@@ -14,6 +14,10 @@ class Field(models.Model):
     def get_objects(self):
         return self.objects.all()
 
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
     def to_json(self):
         from .apis.serializaers import FieldSerializer
         return FieldSerializer(self).data
@@ -75,6 +79,7 @@ class RAM(models.Model):
     timings = models.CharField(max_length=20, null=True)
     sticks = models.PositiveIntegerField()
     url = models.URLField()
+    field = models.ForeignKey(Field, related_name='rams')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -97,6 +102,7 @@ class CPU(models.Model):
     tdp = models.PositiveIntegerField()
     integrated_graphics = models.CharField(max_length=100)
     url = models.URLField()
+    field = models.ForeignKey(Field, related_name='cpus')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -127,6 +133,7 @@ class GPU(models.Model):
     sync = models.CharField(max_length=50, null=True)
     tdp = models.PositiveIntegerField()
     url = models.URLField()
+    field = models.ForeignKey(Field, related_name='gpus')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
