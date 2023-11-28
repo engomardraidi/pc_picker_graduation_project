@@ -18,3 +18,21 @@ def classification_cpu():
             serializer = serializers.CPUFieldSerializer(data=models.CPUField(cpu=cpu, field=programming).to_json())
             if serializer.is_valid():
                 serializer.save()
+
+def classification_ram():
+    programming = models.Field.get_object(1)
+    graphic_design = models.Field.get_object(2)
+    rams = models.RAM.get_objects()
+
+    for ram in rams:
+        new_data = []
+        if ram.size >= 16:
+            new_data.append(models.RAMField(ram=ram, field=programming).to_json())
+            new_data.append(models.RAMField(ram=ram, field=graphic_design).to_json())
+            serializer = serializers.RAMFieldSerializer(data=new_data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+        elif ram.size >= 8:
+            serializer = serializers.RAMFieldSerializer(data=models.RAMField(ram=ram, field=programming).to_json())
+            if serializer.is_valid():
+                serializer.save()
