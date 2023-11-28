@@ -25,3 +25,8 @@ class GPUSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.GPU
         fields = '__all__'
+
+class CPUFieldSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CPUField
+        fields = '__all__'

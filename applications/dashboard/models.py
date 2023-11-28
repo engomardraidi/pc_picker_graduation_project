@@ -19,7 +19,7 @@ class Field(models.Model):
         return self.objects.get(pk=pk)
 
     def to_json(self):
-        from .apis.serializaers import FieldSerializer
+        from .apis.serializers import FieldSerializer
         return FieldSerializer(self).data
 
 class Motherboard(models.Model):
@@ -61,12 +61,12 @@ class Motherboard(models.Model):
 
     @classmethod
     def get_objects_as_json(self):
-        from .apis.serializaers import MotherboardSerializer
+        from .apis.serializers import MotherboardSerializer
         query_set = self.objects.all()
         return MotherboardSerializer(query_set, many=True).data
 
     def to_json(self):
-        from .apis.serializaers import MotherboardSerializer
+        from .apis.serializers import MotherboardSerializer
         return MotherboardSerializer(self).data
 
 class RAM(models.Model):
@@ -90,6 +90,10 @@ class RAM(models.Model):
     class Meta:
         db_table = 'ram'
 
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
 class CPU(models.Model):
     name = models.CharField(max_length=255)
     socket = models.CharField(max_length=50)
@@ -112,6 +116,10 @@ class CPU(models.Model):
 
     class Meta:
         db_table = 'cpu'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
 
 class GPU(models.Model):
     name = models.CharField(max_length=255)
@@ -143,3 +151,27 @@ class GPU(models.Model):
 
     class Meta:
         db_table = 'gpu'
+
+class CPUField(models.Model):
+    cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
+    field = models.ForeignKey(Field, on_delete=models.CASCADE)
+    status = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'cpu_field'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    def to_json(self) -> dict:
+        from .apis.serializers import CPUFieldSerializer
+        return CPUFieldSerializer(self).data
