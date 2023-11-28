@@ -35,3 +35,8 @@ class RAMFieldSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.RAMField
         fields = '__all__'
+
+class GPUFieldSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.GPUField
+        fields = '__all__'

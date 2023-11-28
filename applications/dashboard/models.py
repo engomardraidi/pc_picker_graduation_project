@@ -199,3 +199,27 @@ class RAMField(models.Model):
     def to_json(self) -> dict:
         from .apis.serializers import RAMFieldSerializer
         return RAMFieldSerializer(self).data
+
+class GPUField(models.Model):
+    gpu = models.ForeignKey(GPU, on_delete=models.CASCADE)
+    field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
+    status = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'gpu_field'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    def to_json(self) -> dict:
+        from .apis.serializers import GPUFieldSerializer
+        return GPUFieldSerializer(self).data
