@@ -182,7 +182,7 @@ class RAMField(models.Model):
     status = models.BooleanField(default=True)
 
     class Meta:
-        db_table = 'cpu_field'
+        db_table = 'ram_field'
 
     @classmethod
     def get_objects(self):
