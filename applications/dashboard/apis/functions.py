@@ -36,3 +36,21 @@ def classification_ram():
             serializer = serializers.RAMFieldSerializer(data=models.RAMField(ram=ram, field=programming).to_json())
             if serializer.is_valid():
                 serializer.save()
+
+def classification_gpu():
+    programming = models.Field.get_object(1)
+    graphic_design = models.Field.get_object(2)
+    gpus = models.GPU.get_objects()
+
+    for gpu in gpus:
+        new_data = []
+        if gpu.vram >= 2:
+            new_data.append(models.GPUField(gpu=gpu, field=programming).to_json())
+            new_data.append(models.GPUField(gpu=gpu, field=graphic_design).to_json())
+            serializer = serializers.GPUFieldSerializer(data=new_data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+        else:
+            serializer = serializers.GPUFieldSerializer(data=models.GPUField(gpu=gpu, field=programming).to_json())
+            if serializer.is_valid():
+                serializer.save()
