@@ -6,6 +6,9 @@ class Field(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return self.name
 
     class Meta:
         db_table = 'field'
@@ -17,6 +20,10 @@ class Field(models.Model):
     @classmethod
     def get_object(self, pk):
         return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     def to_json(self):
         from .apis.serializers import FieldSerializer
@@ -44,6 +51,7 @@ class Motherboard(models.Model):
     pci_e_3 = models.PositiveIntegerField()
     pci_e_4 = models.PositiveIntegerField()
     url = models.URLField()
+    image_url = models.URLField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -65,6 +73,10 @@ class Motherboard(models.Model):
         query_set = self.objects.all()
         return MotherboardSerializer(query_set, many=True).data
 
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
     def to_json(self):
         from .apis.serializers import MotherboardSerializer
         return MotherboardSerializer(self).data
@@ -79,7 +91,7 @@ class RAM(models.Model):
     timings = models.CharField(max_length=20, null=True)
     sticks = models.PositiveIntegerField()
     url = models.URLField()
-    field = models.ForeignKey(Field, related_name='rams', on_delete=models.SET_NULL, null=True)
+    image_url = models.URLField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -94,6 +106,14 @@ class RAM(models.Model):
     def get_objects(self):
         return self.objects.all()
 
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
 class CPU(models.Model):
     name = models.CharField(max_length=255)
     socket = models.CharField(max_length=50)
@@ -106,7 +126,7 @@ class CPU(models.Model):
     tdp = models.PositiveIntegerField()
     integrated_graphics = models.CharField(max_length=100)
     url = models.URLField()
-    field = models.ForeignKey(Field, related_name='cpus', on_delete=models.SET_NULL, null=True)
+    image_url = models.URLField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -120,6 +140,14 @@ class CPU(models.Model):
     @classmethod
     def get_objects(self):
         return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
 class GPU(models.Model):
     name = models.CharField(max_length=255)
@@ -141,7 +169,7 @@ class GPU(models.Model):
     sync = models.CharField(max_length=50, null=True)
     tdp = models.PositiveIntegerField()
     url = models.URLField()
-    field = models.ForeignKey(Field, related_name='gpus', on_delete=models.SET_NULL, null=True)
+    image_url = models.URLField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -151,6 +179,18 @@ class GPU(models.Model):
 
     class Meta:
         db_table = 'gpu'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
 class CPUField(models.Model):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)

@@ -32,6 +32,7 @@ class CPUFieldSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class RAMFieldSerializer(serializers.ModelSerializer):
+    ram = RAMSerializer(read_only=True)
     class Meta:
         model = models.RAMField
         fields = '__all__'
