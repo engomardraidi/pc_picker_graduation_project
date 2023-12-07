@@ -16,7 +16,6 @@ def get_total_price(motherboard, cpu, ram, gpu):
     return motherboard_price + cpu_price + ram_price + gpu_price
 
 def write_fun():
-    
     script_dir = os.path.dirname(__file__)
     template_path = os.path.join(script_dir, 'jinja2_templates', 'rule_template.j2')
 
