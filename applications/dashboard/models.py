@@ -3,6 +3,11 @@ from django.db import models
 # Create your models here.
 class Field(models.Model):
     name = models.CharField(max_length=50)
+    motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
+    cpu_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
+    ram_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
+    gpu_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
+    having_gpu = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
@@ -74,8 +79,12 @@ class Motherboard(models.Model):
         return MotherboardSerializer(query_set, many=True).data
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
 
     def to_json(self):
         from .apis.serializers import MotherboardSerializer
@@ -111,8 +120,16 @@ class RAM(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self, query):
+        from .apis.serializers import RAMSerializer
+        return RAMSerializer(self).data
 
 class CPU(models.Model):
     name = models.CharField(max_length=255)
@@ -146,8 +163,16 @@ class CPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import CPUSerializer
+        return CPUSerializer(self).data
 
 class GPU(models.Model):
     name = models.CharField(max_length=255)
@@ -189,8 +214,16 @@ class GPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self, query):
+        from .apis.serializers import GPUSerializer
+        return GPUSerializer(self).data
 
 class CPUField(models.Model):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
@@ -209,8 +242,12 @@ class CPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
 
     def to_json(self) -> dict:
         from .apis.serializers import CPUFieldSerializer
@@ -233,8 +270,12 @@ class RAMField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
 
     def to_json(self) -> dict:
         from .apis.serializers import RAMFieldSerializer
@@ -257,8 +298,12 @@ class GPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
 
     def to_json(self) -> dict:
         from .apis.serializers import GPUFieldSerializer
