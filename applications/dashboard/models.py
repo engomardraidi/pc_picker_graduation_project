@@ -64,6 +64,42 @@ class Producer(models.Model):
     def sql_query(self, query):
         return self.objects.raw(query)
 
+    def to_json(self):
+        from .apis.serializers import ProducerSerializer
+        return ProducerSerializer(self).data
+
+class CaseType(models.Model):
+    case_type = models.CharField(max_length=50, name='type')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'case_type'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import CaseTypeSerializer
+        return CaseTypeSerializer(self).data
+
 class RAMType(models.Model):
     ram_type = models.CharField(max_length=50, name='type', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -152,7 +188,7 @@ class Motherboard(models.Model):
 class RAM(models.Model):
     name = models.CharField(max_length=100)
     size = models.PositiveIntegerField()
-    ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
+    ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True, name='type')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     clock = models.PositiveIntegerField()
@@ -283,6 +319,40 @@ class GPU(models.Model):
     def to_json(self):
         from .apis.serializers import GPUSerializer
         return GPUSerializer(self).data
+
+class Case(models.Model):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    case_type = models.ForeignKey(CaseType, on_delete=models.SET_NULL, null=True, name='type')
+    color = models.CharField(max_length=50)
+    side_panel = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'case'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import CaseSerializer
+        return CaseSerializer(self).data
+
 
 class CPUField(models.Model):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)

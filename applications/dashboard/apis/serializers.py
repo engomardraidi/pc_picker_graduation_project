@@ -11,6 +11,11 @@ class ProducerSerializer(serializers.ModelSerializer):
         model = models.Producer
         fields = '__all__'
 
+class CaseTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CaseType
+        fields = '__all__'
+
 class RAMTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.RAMType
@@ -34,6 +39,11 @@ class CPUSerializer(serializers.ModelSerializer):
 class GPUSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.GPU
+        fields = '__all__'
+
+class CaseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Case
         fields = '__all__'
 
 class CPUFieldSerializer(serializers.ModelSerializer):
