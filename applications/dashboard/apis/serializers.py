@@ -6,6 +6,16 @@ class FieldSerializer(serializers.ModelSerializer):
         model = models.Field
         fields = '__all__'
 
+class ProducerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Producer
+        fields = '__all__'
+
+class RAMTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.RAMType
+        fields = '__all__'
+
 class MotherboardSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Motherboard

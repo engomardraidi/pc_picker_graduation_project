@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+
 class Field(models.Model):
     name = models.CharField(max_length=50)
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
@@ -30,19 +31,80 @@ class Field(models.Model):
     def filter_objects(self, **kwargs):
         return self.objects.filter(**kwargs)
 
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
     def to_json(self):
         from .apis.serializers import FieldSerializer
         return FieldSerializer(self).data
+
+class Producer(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    class Meta:
+        db_table = 'producer'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+class RAMType(models.Model):
+    ram_type = models.CharField(max_length=50, name='type', unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return self.ram_type
+
+    class Meta:
+        db_table = 'ram_type'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import RAMTypeSerializer
+        return RAMTypeSerializer(self).data
 
 class Motherboard(models.Model):
     name = models.CharField(max_length=255)
     from_factor = models.CharField(max_length=50)
     socket = models.CharField(max_length=50)
-    memory_type = models.CharField(max_length=50)
+    ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
     memory_max_capacity = models.PositiveIntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     chipset = models.CharField(max_length=50)
-    producer = models.CharField(max_length=100)
+    producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     ram_slots = models.PositiveIntegerField()
     m2_pci_e_3 = models.PositiveIntegerField(default=0)
     m2_pci_e_4 = models.PositiveIntegerField(default=0)
@@ -69,18 +131,15 @@ class Motherboard(models.Model):
 
     @classmethod
     def get_objects(self):
-        query_set = self.objects.all()
-        return query_set
+        return self.objects.all()
 
     @classmethod
-    def get_objects_as_json(self):
-        from .apis.serializers import MotherboardSerializer
-        query_set = self.objects.all()
-        return MotherboardSerializer(query_set, many=True).data
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -93,9 +152,9 @@ class Motherboard(models.Model):
 class RAM(models.Model):
     name = models.CharField(max_length=100)
     size = models.PositiveIntegerField()
-    memory_type = models.CharField(max_length=50)
+    ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    producer = models.CharField(max_length=100)
+    producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     clock = models.PositiveIntegerField()
     timings = models.CharField(max_length=20, null=True)
     sticks = models.PositiveIntegerField()
@@ -120,8 +179,8 @@ class RAM(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -135,7 +194,7 @@ class CPU(models.Model):
     name = models.CharField(max_length=255)
     socket = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    producer = models.CharField(max_length=100)
+    producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     base_clock = models.FloatField(default=0.0)
     turbo_clock = models.FloatField(default=0.0)
     cores = models.PositiveIntegerField()
@@ -163,8 +222,8 @@ class CPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -180,7 +239,7 @@ class GPU(models.Model):
     series = models.CharField(max_length=50)
     vram = models.PositiveIntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    producer = models.CharField(max_length=100)
+    producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     length = models.FloatField()
     slots = models.FloatField(default=0.0)
     connectors_8pin = models.PositiveIntegerField()
@@ -214,14 +273,14 @@ class GPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
         return self.objects.raw(query)
 
-    def to_json(self, query):
+    def to_json(self):
         from .apis.serializers import GPUSerializer
         return GPUSerializer(self).data
 
@@ -242,14 +301,14 @@ class CPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
         return self.objects.raw(query)
 
-    def to_json(self) -> dict:
+    def to_json(self):
         from .apis.serializers import CPUFieldSerializer
         return CPUFieldSerializer(self).data
 
@@ -270,14 +329,14 @@ class RAMField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
         return self.objects.raw(query)
 
-    def to_json(self) -> dict:
+    def to_json(self):
         from .apis.serializers import RAMFieldSerializer
         return RAMFieldSerializer(self).data
 
@@ -298,13 +357,13 @@ class GPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, *args, **kwargs):
-        return self.objects.filter(*args, **kwargs)
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
 
     @classmethod
     def sql_query(self, query):
         return self.objects.raw(query)
 
-    def to_json(self) -> dict:
+    def to_json(self):
         from .apis.serializers import GPUFieldSerializer
         return GPUFieldSerializer(self).data
