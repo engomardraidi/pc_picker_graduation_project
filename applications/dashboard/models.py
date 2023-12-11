@@ -196,6 +196,70 @@ class DriveType(models.Model):
         from .apis.serializers import DriveTypeSerializer
         return DriveTypeSerializer(self).data
 
+class PowerSupplyType(models.Model):
+    power_supply_type = models.CharField(max_length=50, name='type', unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return self.power_supply_type
+
+    class Meta:
+        db_table = 'power_supply_type'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import PowerSupplyTypeSerializer
+        return PowerSupplyTypeSerializer(self).data
+
+class PowerSupplyEfficiency(models.Model):
+    efficiency = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return self.efficiency
+
+    class Meta:
+        db_table = 'power_supply_efficiency'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import PowerSupplyEfficiencySerializer
+        return PowerSupplyEfficiencySerializer(self).data
+
 class RAMType(models.Model):
     ram_type = models.CharField(max_length=50, name='type', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -492,6 +556,43 @@ class InternalDrive(models.Model):
     def to_json(self):
         from .apis.serializers import InternalDriveSerializer
         return InternalDriveSerializer(self).data
+
+class PowerSupply(models.Model):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    power_type = models.ForeignKey(PowerSupplyType, on_delete=models.SET_NULL, null=True, name='type')
+    efficiency = models.ForeignKey(PowerSupplyEfficiency, on_delete=models.SET_NULL, null=True)
+    wattage = models.PositiveIntegerField()
+    image_url = models.URLField(null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'power_supply'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import PowerSupplySerializer
+        return PowerSupplySerializer(self).data
 
 class CPUField(models.Model):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)

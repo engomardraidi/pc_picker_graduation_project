@@ -31,6 +31,16 @@ class DriveTypeSerializer(serializers.ModelSerializer):
         model = models.DriveType
         fields = '__all__'
 
+class PowerSupplyTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.PowerSupplyType
+        fields = '__all__'
+
+class PowerSupplyEfficiencySerializer(serializers.ModelSerializer):
+    class Meta:
+        models = models.PowerSupplyEfficiency
+        fields = '__all__'
+
 class RAMTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.RAMType
@@ -64,6 +74,11 @@ class CaseSerializer(serializers.ModelSerializer):
 class InternalDriveSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.InternalDrive
+        fields = '__all__'
+
+class PowerSupplySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.PowerSupply
         fields = '__all__'
 
 class CPUFieldSerializer(serializers.ModelSerializer):
