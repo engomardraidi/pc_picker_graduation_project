@@ -26,6 +26,11 @@ class CaseSidePanelSerializer(serializers.ModelSerializer):
         model = models.CaseSidePanel
         fields = '__all__'
 
+class DriveTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.DriveType
+        fields = '__all__'
+
 class RAMTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.RAMType
@@ -54,6 +59,11 @@ class GPUSerializer(serializers.ModelSerializer):
 class CaseSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Case
+        fields = '__all__'
+
+class InternalDriveSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.InternalDrive
         fields = '__all__'
 
 class CPUFieldSerializer(serializers.ModelSerializer):

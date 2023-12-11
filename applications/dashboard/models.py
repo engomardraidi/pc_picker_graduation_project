@@ -164,8 +164,39 @@ class CaseSidePanel(models.Model):
         from .apis.serializers import CaseSidePanelSerializer
         return CaseSidePanelSerializer(self).data
 
+class DriveType(models.Model):
+    drive_type = models.CharField(max_length=50, name='type', unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.drive_type
+
+    class Meta:
+        db_table = 'drive_type'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import DriveTypeSerializer
+        return DriveTypeSerializer(self).data
+
 class RAMType(models.Model):
-    
     ram_type = models.CharField(max_length=50, name='type', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -422,6 +453,45 @@ class Case(models.Model):
         from .apis.serializers import CaseSerializer
         return CaseSerializer(self).data
 
+class InternalDrive(models.Model):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    capacity = models.PositiveIntegerField()
+    price_per_gb = models.DecimalField(max_digits=6, decimal_places=2)
+    drive_type = models.ForeignKey(DriveType, on_delete=models.SET_NULL, null=True)
+    cache = models.PositiveIntegerField()
+    form_factor = models.CharField(max_length=50)
+    interface = models.CharField(max_length=50)
+    image_url = models.URLField(null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'internal_drive'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import InternalDriveSerializer
+        return InternalDriveSerializer(self).data
 
 class CPUField(models.Model):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
