@@ -6,6 +6,11 @@ class FieldSerializer(serializers.ModelSerializer):
         model = models.Field
         fields = '__all__'
 
+class ColorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Color
+        fields = '__all__'
+
 class ProducerSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Producer
@@ -14,6 +19,11 @@ class ProducerSerializer(serializers.ModelSerializer):
 class CaseTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.CaseType
+        fields = '__all__'
+
+class CaseSidePanelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CaseSidePanel
         fields = '__all__'
 
 class RAMTypeSerializer(serializers.ModelSerializer):

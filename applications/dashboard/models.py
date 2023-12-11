@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Field(models.Model):
     name = models.CharField(max_length=50)
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
@@ -12,7 +11,7 @@ class Field(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
-    
+
     def __str__(self):
         return self.name
 
@@ -38,6 +37,38 @@ class Field(models.Model):
     def to_json(self):
         from .apis.serializers import FieldSerializer
         return FieldSerializer(self).data
+
+class Color(models.Model):
+    color = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.color
+
+    class Meta:
+        db_table = 'color'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import ColorSerializer
+        return ColorSerializer(self).data
 
 class Producer(models.Model):
     name = models.CharField(max_length=50, unique=True)
@@ -69,13 +100,13 @@ class Producer(models.Model):
         return ProducerSerializer(self).data
 
 class CaseType(models.Model):
-    case_type = models.CharField(max_length=50, name='type')
+    case_type = models.CharField(max_length=50, name='type', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.name
+        return self.type
 
     class Meta:
         db_table = 'case_type'
@@ -100,7 +131,40 @@ class CaseType(models.Model):
         from .apis.serializers import CaseTypeSerializer
         return CaseTypeSerializer(self).data
 
+class CaseSidePanel(models.Model):
+    side_panel = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.type
+
+    class Meta:
+        db_table = 'case_side_panel'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, **kwargs):
+        return self.objects.filter(**kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import CaseSidePanelSerializer
+        return CaseSidePanelSerializer(self).data
+
 class RAMType(models.Model):
+    
     ram_type = models.CharField(max_length=50, name='type', unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -322,10 +386,10 @@ class GPU(models.Model):
 
 class Case(models.Model):
     name = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
     case_type = models.ForeignKey(CaseType, on_delete=models.SET_NULL, null=True, name='type')
-    color = models.CharField(max_length=50)
-    side_panel = models.CharField(max_length=50)
+    color = models.ForeignKey(Color, on_delete=models.SET_NULL, null=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    side_panel = models.ForeignKey(CaseSidePanel, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.name
