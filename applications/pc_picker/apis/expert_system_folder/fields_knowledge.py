@@ -31,21 +31,12 @@ class FieldsKnowledge(ExpertSystem):
         self.internal_drives_knowledge.reset()
         self.power_supplies_knowledge.reset()
 
-    def __get_part(self, model, budget, Q_query=None, Q_query_field='price', order_field='price', **kwargs):
-        price_query = f'{Q_query_field}__lte'
-        new_Q_query = Q(**{price_query: budget}) if Q_query == None else Q(**{price_query: budget}) & Q_query
-        parts = model.filter_objects(new_Q_query, **kwargs).order_by(f'-{order_field}')
-        if len(parts) == 0:
-            price_query = f'{Q_query_field}__gte'
-            new_Q_query = Q(**{price_query: budget}) if Q_query == None else Q(**{price_query: budget}) & Q_query
-            parts = model.filter_objects(new_Q_query, **kwargs).order_by(order_field)
-        if len(parts) == 0:
-            return None
-        return parts[0]
+    def __get_all_parts(self, field_id, budget, motherboard_Q_query=None):
+        field = dashboard_models.Field.get_object(field_id)
+        if field == None:
+            return 'the field you want not exist'
 
-    def __get_all_parts(self, field, budget, motherboard_Q_query=None):
         pc = PC()
-
         motherboard_budget = field.motherboard_budget * budget
         cpu_budget = field.cpu_budget * budget
         ram_budget = field.ram_budget * budget
@@ -101,10 +92,9 @@ class FieldsKnowledge(ExpertSystem):
     @Rule(AS.rule << InputFact(field_id=1))
     def pick_pc_for_programming(self, rule):
         self.init_expert()
-        field = dashboard_models.Field.get_object(rule['field_id'])
         budget = decimal.Decimal(rule['budget'])
         
-        pc = self.__get_all_parts(field, budget)
+        pc = self.__get_all_parts(1, budget)
         
         return pc.get_pc_parts_as_JSON()
 
@@ -114,6 +104,6 @@ class FieldsKnowledge(ExpertSystem):
         field = dashboard_models.Field.get_object(rule['field_id'])
         budget = decimal.Decimal(rule['budget'])
         
-        pc = self.__get_all_parts(field, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
+        pc = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
         
         return pc.get_pc_parts_as_JSON()
