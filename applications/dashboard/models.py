@@ -28,7 +28,10 @@ class Field(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -60,7 +63,10 @@ class Color(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -92,7 +98,10 @@ class CPUSocket(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -121,7 +130,10 @@ class Producer(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -153,7 +165,10 @@ class CaseType(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -185,7 +200,10 @@ class CaseSidePanel(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -217,7 +235,10 @@ class DriveType(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -249,7 +270,10 @@ class PowerSupplyType(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -281,7 +305,10 @@ class PowerSupplyEfficiency(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -313,7 +340,10 @@ class RAMType(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -366,7 +396,10 @@ class Motherboard(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -407,7 +440,10 @@ class RAM(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -450,7 +486,10 @@ class CPU(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -501,7 +540,10 @@ class GPU(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -538,7 +580,10 @@ class Case(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -578,7 +623,10 @@ class InternalDrive(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -615,7 +663,10 @@ class PowerSupply(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -646,7 +697,10 @@ class CPUField(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -677,7 +731,10 @@ class RAMField(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
@@ -708,7 +765,10 @@ class GPUField(models.Model):
 
     @classmethod
     def get_object(self, pk):
-        return self.objects.get(pk=pk)
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
 
     @classmethod
     def filter_objects(self, *args, **kwargs):
