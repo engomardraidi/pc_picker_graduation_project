@@ -1,0 +1,8 @@
+
+    @Rule(AS.rule << InputFact(type={{ ram.type.id }}))
+    def get_cpu_with_socket_{{ ram.type.id }}(self, rule):
+        field_id = rule['field_id']
+        budget = rule['budget']
+        max_ram_capacity = rule['max_ram_capacity']
+
+        return self.__get_ram(field_id, {{ ram.type.id }}, max_ram_capacity, budget)
