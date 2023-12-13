@@ -11,6 +11,11 @@ class ColorSerializer(serializers.ModelSerializer):
         model = models.Color
         fields = '__all__'
 
+class CPUSocketSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CPUSocket
+        fields = '__all__'
+
 class ProducerSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Producer
