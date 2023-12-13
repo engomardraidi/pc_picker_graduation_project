@@ -4,17 +4,6 @@ import numpy as np
 from fuzzywuzzy import process
 from jinja2 import Template
 
-def get_None_or_JSON(instance):
-    return None if instance == None else instance.to_json()
-
-def get_total_price(motherboard, cpu, ram, gpu):
-    motherboard_price = 0 if motherboard == None else motherboard.price
-    cpu_price = 0 if cpu == None else cpu.cpu.price
-    ram_price = 0 if ram == None else ram.ram.price
-    gpu_price = 0 if gpu == None else gpu.gpu.price
-
-    return motherboard_price + cpu_price + ram_price + gpu_price
-
 def write_fun():
     script_dir = os.path.dirname(__file__)
     template_path = os.path.join(script_dir, 'jinja2_templates', 'rule_template.j2')
