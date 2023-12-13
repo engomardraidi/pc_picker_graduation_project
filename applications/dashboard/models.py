@@ -31,8 +31,8 @@ class Field(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -63,8 +63,8 @@ class Color(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -73,6 +73,38 @@ class Color(models.Model):
     def to_json(self):
         from .apis.serializers import ColorSerializer
         return ColorSerializer(self).data
+
+class CPUSocket(models.Model):
+    socket = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    staus = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.socket
+
+    class Meta:
+        db_table = 'cpu_socket'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        return self.objects.get(pk=pk)
+
+    @classmethod
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import CPUSocketSerializer
+        return CPUSocketSerializer(self).data
 
 class Producer(models.Model):
     name = models.CharField(max_length=50, unique=True)
@@ -92,8 +124,8 @@ class Producer(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -124,8 +156,8 @@ class CaseType(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -156,8 +188,8 @@ class CaseSidePanel(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -188,8 +220,8 @@ class DriveType(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -220,8 +252,8 @@ class PowerSupplyType(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -252,8 +284,8 @@ class PowerSupplyEfficiency(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -270,7 +302,7 @@ class RAMType(models.Model):
     status = models.BooleanField(default=True)
     
     def __str__(self):
-        return self.ram_type
+        return self.type
 
     class Meta:
         db_table = 'ram_type'
@@ -284,8 +316,8 @@ class RAMType(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -298,7 +330,7 @@ class RAMType(models.Model):
 class Motherboard(models.Model):
     name = models.CharField(max_length=255)
     from_factor = models.CharField(max_length=50)
-    socket = models.CharField(max_length=50)
+    socket = models.ForeignKey(CPUSocket, on_delete=models.SET_NULL, null=True)
     ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
     memory_max_capacity = models.PositiveIntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -337,8 +369,8 @@ class Motherboard(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -378,8 +410,8 @@ class RAM(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -391,7 +423,7 @@ class RAM(models.Model):
 
 class CPU(models.Model):
     name = models.CharField(max_length=255)
-    socket = models.CharField(max_length=50)
+    socket = models.ForeignKey(CPUSocket, on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     base_clock = models.FloatField(default=0.0)
@@ -421,8 +453,8 @@ class CPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -472,8 +504,8 @@ class GPU(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -509,8 +541,8 @@ class Case(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -549,8 +581,8 @@ class InternalDrive(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -586,8 +618,8 @@ class PowerSupply(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -602,6 +634,9 @@ class CPUField(models.Model):
     field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
     status = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.cpu.name
+
     class Meta:
         db_table = 'cpu_field'
 
@@ -614,8 +649,8 @@ class CPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -630,6 +665,9 @@ class RAMField(models.Model):
     field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
     status = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.ram.name
+
     class Meta:
         db_table = 'ram_field'
 
@@ -642,8 +680,8 @@ class RAMField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
 
     @classmethod
     def sql_query(self, query):
@@ -658,6 +696,9 @@ class GPUField(models.Model):
     field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
     status = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.gpu.name
+
     class Meta:
         db_table = 'gpu_field'
 
@@ -670,8 +711,8 @@ class GPUField(models.Model):
         return self.objects.get(pk=pk)
 
     @classmethod
-    def filter_objects(self, **kwargs):
-        return self.objects.filter(**kwargs)
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args,**kwargs)
 
     @classmethod
     def sql_query(self, query):
