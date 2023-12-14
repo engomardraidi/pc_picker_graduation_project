@@ -1,6 +1,11 @@
 from .. import models
 from rest_framework import serializers
 
+class DeviceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Device
+        fields = '__all__'
+
 class FieldSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Field

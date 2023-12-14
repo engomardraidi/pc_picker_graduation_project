@@ -2,6 +2,42 @@ from django.utils import timezone
 from django.db import models
 
 # Create your models here.
+class Device(models.Model):
+    name = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'device'
+
+    @classmethod
+    def get_objects(self):
+        return self.objects.all()
+
+    @classmethod
+    def get_object(self, pk):
+        try:
+            return self.objects.get(pk=pk)
+        except self.DoesNotExist:
+            return None
+
+    @classmethod
+    def filter_objects(self, *args, **kwargs):
+        return self.objects.filter(*args, **kwargs)
+
+    @classmethod
+    def sql_query(self, query):
+        return self.objects.raw(query)
+
+    def to_json(self):
+        from .apis.serializers import DeviceSerializer
+        return DeviceSerializer(self).data
+   
+
 class Field(models.Model):
     name = models.CharField(max_length=50)
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
