@@ -4,13 +4,17 @@ from rest_framework.generics import ListAPIView
 from .expert_system_folder.fields_knowledge import FieldsKnowledge
 from .expert_system_folder.input_fact import InputFact
 from ...dashboard.models import Device, Field
-from ...dashboard.apis.serializers import DeviceSerializer
+from ...dashboard.apis.serializers import DeviceSerializer, FieldReadSerializer
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
 
 class ListOfDevices(ListAPIView):
     queryset = Device.get_objects()
     serializer_class = DeviceSerializer
+
+class ListOfFields(ListAPIView):
+    queryset = Field.get_objects()
+    serializer_class = FieldReadSerializer
 
 @api_view(['POST'])
 def pick_pc(request):

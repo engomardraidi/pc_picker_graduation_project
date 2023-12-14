@@ -11,6 +11,11 @@ class FieldSerializer(serializers.ModelSerializer):
         model = models.Field
         fields = '__all__'
 
+class FieldReadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Field
+        fields = ['id', 'name', 'updated_at', 'created_at', 'status']
+
 class ColorSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Color
