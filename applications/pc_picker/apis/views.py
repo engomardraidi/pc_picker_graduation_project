@@ -1,10 +1,16 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from rest_framework.generics import ListAPIView
 from .expert_system_folder.fields_knowledge import FieldsKnowledge
 from .expert_system_folder.input_fact import InputFact
-from ...dashboard.models import Field
+from ...dashboard.models import Device, Field
+from ...dashboard.apis.serializers import DeviceSerializer
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
+
+class ListOfDevices(ListAPIView):
+    queryset = Device.get_objects()
+    serializer_class = DeviceSerializer
 
 @api_view(['POST'])
 def pick_pc(request):
