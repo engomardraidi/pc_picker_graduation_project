@@ -7,7 +7,7 @@
     <img src="logo.png" alt="Logo" width="130" height="130">
   </a>
 
-  <h3 align="center">PC Picker - Backend</h3>
+  <h3 align="center">PC Picker</h3>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
