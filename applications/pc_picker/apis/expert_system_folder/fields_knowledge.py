@@ -2,7 +2,7 @@ from .expert_system_abc import ExpertSystem
 import decimal
 from experta import Rule, AS
 from django.db.models import Q
-from ....dashboard.apis.pc import PC
+from ..pc import PC
 from ....dashboard import models as dashboard_models
 from .input_fact import InputFact
 from .pc_parts.motherboards_knowledge import MotherboardsKnowledge

@@ -453,7 +453,7 @@ class RAM(models.Model):
     def sql_query(self, query):
         return self.objects.raw(query)
 
-    def to_json(self, query):
+    def to_json(self):
         from .apis.serializers import RAMSerializer
         return RAMSerializer(self).data
 

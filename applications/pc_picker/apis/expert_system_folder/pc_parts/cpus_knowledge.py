@@ -8,7 +8,7 @@ class CPUsKnowledge(PCKnowledge):
         cpus = CPUField.filter_objects(field=field_id, cpu__socket=cpu_socket, cpu__price__lte=budget).order_by('-cpu__price')
         if len(cpus) == 0:
             cpus = CPUField.filter_objects(field=field_id, cpu__socket=cpu_socket, cpu__price__gte=budget).order_by('cpu__price')
-        return None if len(cpus) == 0 else cpus[0]
+        return None if len(cpus) == 0 else cpus[0].cpu
 
     @Rule(AS.rule << InputFact(socket=11))
     def get_cpu_with_socket_11(self, rule):

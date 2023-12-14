@@ -8,7 +8,7 @@ class RAMsKnowledge(PCKnowledge):
         rams = RAMField.filter_objects(field=field_id, ram__type=ram_type, ram__size__lte=max_ram_capacity, ram__price__lte=budget).order_by('-ram__price')
         if len(rams) == 0:
             rams = RAMField.filter_objects(field=field_id, ram__type=ram_type, ram__size__lte=max_ram_capacity, ram__price__gte=budget).order_by('ram__price')
-        return None if len(rams) == 0 else rams[0]
+        return None if len(rams) == 0 else rams[0].ram
 
     @Rule(AS.rule << InputFact(type=3))
     def get_cpu_with_socket_3(self, rule):

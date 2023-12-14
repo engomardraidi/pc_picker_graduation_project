@@ -1,4 +1,4 @@
-from .functions import get_None_or_JSON, get_total_price
+from ...dashboard.apis.functions import get_None_or_JSON, get_total_price
 
 class PC:
     def __init__(self, motherboard=None, cpu=None, ram=None, gpu=None, case_part=None, internal_drive=None, power_supply=None) -> None:
