@@ -3,6 +3,10 @@ from django.db import models
 
 # Create your models here.
 class BaseModel(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    status = models.BooleanField(default=True)
+
     class Meta:
         abstract = True
 
@@ -27,9 +31,6 @@ class BaseModel(models.Model):
 
 class Device(BaseModel):
     name = models.CharField(max_length=50)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -51,9 +52,6 @@ class Field(BaseModel):
     case_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
     power_supply_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
     internal_drive_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -67,9 +65,6 @@ class Field(BaseModel):
 
 class Color(BaseModel):
     color = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.color
@@ -83,9 +78,6 @@ class Color(BaseModel):
 
 class CPUSocket(BaseModel):
     socket = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    staus = models.BooleanField(default=True)
 
     def __str__(self):
         return self.socket
@@ -99,9 +91,6 @@ class CPUSocket(BaseModel):
 
 class Producer(BaseModel):
     name = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     class Meta:
         db_table = 'producer'
@@ -112,9 +101,6 @@ class Producer(BaseModel):
 
 class CaseType(BaseModel):
     case_type = models.CharField(max_length=50, name='type', unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.type
@@ -128,9 +114,6 @@ class CaseType(BaseModel):
 
 class CaseSidePanel(BaseModel):
     side_panel = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.type
@@ -144,9 +127,6 @@ class CaseSidePanel(BaseModel):
 
 class DriveType(BaseModel):
     drive_type = models.CharField(max_length=50, name='type', unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.drive_type
@@ -160,9 +140,6 @@ class DriveType(BaseModel):
 
 class PowerSupplyType(BaseModel):
     power_supply_type = models.CharField(max_length=50, name='type', unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
     
     def __str__(self):
         return self.power_supply_type
@@ -176,9 +153,6 @@ class PowerSupplyType(BaseModel):
 
 class PowerSupplyEfficiency(BaseModel):
     efficiency = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
     
     def __str__(self):
         return self.efficiency
@@ -192,9 +166,6 @@ class PowerSupplyEfficiency(BaseModel):
 
 class RAMType(BaseModel):
     ram_type = models.CharField(max_length=50, name='type', unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
     
     def __str__(self):
         return self.type
@@ -208,9 +179,6 @@ class RAMType(BaseModel):
 
 class Chipset(BaseModel):
     chipset = models.CharField(max_length=50, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     class Meta:
         db_table = 'chipset'
@@ -219,9 +187,22 @@ class Chipset(BaseModel):
         from .apis.serializers import ChipsetSerializer
         return ChipsetSerializer(self).data
 
+class Factor(BaseModel):
+    factor = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.factor
+
+    class Meta:
+        db_table = 'factor'
+
+    def to_json(self):
+        from .apis.serializers import FactorSerializer
+        return FactorSerializer(self).data
+
 class Motherboard(BaseModel):
     name = models.CharField(max_length=255)
-    from_factor = models.CharField(max_length=50)
+    factor = models.ForeignKey(Factor, on_delete=models.SET_NULL, null=True)
     socket = models.ForeignKey(CPUSocket, on_delete=models.SET_NULL, null=True)
     ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
     memory_max_capacity = models.PositiveIntegerField()
@@ -242,9 +223,6 @@ class Motherboard(BaseModel):
     pci_e_4 = models.PositiveIntegerField()
     url = models.URLField()
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -267,9 +245,6 @@ class RAM(BaseModel):
     sticks = models.PositiveIntegerField()
     url = models.URLField()
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -294,9 +269,6 @@ class CPU(BaseModel):
     integrated_graphics = models.CharField(max_length=100)
     url = models.URLField()
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -329,9 +301,6 @@ class GPU(BaseModel):
     tdp = models.PositiveIntegerField()
     url = models.URLField()
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -350,9 +319,6 @@ class Case(BaseModel):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     side_panel = models.ForeignKey(CaseSidePanel, on_delete=models.SET_NULL, null=True)
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -374,9 +340,6 @@ class InternalDrive(BaseModel):
     form_factor = models.CharField(max_length=50)
     interface = models.CharField(max_length=50)
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -395,9 +358,6 @@ class PowerSupply(BaseModel):
     efficiency = models.ForeignKey(PowerSupplyEfficiency, on_delete=models.SET_NULL, null=True)
     wattage = models.PositiveIntegerField()
     image_url = models.URLField(null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -412,7 +372,6 @@ class PowerSupply(BaseModel):
 class CPUField(BaseModel):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
     field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.cpu.name
@@ -442,7 +401,6 @@ class RAMField(BaseModel):
 class GPUField(BaseModel):
     gpu = models.ForeignKey(GPU, on_delete=models.CASCADE)
     field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
-    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.gpu.name
