@@ -212,22 +212,22 @@ class GPUSync(BaseModel):
         from .apis.serializers import GPUSyncSerializer
         return GPUSyncSerializer(self).data
 
-class Factor(BaseModel):
-    factor = models.CharField(max_length=50, unique=True)
+class FormFactor(BaseModel):
+    form_factor = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return self.factor
 
     class Meta:
-        db_table = 'factor'
+        db_table = 'form_factor'
 
     def to_json(self):
-        from .apis.serializers import FactorSerializer
-        return FactorSerializer(self).data
+        from .apis.serializers import FormFactorSerializer
+        return FormFactorSerializer(self).data
 
 class Motherboard(BaseModel):
     name = models.CharField(max_length=255)
-    factor = models.ForeignKey(Factor, on_delete=models.SET_NULL, null=True)
+    form_factor = models.ForeignKey(FormFactor, on_delete=models.SET_NULL, null=True)
     socket = models.ForeignKey(CPUSocket, on_delete=models.SET_NULL, null=True)
     ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
     memory_max_capacity = models.PositiveIntegerField()

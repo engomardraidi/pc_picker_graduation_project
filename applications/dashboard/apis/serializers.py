@@ -76,9 +76,9 @@ class ChipsetSerializer(serializers.ModelSerializer):
         model = models.Chipset
         fields = '__all__'
 
-class FactorSerializer(serializers.ModelSerializer):
+class FormFactorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Factor
+        model = models.FormFactor
         fields = '__all__'
 
 class MotherboardSerializer(serializers.ModelSerializer):
