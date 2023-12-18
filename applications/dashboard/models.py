@@ -1,4 +1,3 @@
-from django.utils import timezone
 from django.db import models
 
 # Create your models here.
@@ -187,6 +186,32 @@ class Chipset(BaseModel):
         from .apis.serializers import ChipsetSerializer
         return ChipsetSerializer(self).data
 
+class GPUSeries(BaseModel):
+    series = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.series
+
+    class Meta:
+        db_table = 'gpu_series'
+
+    def to_json(self):
+        from .apis.serializers import GPUSeriesSerializer
+        return GPUSeriesSerializer(self).data
+
+class GPUSync(BaseModel):
+    sync = models.CharField(max_length=50, null=True)
+
+    def __str__(self):
+        return self.sync
+
+    class Meta:
+        db_table = 'gpu_sync'
+
+    def to_json(self):
+        from .apis.serializers import GPUSyncSerializer
+        return GPUSyncSerializer(self).data
+
 class Factor(BaseModel):
     factor = models.CharField(max_length=50, unique=True)
 
@@ -283,7 +308,7 @@ class CPU(BaseModel):
 class GPU(BaseModel):
     name = models.CharField(max_length=255)
     pci_e = models.FloatField()
-    series = models.CharField(max_length=50)
+    series = models.ForeignKey(GPUSeries, on_delete=models.SET_NULL, null=True)
     vram = models.PositiveIntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
@@ -297,7 +322,7 @@ class GPU(BaseModel):
     vga = models.BooleanField()
     boost_clock = models.PositiveIntegerField()
     memory_clock = models.PositiveIntegerField()
-    sync = models.CharField(max_length=50, null=True)
+    sync = models.ForeignKey(GPUSync, on_delete=models.SET_NULL, null=True)
     tdp = models.PositiveIntegerField()
     url = models.URLField()
     image_url = models.URLField(null=True)

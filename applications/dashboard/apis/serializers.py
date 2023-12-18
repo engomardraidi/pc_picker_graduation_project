@@ -61,6 +61,16 @@ class RAMTypeSerializer(serializers.ModelSerializer):
         model = models.RAMType
         fields = '__all__'
 
+class GPUSeriesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.GPUSeries
+        fields = '__all__'
+
+class GPUSyncSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.GPUSync
+        fields = '__all__'
+
 class ChipsetSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Chipset
