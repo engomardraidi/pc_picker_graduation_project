@@ -28,6 +28,18 @@ class BaseModel(models.Model):
     def sql_query(self, query):
         return self.objects.raw(query)
 
+    @classmethod
+    def get_active_objects(self):
+        return self.filter_objects(status=True)
+
+    @classmethod
+    def delete_object(self, pk):
+        try:
+            instance = self.filter_objects(pk=pk)
+            return instance.update(status=False)
+        except self.DoesNotExist:
+            return None
+
 class Device(BaseModel):
     name = models.CharField(max_length=50)
 
