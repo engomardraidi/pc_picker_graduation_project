@@ -61,6 +61,11 @@ class RAMTypeSerializer(serializers.ModelSerializer):
         model = models.RAMType
         fields = '__all__'
 
+class ChipsetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Chipset
+        fields = '__all__'
+
 class MotherboardSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Motherboard
