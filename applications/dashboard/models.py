@@ -226,7 +226,7 @@ class FormFactor(BaseModel):
         return FormFactorSerializer(self).data
 
 class Motherboard(BaseModel):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     form_factor = models.ForeignKey(FormFactor, on_delete=models.SET_NULL, null=True)
     socket = models.ForeignKey(CPUSocket, on_delete=models.SET_NULL, null=True)
     ram_type = models.ForeignKey(RAMType, on_delete=models.SET_NULL, null=True)
