@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'applications.pc_picker',
     'applications.dashboard',
+    'applications.users',
 ]
 
 MIDDLEWARE = [
