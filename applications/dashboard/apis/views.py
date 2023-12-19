@@ -25,3 +25,7 @@ class RAMViewSet(BaseViewSet):
 class CaseViewSet(BaseViewSet):
     queryset = models.Case.get_active_objects()
     serializer_class = serializers.CaseSerializer
+
+class InternalDrivesViewSet(BaseViewSet):
+    queryset = models.InternalDrive.get_active_objects()
+    serializer_class = serializers.InternalDriveSerializer
