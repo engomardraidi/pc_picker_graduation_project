@@ -21,3 +21,7 @@ class CPUViewSet(BaseViewSet):
 class RAMViewSet(BaseViewSet):
     queryset = models.RAM.get_active_objects()
     serializer_class = serializers.RAMSerializer
+
+class CaseViewSet(BaseViewSet):
+    queryset = models.Case.get_active_objects()
+    serializer_class = serializers.CaseSerializer
