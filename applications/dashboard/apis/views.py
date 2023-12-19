@@ -4,17 +4,13 @@ from . import serializers
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
-class MotherboardListView(ListCreateAPIView):
+class MotherboardViewSet(ModelViewSet):
     queryset = models.Motherboard.get_active_objects()
     serializer_class = serializers.MotherboardSerializer
 
-class SingleMotherboardView(RetrieveUpdateDestroyAPIView):
-    queryset = models.Motherboard.get_active_objects()
-    serializer_class = serializers.MotherboardSerializer
-
-    def delete(self, request, *args, **kwargs):
+    def destroy(self, request, *args, **kwargs):
         request.data.update({'status': False})
-        self.patch(request, *args, **kwargs)
+        self.partial_update(request, *args, **kwargs)
         return Response(status=204)
 
 class CPUViewSet(ModelViewSet):

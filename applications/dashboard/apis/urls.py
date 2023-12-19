@@ -2,12 +2,8 @@ from django.urls import path
 from rest_framework import routers
 from . import views
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
+router.register(r'motherboards', views.MotherboardViewSet, basename='motherboards')
 router.register(r'cpus', views.CPUViewSet, basename='cpus')
 
-urlpatterns = [
-    path('motherboards/', views.MotherboardListView.as_view(), name='list-motherboards'),
-    path('motherboards/<int:pk>/', views.SingleMotherboardView.as_view(), name='single-motherboard'),
-]
-
-urlpatterns += router.urls
+urlpatterns = router.urls
