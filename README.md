@@ -100,7 +100,7 @@ Below you will find instructions to run project.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/engomardraidi/pc_picker_graduation_project.git
    ```
 2. Open proejct on your IDE then
    ```sh
