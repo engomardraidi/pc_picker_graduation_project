@@ -29,3 +29,7 @@ class CaseViewSet(BaseViewSet):
 class InternalDrivesViewSet(BaseViewSet):
     queryset = models.InternalDrive.get_active_objects()
     serializer_class = serializers.InternalDriveSerializer
+
+class PowerSupplyViewSet(BaseViewSet):
+    queryset = models.PowerSupply.get_active_objects()
+    serializer_class = serializers.PowerSupplySerializer
