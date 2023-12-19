@@ -15,5 +15,9 @@ class MotherboardViewSet(BaseViewSet):
     serializer_class = serializers.MotherboardSerializer
 
 class CPUViewSet(BaseViewSet):
-    queryset = models.CPU.get_objects()
+    queryset = models.CPU.get_active_objects()
     serializer_class = serializers.CPUSerializer
+
+class RAMViewSet(BaseViewSet):
+    queryset = models.RAM.get_active_objects()
+    serializer_class = serializers.RAMSerializer
