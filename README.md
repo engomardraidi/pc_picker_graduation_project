@@ -7,7 +7,7 @@
     <img src="logo.png" alt="Logo" width="130" height="130">
   </a>
 
-  <h3 align="center">PC Picker</h3>
+  <h3 align="center">PC Picker - Backend</h3>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
@@ -33,14 +33,14 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <!-- <li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -71,5 +71,40 @@ Why you should use it:
 ### Built With
 
 * [![django](https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Below you will find instructions on setting up project locally. To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* Python -v 3.10.13
+* django
+  ```sh
+  pip install django
+  ```
+* django rest-framework
+  ```sh
+  pip install djangorestframework
+  pip install markdown       # Markdown support for the browsable API.
+  pip install django-filter  # Filtering support
+  ```
+
+### Installation
+
+Below you will find instructions to run project.
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Open proejct on your IDE then
+   ```sh
+   python3 manage.py runserver
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
