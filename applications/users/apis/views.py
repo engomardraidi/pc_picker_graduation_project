@@ -57,3 +57,12 @@ def user_account(request, username):
     user = User.objects.get(pk=decode_jwt['user_id'])
 
     return Response(UserSerializer(user).data)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def new_user(request):
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save()
+
+    return Response(serializer.data)
