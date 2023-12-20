@@ -1,4 +1,5 @@
 from rest_framework.response import Response
+from .permissions import IsSuperAdmin
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -28,6 +29,7 @@ def login(request):
     access_token = str(refresh_token_object.access_token)
 
     tokens = {
+        'id': user.id,
         'username': username,
         'refresh_token': refresh_token,
         'access_token': access_token
@@ -47,7 +49,7 @@ def logout(request):
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def user_account(request, username):
+def user_account(request, pk):
     authorization = request.headers['Authorization']
     authorization = str(authorization).split()
     access_token = authorization[1]
@@ -66,3 +68,20 @@ def new_user(request):
         serializer.save()
 
     return Response(serializer.data)
+
+@api_view(['POST'])
+@permission_classes([IsSuperAdmin])
+def delete_user(request):
+    user_id = request.data.get('user_id', None)
+    if type(user_id) is not int:
+        return Response(get_detail_response(Constants.USER_ID_NOT_VALID), status=400)
+
+    try:
+        user = User.objects.get(pk=user_id)
+        if user.is_superuser:
+            return Response(get_detail_response(Constants.CAN_NOT_DELETE_SUPER), status=400)
+        else:
+            user.delete()
+            return Response(status=200)
+    except User.DoesNotExist:
+        return Response(get_detail_response(Constants.User_NOT_FOUND),status=404)

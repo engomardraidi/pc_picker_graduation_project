@@ -5,3 +5,6 @@ class Constants:
     FIELD_NOT_EXIST = 'The field you want not exist'
     LOGIN_INFORMATION_REQUIRED = 'Username and password are required'
     LOGIN_INFORMATION_INCORRECT = 'Username or password is incorrect'
+    USER_ID_NOT_VALID = 'User id is not valid'
+    User_NOT_FOUND = 'User is not found'
+    CAN_NOT_DELETE_SUPER = 'You cannot delete the super user'
