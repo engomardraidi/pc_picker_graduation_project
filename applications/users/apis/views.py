@@ -1,5 +1,6 @@
 from rest_framework.response import Response
 from .permissions import IsSuperAdmin
+from rest_framework.generics import ListAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -85,3 +86,8 @@ def delete_user(request):
             return Response(status=200)
     except User.DoesNotExist:
         return Response(get_detail_response(Constants.User_NOT_FOUND),status=404)
+
+class ListUsers(ListAPIView):
+    queryset = User.objects.filter(is_active=1)
+    serializer_class = UserSerializer
+    permission_classes = [IsSuperAdmin]
