@@ -13,7 +13,13 @@ def login(request):
     username = request.data.get('username', None)
     password = request.data.get('password', None)
 
+    if username is None or password is None:
+        return Response({'details': 'Username and password are required'}, status=400)
+
     user = authenticate(request, username=username, password=password)
+
+    if user is None:
+        return Response({'details': 'Username or password is incorrect'}, status=401)
 
     refresh_token_object = RefreshToken.for_user(user)
     refresh_token = str(refresh_token_object)
