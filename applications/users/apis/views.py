@@ -5,6 +5,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.conf import settings
+from ...core.constants import Constants
+from ...core.functions import get_detail_response
 from .serializers import UserSerializer
 import jwt
 
@@ -14,12 +16,12 @@ def login(request):
     password = request.data.get('password', None)
 
     if username is None or password is None:
-        return Response({'details': 'Username and password are required'}, status=400)
+        return Response(get_detail_response(Constants.LOGIN_INFORMATION_REQUIRED), status=400)
 
     user = authenticate(request, username=username, password=password)
 
     if user is None:
-        return Response({'details': 'Username or password is incorrect'}, status=401)
+        return Response(get_detail_response(Constants.LOGIN_INFORMATION_INCORRECT), status=401)
 
     refresh_token_object = RefreshToken.for_user(user)
     refresh_token = str(refresh_token_object)
