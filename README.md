@@ -145,7 +145,7 @@ Below you will find instructions and everything you need to use the APIs.
      ```
    * Content-Type
      ```sh
-     multipart/form-data
+     multipart/form-data # not allowed application/json
      ```
    * Response
      ```sh
@@ -155,5 +155,35 @@ Below you will find instructions and everything you need to use the APIs.
       "refresh_token": string,
       "access_token": string,
      }
+2. Add new admin
+   * Permissions: Only super admins are allowed
+   * POST method
+   * path
+     ```sh
+     accounts/new/
+     ```
+   * Body
+     ```sh
+     {
+       "username": string,
+       "first_name": string,
+       "last_name": string,
+       "email": string,
+       "password": string,
+     }
+    * Headers
+      ```sh
+      Authorization: Bearer {access_token}
+      ```
+    * Response
+      ```sh
+      {
+        "username": string,
+        "first_name": string,
+        "last_name": string,
+        "email": string,
+        "password": string,
+        "data_joind": string,
+      }
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
