@@ -197,15 +197,15 @@ Below you will find instructions and everything you need to use the APIs.
      ```sh
      accounts/list/
      ```
-  * Headers
+   * Headers
      ```sh
      Authorization: Bearer {access_token}
      ```
-  * Response
+   * Response
      ```sh
      [
        {
-         "id: int,
+         "id": int,
          "username": string,
          "first_name": string,
          "last_name": string,
@@ -214,7 +214,7 @@ Below you will find instructions and everything you need to use the APIs.
          "data_joind": string,
        },
        {
-         "id: int,
+         "id": int,
          "username": string,
          "first_name": string,
          "last_name": string,
