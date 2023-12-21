@@ -152,7 +152,6 @@ Below you will find instructions and everything you need to use the APIs.
      {
       "id": int,
       "username": string,
-      "refresh_token": string,
       "access_token": string,
      }
 2. Add new admin
