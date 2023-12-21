@@ -249,3 +249,26 @@ Below you will find instructions and everything you need to use the APIs.
      ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+5. Delete admin
+   * Permissions: Only super admins are allowed
+   * POST method
+   * path
+     ```sh
+     accounts/delete/
+     ```
+   * Body
+     ```sh
+     {
+       "user_id": int,
+     }
+   * Headers
+     ```sh
+     Authorization: Bearer {access_token}
+     ```
+   * Response
+     ```sh
+     {} # with status code 204 (no content)
+     ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
