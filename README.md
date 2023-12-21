@@ -104,6 +104,10 @@ Below you will find instructions to run project.
    ```
 2. Open proejct on your IDE then
    ```sh
+   python3 manage.py super_admin # Create super admin in database
+   ```
+3. Run server
+   ```sh
    python3 manage.py runserver
    ```
 
