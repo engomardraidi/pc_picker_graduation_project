@@ -272,3 +272,20 @@ Below you will find instructions and everything you need to use the APIs.
      ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+6. Logut
+   * POST method
+   * path
+     ```sh
+     accounts/logout/
+     ```
+   * Headers
+     ```sh
+     Authorization: Bearer {access_token}
+     ```
+   * Response
+     ```sh
+     {} # with status code 200 (ok)
+     ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
