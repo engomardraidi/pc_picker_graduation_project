@@ -273,7 +273,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-6. Logut
+6. Logout
    * POST method
    * path
      ```sh
