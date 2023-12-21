@@ -40,6 +40,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#accounts">Accounts</a></li>
+      </ul>
+    </li>
     <!-- <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -110,5 +116,44 @@ Below you will find instructions to run project.
    ```sh
    python3 manage.py runserver
    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Below you will find instructions and everything you need to use the APIs.
+
+* Server run on
+  ```sh
+  http://127.0.0.1:8000/
+  ```
+### Accounts
+
+1. Login
+   * POST method
+   * path
+     ```sh
+     accounts/login/
+     ```
+   * Body
+     ```sh
+     {
+       "username": string,
+       "password": string,
+     }
+     ```
+   * Content-Type
+     ```sh
+     multipart/form-data
+     ```
+   * Response
+     ```sh
+     {
+      "id": int,
+      "username": string,
+      "refresh_token": string,
+      "access_token": string,
+     }
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
