@@ -150,9 +150,9 @@ Below you will find instructions and everything you need to use the APIs.
    * Response
      ```sh
      {
-      "id": int,
-      "username": string,
-      "access_token": string,
+       "id": int,
+       "username": string,
+       "access_token": string,
      }
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
