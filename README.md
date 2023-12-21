@@ -154,6 +154,9 @@ Below you will find instructions and everything you need to use the APIs.
       "username": string,
       "access_token": string,
      }
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 2. Add new admin
    * Permissions: Only super admins are allowed
    * POST method
@@ -177,12 +180,50 @@ Below you will find instructions and everything you need to use the APIs.
     * Response
       ```sh
       {
+        "id": int,
         "username": string,
         "first_name": string,
         "last_name": string,
         "email": string,
-        "password": string,
         "data_joind": string,
       }
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+2. List of all admins
+   * Permissions: Only super admins are allowed
+   * GET method
+   * path
+     ```sh
+     accounts/list/
+     ```
+  * Headers
+     ```sh
+     Authorization: Bearer {access_token}
+     ```
+  * Response
+     ```sh
+     [
+       {
+         "id: int,
+         "username": string,
+         "first_name": string,
+         "last_name": string,
+         "email": string,
+         "password": string,
+         "data_joind": string,
+       },
+       {
+         "id: int,
+         "username": string,
+         "first_name": string,
+         "last_name": string,
+         "email": string,
+         "password": string,
+         "data_joind": string,
+       },
+       ...
+     ]
+     ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
