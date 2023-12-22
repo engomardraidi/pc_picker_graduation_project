@@ -32,7 +32,6 @@ def login(request):
     tokens = {
         'id': user.id,
         'username': username,
-        'refresh_token': refresh_token,
         'access_token': access_token
     }
 
@@ -40,6 +39,7 @@ def login(request):
     return Response(tokens)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def logout(request):
     if 'refresh_token' in request.session:
         del request.session['refresh_token']
@@ -62,13 +62,13 @@ def user_account(request, pk):
     return Response(UserSerializer(user).data)
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsSuperAdmin])
 def new_user(request):
     serializer = UserSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
-        serializer.save()
-
-    return Response(serializer.data)
+        user = serializer.save()
+        return Response(UserSerializer(user).data)
+    return Response(status=200)
 
 @api_view(['POST'])
 @permission_classes([IsSuperAdmin])
@@ -83,7 +83,7 @@ def delete_user(request):
             return Response(get_detail_response(Constants.CAN_NOT_DELETE_SUPER), status=400)
         else:
             user.delete()
-            return Response(status=200)
+            return Response(status=204)
     except User.DoesNotExist:
         return Response(get_detail_response(Constants.User_NOT_FOUND),status=404)
 
