@@ -157,7 +157,20 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-2. Get account information
+2. Refresh token
+   * POST method
+   * path
+     ```sh
+     accounts/tokens/refresh/
+     ```
+   * Response
+     ```sh
+     {} # with status code 200 (ok) or status code 401 (unauthorized) if user not login
+     ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+3. Get account information
    * GET method
    * path
      ```sh
@@ -181,7 +194,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-3. Add new admin
+4. Add new admin
    * Permissions: Only super admins are allowed
    * POST method
    * path
@@ -214,7 +227,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-4. List of all admins
+5. List of all admins
    * Permissions: Only super admins are allowed
    * GET method
    * path
@@ -250,7 +263,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-5. Delete admin
+6. Delete admin
    * Permissions: Only super admins are allowed
    * POST method
    * path
@@ -273,7 +286,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-6. Logout
+7. Logout
    * POST method
    * path
      ```sh
