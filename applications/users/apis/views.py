@@ -28,10 +28,12 @@ def login(request):
     refresh_token_object = RefreshToken.for_user(user)
     refresh_token = str(refresh_token_object)
     access_token = str(refresh_token_object.access_token)
+    exp = jwt.decode(refresh_token, settings.SECRET_KEY, algorithms=['HS256'])['exp']
 
     tokens = {
         'id': user.id,
         'username': username,
+        'refresh_exp': exp,
         'access_token': access_token
     }
 
