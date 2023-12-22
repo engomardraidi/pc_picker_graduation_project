@@ -112,7 +112,12 @@ Below you will find instructions to run project.
    ```sh
    python3 manage.py super_admin # Create super admin in database
    ```
-3. Run server
+3. Create project database
+   ```sh
+   python3 manage.py makemigrations
+   python3 manage.py migrate
+   ```
+4. Run server
    ```sh
    python3 manage.py runserver
    ```
