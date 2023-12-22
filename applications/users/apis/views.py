@@ -87,6 +87,15 @@ def delete_user(request):
     except User.DoesNotExist:
         return Response(get_detail_response(Constants.User_NOT_FOUND),status=404)
 
+@api_view(['POST'])
+def refresh_token_view(request):
+    if 'refresh_token' not in request.session:
+        return Response(get_detail_response('There is no refresh token'),status=401)
+
+    refresh_token = request.session['refresh_token']
+    refresh_token_obj = RefreshToken(refresh_token)
+    return Response({'access_token': str(refresh_token_obj.access_token)})
+
 class ListUsers(ListAPIView):
     queryset = User.objects.filter(is_active=1)
     serializer_class = UserSerializer
