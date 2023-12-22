@@ -152,6 +152,7 @@ Below you will find instructions and everything you need to use the APIs.
      {
        "id": int,
        "username": string,
+       "refresh_exp": int, # timestamp of the refresh expiration time
        "access_token": string,
      }
 
