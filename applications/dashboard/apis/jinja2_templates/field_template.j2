@@ -4,7 +4,7 @@
         self.init_expert()
         budget = decimal.Decimal(rule['budget'])
         {% if field.having_gpu %}
-        pc = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
+        pc = self.__get_all_parts(2, budget)
         {% else %}
         pc = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
         {% endif %}
