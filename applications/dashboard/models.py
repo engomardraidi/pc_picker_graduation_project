@@ -322,6 +322,7 @@ class GPU(BaseModel):
     pci_e = models.FloatField()
     series = models.ForeignKey(GPUSeries, on_delete=models.SET_NULL, null=True)
     vram = models.PositiveIntegerField()
+    cores = models.PositiveIntegerField(null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     length = models.FloatField()
