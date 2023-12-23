@@ -94,16 +94,33 @@ class FieldsKnowledge(ExpertSystem):
         self.init_expert()
         budget = decimal.Decimal(rule['budget'])
         
-        pc = self.__get_all_parts(1, budget)
+        pc = self.__get_all_parts(2, budget)
         
         return pc.get_pc_parts_as_JSON()
 
     @Rule(AS.rule << InputFact(field_id=2))
     def pick_pc_for_graphic_design(self, rule):
         self.init_expert()
-        field = dashboard_models.Field.get_object(rule['field_id'])
         budget = decimal.Decimal(rule['budget'])
         
         pc = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
+        
+        return pc.get_pc_parts_as_JSON()
+
+    @Rule(AS.rule << InputFact(field_id=3))
+    def pick_pc_for_gaming(self, rule):
+        self.init_expert()
+        budget = decimal.Decimal(rule['budget'])
+        
+        pc = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
+        
+        return pc.get_pc_parts_as_JSON()
+
+    @Rule(AS.rule << InputFact(field_id=4))
+    def pick_pc_for_office(self, rule):
+        self.init_expert()
+        budget = decimal.Decimal(rule['budget'])
+        
+        pc = self.__get_all_parts(2, budget)
         
         return pc.get_pc_parts_as_JSON()
