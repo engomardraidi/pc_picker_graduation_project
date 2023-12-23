@@ -279,6 +279,7 @@ class RAM(BaseModel):
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     clock = models.PositiveIntegerField()
     sticks = models.PositiveIntegerField()
+    timings = models.CharField(max_length=20, null=True)
     url = models.URLField()
     image_url = models.URLField(null=True)
 
