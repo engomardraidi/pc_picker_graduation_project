@@ -3,7 +3,7 @@ import decimal
 from experta import Rule, AS
 from django.db.models import Q
 from ..pc import PC
-from ....dashboard import models as dashboard_models
+from ....dashboard.models import Field
 from .input_fact import InputFact
 from .pc_parts.motherboards_knowledge import MotherboardsKnowledge
 from .pc_parts.cpus_knowledge import CPUsKnowledge
@@ -32,7 +32,7 @@ class FieldsKnowledge(ExpertSystem):
         self.power_supplies_knowledge.reset()
 
     def __get_all_parts(self, field_id, budget, motherboard_Q_query=None):
-        field = dashboard_models.Field.get_object(field_id)
+        field = Field.get_object(field_id)
         if field == None:
             return 'the field you want not exist'
 
@@ -54,11 +54,20 @@ class FieldsKnowledge(ExpertSystem):
         pci_e_3 = pc.motherboard.pci_e_3
         pci_e_4 = pc.motherboard.pci_e_4
 
-        self.cpus_knowledge.declare(InputFact(field_id=field.id, socket=socket.id, budget=cpu_budget))
-        self.rams_knowledge.declare(InputFact(field_id=field.id, type=ram_type.id, max_ram_capacity=max_memory_size, budget=ram_budget))
         
-        pc.cpu = self.cpus_knowledge.run()
-        pc.ram = self.rams_knowledge.run()
+        field_copy = field
+        while pc.cpu == None:
+            self.cpus_knowledge.declare(InputFact(field_id=field_copy.id, socket=socket.id, budget=cpu_budget))
+            pc.cpu = self.cpus_knowledge.run()
+            if pc.cpu == None:
+                field_copy = Field.filter_objects(highest_performance=field_copy.highest_performance + 1)[0]
+        
+        field_copy = field
+        while pc.ram == None:
+            self.rams_knowledge.declare(InputFact(field_id=field.id, type=ram_type.id, max_ram_capacity=max_memory_size, budget=ram_budget))
+            pc.ram = self.rams_knowledge.run()
+            if pc.ram == None:
+                field_copy = Field.filter_objects(highest_performance=field_copy.highest_performance + 1)[0]
 
         gpu_3 = None
         gpu_4 = None
