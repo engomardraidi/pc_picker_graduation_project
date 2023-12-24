@@ -55,6 +55,7 @@ class Device(BaseModel):
 
 class Field(BaseModel):
     name = models.CharField(max_length=50)
+    highest_performance = models.PositiveIntegerField()
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
     cpu_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
     ram_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
