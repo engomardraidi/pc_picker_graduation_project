@@ -103,7 +103,7 @@ class FieldsKnowledge(ExpertSystem):
         self.init_expert()
         budget = decimal.Decimal(rule['budget'])
         
-        pc = self.__get_all_parts(1, budget)
+        pc = self.__get_all_parts(1, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
         
         return pc.get_pc_parts_as_JSON()
 
