@@ -5,7 +5,7 @@ from experta import Rule, AS
 import decimal
 
 class CasesKnowledge(PCKnowledge):
-    def __get_case(self,budget):
+    def __get_case(self, style_id, budget):
         cases = []
         perc = decimal.Decimal(0.03)
 
@@ -13,7 +13,7 @@ class CasesKnowledge(PCKnowledge):
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
-            cases = Case.filter_objects(price__range=(min_budget, max_budget))
+            cases = Case.filter_objects(style=style_id, price__range=(min_budget, max_budget))
 
         closest_case = cases[0]
         abs_diff = abs(budget - closest_case.price)
@@ -26,8 +26,16 @@ class CasesKnowledge(PCKnowledge):
 
         return closest_case
 
-    @Rule(AS.rule << InputFact())
-    def get_case(self, rule):
+    @Rule(AS.rule << InputFact(style_id=1))
+    def get_standard_case(self, rule):
+        style_id = rule['style_id']
         budget = rule['budget']
 
-        return self.__get_case(budget)
+        return self.__get_case(style_id, budget)
+
+    @Rule(AS.rule << InputFact(style_id=2))
+    def get_gaming_case(self, rule):
+        style_id = rule['style_id']
+        budget = rule['budget']
+
+        return self.__get_case(style_id, budget)
