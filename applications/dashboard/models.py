@@ -124,6 +124,16 @@ class CaseType(BaseModel):
         from .apis.serializers import CaseTypeSerializer
         return CaseTypeSerializer(self).data
 
+class CaseStyle(BaseModel):
+    style = models.CharField(max_length=50, unique=True)
+
+    class Meta:
+        db_table = 'case_style'
+
+    def to_json(self):
+        from .apis.serializers import CaseStyleSerializer
+        return CaseStyleSerializer(self).data
+
 class CaseSidePanel(BaseModel):
     side_panel = models.CharField(max_length=50, unique=True)
 
