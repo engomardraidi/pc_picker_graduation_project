@@ -122,19 +122,19 @@ class PowerSupplySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CPUFieldSerializer(serializers.ModelSerializer):
-    cpu = CPUSerializer(read_only=True)
+    cpu = CPUSerializer()
     class Meta:
         model = models.CPUField
         fields = '__all__'
 
 class RAMFieldSerializer(serializers.ModelSerializer):
-    ram = RAMSerializer(read_only=True)
+    ram = RAMSerializer()
     class Meta:
         model = models.RAMField
         fields = '__all__'
 
 class GPUFieldSerializer(serializers.ModelSerializer):
-    gpu = GPUSerializer(read_only=True)
+    gpu = GPUSerializer()
     class Meta:
         model = models.GPUField
         fields = '__all__'
