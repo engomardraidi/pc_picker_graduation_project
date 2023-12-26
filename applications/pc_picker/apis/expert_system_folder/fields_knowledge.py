@@ -104,7 +104,7 @@ class FieldsKnowledge(ExpertSystem):
         list_pcs = self.__get_all_parts(1, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pc.append(pc.get_pc_parts_as_JSON(budget))
+            pcs.append(pc.get_pc_parts_as_JSON(budget))
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=2))
@@ -115,7 +115,7 @@ class FieldsKnowledge(ExpertSystem):
         list_pcs = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pc.append(pc.get_pc_parts_as_JSON(budget))
+            pcs.append(pc.get_pc_parts_as_JSON(budget))
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=3))
@@ -126,7 +126,7 @@ class FieldsKnowledge(ExpertSystem):
         list_pcs = self.__get_all_parts(3, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pc.append(pc.get_pc_parts_as_JSON(budget))
+            pcs.append(pc.get_pc_parts_as_JSON(budget))
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=4))
@@ -137,5 +137,5 @@ class FieldsKnowledge(ExpertSystem):
         list_pcs = self.__get_all_parts(4, budget)
         pcs = []
         for pc in list_pcs:
-            pc.append(pc.get_pc_parts_as_JSON(budget))
+            pcs.append(pc.get_pc_parts_as_JSON(budget))
         return pcs
