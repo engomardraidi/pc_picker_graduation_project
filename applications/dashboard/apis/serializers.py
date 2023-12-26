@@ -36,6 +36,11 @@ class CaseTypeSerializer(serializers.ModelSerializer):
         model = models.CaseType
         fields = '__all__'
 
+class CaseStyleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CaseStyle
+        fields = '__all__'
+
 class CaseSidePanelSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.CaseSidePanel
