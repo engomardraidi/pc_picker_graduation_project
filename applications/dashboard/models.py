@@ -367,6 +367,7 @@ class Case(BaseModel):
     color = models.ForeignKey(Color, on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     side_panel = models.ForeignKey(CaseSidePanel, on_delete=models.SET_NULL, null=True)
+    style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
     image_url = models.URLField(null=True)
 
     def __str__(self):
