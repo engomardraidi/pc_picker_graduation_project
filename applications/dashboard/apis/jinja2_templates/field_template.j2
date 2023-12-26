@@ -1,11 +1,15 @@
 
     @Rule(AS.rule << InputFact(field_id={{ field.id }}))
     def pick_pc_for_{{ field.name|replace(' ', '_') }}(self, rule):
-        self.init_expert()
+        self.__init_expert()
         budget = decimal.Decimal(rule['budget'])
         {% if not field.having_gpu %}
-        pc = self.__get_all_parts({{ field.id }}, budget)
+        list_pcs = self.__get_all_parts({{ field.id }}, budget)
         {% else %}
-        pc = self.__get_all_parts({{ field.id }}, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
+        list_pcs = self.__get_all_parts({{ field.id }}, budget, motherboard_Q_query=~Q(pci_e_3=0) & ~Q(pci_e_4=0))
         {% endif %}
-        return pc.get_pc_parts_as_JSON()
+        pcs = []
+        for pc in list_pcs:
+            pc.append(pc.get_pc_parts_as_JSON(budget))
+        return pcs
+        
