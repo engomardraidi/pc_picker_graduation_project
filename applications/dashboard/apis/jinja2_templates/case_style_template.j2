@@ -1,0 +1,7 @@
+
+    @Rule(AS.rule << InputFact(style_id={{ style.id }}))
+    def get_{{ style.style }}_case(self, rule):
+        style_id = rule['style_id']
+        budget = rule['budget']
+
+        return self.__get_case(style_id, budget)
