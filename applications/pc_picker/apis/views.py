@@ -34,4 +34,4 @@ def pick_pc(request):
     expert_system.declare(InputFact(field_id=field_id, budget=budget))
     result = expert_system.run()
 
-    return Response({'result': result})
+    return Response({'num_of_PCs': len(result), 'PCs': result})
