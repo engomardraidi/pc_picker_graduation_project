@@ -9,7 +9,7 @@ class InternalDrivesKnowledge(PCKnowledge):
         internal_drives = []
         perc = decimal.Decimal(0.03)
 
-        while len(internal_drives) == 0:
+        while len(internal_drives) == 0 and perc < 1:
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
