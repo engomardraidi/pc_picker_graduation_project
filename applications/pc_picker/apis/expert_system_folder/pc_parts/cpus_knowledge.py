@@ -2,13 +2,32 @@ from .....dashboard.models import CPUField
 from ..pc_knowledge import PCKnowledge
 from ..input_fact import InputFact
 from experta import Rule, AS
+import decimal
 
 class CPUsKnowledge(PCKnowledge):
     def __get_cpu(self, field_id, cpu_socket, budget):
-        cpus = CPUField.filter_objects(field=field_id, cpu__socket=cpu_socket, cpu__price__lte=budget).order_by('-cpu__price')
+        cpus = []
+        perc = decimal.Decimal(0.03)
+
+        while len(cpus) == 0 and perc < 0.5:
+            perc += decimal.Decimal(0.02)
+            min_budget = budget - (budget * perc)
+            max_budget = budget + (budget * perc)
+            cpus = CPUField.filter_objects(field=field_id, cpu__socket=cpu_socket, cpu__price__range=(min_budget, max_budget))
+
         if len(cpus) == 0:
-            cpus = CPUField.filter_objects(field=field_id, cpu__socket=cpu_socket, cpu__price__gte=budget).order_by('cpu__price')
-        return None if len(cpus) == 0 else cpus[0].cpu
+            return None
+
+        closest_cpu = cpus[0].cpu
+        abs_diff = abs(budget - closest_cpu.price)
+
+        for cpu in cpus:
+            abs_value = abs(budget - cpu.cpu.price)
+            if abs_diff > abs_value:
+                abs_diff = abs_value
+                closest_cpu = cpu.cpu
+
+        return closest_cpu
 
     @Rule(AS.rule << InputFact(socket=11))
     def get_cpu_with_socket_11(self, rule):
