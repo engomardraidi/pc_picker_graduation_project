@@ -3,7 +3,6 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
 from .. import models
 from . import serializers
-from rest_framework.decorators import api_view
 
 class BaseViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
