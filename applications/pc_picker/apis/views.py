@@ -3,17 +3,18 @@ from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from .expert_system_folder.fields_knowledge import FieldsKnowledge
 from .expert_system_folder.input_fact import InputFact
-from ...dashboard.models import Device, Field
 from ...dashboard.apis.serializers import DeviceSerializer, FieldReadSerializer
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
+from ...dashboard import models as dashboard_models
+from ...dashboard.apis import serializers as dashboard_serializers
 
 class ListOfDevices(ListAPIView):
-    queryset = Device.get_objects()
+    queryset = dashboard_models.Device.get_objects()
     serializer_class = DeviceSerializer
 
 class ListOfFields(ListAPIView):
-    queryset = Field.get_objects()
+    queryset = dashboard_models.Field.get_objects()
     serializer_class = FieldReadSerializer
 
 @api_view(['POST'])
@@ -26,7 +27,7 @@ def pick_pc(request):
     elif not isinstance(field_id,int) or not isinstance(budget,int):
         return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
 
-    if Field.get_object(field_id) == None:
+    if dashboard_models.Field.get_object(field_id) == None:
         return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
 
     expert_system = FieldsKnowledge()
@@ -35,3 +36,21 @@ def pick_pc(request):
     result = expert_system.run()
 
     return Response({'num_of_PCs': len(result), 'PCs': result})
+
+@api_view(['POST'])
+def pick_cpus(request):
+    field_id = request.data.get('field_id', None)
+    motherboard_id = request.data.get('motherboard_id', None)
+
+    if not isinstance(motherboard_id, int) or not isinstance(field_id, int):
+        return Response({'details': 'Informations are not complete'}, status=400)
+
+    motherboard = dashboard_models.Motherboard.get_object(motherboard_id)
+
+    if motherboard is None:
+        return Response([])
+
+    cpus = dashboard_models.CPU.filter_objects(cpufield__field__id=field_id, socket=motherboard.socket)
+    serializer = dashboard_serializers.CPUSerializer(cpus, many=True)
+
+    return Response(serializer.data)
