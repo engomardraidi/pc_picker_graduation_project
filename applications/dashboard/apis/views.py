@@ -1,11 +1,12 @@
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
+from .permissions import IsAdmin
 from .. import models
 from . import serializers
 
 class BaseViewSet(ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdmin]
 
     def destroy(self, request, *args, **kwargs):
         request.data.update({'status': False})
