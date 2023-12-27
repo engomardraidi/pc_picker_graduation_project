@@ -37,7 +37,7 @@ def pick_pc(request):
 
     return Response({'num_of_PCs': len(result), 'PCs': result})
 
-@api_view(['POST'])
+@api_view(['GET'])
 def pick_cpus(request):
     field_id = request.data.get('field_id', None)
     motherboard_id = request.data.get('motherboard_id', None)
@@ -55,7 +55,7 @@ def pick_cpus(request):
 
     return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['GET'])
 def pick_rams(request):
     field_id = request.data.get('field_id', None)
     motherboard_id = request.data.get('motherboard_id', None)
@@ -73,7 +73,7 @@ def pick_rams(request):
 
     return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['GET'])
 def pick_gpus(request):
     field_id = request.data.get('field_id', None)
     motherboard_id = request.data.get('motherboard_id', None)
@@ -97,7 +97,7 @@ def pick_gpus(request):
 
     return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['GET'])
 def pick_cases(request):
     field_id = request.data.get('field_id', None)
 
