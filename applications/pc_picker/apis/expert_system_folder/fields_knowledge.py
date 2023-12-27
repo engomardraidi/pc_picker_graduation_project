@@ -47,6 +47,7 @@ class FieldsKnowledge(ExpertSystem):
         case_budget = field.case_budget * budget
         internal_drive_budget = field.internal_drive_budget * budget
         power_supply_budget = field.power_supply_budget * budget
+        case_style = field.case_style.id
 
         self.motherboard_knowledge.declare(InputFact(part='motherboard', budget=motherboard_budget, Q_query=motherboard_Q_query))
         motherboards = self.motherboard_knowledge.run()
@@ -82,7 +83,7 @@ class FieldsKnowledge(ExpertSystem):
             elif gpu_3 != None:
                 pc.gpu = gpu_3
 
-            self.cases_knowledge.declare(InputFact(budget=case_budget))
+            self.cases_knowledge.declare(InputFact(style_id=case_style, budget=case_budget))
             pc.case_part = self.cases_knowledge.run()
 
             self.internal_drives_knowledge.declare(InputFact(budget=internal_drive_budget))
