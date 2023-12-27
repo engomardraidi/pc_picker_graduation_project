@@ -30,7 +30,7 @@ class BaseModel(models.Model):
 
     @classmethod
     def get_active_objects(self):
-        return self.filter_objects(status=True)
+        return self.filter_objects(status=True).order_by('id')
 
     @classmethod
     def delete_object(self, pk):
