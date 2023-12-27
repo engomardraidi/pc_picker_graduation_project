@@ -169,3 +169,71 @@ def classification_ram(sender, instance, created, **kwargs):
         print('Graphic Design:', new_predictions[0, 1])
         print('Programming:', new_predictions[0, 2])
         print('Office:', new_predictions[0, 3])
+
+@receiver(post_save, sender=models.GPU)
+def classification_gpu(sender, instance, created, **kwargs):
+    if created:
+        df = pd.read_csv("./././datasets/gpu_fields_class.csv")
+
+        df = df.drop(columns=['pci_e', 'length', 'slots', 'connectors_8pin', 'connectors_6pin', 'hdmi', 'display_port', 'dvi', 'vga', 'sync', 'tdp', 'image_url', 'created_at', 'updated_at', 'status', 'producer'])
+
+        X = df[['vram', 'cores', 'memory_clock', 'boost_clock', 'price']]
+
+        y = df[['gaming', 'graphic design', 'programming', 'office']]
+
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+        # Initialize the Random Forest classifier
+        classifier = MultiOutputClassifier(RandomForestClassifier(random_state=42))
+
+        # Train the model on the training data
+        classifier.fit(X_train, y_train)
+
+        # Make predictions on the test set
+        predictions = classifier.predict(X_test)
+
+        # Evaluate the accuracy for each label
+        for i, label in enumerate(y.columns):
+            accuracy = accuracy_score(y_test[label], predictions[:, i])
+            print(f'Accuracy for {label}: {accuracy}')
+
+        # Display overall classification report
+        print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
+
+
+        new_data = pd.DataFrame({
+            'vram': [instance.vram],
+            'cores': [instance.cores],
+            'memory_clock': [instance.memory_clock],
+            'boost_clock': [instance.boost_clock],
+            'price': [instance.price]
+        })
+
+        # Make predictions for the new data
+        new_predictions = classifier.predict(new_data)
+
+        list_data = []
+
+        if new_predictions[0, 0]:
+            # gaming
+            list_data.append({'gpu': instance.id, 'field': 3})
+        if new_predictions[0, 1]:
+            # graphic design
+            list_data.append({'gpu': instance.id, 'field': 2})
+        if new_predictions[0, 2]:
+            # programming
+            list_data.append({'gpu': instance.id, 'field': 1})
+        if new_predictions[0, 3]:
+            # office
+            list_data.append({'gpu': instance.id, 'field': 4})
+
+        serializer = serializers.GPUFieldSerializer(data=list_data, many=True)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+
+        # Display the predictions
+        print('Predicted classification for the new data:')
+        print('Gaming:', new_predictions[0, 0])
+        print('Graphic Design:', new_predictions[0, 1])
+        print('Programming:', new_predictions[0, 2])
+        print('Office:', new_predictions[0, 3])
