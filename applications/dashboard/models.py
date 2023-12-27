@@ -53,8 +53,19 @@ class Device(BaseModel):
         from .apis.serializers import DeviceSerializer
         return DeviceSerializer(self).data
 
+class CaseStyle(BaseModel):
+    style = models.CharField(max_length=50, unique=True)
+
+    class Meta:
+        db_table = 'case_style'
+
+    def to_json(self):
+        from .apis.serializers import CaseStyleSerializer
+        return CaseStyleSerializer(self).data
+
 class Field(BaseModel):
     name = models.CharField(max_length=50)
+    case_style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
     highest_performance = models.PositiveIntegerField()
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
     cpu_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
@@ -123,16 +134,6 @@ class CaseType(BaseModel):
     def to_json(self):
         from .apis.serializers import CaseTypeSerializer
         return CaseTypeSerializer(self).data
-
-class CaseStyle(BaseModel):
-    style = models.CharField(max_length=50, unique=True)
-
-    class Meta:
-        db_table = 'case_style'
-
-    def to_json(self):
-        from .apis.serializers import CaseStyleSerializer
-        return CaseStyleSerializer(self).data
 
 class CaseSidePanel(BaseModel):
     side_panel = models.CharField(max_length=50, unique=True)
