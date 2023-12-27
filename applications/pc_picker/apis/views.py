@@ -120,3 +120,10 @@ def pick_internal_drives(request):
     serializer = dashboard_serializers.InternalDriveSerializer(internal_drives, many=True)
 
     return Response(serializer.data)
+
+@api_view(['GET'])
+def pick_power_supplies(request):
+    power_supplies = dashboard_models.PowerSupply.get_active_objects()
+    serializer = dashboard_serializers.PowerSupplySerializer(power_supplies, many=True)
+
+    return Response(serializer.data)

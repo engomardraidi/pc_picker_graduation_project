@@ -10,4 +10,5 @@ urlpatterns = [
     path('pick-gpus/', views.pick_gpus, name='pick-gpus'),
     path('pick-cases/', views.pick_cases, name='pick-cases'),
     path('pick-internal-drives/', views.pick_internal_drives, name='pick-internal-drives'),
+    path('pick-power-supplies/', views.pick_power_supplies, name='pick-power-supplies'),
 ]
