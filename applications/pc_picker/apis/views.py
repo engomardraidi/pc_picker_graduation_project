@@ -48,7 +48,7 @@ def pick_cpus(request):
     motherboard = dashboard_models.Motherboard.get_object(motherboard_id)
 
     if motherboard is None:
-        return Response([])
+        return Response({'details': 'Not found cpus compatabile with selected motherboard'}, status=404)
 
     cpus = dashboard_models.CPU.filter_objects(cpufield__field__id=field_id, socket=motherboard.socket)
     serializer = dashboard_serializers.CPUSerializer(cpus, many=True)
@@ -66,9 +66,33 @@ def pick_rams(request):
     motherboard = dashboard_models.Motherboard.get_object(motherboard_id)
 
     if motherboard is None:
-        return Response([])
+        return Response({'details': 'Not found rams compatabile with selected motherboard'}, status=404)
 
     rams = dashboard_models.RAM.filter_objects(ramfield__field__id=field_id, type=motherboard.ram_type, size__lte=motherboard.memory_max_capacity)
     serializer = dashboard_serializers.RAMSerializer(rams, many=True)
+
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def pick_gpus(request):
+    field_id = request.data.get('field_id', None)
+    motherboard_id = request.data.get('motherboard_id', None)
+
+    if not isinstance(motherboard_id, int) or not isinstance(field_id, int):
+        return Response({'details': 'Informations are not complete'}, status=400)
+
+    motherboard = dashboard_models.Motherboard.get_object(motherboard_id)
+
+    if motherboard is None:
+        return Response([])
+
+    if motherboard.pci_e_3 + motherboard.pci_e_4 == 0:
+        return Response({'details': 'Not found gpus compatabile with selected motherboard'}, status=404)
+    gpus = []
+    if motherboard.pci_e_3 > 0 and motherboard.pci_e_4 > 0:
+        gpus = dashboard_models.GPU.filter_objects(gpufield__field__id=field_id)
+    else:
+        gpus = dashboard_models.GPU.filter_objects(gpufield__field__id=field_id, pci_e=3 if motherboard.pci_e_3 > 0 else 4)
+    serializer = dashboard_serializers.GPUSerializer(gpus, many=True)
 
     return Response(serializer.data)
