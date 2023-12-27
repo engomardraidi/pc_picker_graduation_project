@@ -5,8 +5,33 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+from jinja2 import Template
 import pandas as pd
 from . import serializers
+import os
+
+@receiver(post_save, sender=models.CaseStyle)
+def create_case_style_function_in_knowledge_engine(sender, instance, created, **kwargs):
+    if created:
+        script_dir = os.path.dirname(__file__)
+        template_path = os.path.join(script_dir, 'jinja2_templates', 'case_style_template.j2')
+
+        with open(template_path, 'r') as file:
+            rule_template_content = file.read()
+
+        rule_template = Template(rule_template_content)
+
+        rendered_rule_template = rule_template.render(style=instance)
+        expert_system_file_path = os.path.join('applications/pc_picker/apis/expert_system_folder/pc_parts/cases_knowledge.py')
+
+        with open(expert_system_file_path, 'r') as file:
+            content = file.read()
+
+        if rendered_rule_template not in content:
+            with open(expert_system_file_path, 'a') as file:
+                file.write('\n')
+                file.write(rendered_rule_template)
+                file.flush()
     
 
 @receiver(post_save, sender=models.CPU)
