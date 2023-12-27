@@ -54,3 +54,21 @@ def pick_cpus(request):
     serializer = dashboard_serializers.CPUSerializer(cpus, many=True)
 
     return Response(serializer.data)
+
+@api_view(['POST'])
+def pick_rams(request):
+    field_id = request.data.get('field_id', None)
+    motherboard_id = request.data.get('motherboard_id', None)
+
+    if not isinstance(motherboard_id, int) or not isinstance(field_id, int):
+        return Response({'details': 'Informations are not complete'}, status=400)
+
+    motherboard = dashboard_models.Motherboard.get_object(motherboard_id)
+
+    if motherboard is None:
+        return Response([])
+
+    rams = dashboard_models.RAM.filter_objects(ramfield__field__id=field_id, type=motherboard.ram_type, size__lte=motherboard.memory_max_capacity)
+    serializer = dashboard_serializers.RAMSerializer(rams, many=True)
+
+    return Response(serializer.data)

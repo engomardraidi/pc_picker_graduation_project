@@ -6,4 +6,5 @@ urlpatterns = [
     path('fields/', views.ListOfFields.as_view(), name='fields'),
     path('pick-pc/', views.pick_pc, name='pick-pc'),
     path('pick-cpus/', views.pick_cpus, name='pick-cpus'),
+    path('pick-rams/', views.pick_cpus, name='pick-rams'),
 ]
