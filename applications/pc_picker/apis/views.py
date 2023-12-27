@@ -38,6 +38,13 @@ def pick_pc(request):
     return Response({'num_of_PCs': len(result), 'PCs': result})
 
 @api_view(['GET'])
+def pick_motherboards(request):
+    motherbords = dashboard_models.Motherboard.get_active_objects()
+    serializer = dashboard_serializers.MotherboardSerializer(motherbords, many=True)
+
+    return Response(serializer.data)
+
+@api_view(['GET'])
 def pick_cpus(request):
     field_id = request.data.get('field_id', None)
     motherboard_id = request.data.get('motherboard_id', None)

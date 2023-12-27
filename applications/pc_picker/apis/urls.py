@@ -5,6 +5,7 @@ urlpatterns = [
     path('devices/', views.ListOfDevices.as_view(), name='devices'),
     path('fields/', views.ListOfFields.as_view(), name='fields'),
     path('pick-pc/', views.pick_pc, name='pick-pc'),
+    path('pick-motherboards/', views.pick_motherboards, name='pick-motherboards'),
     path('pick-cpus/', views.pick_cpus, name='pick-cpus'),
     path('pick-rams/', views.pick_rams, name='pick-rams'),
     path('pick-gpus/', views.pick_gpus, name='pick-gpus'),
