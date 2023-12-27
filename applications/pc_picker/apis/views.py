@@ -113,3 +113,10 @@ def pick_cases(request):
     serializer = dashboard_serializers.CaseSerializer(cases, many=True)
 
     return Response(serializer.data)
+
+@api_view(['GET'])
+def pick_internal_drives(request):
+    internal_drives = dashboard_models.InternalDrive.get_active_objects()
+    serializer = dashboard_serializers.InternalDriveSerializer(internal_drives, many=True)
+
+    return Response(serializer.data)
