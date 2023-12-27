@@ -8,4 +8,5 @@ urlpatterns = [
     path('pick-cpus/', views.pick_cpus, name='pick-cpus'),
     path('pick-rams/', views.pick_rams, name='pick-rams'),
     path('pick-gpus/', views.pick_gpus, name='pick-gpus'),
+    path('pick-cases/', views.pick_cases, name='pick-cases'),
 ]
