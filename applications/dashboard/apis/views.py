@@ -3,6 +3,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
 from .. import models
 from . import serializers
+from rest_framework.decorators import api_view
 
 class BaseViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
@@ -23,6 +24,10 @@ class CPUViewSet(BaseViewSet):
 class RAMViewSet(BaseViewSet):
     queryset = models.RAM.get_active_objects()
     serializer_class = serializers.RAMSerializer
+
+class GPUViewSet(BaseViewSet):
+    queryset = models.GPU.get_active_objects()
+    serializer_class = serializers.GPUSerializer
 
 class CaseViewSet(BaseViewSet):
     queryset = models.Case.get_active_objects()
