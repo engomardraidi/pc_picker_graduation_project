@@ -8,6 +8,7 @@ from ...core.functions import get_detail_response
 from ...core.constants import Constants
 from ...dashboard import models as dashboard_models
 from ...dashboard.apis import serializers as dashboard_serializers
+from rest_framework.pagination import PageNumberPagination
 
 class ListOfDevices(ListAPIView):
     queryset = dashboard_models.Device.get_objects()
@@ -39,10 +40,12 @@ def pick_pc(request):
 
 @api_view(['GET'])
 def pick_motherboards(request):
+    paginator = PageNumberPagination()
     motherbords = dashboard_models.Motherboard.get_active_objects()
-    serializer = dashboard_serializers.MotherboardSerializer(motherbords, many=True)
+    result = paginator.paginate_queryset(motherbords, request)
+    serializer = dashboard_serializers.MotherboardSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_cpus(request):
@@ -57,10 +60,12 @@ def pick_cpus(request):
     if motherboard is None:
         return Response({'details': 'Not found cpus compatabile with selected motherboard'}, status=404)
 
+    paginator = PageNumberPagination()
     cpus = dashboard_models.CPU.filter_objects(cpufield__field__id=field_id, socket=motherboard.socket)
-    serializer = dashboard_serializers.CPUSerializer(cpus, many=True)
+    result = paginator.paginate_queryset(cpus, request)
+    serializer = dashboard_serializers.CPUSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_rams(request):
@@ -74,11 +79,13 @@ def pick_rams(request):
 
     if motherboard is None:
         return Response([], status=404)
-
+    
+    paginator = PageNumberPagination()
     rams = dashboard_models.RAM.filter_objects(ramfield__field__id=field_id, type=motherboard.ram_type, size__lte=motherboard.memory_max_capacity)
-    serializer = dashboard_serializers.RAMSerializer(rams, many=True)
+    result = paginator.paginate_queryset(rams, request)
+    serializer = dashboard_serializers.RAMSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_gpus(request):
@@ -95,14 +102,17 @@ def pick_gpus(request):
 
     if motherboard.pci_e_3 + motherboard.pci_e_4 == 0:
         return Response([], status=404)
+
+    paginator = PageNumberPagination()
     gpus = []
     if motherboard.pci_e_3 > 0 and motherboard.pci_e_4 > 0:
         gpus = dashboard_models.GPU.filter_objects(gpufield__field__id=field_id)
     else:
         gpus = dashboard_models.GPU.filter_objects(gpufield__field__id=field_id, pci_e=3 if motherboard.pci_e_3 > 0 else 4)
-    serializer = dashboard_serializers.GPUSerializer(gpus, many=True)
+    result = paginator.paginate_queryset(gpus, request)
+    serializer = dashboard_serializers.GPUSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_cases(request):
@@ -116,21 +126,27 @@ def pick_cases(request):
     if field is None:
         return Response([])
 
+    paginator = PageNumberPagination()
     cases = dashboard_models.Case.filter_objects(style=field.case_style)
-    serializer = dashboard_serializers.CaseSerializer(cases, many=True)
+    result = paginator.paginate_queryset(cases, request)
+    serializer = dashboard_serializers.CaseSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_internal_drives(request):
+    paginator = PageNumberPagination()
     internal_drives = dashboard_models.InternalDrive.get_active_objects()
-    serializer = dashboard_serializers.InternalDriveSerializer(internal_drives, many=True)
+    result = paginator.paginate_queryset(internal_drives, request)
+    serializer = dashboard_serializers.InternalDriveSerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET'])
 def pick_power_supplies(request):
+    paginator = PageNumberPagination()
     power_supplies = dashboard_models.PowerSupply.get_active_objects()
-    serializer = dashboard_serializers.PowerSupplySerializer(power_supplies, many=True)
+    result = paginator.paginate_queryset(power_supplies, request)
+    serializer = dashboard_serializers.PowerSupplySerializer(result, many=True)
 
-    return Response(serializer.data)
+    return paginator.get_paginated_response(serializer.data)
