@@ -1,137 +1,152 @@
 from .. import models
 from rest_framework import serializers
 
-class DeviceSerializer(serializers.ModelSerializer):
+class BaseSerializer(serializers.ModelSerializer):
+    pass
+
+class SerializerWithoutImage(BaseSerializer):
+    pass
+class SerializerWithImage(BaseSerializer):
+    def validate(self, attrs):
+        external_image = attrs.get('external_image', None)
+        image = attrs.get('image', None)
+
+        if external_image is None and image is None:
+            raise serializers.ValidationError({'image': 'Please upload an image or enter external image url.'})
+
+        return super().validate(attrs)
+
+class DeviceSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Device
         fields = '__all__'
 
-class FieldSerializer(serializers.ModelSerializer):
+class FieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Field
         fields = '__all__'
 
-class FieldReadSerializer(serializers.ModelSerializer):
+class FieldReadSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Field
         fields = ['id', 'name', 'updated_at', 'created_at', 'status']
 
-class ColorSerializer(serializers.ModelSerializer):
+class ColorSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Color
         fields = '__all__'
 
-class CPUSocketSerializer(serializers.ModelSerializer):
+class CPUSocketSerializer(SerializerWithoutImage):
     class Meta:
         model = models.CPUSocket
         fields = '__all__'
 
-class ProducerSerializer(serializers.ModelSerializer):
+class ProducerSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Producer
         fields = '__all__'
 
-class CaseTypeSerializer(serializers.ModelSerializer):
+class CaseTypeSerializer(SerializerWithoutImage):
     class Meta:
         model = models.CaseType
         fields = '__all__'
 
-class CaseStyleSerializer(serializers.ModelSerializer):
+class CaseStyleSerializer(SerializerWithoutImage):
     class Meta:
         model = models.CaseStyle
         fields = '__all__'
 
-class CaseSidePanelSerializer(serializers.ModelSerializer):
+class CaseSidePanelSerializer(SerializerWithoutImage):
     class Meta:
         model = models.CaseSidePanel
         fields = '__all__'
 
-class DriveTypeSerializer(serializers.ModelSerializer):
+class DriveTypeSerializer(SerializerWithoutImage):
     class Meta:
         model = models.DriveType
         fields = '__all__'
 
-class PowerSupplyTypeSerializer(serializers.ModelSerializer):
+class PowerSupplyTypeSerializer(SerializerWithoutImage):
     class Meta:
         model = models.PowerSupplyType
         fields = '__all__'
 
-class PowerSupplyEfficiencySerializer(serializers.ModelSerializer):
+class PowerSupplyEfficiencySerializer(SerializerWithoutImage):
     class Meta:
         models = models.PowerSupplyEfficiency
         fields = '__all__'
 
-class RAMTypeSerializer(serializers.ModelSerializer):
+class RAMTypeSerializer(SerializerWithoutImage):
     class Meta:
         model = models.RAMType
         fields = '__all__'
 
-class GPUSeriesSerializer(serializers.ModelSerializer):
+class GPUSeriesSerializer(SerializerWithoutImage):
     class Meta:
         model = models.GPUSeries
         fields = '__all__'
 
-class GPUSyncSerializer(serializers.ModelSerializer):
+class GPUSyncSerializer(SerializerWithoutImage):
     class Meta:
         model = models.GPUSync
         fields = '__all__'
 
-class ChipsetSerializer(serializers.ModelSerializer):
+class ChipsetSerializer(SerializerWithoutImage):
     class Meta:
         model = models.Chipset
         fields = '__all__'
 
-class FormFactorSerializer(serializers.ModelSerializer):
+class FormFactorSerializer(SerializerWithoutImage):
     class Meta:
         model = models.FormFactor
         fields = '__all__'
 
-class MotherboardSerializer(serializers.ModelSerializer):
+class MotherboardSerializer(SerializerWithImage):
     class Meta:
         model = models.Motherboard
         fields = '__all__'
 
-class RAMSerializer(serializers.ModelSerializer):
+class RAMSerializer(SerializerWithImage):
     class Meta:
         model = models.RAM
         fields = '__all__'
 
-class CPUSerializer(serializers.ModelSerializer):
+class CPUSerializer(SerializerWithImage):
     class Meta:
         model = models.CPU
         fields = '__all__'
 
-class GPUSerializer(serializers.ModelSerializer):
+class GPUSerializer(SerializerWithImage):
     class Meta:
         model = models.GPU
         fields = '__all__'
 
-class CaseSerializer(serializers.ModelSerializer):
+class CaseSerializer(SerializerWithImage):
     class Meta:
         model = models.Case
         fields = '__all__'
 
-class InternalDriveSerializer(serializers.ModelSerializer):
+class InternalDriveSerializer(SerializerWithImage):
     class Meta:
         model = models.InternalDrive
         fields = '__all__'
 
-class PowerSupplySerializer(serializers.ModelSerializer):
+class PowerSupplySerializer(SerializerWithImage):
     class Meta:
         model = models.PowerSupply
         fields = '__all__'
 
-class CPUFieldSerializer(serializers.ModelSerializer):
+class CPUFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.CPUField
         fields = '__all__'
 
-class RAMFieldSerializer(serializers.ModelSerializer):
+class RAMFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.RAMField
         fields = '__all__'
 
-class GPUFieldSerializer(serializers.ModelSerializer):
+class GPUFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.GPUField
         fields = '__all__'
