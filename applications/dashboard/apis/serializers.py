@@ -101,6 +101,11 @@ class FormFactorSerializer(SerializerWithoutImage):
         model = models.FormFactor
         fields = '__all__'
 
+class LaptopSerializer(SerializerWithImage):
+    class Meta:
+        model = models.Laptop
+        fields = '__all__'
+
 class MotherboardSerializer(SerializerWithImage):
     class Meta:
         model = models.Motherboard

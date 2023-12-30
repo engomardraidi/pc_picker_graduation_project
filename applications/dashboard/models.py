@@ -249,6 +249,35 @@ class FormFactor(BaseModel):
         from .apis.serializers import FormFactorSerializer
         return FormFactorSerializer(self).data
 
+class Laptop(BaseModel):
+    name = models.CharField(max_length=255)
+    screen_size = models.FloatField()
+    cpu_type = models.CharField(max_length=255)
+    memory = models.PositiveIntegerField()
+    storage = models.CharField(max_length=255)
+    gpu = models.CharField(max_length=255)
+    resolution = models.CharField(max_length=255)
+    weight = models.FloatField()
+    backlit_keyboard = models.BooleanField(default=False)
+    touchscreen = models.BooleanField(default=False)
+    cpu_speed = models.FloatField()
+    number_of_cores = models.PositiveIntegerField()
+    display_type = models.CharField(max_length=255)
+    graphic_type = models.CharField(max_length=255)
+    operating_system = models.CharField(max_length=255)
+    webcam = models.BooleanField(default=False)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    use = models.CharField(max_length=255)
+    external_image = models.URLField(null=True)
+    image = models.ImageField(upload_to='images/laptops/', null=True)
+
+    class Meta:
+        db_table = 'laptop'
+
+    def to_json(self):
+        from .apis.serializers import LaptopSerializer
+        return LaptopSerializer(self).data
+
 class Motherboard(BaseModel):
     name = models.CharField(max_length=255, unique=True)
     form_factor = models.ForeignKey(FormFactor, on_delete=models.SET_NULL, null=True)
