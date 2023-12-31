@@ -1,4 +1,5 @@
 import os
+import decimal
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import process
@@ -10,10 +11,30 @@ from ...dashboard.models import PCField
 
 def get_laptop_as_json(laptop, budget):
     return {
-        'perc': f'{(laptop.price / budget) * 100}%',
+        'perc': (laptop.price / budget) * 100,
         'price': laptop.price,
         'laptop': laptop.to_json()
     }
+
+def get_best_laptops(laptops):
+    full_perc = decimal.Decimal(100)
+    diff = 0
+    best_laptops = []
+
+    if len(laptops) > 4:
+        while len(best_laptops) < 4:
+            diff += 2
+            for laptop in laptops:
+                if len(best_laptops) == 4:
+                    break
+                check = laptop.get('check', False)
+                if abs(laptop['perc'] - full_perc) <= diff and not check:
+                    best_laptops.append(laptop)
+                    laptop['check'] = True
+    else:
+        best_laptops = laptops
+
+    return best_laptops
 
 def validate_field_budget(field_id, budget):
     if field_id == None or budget == None:
