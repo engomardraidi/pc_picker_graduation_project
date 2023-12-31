@@ -3,6 +3,28 @@ import pandas as pd
 import numpy as np
 from fuzzywuzzy import process
 from jinja2 import Template
+from rest_framework.response import Response
+from ...core.functions import get_detail_response
+from ...core.constants import Constants
+from ...dashboard.models import PCField
+
+def get_laptop_as_json(laptop, budget):
+    return {
+        'perc': f'{(laptop.price / budget) * 100}%',
+        'price': laptop.price,
+        'laptop': laptop.to_json()
+    }
+
+def validate_field_budget(field_id, budget):
+    if field_id == None or budget == None:
+        return Response(get_detail_response(Constants.REQUEIRED_FIELDS), status=400)
+    elif not isinstance(field_id,int) or not isinstance(budget,int):
+        return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
+
+    if PCField.get_object(field_id) == None:
+        return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
+
+    return None
 
 def write_fun():
     script_dir = os.path.dirname(__file__)
