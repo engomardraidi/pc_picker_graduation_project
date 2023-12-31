@@ -162,3 +162,8 @@ class GPUFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.GPUField
         fields = '__all__'
+
+class LaptopUseSerializer(SerializerWithoutImage):
+    class Meta:
+        model = models.LaptopUse
+        fields = '__all__'

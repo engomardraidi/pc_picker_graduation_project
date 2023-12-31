@@ -280,6 +280,7 @@ class Laptop(BaseModel):
     operating_system = models.CharField(max_length=255)
     webcam = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    # use = models.CharField(max_length=255)
     use = models.ForeignKey(LaptopField, on_delete=models.SET_NULL, null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images/laptops/', null=True)
@@ -517,3 +518,17 @@ class GPUField(BaseModel):
     def to_json(self):
         from .apis.serializers import GPUFieldSerializer
         return GPUFieldSerializer(self).data
+
+class LaptopUse(BaseModel):
+    laptop = models.ForeignKey(Laptop, on_delete=models.CASCADE)
+    use = models.ForeignKey(LaptopField, on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return f'{self.laptop.name} | {self.use.name}'
+
+    class Meta:
+        db_table = 'laptop_use'
+
+    def to_json(self):
+        from .apis.serializers import LaptopUseSerializer
+        return LaptopUseSerializer(self).data
