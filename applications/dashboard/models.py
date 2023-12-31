@@ -280,9 +280,12 @@ class Laptop(BaseModel):
     operating_system = models.CharField(max_length=255)
     webcam = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    use = models.CharField(max_length=255)
+    use = models.ForeignKey(LaptopField, on_delete=models.SET_NULL, null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images/laptops/', null=True)
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         db_table = 'laptop'
