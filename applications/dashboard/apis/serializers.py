@@ -21,6 +21,11 @@ class DeviceSerializer(SerializerWithoutImage):
         model = models.Device
         fields = '__all__'
 
+class LaptopFieldSerializer(SerializerWithoutImage):
+    class Meta:
+        model = models.LaptopField
+        fields = '__all__'
+
 class PCFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.PCField
