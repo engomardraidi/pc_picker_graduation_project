@@ -11,16 +11,16 @@ class LaptopsKnowledge(ExpertSystem):
         perc = decimal.Decimal(0.03)
         laptops = []
 
-        while len(laptops) < 5 and perc < 0.4:
+        while len(laptops) < 5:
             perc += decimal.Decimal(0.03)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
-            laptops += Laptop.filter_objects(use=field_id, price__range=(min_budget, max_budget))
+            laptops = Laptop.filter_objects(laptopuse__use__id=field_id, price__range=(min_budget, max_budget))
 
         return laptops
 
     @Rule(AS.rule << InputFact(field_id=1))
-    def pick_laptop_for_personal_use(self, rule):
+    def pick_laptop_for_home_use(self, rule):
         budget = decimal.Decimal(rule['budget'])
         
         list_laptops = self.__get_laptops(1, budget)
@@ -32,7 +32,7 @@ class LaptopsKnowledge(ExpertSystem):
         return laptops
 
     @Rule(AS.rule << InputFact(field_id=2))
-    def pick_laptop_for_business_use(self, rule):
+    def pick_laptop_for_workstation_use(self, rule):
         budget = decimal.Decimal(rule['budget'])
         
         list_laptops = self.__get_laptops(2, budget)
