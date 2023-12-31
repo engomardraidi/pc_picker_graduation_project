@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('devices/', views.ListOfDevices.as_view(), name='devices'),
     path('fields/', views.ListOfPCFields.as_view(), name='fields'),
+    path('pick-laptop/', views.pick_laptop, name='pick-laptop'),
     path('pick-pc/', views.pick_pc, name='pick-pc'),
     path('pick-motherboards/', views.pick_motherboards, name='pick-motherboards'),
     path('pick-cpus/', views.pick_cpus, name='pick-cpus'),

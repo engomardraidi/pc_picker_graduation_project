@@ -1,11 +1,11 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
-from .expert_system_folder.fields_knowledge import FieldsKnowledge
-from .expert_system_folder.input_fact import InputFact
+from .expert_system.fields_knowledge import FieldsKnowledge
+from .expert_system.laptops_knowledge import LaptopsKnowledge
+from .expert_system.input_fact import InputFact
 from ...dashboard.apis.serializers import DeviceSerializer, PCFieldReadSerializer
-from ...core.functions import get_detail_response
-from ...core.constants import Constants
+from .functions import validate_field_budget
 from ...dashboard import models as dashboard_models
 from ...dashboard.apis import serializers as dashboard_serializers
 from rest_framework.pagination import PageNumberPagination
@@ -19,17 +19,31 @@ class ListOfPCFields(ListAPIView):
     serializer_class = PCFieldReadSerializer
 
 @api_view(['POST'])
+def pick_laptop(request):
+    field_id = request.data.get('field_id', None)
+    budget = request.data.get('budget', None)
+
+    result = validate_field_budget(field_id, budget)
+
+    if result is not None:
+        return result
+
+    expert_system = LaptopsKnowledge()
+    expert_system.reset()
+    expert_system.declare(InputFact(field_id=field_id, budget=budget))
+    result = expert_system.run()
+
+    return Response({'num_of_laptops': len(result), 'laptops': result})
+
+@api_view(['POST'])
 def pick_pc(request):
     field_id = request.data.get('field_id', None)
     budget = request.data.get('budget', None)
 
-    if field_id == None or budget == None:
-        return Response(get_detail_response(Constants.REQUEIRED_FIELDS), status=400)
-    elif not isinstance(field_id,int) or not isinstance(budget,int):
-        return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
+    result = validate_field_budget(field_id, budget)
 
-    if dashboard_models.PCField.get_object(field_id) == None:
-        return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
+    if result is not None:
+        return result
 
     expert_system = FieldsKnowledge()
     expert_system.reset()
