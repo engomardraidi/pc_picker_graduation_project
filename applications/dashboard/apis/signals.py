@@ -22,7 +22,7 @@ def create_case_style_function_in_knowledge_engine(sender, instance, created, **
         rule_template = Template(rule_template_content)
 
         rendered_rule_template = rule_template.render(style=instance)
-        expert_system_file_path = os.path.join('applications/pc_picker/apis/expert_system_folder/pc_parts/cases_knowledge.py')
+        expert_system_file_path = os.path.join('applications/pc_picker/apis/expert_system/pc_parts/cases_knowledge.py')
 
         with open(expert_system_file_path, 'r') as file:
             content = file.read()
