@@ -3,7 +3,7 @@ import decimal
 from experta import Rule, AS
 from django.db.models import Q
 from ..pc import PC
-from ....dashboard.models import Field
+from ....dashboard.models import PCField
 from .input_fact import InputFact
 from .pc_parts.motherboards_knowledge import MotherboardsKnowledge
 from .pc_parts.cpus_knowledge import CPUsKnowledge
@@ -35,7 +35,7 @@ class FieldsKnowledge(ExpertSystem):
         self.power_supplies_knowledge.reset()
 
     def __get_all_parts(self, field_id, budget, motherboard_Q_query=None):
-        field = Field.get_object(field_id)
+        field = PCField.get_object(field_id)
         if field == None:
             return 'the field you want not exist'
 

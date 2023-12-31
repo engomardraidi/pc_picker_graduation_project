@@ -63,7 +63,7 @@ class CaseStyle(BaseModel):
         from .apis.serializers import CaseStyleSerializer
         return CaseStyleSerializer(self).data
 
-class Field(BaseModel):
+class PCField(BaseModel):
     name = models.CharField(max_length=50)
     case_style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
     highest_performance = models.PositiveIntegerField()
@@ -80,7 +80,7 @@ class Field(BaseModel):
         return self.name
 
     class Meta:
-        db_table = 'field'
+        db_table = 'pc_field'
 
     def to_json(self):
         from .apis.serializers import FieldSerializer
@@ -464,7 +464,7 @@ class PowerSupply(BaseModel):
 
 class CPUField(BaseModel):
     cpu = models.ForeignKey(CPU, on_delete=models.CASCADE)
-    field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
+    field = models.ForeignKey(PCField, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.cpu.name
@@ -478,7 +478,7 @@ class CPUField(BaseModel):
 
 class RAMField(BaseModel):
     ram = models.ForeignKey(RAM, on_delete=models.CASCADE)
-    field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
+    field = models.ForeignKey(PCField, on_delete=models.SET_NULL, null=True)
     status = models.BooleanField(default=True)
 
     def __str__(self):
@@ -493,7 +493,7 @@ class RAMField(BaseModel):
 
 class GPUField(BaseModel):
     gpu = models.ForeignKey(GPU, on_delete=models.CASCADE)
-    field = models.ForeignKey(Field, on_delete=models.SET_NULL, null=True)
+    field = models.ForeignKey(PCField, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.gpu.name

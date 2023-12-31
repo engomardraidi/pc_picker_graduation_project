@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from .expert_system_folder.fields_knowledge import FieldsKnowledge
 from .expert_system_folder.input_fact import InputFact
-from ...dashboard.apis.serializers import DeviceSerializer, FieldReadSerializer
+from ...dashboard.apis.serializers import DeviceSerializer, PCFieldReadSerializer
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
 from ...dashboard import models as dashboard_models
@@ -14,9 +14,9 @@ class ListOfDevices(ListAPIView):
     queryset = dashboard_models.Device.get_objects()
     serializer_class = DeviceSerializer
 
-class ListOfFields(ListAPIView):
-    queryset = dashboard_models.Field.get_objects()
-    serializer_class = FieldReadSerializer
+class ListOfPCFields(ListAPIView):
+    queryset = dashboard_models.PCField.get_objects()
+    serializer_class = PCFieldReadSerializer
 
 @api_view(['POST'])
 def pick_pc(request):
@@ -28,7 +28,7 @@ def pick_pc(request):
     elif not isinstance(field_id,int) or not isinstance(budget,int):
         return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
 
-    if dashboard_models.Field.get_object(field_id) == None:
+    if dashboard_models.PCField.get_object(field_id) == None:
         return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
 
     expert_system = FieldsKnowledge()

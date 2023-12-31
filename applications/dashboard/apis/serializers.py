@@ -21,14 +21,14 @@ class DeviceSerializer(SerializerWithoutImage):
         model = models.Device
         fields = '__all__'
 
-class FieldSerializer(SerializerWithoutImage):
+class PCFieldSerializer(SerializerWithoutImage):
     class Meta:
-        model = models.Field
+        model = models.PCField
         fields = '__all__'
 
-class FieldReadSerializer(SerializerWithoutImage):
+class PCFieldReadSerializer(SerializerWithoutImage):
     class Meta:
-        model = models.Field
+        model = models.PCField
         fields = ['id', 'name', 'updated_at', 'created_at', 'status']
 
 class ColorSerializer(SerializerWithoutImage):
