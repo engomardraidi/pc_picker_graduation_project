@@ -39,3 +39,7 @@ class InternalDrivesViewSet(BaseViewSet):
 class PowerSupplyViewSet(BaseViewSet):
     queryset = models.PowerSupply.get_active_objects()
     serializer_class = serializers.PowerSupplySerializer
+
+class LaptopViewSet(BaseViewSet):
+    queryset = models.Laptop.get_active_objects()
+    serializer_class = serializers.LaptopSerializer
