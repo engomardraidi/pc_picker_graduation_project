@@ -10,7 +10,7 @@ class PC:
         self.internal_drive = internal_drive
         self.power_supply = power_supply
 
-    def get_pc_parts_as_JSON(self, budget):
+    def get_pc_parts_as_json(self, budget):
         total = get_total_price(self)
         return {
             'perc': f'{(total / budget) * 100}%',
