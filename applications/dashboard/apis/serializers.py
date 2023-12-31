@@ -6,13 +6,15 @@ class BaseSerializer(serializers.ModelSerializer):
 
 class SerializerWithoutImage(BaseSerializer):
     pass
+
 class SerializerWithImage(BaseSerializer):
     def validate(self, attrs):
-        external_image = attrs.get('external_image', None)
-        image = attrs.get('image', None)
-
-        if external_image is None and image is None:
-            raise serializers.ValidationError({'image': 'Please upload an image or enter external image url.'})
+        if not self.partial:
+            external_image = attrs.get('external_image', None)
+            image = attrs.get('image', None)
+    
+            if external_image is None and image is None:
+                raise serializers.ValidationError({'image': 'Please upload an image or enter external image url.'})
 
         return super().validate(attrs)
 
