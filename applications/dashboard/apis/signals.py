@@ -237,3 +237,63 @@ def classification_gpu(sender, instance, created, **kwargs):
         print('Graphic Design:', new_predictions[0, 1])
         print('Programming:', new_predictions[0, 2])
         print('Office:', new_predictions[0, 3])
+
+@receiver(post_save, sender=models.Laptop)
+def classification_laptop(sender, instance, created, **kwargs):
+    # Load the laptop dataset
+    df = pd.read_csv("./././datasets/laptops-readiest.csv")
+
+    df['Number_of_Cores'] = df['Number_of_Cores'].str.split('-', n=1).str[0]
+
+    X = df[['VRAM', 'GPU_Speed', 'GPU_Cores', 'CPU_Speed', 'Number_of_Cores', 'Memory']]
+
+    # Target variable (y)
+    y = df[['Gaming', 'Workstation', 'Home']]
+
+    # Split the data into training and testing sets (80% train, 20% test)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Initialize the RandomForestClassifier
+    classifier = RandomForestClassifier(random_state=42)
+
+    # Train the model on the training data
+    classifier.fit(X_train, y_train)
+
+    # Make predictions on the test set
+    predictions = classifier.predict(X_test)
+
+    # Evaluate the model
+    accuracy = accuracy_score(y_test, predictions)
+    print(f'Accuracy: {accuracy}')
+
+    # Display classification report
+    print(classification_report(y_test, predictions))
+
+    # Example input data for testing
+    example_input = pd.DataFrame({
+        'VRAM': [8],
+        'GPU_Speed': [16000],
+        'GPU_Cores': [7472],
+        'CPU_Speed': [2.3],
+        'Number_of_Cores': [14],
+        'Memory': [32],
+    })
+
+    # Make predictions for the example input
+    new_predictions = classifier.predict(example_input)
+
+    list_data = []
+
+    if new_predictions[0][0] == True:
+        list_data.append({'laptop': instance.id, 'use': 3})
+    if new_predictions[0][1] == True:
+        list_data.append({'laptop': instance.id, 'use': 2})
+    if new_predictions[0][2] == True:
+        list_data.append({'laptop': instance.id, 'use': 1})
+
+    serializer = serializers.LaptopUseSerializer(data=list_data, many=True)
+    if serializer.is_valid():
+        serializer.save()
+
+    # Display the predicted use
+    print('Predicted Use for the Example Input:', new_predictions)
