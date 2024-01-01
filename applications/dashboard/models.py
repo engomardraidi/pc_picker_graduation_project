@@ -317,7 +317,6 @@ class Motherboard(BaseModel):
     hdmi = models.BooleanField(default=False)
     pci_e_3 = models.PositiveIntegerField()
     pci_e_4 = models.PositiveIntegerField()
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -340,7 +339,6 @@ class RAM(BaseModel):
     clock = models.PositiveIntegerField()
     sticks = models.PositiveIntegerField()
     timings = models.CharField(max_length=20, null=True)
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -365,7 +363,6 @@ class CPU(BaseModel):
     threads = models.PositiveIntegerField()
     tdp = models.PositiveIntegerField()
     integrated_graphics = models.CharField(max_length=100)
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -399,7 +396,6 @@ class GPU(BaseModel):
     memory_clock = models.PositiveIntegerField()
     sync = models.ForeignKey(GPUSync, on_delete=models.SET_NULL, null=True)
     tdp = models.PositiveIntegerField()
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -420,7 +416,6 @@ class Case(BaseModel):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     side_panel = models.ForeignKey(CaseSidePanel, on_delete=models.SET_NULL, null=True)
     style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -443,7 +438,6 @@ class InternalDrive(BaseModel):
     cache = models.PositiveIntegerField()
     form_factor = models.CharField(max_length=50)
     interface = models.CharField(max_length=50)
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
@@ -463,7 +457,6 @@ class PowerSupply(BaseModel):
     power_type = models.ForeignKey(PowerSupplyType, on_delete=models.SET_NULL, null=True, name='type')
     efficiency = models.ForeignKey(PowerSupplyEfficiency, on_delete=models.SET_NULL, null=True)
     wattage = models.PositiveIntegerField()
-    url = models.URLField(null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images', null=True)
 
