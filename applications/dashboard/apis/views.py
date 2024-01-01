@@ -6,12 +6,6 @@ from . import serializers
 
 class BaseViewSet(ModelViewSet):
     permission_classes = [IsAdmin]
-
-    def destroy(self, request, *args, **kwargs):
-        request.data.update({'status': False})
-        self.partial_update(request, *args, **kwargs)
-        return Response(status=204)
-
 class MotherboardViewSet(BaseViewSet):
     queryset = models.Motherboard.get_active_objects()
     serializer_class = serializers.MotherboardSerializer
