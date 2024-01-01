@@ -56,6 +56,9 @@ class Device(BaseModel):
 class CaseStyle(BaseModel):
     style = models.CharField(max_length=50, unique=True)
 
+    def __str__(self) -> str:
+        return self.style
+
     class Meta:
         db_table = 'case_style'
 
