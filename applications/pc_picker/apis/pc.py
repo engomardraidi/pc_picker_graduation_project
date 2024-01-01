@@ -13,7 +13,7 @@ class PC:
     def get_pc_parts_as_json(self, budget):
         total = get_total_price(self)
         return {
-            'perc': f'{(total / budget) * 100}%',
+            'perc': round((total / budget) * 100, 2),
             'total_price': total,
             'pc': {
                 'motherboard': get_None_or_JSON(self.motherboard),

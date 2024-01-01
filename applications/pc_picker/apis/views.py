@@ -5,7 +5,7 @@ from .expert_system.fields_knowledge import FieldsKnowledge
 from .expert_system.laptops_knowledge import LaptopsKnowledge
 from .expert_system.input_fact import InputFact
 from ...dashboard.apis.serializers import DeviceSerializer, PCFieldReadSerializer
-from .functions import validate_field_budget, get_best_laptops
+from .functions import validate_field_budget, get_best_laptops, get_best_pcs
 from ...dashboard import models as dashboard_models
 from ...dashboard.apis import serializers as dashboard_serializers
 from rest_framework.pagination import PageNumberPagination
@@ -53,7 +53,9 @@ def pick_pc(request):
     expert_system.declare(InputFact(field_id=field_id, budget=budget))
     result = expert_system.run()
 
-    return Response({'num_of_PCs': len(result), 'PCs': result})
+    best_pcs = get_best_pcs(result)
+
+    return Response({'num_of_PCs': len(best_pcs), 'PCs': best_pcs})
 
 @api_view(['GET'])
 def pick_motherboards(request):

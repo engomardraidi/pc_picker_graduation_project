@@ -36,6 +36,26 @@ def get_best_laptops(laptops):
 
     return best_laptops
 
+def get_best_pcs(pcs):
+    full_perc = decimal.Decimal(100)
+    diff = 0
+    best_pcs = []
+
+    if len(pcs) > 4:
+        while len(best_pcs) < 4:
+            diff += 2
+            for laptop in pcs:
+                if len(best_pcs) == 4:
+                    break
+                check = laptop.get('check', False)
+                if abs(laptop['perc'] - full_perc) <= diff and not check:
+                    best_pcs.append(laptop)
+                    laptop['check'] = True
+    else:
+        best_pcs = pcs
+
+    return best_pcs
+
 def validate_field_budget(field_id, budget):
     if field_id == None or budget == None:
         return Response(get_detail_response(Constants.REQUEIRED_FIELDS), status=400)
