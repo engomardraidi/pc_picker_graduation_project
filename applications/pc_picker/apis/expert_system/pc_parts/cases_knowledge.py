@@ -9,11 +9,15 @@ class CasesKnowledge(PCKnowledge):
         cases = []
         perc = decimal.Decimal(0.03)
 
-        while len(cases) == 0 and perc < 1:
+        while len(cases) == 0 and perc <= 1:
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
             cases = Case.filter_objects(style=style_id, price__range=(min_budget, max_budget))
+            print(cases)
+
+        if len(cases) == 0:
+            return None
 
         closest_case = cases[0]
         abs_diff = abs(budget - closest_case.price)

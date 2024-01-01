@@ -21,5 +21,4 @@ class MotherboardsKnowledge(PCKnowledge):
             else:
                 motherboards = models_dashboard.Motherboard.filter_objects(price__range=(min_budget, max_budget))
 
-
         return motherboards

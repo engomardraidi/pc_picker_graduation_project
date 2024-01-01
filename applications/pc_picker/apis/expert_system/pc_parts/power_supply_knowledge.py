@@ -9,11 +9,14 @@ class PowerSuppliesKnowledge(PCKnowledge):
         power_supplies = []
         perc = decimal.Decimal(0.03)
 
-        while len(power_supplies) == 0 and perc < 1:
+        while len(power_supplies) == 0 and perc <= 1:
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
             power_supplies = PowerSupply.filter_objects(price__range=(min_budget, max_budget))
+
+        if len(power_supplies) == 0:
+            return None
 
         closest_power_supplie = power_supplies[0]
         abs_diff = abs(budget - closest_power_supplie.price)
