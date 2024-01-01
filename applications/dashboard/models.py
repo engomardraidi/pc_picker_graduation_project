@@ -318,7 +318,7 @@ class Motherboard(BaseModel):
     pci_e_3 = models.PositiveIntegerField()
     pci_e_4 = models.PositiveIntegerField()
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/motherboards/', null=True)
 
     def __str__(self):
         return self.name
@@ -340,7 +340,7 @@ class RAM(BaseModel):
     sticks = models.PositiveIntegerField()
     timings = models.CharField(max_length=20, null=True)
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/rams/', null=True)
 
     def __str__(self):
         return self.name
@@ -364,7 +364,7 @@ class CPU(BaseModel):
     tdp = models.PositiveIntegerField()
     integrated_graphics = models.CharField(max_length=100)
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/cpus/', null=True)
 
     def __str__(self):
         return self.name
@@ -397,7 +397,7 @@ class GPU(BaseModel):
     sync = models.ForeignKey(GPUSync, on_delete=models.SET_NULL, null=True)
     tdp = models.PositiveIntegerField()
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/gpus/', null=True)
 
     def __str__(self):
         return self.name
@@ -417,7 +417,7 @@ class Case(BaseModel):
     side_panel = models.ForeignKey(CaseSidePanel, on_delete=models.SET_NULL, null=True)
     style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/cases/', null=True)
 
     def __str__(self):
         return self.name
@@ -439,7 +439,7 @@ class InternalDrive(BaseModel):
     form_factor = models.CharField(max_length=50)
     interface = models.CharField(max_length=50)
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/internal-drives/', null=True)
 
     def __str__(self):
         return self.name
@@ -458,7 +458,7 @@ class PowerSupply(BaseModel):
     efficiency = models.ForeignKey(PowerSupplyEfficiency, on_delete=models.SET_NULL, null=True)
     wattage = models.PositiveIntegerField()
     external_image = models.URLField(null=True)
-    image = models.ImageField(upload_to='images', null=True)
+    image = models.ImageField(upload_to='images/power-supplies/', null=True)
 
     def __str__(self):
         return self.name
