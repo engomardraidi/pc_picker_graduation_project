@@ -9,6 +9,8 @@ from ...core.functions import get_detail_response
 from ...core.constants import Constants
 from ...dashboard.models import PCField
 
+__NUM_OF_BEST = 3
+
 def get_laptop_as_json(laptop, budget):
     return {
         'perc': (laptop.price / budget) * 100,
@@ -21,11 +23,11 @@ def get_best_laptops(laptops):
     diff = 0
     best_laptops = []
 
-    if len(laptops) > 4:
-        while len(best_laptops) < 4:
+    if len(laptops) > __NUM_OF_BEST:
+        while len(best_laptops) < __NUM_OF_BEST:
             diff += 2
             for laptop in laptops:
-                if len(best_laptops) == 4:
+                if len(best_laptops) == __NUM_OF_BEST:
                     break
                 check = laptop.get('check', False)
                 if abs(laptop['perc'] - full_perc) <= diff and not check:
@@ -41,11 +43,11 @@ def get_best_pcs(pcs):
     diff = 0
     best_pcs = []
 
-    if len(pcs) > 4:
-        while len(best_pcs) < 4:
+    if len(pcs) > __NUM_OF_BEST:
+        while len(best_pcs) < __NUM_OF_BEST:
             diff += 2
             for laptop in pcs:
-                if len(best_pcs) == 4:
+                if len(best_pcs) == __NUM_OF_BEST:
                     break
                 check = laptop.get('check', False)
                 if abs(laptop['perc'] - full_perc) <= diff and not check:
@@ -56,13 +58,13 @@ def get_best_pcs(pcs):
 
     return best_pcs
 
-def validate_field_budget(field_id, budget):
+def validate_field_budget(field_model, field_id, budget):
     if field_id == None or budget == None:
         return Response(get_detail_response(Constants.REQUEIRED_FIELDS), status=400)
     elif not isinstance(field_id,int) or not isinstance(budget,int):
         return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
 
-    if PCField.get_object(field_id) == None:
+    if field_model.get_object(field_id) == None:
         return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
 
     return None
