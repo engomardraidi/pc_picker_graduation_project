@@ -15,7 +15,7 @@ class InternalDrivesKnowledge(PCKnowledge):
             max_budget = budget + (budget * perc)
             internal_drives = InternalDrive.filter_objects(price__range=(min_budget, max_budget))
 
-        if len(internal_drive) == 0:
+        if len(internal_drives) == 0:
             return None
 
         closest_internal_drive = internal_drives[0]
