@@ -24,7 +24,7 @@ def pick_laptop(request):
     field_id = request.data.get('field_id', None)
     budget = request.data.get('budget', None)
 
-    result = validate_field_budget(field_id, budget)
+    result = validate_field_budget(dashboard_models.LaptopField, field_id, budget)
 
     if result is not None:
         return result
@@ -43,7 +43,7 @@ def pick_pc(request):
     field_id = request.data.get('field_id', None)
     budget = request.data.get('budget', None)
 
-    result = validate_field_budget(field_id, budget)
+    result = validate_field_budget(dashboard_models.PCField, field_id, budget)
 
     if result is not None:
         return result
