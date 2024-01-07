@@ -14,7 +14,6 @@ class CasesKnowledge(PCKnowledge):
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
             cases = Case.filter_objects(style=style_id, price__range=(min_budget, max_budget))
-            print(cases)
 
         if len(cases) == 0:
             return None
