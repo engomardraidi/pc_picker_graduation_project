@@ -330,7 +330,7 @@ class Mobile(BaseModel):
         return self.name
 
     class Meta:
-        db_table = 'phone'
+        db_table = 'mobile'
 
     def to_json(self):
         from .apis.serializers import MobileSerializer
