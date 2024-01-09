@@ -76,6 +76,16 @@ class LaptopField(BaseModel):
         from .apis.serializers import LaptopFieldSerializer
         return LaptopFieldSerializer(self).data
 
+class MobileField(BaseModel):
+    name = models.CharField(max_length=50)
+
+    class Meta:
+        db_table = 'mobile_field'
+
+    def to_json(self):
+        from .apis.serializers import MobileFieldSerializer
+        return MobileFieldSerializer(self).data
+
 class PCField(BaseModel):
     name = models.CharField(max_length=50)
     case_style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)

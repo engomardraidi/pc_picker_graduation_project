@@ -28,6 +28,11 @@ class LaptopFieldSerializer(SerializerWithoutImage):
         model = models.LaptopField
         fields = '__all__'
 
+class MobileFieldSerializer(SerializerWithoutImage):
+    class Meta:
+        model = models.MobileField
+        fields = '__all__'
+
 class PCFieldSerializer(SerializerWithoutImage):
     class Meta:
         model = models.PCField
