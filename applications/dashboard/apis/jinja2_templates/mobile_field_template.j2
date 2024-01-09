@@ -1,0 +1,12 @@
+
+    @Rule(AS.rule << InputFact(field_id={{ field.id }}))
+    def pick_mobile_for_{{ field.name }}_use(self, rule):
+        budget = decimal.Decimal(rule['budget'])
+        
+        list_mobiles = self.__get_mobiles({{ field.id }}, budget)
+        mobiles = []
+
+        for mobile in list_mobiles:
+            mobiles.append(get_mobile_as_json(mobile, budget))
+
+        return mobiles
