@@ -1,4 +1,3 @@
-from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from .permissions import IsAdmin
 from .. import models
@@ -37,3 +36,7 @@ class PowerSupplyViewSet(BaseViewSet):
 class LaptopViewSet(BaseViewSet):
     queryset = models.Laptop.get_active_objects()
     serializer_class = serializers.LaptopSerializer
+
+class MobileViewSet(BaseViewSet):
+    queryset = models.Mobile.get_active_objects()
+    serializer_class = serializers.MobileSerializer
