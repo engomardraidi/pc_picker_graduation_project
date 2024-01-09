@@ -37,7 +37,7 @@ def create_case_style_function_in_knowledge_engine(sender, instance, created, **
 @receiver(post_save, sender=models.CPU)
 def classification_cpu(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv("./././datasets/cpu_fields_class.csv")
+        df = pd.read_csv('./././datasets/cpu_fields_class.csv')
 
         df = df.drop(columns=['integrated_graphics', 'url', 'image_url', 'created_at', 'updated_at', 'status', 'socket', 'producer'])
 
@@ -105,7 +105,7 @@ def classification_cpu(sender, instance, created, **kwargs):
 @receiver(post_save, sender=models.RAM)
 def classification_ram(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv("./././datasets/ram_fields_class.csv")
+        df = pd.read_csv('./././datasets/ram_fields_class.csv')
 
         df = df.drop(columns=['timings', 'sticks', 'url', 'image_url', 'created_at', 'updated_at', 'status', 'producer'])
 
@@ -173,7 +173,7 @@ def classification_ram(sender, instance, created, **kwargs):
 @receiver(post_save, sender=models.GPU)
 def classification_gpu(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv("./././datasets/gpu_fields_class.csv")
+        df = pd.read_csv('./././datasets/gpu_fields_class.csv')
 
         df = df.drop(columns=['pci_e', 'length', 'slots', 'connectors_8pin', 'connectors_6pin', 'hdmi', 'display_port', 'dvi', 'vga', 'sync', 'tdp', 'image_url', 'created_at', 'updated_at', 'status', 'producer'])
 
@@ -241,7 +241,7 @@ def classification_gpu(sender, instance, created, **kwargs):
 @receiver(post_save, sender=models.Laptop)
 def classification_laptop(sender, instance, created, **kwargs):
     # Load the laptop dataset
-    df = pd.read_csv("./././datasets/laptops-readiest.csv")
+    df = pd.read_csv('./././datasets/laptops-readiest.csv')
 
     df['Number_of_Cores'] = df['Number_of_Cores'].str.split('-', n=1).str[0]
 
@@ -297,3 +297,72 @@ def classification_laptop(sender, instance, created, **kwargs):
 
     # Display the predicted use
     print('Predicted Use for the Example Input:', new_predictions)
+
+@receiver(post_save, sender=models.Mobile)
+def classification_mobile(sender, instance, created, **kwargs):
+    df = pd.read_csv('./././datasets/mobiles.csv')
+
+    features = ['Price', 'Core_count', 'CPU_speed', 'Ram', 'Battery', 'Main_camera', 'Cameras_num']
+    X = df[features]
+
+    # Target variables (y)
+    target_variables = ['Performance_class', 'Camera_class', 'Battery_class', 'Browsing_class']
+    y = df[target_variables]
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Initialize the RandomForestClassifier
+    classifier = MultiOutputClassifier(RandomForestClassifier(random_state=42))
+
+    # Train the model on the training data
+    classifier.fit(X_train, y_train)
+
+    # Make predictions on the test set
+    predictions = classifier.predict(X_test)
+
+    # Evaluate the model
+    from sklearn.metrics import accuracy_score, classification_report
+
+    accuracy = accuracy_score(y_test, predictions)
+    print(f'Overall Accuracy: {accuracy}')
+
+    # Display classification report for each target variable
+    for i, target_variable in enumerate(target_variables):
+        print(f'\nClassification Report for {target_variable}:')
+        print(classification_report(y_test[target_variable], predictions[:, i]))
+
+
+    # Example input data for testing
+    example_input = pd.DataFrame({
+        'Price': [instance.price],
+        'Core_count': [instance.core_count],
+        'CPU_speed': [instance.cpu_speed],
+        'Ram': [instance.ram],
+        'Battery': [instance.battery],
+        'Main_camera': [instance.main_camera],
+        'Cameras_num': [instance.cameras_num]
+    })
+
+    # Make predictions for the example input
+    new_predictions = classifier.predict(example_input)
+
+    list_data = []
+
+    if new_predictions[0][0] == True:
+        list_data.append({'mobile': instance.id, 'use': 1})
+    if new_predictions[0][1] == True:
+        list_data.append({'mobile': instance.id, 'use': 2})
+    if new_predictions[0][2] == True:
+        list_data.append({'mobile': instance.id, 'use': 3})
+    if new_predictions[0][2] == True:
+        list_data.append({'mobile': instance.id, 'use': 4})
+
+
+
+    serializer = serializers.MobileUseSerializer(data=list_data, many=True)
+    if serializer.is_valid():
+        serializer.save()
+
+    # Display the predicted values for each target variable
+    for i, target_variable in enumerate(target_variables):
+        print(f'Predicted {target_variable} for the Example Input:', new_predictions[0, i])
