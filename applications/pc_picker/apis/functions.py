@@ -18,6 +18,13 @@ def get_laptop_as_json(laptop, budget):
         'laptop': laptop.to_json()
     }
 
+def get_mobile_as_json(mobile, budget):
+    return {
+        'perc': (mobile.price / budget) * 100,
+        'price': mobile.price,
+        'mobile': mobile.to_json()
+    }
+
 def get_best_laptops(laptops):
     full_perc = decimal.Decimal(100)
     diff = 0
@@ -37,6 +44,26 @@ def get_best_laptops(laptops):
         best_laptops = laptops
 
     return best_laptops
+
+def get_best_mobiles(mobiles):
+    full_perc = decimal.Decimal(100)
+    diff = 0
+    best_mobiles = []
+
+    if len(mobiles) > __NUM_OF_BEST:
+        while len(best_mobiles) < __NUM_OF_BEST:
+            diff += 2
+            for mobile in mobiles:
+                if len(best_mobiles) == __NUM_OF_BEST:
+                    break
+                check = mobile.get('check', False)
+                if abs(mobile['perc'] - full_perc) <= diff and not check:
+                    best_mobiles.append(mobile)
+                    mobile['check'] = True
+    else:
+        best_mobiles = mobiles
+
+    return best_mobiles
 
 def get_best_pcs(pcs):
     full_perc = decimal.Decimal(100)

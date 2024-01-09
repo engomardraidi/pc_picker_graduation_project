@@ -3,13 +3,13 @@ from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from .expert_system.fields_knowledge import FieldsKnowledge
 from .expert_system.laptops_knowledge import LaptopsKnowledge
+from .expert_system.mobiles_knowledge import MobilesKnowledge
 from .expert_system.input_fact import InputFact
 from ...dashboard.apis.serializers import DeviceSerializer, PCFieldReadSerializer
-from .functions import validate_field_budget, get_best_laptops, get_best_pcs
+from .functions import validate_field_budget, get_best_laptops, get_best_pcs, get_best_mobiles
 from ...dashboard import models as dashboard_models
 from ...dashboard.apis import serializers as dashboard_serializers
 from rest_framework.pagination import PageNumberPagination
-import decimal
 
 class ListOfDevices(ListAPIView):
     queryset = dashboard_models.Device.get_objects()
@@ -37,6 +37,25 @@ def pick_laptop(request):
     best_laptops = get_best_laptops(result)
 
     return Response({'num_of_laptops': len(best_laptops), 'laptops': best_laptops})
+
+@api_view(['POST'])
+def pick_mobile(request):
+    field_id = request.data.get('field_id', None)
+    budget = request.data.get('budget', None)
+
+    result = validate_field_budget(dashboard_models.MobileField, field_id, budget)
+
+    if result is not None:
+        return result
+
+    expert_system = MobilesKnowledge()
+    expert_system.reset()
+    expert_system.declare(InputFact(field_id=field_id, budget=budget))
+    result = expert_system.run()
+
+    best_laptops = get_best_mobiles(result)
+
+    return Response({'num_of_mobiles': len(best_laptops), 'mobiles': best_laptops})
 
 @api_view(['POST'])
 def pick_pc(request):
