@@ -322,7 +322,6 @@ class Mobile(BaseModel):
     main_camera = models.PositiveIntegerField()
     front_camera = models.PositiveIntegerField()
     cameras_num = models.PositiveIntegerField()
-    performance_class = models.CharField(max_length=255)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images/phones/', null=True)
 
