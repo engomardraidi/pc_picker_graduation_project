@@ -566,3 +566,17 @@ class LaptopUse(BaseModel):
     def to_json(self):
         from .apis.serializers import LaptopUseSerializer
         return LaptopUseSerializer(self).data
+
+class MobileUse(BaseModel):
+    mobile = models.ForeignKey(Mobile, on_delete=models.CASCADE)
+    use = models.ForeignKey(MobileField, on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return f'{self.mobile.name} | {self.use.name}'
+
+    class Meta:
+        db_table = 'mobile_use'
+
+    def to_json(self):
+        from .apis.serializers import LaptopUseSerializer
+        return LaptopUseSerializer(self).data

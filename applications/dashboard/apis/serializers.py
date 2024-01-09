@@ -177,3 +177,8 @@ class LaptopUseSerializer(SerializerWithoutImage):
     class Meta:
         model = models.LaptopUse
         fields = '__all__'
+
+class MobileUseSerializer(SerializerWithoutImage):
+    class Meta:
+        model = models.MobileUse
+        fields = '__all__'
