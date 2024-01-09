@@ -113,6 +113,11 @@ class LaptopSerializer(SerializerWithImage):
         model = models.Laptop
         fields = '__all__'
 
+class MobileSerializer(SerializerWithImage):
+    class Meta:
+        model = models.Mobile
+        fields = '__all__'
+
 class MotherboardSerializer(SerializerWithImage):
     class Meta:
         model = models.Motherboard

@@ -296,6 +296,36 @@ class Laptop(BaseModel):
         from .apis.serializers import LaptopSerializer
         return LaptopSerializer(self).data
 
+class Mobile(BaseModel):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    cameras = models.CharField(max_length=255)
+    cpu = models.CharField(max_length=255)
+    core_count = models.PositiveIntegerField()
+    cpu_speed = models.FloatField()
+    storage = models.CharField(max_length=255)
+    ram = models.PositiveIntegerField()
+    screen_size = models.FloatField()
+    refresh_rate = models.PositiveIntegerField()
+    battery = models.PositiveIntegerField()
+    fast_charging = models.BooleanField(default=False)
+    main_camera = models.PositiveIntegerField()
+    front_camera = models.PositiveIntegerField()
+    cameras_num = models.PositiveIntegerField()
+    performance_class = models.CharField(max_length=255)
+    external_image = models.URLField(null=True)
+    image = models.ImageField(upload_to='images/phones/', null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'phone'
+
+    def to_json(self):
+        from .apis.serializers import MobileSerializer
+        return MobileSerializer(self).data
+
 class Motherboard(BaseModel):
     name = models.CharField(max_length=255, unique=True)
     form_factor = models.ForeignKey(FormFactor, on_delete=models.SET_NULL, null=True)
