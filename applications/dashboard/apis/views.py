@@ -1,10 +1,13 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.filters import SearchFilter
 from .permissions import IsAdmin
 from .. import models
 from . import serializers
 
 class BaseViewSet(ModelViewSet):
     permission_classes = [IsAdmin]
+    filter_backends = [SearchFilter]
+    search_fields = ['name']
 class MotherboardViewSet(BaseViewSet):
     queryset = models.Motherboard.get_active_objects()
     serializer_class = serializers.MotherboardSerializer
