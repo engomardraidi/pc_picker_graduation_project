@@ -67,7 +67,7 @@ class CaseStyle(BaseModel):
         return CaseStyleSerializer(self).data
 
 class LaptopField(BaseModel):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
 
     class Meta:
         db_table = 'laptop_field'
@@ -77,7 +77,7 @@ class LaptopField(BaseModel):
         return LaptopFieldSerializer(self).data
 
 class MobileField(BaseModel):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
 
     class Meta:
         db_table = 'mobile_field'
@@ -87,7 +87,7 @@ class MobileField(BaseModel):
         return MobileFieldSerializer(self).data
 
 class PCField(BaseModel):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
     case_style = models.ForeignKey(CaseStyle, on_delete=models.SET_NULL, null=True)
     highest_performance = models.PositiveIntegerField()
     motherboard_budget = models.DecimalField(max_digits=2, decimal_places=2, default=0)
@@ -226,6 +226,9 @@ class RAMType(BaseModel):
 class Chipset(BaseModel):
     chipset = models.CharField(max_length=50, unique=True)
 
+    def __str__(self) -> str:
+        return self.chipset
+
     class Meta:
         db_table = 'chipset'
 
@@ -263,7 +266,7 @@ class FormFactor(BaseModel):
     form_factor = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
-        return self.factor
+        return self.form_factor
 
     class Meta:
         db_table = 'form_factor'
@@ -377,7 +380,7 @@ class RAM(BaseModel):
     producer = models.ForeignKey(Producer, on_delete=models.SET_NULL, null=True)
     clock = models.PositiveIntegerField()
     sticks = models.PositiveIntegerField()
-    timings = models.CharField(max_length=20, null=True)
+    timings = models.CharField(max_length=25, null=True)
     external_image = models.URLField(null=True)
     image = models.ImageField(upload_to='images/rams/', null=True)
 
@@ -427,10 +430,10 @@ class GPU(BaseModel):
     slots = models.FloatField(default=0.0)
     connectors_8pin = models.PositiveIntegerField()
     connectors_6pin = models.PositiveIntegerField()
-    hdmi = models.BooleanField()
-    display_port = models.BooleanField()
-    dvi = models.BooleanField()
-    vga = models.BooleanField()
+    hdmi = models.PositiveIntegerField()
+    display_port = models.PositiveIntegerField()
+    dvi = models.PositiveIntegerField()
+    vga = models.PositiveIntegerField()
     boost_clock = models.PositiveIntegerField()
     memory_clock = models.PositiveIntegerField()
     sync = models.ForeignKey(GPUSync, on_delete=models.SET_NULL, null=True)
