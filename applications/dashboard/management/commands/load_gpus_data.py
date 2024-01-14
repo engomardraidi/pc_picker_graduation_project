@@ -1,7 +1,7 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
-from ...models import GPU
+from ...models import GPU, GPUSeries, Producer, GPUSync, PCField, GPUField
 
 class Command(BaseCommand):
     help = 'Loads data from gpus_1-cleand.csv'
@@ -14,25 +14,40 @@ class Command(BaseCommand):
         print("Loading GPUs data")
 
         for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/gpus_1-cleaned.csv')):
+            series = GPUSeries.objects.get_or_create(series=row['series'])[0]
+            producer = Producer.objects.get_or_create(name=row['producer'])[0]
+            sync = GPUSync.objects.get_or_create(sync=row['sync'])[0]
+
             gpu = GPU(
                     name=row['name'],
                     pci_e=float(row['pci-e']),
-                    series=row['series'],
-                    vram=int(str(row['vram']).replace('GB', '').strip()),
+                    series=series,
+                    vram=int(row['vram']),
                     price=float(row['price']),
-                    producer=row['producer'],
-                    length=float(str(row['length']).replace('mm', '').strip()),
+                    producer=producer,
+                    length=float(row['length']),
                     slots=float(row['slots']) if row['slots'] != '' else 0.0,
                     connectors_8pin=int(float(row['8-pin connectors'])),
                     connectors_6pin=int(float(row['6-pin connectors'])),
-                    hdmi=True if row['hdmi'] == '1.0' else False,
-                    display_port=True if row['display port'] == '1.0' else False,
-                    dvi=True if row['dvi'] == '1.0' else False,
-                    vga=True if row['vga'] == '1.0' else False,
-                    boost_clock=int(str(row['boost clock']).replace('MHz', '').strip()),
-                    memory_clock=int(str(row['memory clock']).replace('MHz', '').strip()),
-                    sync=row['sync'],
-                    tdp=int(str(row['tdp']).replace('W', '').strip()),
-                    url=row['url'],
+                    hdmi=int(float(row['hdmi'])),
+                    display_port=int(float(row['display port'])),
+                    dvi=int(float(row['dvi'])),
+                    vga=int(float(row['vga'])),
+                    boost_clock=int(row['boost_clock']),
+                    memory_clock=int(row['memory_clock']),
+                    sync=sync,
+                    tdp=int(row['tdp']),
+                    external_image=row['image_url'],
                 )
-            gpu.save()
+            gpu.save(command=True)
+
+            fields = PCField.get_objects()
+
+            if str(row['programming']).lower() == 'true':
+                GPUField(gpu=gpu, field=fields[0]).save()
+            if str(row['graphic design']).lower() == 'true':
+                GPUField(gpu=gpu, field=fields[1]).save()
+            if str(row['gaming']).lower() == 'true':
+                GPUField(gpu=gpu, field=fields[2]).save()
+            if str(row['office']).lower() == 'true':
+                GPUField(gpu=gpu, field=fields[3]).save()

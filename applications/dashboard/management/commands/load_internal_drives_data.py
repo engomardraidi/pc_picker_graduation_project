@@ -15,13 +15,7 @@ class Command(BaseCommand):
         print("Loading Internal Drives data")
 
         for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/internal-drive-cleaned.csv')):  
-            drive_type = None
-            drive_type = DriveType.filter_objects(type=f'HDD {row["type"]}' if row['type'] != 'SSD' else row['type']) 
-            if len(drive_type) == 0:
-                drive_type = DriveType(type=f'HDD {row["type"]}' if row['type'] != 'SSD' else row['type'])
-                drive_type.save()
-            else:
-                drive_type = drive_type[0]
+            drive_type = DriveType.objects.get_or_create(type=f'HDD {row["type"]}' if row['type'] != 'SSD' else row['type'])[0]
 
             internal_drive = InternalDrive(
                 name=row['name'],
@@ -31,6 +25,7 @@ class Command(BaseCommand):
                 drive_type=drive_type,
                 cache=int(float(row['cache'])),
                 form_factor=row['form_factor'],
-                interface=row['interface']
+                interface=row['interface'],
+                external_image=row['image_url']
             )
-            internal_drive.save()
+            internal_drive.save(command=True)

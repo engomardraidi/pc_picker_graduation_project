@@ -1,7 +1,7 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
-from ...models import Motherboard
+from ...models import Motherboard, CPUSocket, FormFactor, RAMType, Chipset, Producer
 
 class Command(BaseCommand):
     help = 'Loads data from motherboards_1-cleand.csv'
@@ -14,6 +14,12 @@ class Command(BaseCommand):
         print("Loading motherboards data")
 
         for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/motherboards_1-cleaned.csv')):
+            socket = CPUSocket.objects.get_or_create(socket=row['socket'])[0]
+            form_factor = FormFactor.objects.get_or_create(form_factor=row['from_factor'])[0]
+            ram_type = RAMType.objects.get_or_create(type=row['memory_type'])[0]
+            chipset = Chipset.objects.get_or_create(chipset=row['chipset'])[0]
+            producer = Producer.objects.get_or_create(name=row['producer'])[0]
+
             m2_pci_e_3=int(float(row['m.2 pci-e 3.0']) if row['m.2 pci-e 3.0'].isdigit() else 0)
             m2_pci_e_4=int(float(row['m.2 pci-e 4.0']) if row['m.2 pci-e 4.0'].isdigit() else 0)   
             usb_3_slots=int(float(row['usb 3 slots']) if row['usb 3 slots'].isdigit() else 0)      
@@ -22,13 +28,13 @@ class Command(BaseCommand):
 
             motherboard = Motherboard(
                     name=row['name'],
-                    from_factor=row['from_factor'],
-                    socket=row['socket'],
-                    memory_type=row['memory_type'],
+                    form_factor=form_factor,
+                    socket=socket,
+                    ram_type=ram_type,
                     memory_max_capacity=int(float(row['memory_max_capacity'])),
                     price=float(row['price']),
-                    chipset=row['chipset'],
-                    producer=row['producer'],
+                    chipset=chipset,
+                    producer=producer,
                     ram_slots=int(row['ram_slots']),
                     m2_pci_e_3=m2_pci_e_3,
                     m2_pci_e_4=m2_pci_e_4,
@@ -41,6 +47,6 @@ class Command(BaseCommand):
                     hdmi=True if row['hdmi'] == '1.0' else False,
                     pci_e_3=int(float(row['pci-e 3.0'])),
                     pci_e_4=int(float(row['pci-e 4.0'])),
-                    url=row['url'],
+                    external_image=row['external_image'],
                 )
-            motherboard.save()
+            motherboard.save(command=True)

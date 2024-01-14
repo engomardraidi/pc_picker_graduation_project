@@ -1,7 +1,7 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
-from ...models import Laptop
+from ...models import Laptop, LaptopField, LaptopUse
 
 class Command(BaseCommand):
     help = 'Loads data from laptops-ready.csv'
@@ -35,7 +35,15 @@ class Command(BaseCommand):
                 operating_system=row['Operating_System'],
                 webcam=True if row['Webcam'] == 'Yes' else False,
                 price=row['Price'],
-                use=row['Use'],
                 external_image=row['Image']
             )
-            laptop.save()
+            laptop.save(command=True)
+
+            fields = LaptopField.get_objects()
+
+            if str(row['Home']).lower() == 'true':
+                LaptopUse(laptop=laptop, use=fields[0]).save()
+            if str(row['Workstation']).lower() == 'true':
+                LaptopUse(laptop=laptop, use=fields[1]).save()
+            if str(row['Gaming']).lower() == 'true':
+                LaptopUse(laptop=laptop, use=fields[2]).save()

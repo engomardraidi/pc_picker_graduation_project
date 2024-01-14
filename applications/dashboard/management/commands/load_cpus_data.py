@@ -1,7 +1,7 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
-from ...models import CPU
+from ...models import CPU, CPUSocket, Producer, PCField, CPUField
 
 class Command(BaseCommand):
     help = 'Loads data from cpus_1-cleand.csv'
@@ -14,17 +14,31 @@ class Command(BaseCommand):
         print("Loading CPUs data")
 
         for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/cpus_1-cleaned.csv')):
+            socket = CPUSocket.objects.get_or_create(socket=row['socket'])[0]
+            producer = Producer.objects.get_or_create(name=row['producer'])[0]
+
             cpu = CPU(
                     name=row['name'],
-                    socket=row['socket'],
+                    socket=socket,
                     price=float(row['price']),
-                    producer=row['producer'],
-                    base_clock=float(str(row['base clock']).replace(' ', '').replace('GHz', '0').strip()),
-                    turbo_clock=float(str(row['turbo clock']).replace(' ', '').replace('GHz', '0').strip()),
+                    producer=producer,
+                    base_clock=float(row['base_clock']),
+                    turbo_clock=float(row['turbo_clock']),
                     cores=int(row['cores']),
                     threads=int(row['threads']),
-                    tdp=int(str(row['tdp']).replace('W', '').strip()),
+                    tdp=int(row['tdp']),
                     integrated_graphics=row['integrated graphics'],
-                    url=row['url'],
+                    external_image=row['image_url'],
                 )
-            cpu.save()
+            cpu.save(command=True)
+
+            fields = PCField.get_objects()
+
+            if str(row['programming']).lower() == 'true':
+                CPUField(cpu=cpu, field=fields[0]).save()
+            if str(row['graphic design']).lower() == 'true':
+                CPUField(cpu=cpu, field=fields[1]).save()
+            if str(row['gaming']).lower() == 'true':
+                CPUField(cpu=cpu, field=fields[2]).save()
+            if str(row['office']).lower() == 'true':
+                CPUField(cpu=cpu, field=fields[3]).save()

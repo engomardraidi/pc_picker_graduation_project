@@ -1,7 +1,7 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
-from ...models import Mobile
+from ...models import Mobile, MobileField, MobileUse
 
 class Command(BaseCommand):
     help = 'Loads data from mobiles.csv'
@@ -32,5 +32,15 @@ class Command(BaseCommand):
                 cameras_num=int(row['Cameras_num']),
                 external_image=row['Image']
             )
-            mobile.save()
+            mobile.save(command=True)
 
+            fields = MobileField.get_objects()
+
+            if str(row['Performance_class']).lower() == 'true':
+                MobileUse(mobile=mobile, use=fields[0]).save()
+            if str(row['Camera_class']).lower() == 'true':
+                MobileUse(mobile=mobile, use=fields[1]).save()
+            if str(row['Battery_class']).lower() == 'true':
+                MobileUse(mobile=mobile, use=fields[2]).save()
+            if str(row['Browsing_class']).lower() == 'true':
+                MobileUse(mobile=mobile, use=fields[3]).save()
