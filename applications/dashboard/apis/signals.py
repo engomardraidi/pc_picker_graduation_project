@@ -1,40 +1,42 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from .. import models
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from jinja2 import Template
-import pandas as pd
+from .decorators import disable_for_loaddata
+from .. import models
 from . import serializers
+import pandas as pd
 import os
 
-@receiver(post_save, sender=models.CaseStyle)
-def create_case_style_function_in_knowledge_engine(sender, instance, created, **kwargs):
-    if created:
-        script_dir = os.path.dirname(__file__)
-        template_path = os.path.join(script_dir, 'jinja2_templates', 'case_style_template.j2')
+# @receiver(post_save, sender=models.CaseStyle)
+# def create_case_style_function_in_knowledge_engine(sender, instance, created, **kwargs):
+#     if created:
+#         script_dir = os.path.dirname(__file__)
+#         template_path = os.path.join(script_dir, 'jinja2_templates', 'case_style_template.j2')
 
-        with open(template_path, 'r') as file:
-            rule_template_content = file.read()
+#         with open(template_path, 'r') as file:
+#             rule_template_content = file.read()
 
-        rule_template = Template(rule_template_content)
+#         rule_template = Template(rule_template_content)
 
-        rendered_rule_template = rule_template.render(style=instance)
-        expert_system_file_path = os.path.join('applications/pc_picker/apis/expert_system/pc_parts/cases_knowledge.py')
+#         rendered_rule_template = rule_template.render(style=instance)
+#         expert_system_file_path = os.path.join('applications/pc_picker/apis/expert_system/pc_parts/cases_knowledge.py')
 
-        with open(expert_system_file_path, 'r') as file:
-            content = file.read()
+#         with open(expert_system_file_path, 'r') as file:
+#             content = file.read()
 
-        if rendered_rule_template not in content:
-            with open(expert_system_file_path, 'a') as file:
-                file.write('\n')
-                file.write(rendered_rule_template)
-                file.flush()
+#         if rendered_rule_template not in content:
+#             with open(expert_system_file_path, 'a') as file:
+#                 file.write('\n')
+#                 file.write(rendered_rule_template)
+#                 file.flush()
     
 
 @receiver(post_save, sender=models.CPU)
+@disable_for_loaddata
 def classification_cpu(sender, instance, created, **kwargs):
     if created:
         df = pd.read_csv('./././datasets/cpu_fields_class.csv')
@@ -103,6 +105,7 @@ def classification_cpu(sender, instance, created, **kwargs):
         print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.RAM)
+@disable_for_loaddata
 def classification_ram(sender, instance, created, **kwargs):
     if created:
         df = pd.read_csv('./././datasets/ram_fields_class.csv')
@@ -171,6 +174,7 @@ def classification_ram(sender, instance, created, **kwargs):
         print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.GPU)
+@disable_for_loaddata
 def classification_gpu(sender, instance, created, **kwargs):
     if created:
         df = pd.read_csv('./././datasets/gpu_fields_class.csv')
@@ -239,6 +243,7 @@ def classification_gpu(sender, instance, created, **kwargs):
         print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.Laptop)
+@disable_for_loaddata
 def classification_laptop(sender, instance, created, **kwargs):
     # Load the laptop dataset
     df = pd.read_csv('./././datasets/laptops-readiest.csv')
@@ -299,6 +304,7 @@ def classification_laptop(sender, instance, created, **kwargs):
     print('Predicted Use for the Example Input:', new_predictions)
 
 @receiver(post_save, sender=models.Mobile)
+@disable_for_loaddata
 def classification_mobile(sender, instance, created, **kwargs):
     df = pd.read_csv('./././datasets/mobiles.csv')
 
