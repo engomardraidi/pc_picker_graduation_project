@@ -494,8 +494,8 @@ Below you will find instructions and everything you need to use the APIs.
       "num_of_laptops": int,
       "laptops": [
           {
-             "perc": 100.2,
-             "price": 1002.0,
+             "perc": num,
+             "price": num,
              "laptop": {
                   "id": id,
                   "created_at": string,
@@ -521,6 +521,56 @@ Below you will find instructions and everything you need to use the APIs.
                   "operating_system": string,
                   "webcam": bool,
                   "price": string,
+                  "external_image": url or null,
+                  "image": url or null,
+              },
+           ]
+        }
+     }
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+3. Pick Mobile
+   * POST method
+   * path
+     ```sh
+     pick-mobile/
+     ```
+   * Body
+     ```sh
+     {
+       "field_id": list of int,
+       "budget": num,
+     }
+     ```
+   * Response
+     ```sh
+     {
+      "num_of_mobiles": int,
+      "mobiles": [
+          {
+             "perc": num,
+             "price": num,
+             "mobile": {
+                  "id": id,
+                  "created_at": string,
+                  "updated_at": string,
+                  "status": bool,
+                  "name": string,
+                  "price": string,
+                  "cameras": string,
+                  "cpu": string,
+                  "core_count": int,
+                  "cpu_speed": float,
+                  "storage": string,
+                  "ram": int,
+                  "screen_size": float,
+                  "refresh_rate": int,
+                  "battery": int,
+                  "fast_charging": bool,
+                  "main_camera": int,
+                  "front_camera": int,
+                  "cameras_num": int,
                   "external_image": url or null,
                   "image": url or null,
               },
