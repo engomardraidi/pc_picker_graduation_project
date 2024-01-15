@@ -45,6 +45,9 @@
       <ul>
         <li><a href="#accounts">Accounts</a></li>
       </ul>
+      <ul>
+        <li><a href="#picker">PC/Laptop/Mobile Picker</a></li>
+      </ul>
     </li>
     <!-- <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -306,5 +309,168 @@ Below you will find instructions and everything you need to use the APIs.
      ```sh
      {} # with status code 200 (ok)
      ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Picker
+
+1. PC Picker
+   * POST method
+   * path
+     ```sh
+     pick-pc/
+     ```
+   * Body
+     ```sh
+     {
+       "field_id": int,
+       "budget": num,
+     }
+     ```
+   * Response
+     ```sh
+     {
+      "num_of_PCs": int,
+      "PCs": [
+           {
+             "perc": num,
+             "total_price": num,
+             "pc": {
+                      "motherboard": {
+                      "id": int,
+                      "created_at": string,
+                      "updated_at": string,
+                      "status": bool,
+                      "name": string,
+                      "memory_max_capacity": int,
+                      "price": string,
+                      "ram_slots": int,
+                      "m2_pci_e_3": int,
+                      "m2_pci_e_4": int,
+                      "usb_3_slots": int,
+                      "usb_3_headers": int,
+                      "usb_3_type_c": int,
+                      "vga": int,
+                      "dvi": int,
+                      "display_port": int,
+                      "hdmi": int,
+                      "pci_e_3": int,
+                      "pci_e_4": int,
+                      "external_image": url or null,
+                      "image": url or null,
+                      "form_factor": int, # id of form factor
+                      "socket": int, # id of socket
+                      "ram_type": int, # id of RAM type
+                      "chipset": int, # id of chipset
+                      "producer": int # id of producer
+                    },
+                "cpu": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "price": string,
+                    "base_clock": float,
+                    "turbo_clock": float,
+                    "cores": int,
+                    "threads": int,
+                    "tdp": int,
+                    "integrated_graphics": string or null,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "socket": int, # id od socket
+                    "producer": int # id of producer
+                },
+                "ram": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "size": int,
+                    "price": string,
+                    "clock": int,
+                    "sticks": int,
+                    "timings": string,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "type": int, # id of RAM type
+                    "producer": int # id of producer
+                },
+                "gpu": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "pci_e": int,
+                    "vram": int,
+                    "cores": int,
+                    "price": string,
+                    "length": float,
+                    "slots": float,
+                    "connectors_8pin": int,
+                    "connectors_6pin": int,
+                    "hdmi": int,
+                    "display_port": int,
+                    "dvi": int,
+                    "vga": int,
+                    "boost_clock": int,
+                    "memory_clock": int,
+                    "tdp": int,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "series": int, # id of series
+                    "producer": int, # id of producer
+                    "sync": int # id of sync
+                },
+                "case": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "price": string,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "type": int # id of type,
+                    "color": int, # id of color
+                    "side_panel": int, # id of side panel
+                    "style": int # id of style
+                },
+                "internal_drive": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "price": string,
+                    "capacity": int,
+                    "price_per_gb": string,
+                    "cache": int,
+                    "form_factor": string,
+                    "interface": string,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "drive_type": int # id of drive type
+                },
+                "power_supply": {
+                    "id": int,
+                    "created_at": string,
+                    "updated_at": string,
+                    "status": bool,
+                    "name": string,
+                    "price": string,
+                    "wattage": int,
+                    "external_image": url or null,
+                    "image": url or null,
+                    "type": int, # id of type
+                    "efficiency": int # id of efficiency
+                }
+            },
+          ]
+        }
+     }
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
