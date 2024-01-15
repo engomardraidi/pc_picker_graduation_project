@@ -314,7 +314,7 @@ Below you will find instructions and everything you need to use the APIs.
 
 ### Picker
 
-1. PC Picker
+1. Pick PC
    * POST method
    * path
      ```sh
@@ -470,6 +470,61 @@ Below you will find instructions and everything you need to use the APIs.
                 }
             },
           ]
+        }
+     }
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+2. Pick Laptop
+   * POST method
+   * path
+     ```sh
+     pick-laptop/
+     ```
+   * Body
+     ```sh
+     {
+       "field_id": int,
+       "budget": num,
+     }
+     ```
+   * Response
+     ```sh
+     {
+      "num_of_laptops": int,
+      "laptops": [
+          {
+             "perc": 100.2,
+             "price": 1002.0,
+             "laptop": {
+                  "id": id,
+                  "created_at": string,
+                  "updated_at": string,
+                  "status": bool,
+                  "name": string,
+                  "screen_size": float,
+                  "cpu_type": string,
+                  "memory": int,
+                  "storage": string,
+                  "gpu": string,
+                  "vram": int,
+                  "gpu_speed": float,
+                  "gpu_cores": int,
+                  "resolution": string,
+                  "weight": float,
+                  "backlit_keyboard": bool,
+                  "touchscreen": bool,
+                  "cpu_speed": float,
+                  "number_of_cores": string,
+                  "display_type": string,
+                  "graphic_type": string,
+                  "operating_system": string,
+                  "webcam": bool,
+                  "price": string,
+                  "external_image": url or null,
+                  "image": url or null,
+              },
+           ]
         }
      }
 
