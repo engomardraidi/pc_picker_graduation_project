@@ -106,7 +106,7 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   pip install pandas
   pip install numpy
-  pip install django-filter
+  pip install djangorestframework-simplejwt
   pip install experta
   pip install fuzzywuzzy
   pip install jinja2
