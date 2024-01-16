@@ -23,6 +23,7 @@ class Command(BaseCommand):
                     pci_e=float(row['pci-e']),
                     series=series,
                     vram=int(row['vram']),
+                    cores=int(row['cores']),
                     price=float(row['price']),
                     producer=producer,
                     length=float(row['length']),

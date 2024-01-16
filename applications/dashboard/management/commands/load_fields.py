@@ -25,7 +25,7 @@ class Command(BaseCommand):
             'internal_drive_budget': 0.2,
             'power_supply_budget': 0.05,
             'highest_performance': 1,
-            'case_style_id': standard.id
+            'case_style': standard.id
          },
          {
             'name': 'programming',
@@ -38,7 +38,7 @@ class Command(BaseCommand):
             'internal_drive_budget': 0.15,
             'power_supply_budget': 0.05,
             'highest_performance': 2,
-            'case_style_id': standard.id
+            'case_style': standard.id
          },
          {
             'name': 'graphic design',
@@ -51,7 +51,7 @@ class Command(BaseCommand):
             'internal_drive_budget': 0.15,
             'power_supply_budget': 0.05,
             'highest_performance': 3,
-            'case_style_id': gaming.id
+            'case_style': gaming.id
          },
          {
             'name': 'gaming',
@@ -64,7 +64,7 @@ class Command(BaseCommand):
             'internal_drive_budget': 0.1,
             'power_supply_budget': 0.05,
             'highest_performance': 4,
-            'case_style_id': gaming.id
+            'case_style': gaming.id
          },
       ]
       
