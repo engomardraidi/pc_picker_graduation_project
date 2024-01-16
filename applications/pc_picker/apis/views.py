@@ -48,12 +48,17 @@ def pick_mobile(request):
     if result is not None:
         return result
 
+    field_id.sort()
+
     expert_system = MobilesKnowledge()
     expert_system.reset()
     expert_system.declare(InputFact(field_id=field_id, budget=budget))
     result = expert_system.run()
 
-    best_laptops = get_best_mobiles(result)
+    if result != None:
+        best_laptops = get_best_mobiles(result)
+    else:
+        best_laptops = []
 
     return Response({'num_of_mobiles': len(best_laptops), 'mobiles': best_laptops})
 

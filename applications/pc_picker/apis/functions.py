@@ -5,9 +5,10 @@ import numpy as np
 from fuzzywuzzy import process
 from jinja2 import Template
 from rest_framework.response import Response
+from numbers import Number
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
-from ...dashboard.models import PCField
+from ...dashboard.models import MobileField
 
 __NUM_OF_BEST = 3
 
@@ -88,10 +89,14 @@ def get_best_pcs(pcs):
 def validate_field_budget(field_model, field_id, budget):
     if field_id == None or budget == None:
         return Response(get_detail_response(Constants.REQUEIRED_FIELDS), status=400)
-    elif not isinstance(field_id,int) or not isinstance(budget,int):
+    elif (not isinstance(field_id,int) or not isinstance(budget,Number)) and field_model is not MobileField:
         return Response(get_detail_response(Constants.NOT_A_NUMBER), status=400)
+    elif field_model is MobileField and (not isinstance(field_id,list) or not all(isinstance(i,int) for i in field_id)):
+        return Response(get_detail_response(Constants.FIELD_NOT_A_LIST), status=400)
+    elif field_model is MobileField and not isinstance(budget,Number):
+        return Response(get_detail_response(Constants.BUDGET_NOT_A_NUMBER), status=400)
 
-    if field_model.get_object(field_id) == None:
+    if field_model is not MobileField and field_model.get_object(field_id) == None:
         return Response(get_detail_response(Constants.FIELD_NOT_EXIST), status=404)
 
     return None
