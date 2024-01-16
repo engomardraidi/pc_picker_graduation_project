@@ -120,7 +120,15 @@ Below you will find instructions to run project.
    python3 manage.py makemigrations
    python3 manage.py migrate
    ```
-4. Run server
+4. Load all data to database
+   ```sh
+   python3 manage.py load_all_data
+   ```
+5. Create super admin
+   ```sh
+   python3 manage.py super_admin
+   ```
+6. Run server
    ```sh
    python3 manage.py runserver
    ```
