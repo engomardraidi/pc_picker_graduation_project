@@ -102,6 +102,19 @@ This is an example of how to list things you need to use the software and how to
   pip install markdown       # Markdown support for the browsable API.
   pip install django-filter  # Filtering support
   ```
+* Another required packages
+  ```sh
+  pip install pandas
+  pip install numpy
+  pip install django-filter
+  pip install experta
+  pip install fuzzywuzzy
+  pip install jinja2
+  pip install pycopg2-binary
+  pip install pyjwt
+  pip install scikit-learn
+  pip install urllib3
+  ```
 
 ### Installation
 
