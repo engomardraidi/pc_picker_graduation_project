@@ -1,171 +1,171 @@
-#,name,from_factor,socket,memory_type,memory_max_capacity,price,chipset,producer,ram_slots,m.2 pci-e 3.0,m.2 pci-e 4.0,usb 3 slots,usb 3 headers,usb 3 type-c,vga,dvi,display port,hdmi,pci-e 3.0,pci-e 4.0,url
-1090,Gigabyte GA-Z97M-D3H GL/USB3.0/HDMI/DVI/VGA Z9,Micro-ATX,1150,DDR3,32.0,300,Z97,Gigabyte,4,,0.0,,,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/4719331816674_Gigabyte%20GA-Z97M-D3H%20GL_USB3.0_HDMI_DVI_VGA%20Z97
-383,ASRock Z490 Aqu,E-ATX,1200,DDR4,128.0,124.99,Z490,ASRock,4,2.0,,4.0,,,0.0,0.0,0.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4710483931178_ASRock%20Z490%20Aqua
-335,ASRock X570 Aqua,E-ATX,AM4,DDR4,128.0,124.99,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,0,3,"https://www.pc-kombo.com/us/product/mainboard/4717677339338_ASRock%20X570%20Aqua,%20AMD%20X570"
-709,ASUS ROG Rampage VI Extreme OMEG,E-ATX,2066,DDR4,128.0,224.49,X299,ASUS,8,2.0,0.0,10.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4718017225656_ASUS%20ROG%20Rampage%20VI%20Extreme%20OMEGA
-1138,Gigabyte X299X Designare 10,E-ATX,2066,DDR4,256.0,323.99,X299,Gigabyte,8,2.0,0.0,4.0,,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/0889523019627_Gigabyte%20X299X%20Designare%2010G
-55,Asus ROG RAMPAGE VI EXTREM,E-ATX,2066,DDR4,128.0,423.49,X299,Asus,8,1.0,0.0,8.0,,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349805534_Asus%20ROG%20RAMPAGE%20VI%20EXTREME
-350,ASRock X670E Taichi Carrar,E-ATX,AM5,DDR5,128.0,522.99,X670E,ASRock,4,,1.0,3.0,,,0.0,0.0,0.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4710483940170_ASRock%20X670E%20Taichi%20Carrara
-907,ASUS WS X299 SAG,CEB,2066,DDR4,128.0,523.52,X299,ASUS,8,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,7,0,https://www.pc-kombo.com/us/product/mainboard/4712900853674_ASUS%20WS%20X299%20SAGE
-686,ASUS ROG Maximus XI Extreme,E-ATX,1151,DDR4,128.0,551.1,Z390,ASUS,4,4.0,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4718017122863_ASUS%20ROG%20Maximus%20XI%20Extreme
-1125,Gigabyte TRX40 Aorus Maste,E-ATX,TRX40,DDR4,256.0,578.68,TRX40,Gigabyte,8,3.0,0.0,,4.0,,0.0,0.0,0.0,0.0,0,4,https://www.pc-kombo.com/us/product/mainboard/4719331807566_Gigabyte%20TRX40%20Aorus%20Master
-916,ASUS X99-E WS USB 3.,"XL-ATX, CEB",2011-V3,DDR4,128.0,606.26,X99,ASUS,8,1.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,7,0,https://www.pc-kombo.com/us/product/mainboard/4712900074536_ASUS%20X99-E%20WS%20USB%203.1
-994,Gigabyte Aorus X299-Gaming,ATX,2066,DDR4,128.0,633.84,X299,Gigabyte,8,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719331801670_Gigabyte%20Aorus%20X299-Gaming%209
-997,Gigabyte Aorus Z270X-Gaming,ATX,1151,DDR4,64.0,661.42,Z270,Gigabyte,4,0.0,0.0,5.0,4.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4719331846381_Gigabyte%20Aorus%20Z270X-Gaming%208
-643,ASUS ProArt Z690-CREATOR WIF,ATX,1700,DDR5,128.0,689.0,Z690,ASUS,4,,1.0,,,,0.0,0.0,2.0,1.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4711081460732_ASUS%20ProArt%20Z690-CREATOR%20WIFI
-1136,Gigabyte X299X Aorus Maste,E-ATX,2066,DDR4,256.0,647.7128571428570,X299,Gigabyte,8,3.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4719331806996_Gigabyte%20X299X%20Aorus%20Master
-323,ASRock X299 OC Formul,ATX,2066,DDR4,64.0,606.4257142857140,X299,ASRock,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4717677334197_ASRock%20X299%20OC%20Formula
-687,ASUS ROG Maximus XI FORMUL,ATX,1151,DDR4,64.0,565.1385714285720,Z390,ASUS,4,2.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4718017131285_ASUS%20ROG%20Maximus%20XI%20FORMULA
-1414,MSI MEG Z590I Unif,Mini-ITX,1200,DDR4,64.0,523.8514285714290,Z590,MSI,2,1.0,1.0,,,,0.0,0.0,1.0,1.0,0,1,https://www.pc-kombo.com/us/product/mainboard/4719072802837_MSI%20MEG%20Z590I%20Unify
-685,ASUS ROG Maximus XI COD,ATX,1151,DDR4,64.0,482.56428571428600,Z390,ASUS,4,2.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4718017133807_ASUS%20ROG%20Maximus%20XI%20CODE
-813,Asus SABERTOOTH X9,ATX,2011-v3,DDR4,64.0,441.27714285714300,X99,Asus,8,,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0801947366828_Asus%20SABERTOOTH%20X99
-665,ASUS ROG Crosshair VIII Hero,ATX,AM4,DDR4,128.0,399.99,X570,ASUS,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,0,4,"https://www.pc-kombo.com/us/product/mainboard/4718017393751_ASUS%20ROG%20Crosshair%20VIII%20Hero,%20AMD%20X570"
-321,ASRock X299 Gaming i,ATX,2066,DDR4,128.0,180.99,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677333541_ASRock%20X299%20Gaming%20i9
-325,ASRock X299 Taichi X,ATX,2066,DDR4,128.0,225.82333333333300,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677334449_ASRock%20X299%20Taichi%20XE
-85,Gigabyte F2A88XN-WIF,Mini-ITX,FM2+,DDR3,64.0,270.6566666666670,A88X,Gigabyte,2,0.0,0.0,2.0,2.0,,0.0,1.0,0.0,2.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719331839093_Gigabyte%20F2A88XN-WIFI
-1161,Gigabyte X99-UD5 WIF,E-ATX,2011-V3,DDR4,64.0,315.49,X99,Gigabyte,8,0.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4719331833237_Gigabyte%20X99-UD5%20WIFI
-324,ASRock X299 Taich,ATX,2066,DDR4,128.0,360.3233333333330,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677333558_ASRock%20X299%20Taichi
-912,Asus X99-DELUXE I,ATX,2011-v3,DDR4,128.0,405.1566666666670,X99,Asus,8,1.0,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349397794_Asus%20X99-DELUXE%20II
-1207,Gigabyte Z490 Aorus Pro A,ATX,1200,DDR4,64.0,449.99,Z490,Gigabyte,4,3.0,0.0,3.0,2.0,,0.0,0.0,0.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719331808358_Gigabyte%20Z490%20Aorus%20Pro%20AX
-17,ASRock X399 Taich,ATX,TR4,DDR4,128.0,599.99,X399,ASRock,8,3.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677333947_ASRock%20X399%20Taichi
-596,Asus PRIME X299-,ATX,2066,DDR4,128.0,395.26,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349769430_Asus%20PRIME%20X299-A
-774,Asus ROG STRIX X99 GAMIN,ATX,2011-v3,DDR4,128.0,262.6,X99,Asus,8,1.0,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/6950031422576_Asus%20ROG%20STRIX%20X99%20GAMING
-388,ASRock Z490 Phantom Gaming-ITX/TB,Mini-ITX,1200,DDR4,64.0,129.94,Z490,ASRock,2,2.0,,2.0,,,0.0,0.0,1.0,1.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4710483931192_ASRock%20Z490%20Phantom%20Gaming-ITX_TB3
-1407,MSI MEG Z490 AC,ATX,1200,DDR4,128.0,398.0,Z490,MSI,4,2.0,,2.0,,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719072718923_MSI%20MEG%20Z490%20ACE
-65,ASUS TUF GAMING Z690-PLUS WIFI D,ATX,1700,DDR4,128.0,269.99,Z690,ASUS,4,1.0,3.0,4.0,,,0.0,0.0,1.0,1.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4711081438779_ASUS%20TUF%20GAMING%20Z690-PLUS%20WIFI%20D4
-803,ASUS ROG STRIX Z690-A GAMING WIFI D,ATX,1700,DDR4,128.0,393.56,Z690,ASUS,4,,1.0,4.0,,,0.0,0.0,1.0,1.0,1,1,https://www.pc-kombo.com/us/product/mainboard/4711081446460_ASUS%20ROG%20STRIX%20Z690-A%20GAMING%20WIFI%20D4
-683,ASUS ROG MAXIMUS X HERO Wi-F,ATX,1151,DDR4,64.0,545.78,Z370,ASUS,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4712900864113_ASUS%20ROG%20MAXIMUS%20X%20HERO%20Wi-Fi
-381,ASRock Z390 Taichi Ultimate,ATX,1151,DDR4,128.0,440.51666666666700,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677336757_ASRock%20Z390%20Taichi%20Ultimate
-1542,NZXT N7 Z390 Intel Z390,ATX,1151,DDR4,64.0,335.25333333333300,Z390,NZXT,4,2.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,5,0,"https://www.pc-kombo.com/us/product/mainboard/5060301694716_NZXT%20N7%20Z390%20Intel%20Z390%20,%20weiß"
-346,ASRock X670E PG Lightnin,ATX,AM5,DDR5,128.0,229.99,X670E,ASRock,4,1.0,1.0,6.0,,,0.0,0.0,1.0,1.0,0,3,https://www.pc-kombo.com/us/product/mainboard/4710483940347_ASRock%20X670E%20PG%20Lightning
-777,Asus ROG STRIX Z270G GAMIN,ATX,1151,DDR4,64.0,203.32333333333300,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349587188_Asus%20ROG%20STRIX%20Z270G%20GAMING
-499,Asus MAXIMUS VIII IMPAC,Mini-ITX,1151,DDR4,32.0,176.65666666666700,Z170,Asus,2,,0.0,4.0,1.0,,,,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/5283566774508_Asus%20MAXIMUS%20VIII%20IMPACT
-234,ASRock B650 Live Mixe,ATX,AM5,DDR5,128.0,149.99,B650,ASRock,4,,2.0,4.0,,,0.0,0.0,1.0,1.0,1,2,https://www.pc-kombo.com/us/product/mainboard/4710483941016_ASRock%20B650%20Live%20Mixer
-1390,MSI MAG X570S Tomahawk WiF,ATX,AM4,DDR4,128.0,203.8825,X570,MSI,4,,2.0,,,,0.0,0.0,0.0,1.0,2,2,https://www.pc-kombo.com/us/product/mainboard/4719072864217_MSI%20MAG%20X570S%20Tomahawk%20WiFi
-675,Asus ROG MAXIMUS IX HER,ATX,1151,DDR4,64.0,257.775,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349580653_Asus%20ROG%20MAXIMUS%20IX%20HERO
-887,Asus TUF X299 MARK,ATX,2066,DDR4,128.0,311.6675,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349775172_Asus%20TUF%20X299%20MARK%202
-18,ASRock X570 Taichi,ATX,AM4,DDR4,128.0,365.56,X570,ASRock,4,3.0,0.0,6.0,2.0,,0.0,0.0,0.0,1.0,0,5,"https://www.pc-kombo.com/us/product/mainboard/4717677338683_ASRock%20X570%20Taichi,%20AMD%20X570"
-1133,Gigabyte X299 UD,ATX,2066,DDR4,128.0,324.14,X299,Gigabyte,8,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719331801779_Gigabyte%20X299%20UD4
-790,ASUS ROG Strix Z390-F Gaming,ATX,1151,DDR4,128.0,282.72,Z390,ASUS,4,,0.0,,,,0.0,0.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4718017051767_ASUS%20ROG%20Strix%20Z390-F%20Gaming
-1227,Gigabyte Z590 UD A,ATX,1200,DDR4,128.0,241.3,Z590,Gigabyte,4,1.0,1.0,4.0,,,0.0,0.0,1.0,0.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4719331814878_Gigabyte%20Z590%20UD%20AC
-759,Asus ROG STRIX X299-XE GAMIN,ATX,2066,DDR4,128.0,262.84000000000000,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349773093_Asus%20ROG%20STRIX%20X299-XE%20GAMING
-969,EVGA Z370 Classified,ATX,1151,DDR4,64.0,284.38,Z370,EVGA,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4250812422576_EVGA%20Z370%20Classified%20K
-677,Asus ROG MAXIMUS X APE,E-ATX,1151,DDR4,32.0,305.92,Z370,Asus,2,,0.0,6.0,1.0,,,,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349650684_Asus%20ROG%20MAXIMUS%20X%20APEX
-336,ASRock X570 Extreme4,ATX,AM4,DDR4,128.0,327.46000000000000,X570,ASRock,4,2.0,0.0,6.0,5.0,,0.0,0.0,0.0,1.0,0,5,"https://www.pc-kombo.com/us/product/mainboard/4717677338911_ASRock%20X570%20Extreme4,%20AMD%20X570"
-1150,Gigabyte X570S Aorus Elit,ATX,AM4,DDR4,128.0,349.0,X570,Gigabyte,4,,3.0,,,,0.0,0.0,0.0,1.0,0,3,https://www.pc-kombo.com/us/product/mainboard/4719331823528_Gigabyte%20X570S%20Aorus%20Elite
-1434,MSI MPG Z390 Gaming Pro Carbo,ATX,1151,DDR4,64.0,387.0,Z390,MSI,4,2.0,0.0,,4.0,,0.0,0.0,1.0,1.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4719072596477_MSI%20MPG%20Z390%20Gaming%20Pro%20Carbon
-28,ASRock Z390 Taich,ATX,1151,DDR4,128.0,293.495,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677336764_ASRock%20Z390%20Taichi
-384,ASRock Z490 Extreme,ATX,1200,DDR4,128.0,199.99,Z490,ASRock,4,2.0,0.0,2.0,1.0,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4710483931048_ASRock%20Z490%20Extreme4
-1000,Gigabyte AX370-Gaming 5,ATX,AM4,DDR4,64.0,249.66,X370,Gigabyte,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,"https://www.pc-kombo.com/us/product/mainboard/4719331801267_Gigabyte%20AX370-Gaming%205,%20AMD%20X370"
-1437,MSI MPG Z390M Gaming Edge AC,Micro-ATX,1151,DDR4,128.0,299.33,Z390,MSI,4,,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719072598723_MSI%20MPG%20Z390M%20Gaming%20Edge%20AC
-1058,Gigabyte B660 Gaming X AX DDR,ATX,1700,DDR4,128.0,349.0,B660,Gigabyte,4,1.0,2.0,2.0,,,0.0,0.0,1.0,1.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4719331835880_Gigabyte%20B660%20Gaming%20X%20AX%20DDR4
-413,ASRock Z790M PG Lightning/D,Micro-ATX,1700,DDR4,128.0,179.99,Z790,ASRock,4,,1.0,4.0,,,0.0,0.0,0.0,1.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4710483940873_ASRock%20Z790M%20PG%20Lightning_D4
-1196,Gigabyte Z390 Aorus Pro WiF,ATX,1151,DDR4,64.0,379.79,Z390,Gigabyte,4,2.0,0.0,3.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4719331804299_Gigabyte%20Z390%20Aorus%20Pro%20WiFi
-1201,Gigabyte Z390 Designar,ATX,1151,DDR4,64.0,264.89,Z390,Gigabyte,4,2.0,0.0,4.0,2.0,,0.0,0.0,1.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719331804640_Gigabyte%20Z390%20Designare
-9,ASRock B650M PG Riptid,Micro-ATX,AM5,DDR5,128.0,149.99,B650E,ASRock,4,,1.0,2.0,,,0.0,0.0,1.0,1.0,0,2,https://www.pc-kombo.com/us/product/mainboard/4710483940835_ASRock%20B650M%20PG%20Riptide
-404,ASRock Z790 PG Lightning/D,ATX,1700,DDR4,128.0,192.99,Z790,ASRock,4,,1.0,5.0,,,0.0,0.0,0.0,1.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4710483940958_ASRock%20Z790%20PG%20Lightning_D4
-389,ASRock Z490 Pro,ATX,1200,DDR4,128.0,119.99,Z490,ASRock,4,2.0,0.0,2.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4710483930751_ASRock%20Z490%20Pro4
-402,ASRock Z590M-ITX/a,Mini-ITX,1200,DDR4,64.0,124.41857142857100,Z590,ASRock,2,1.0,1.0,,,,0.0,0.0,1.0,1.0,0,1,https://www.pc-kombo.com/us/product/mainboard/4710483933868_ASRock%20Z590M-ITX_ax
-1215,Gigabyte Z490 UD A,ATX,1200,DDR4,64.0,128.84714285714300,Z490,Gigabyte,4,3.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719331808501_Gigabyte%20Z490%20UD%20AC
-1142,Gigabyte X470 Aorus Gaming 5 WiF,ATX,AM4,DDR4,64.0,133.2757142857140,X470,Gigabyte,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4719331802950_Gigabyte%20X470%20Aorus%20Gaming%205%20WiFi
-104,Gigabyte Z390 I Aorus Pro WiF,Mini-ITX,1151,DDR4,32.0,137.70428571428600,Z390,Gigabyte,2,1.0,0.0,4.0,3.0,,0.0,0.0,1.0,1.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719331804527_Gigabyte%20Z390%20I%20Aorus%20Pro%20WiFi
-379,ASRock Z390 Phantom Gaming-ITX/AC,Mini-ITX,1151,DDR4,64.0,142.13285714285700,Z390,ASRock,2,,0.0,,,,0.0,0.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677336832_ASRock%20Z390%20Phantom%20Gaming-ITX_AC
-781,Asus ROG STRIX Z370-F GAMIN,ATX,1151,DDR4,64.0,146.56142857142900,Z370,Asus,4,2.0,0.0,2.0,,,,1.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349854907_Asus%20ROG%20STRIX%20Z370-F%20GAMING
-341,ASRock X570 Pro4,ATX,AM4,DDR4,128.0,150.99,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,1.0,0,4,"https://www.pc-kombo.com/us/product/mainboard/4717677338874_ASRock%20X570%20Pro4,%20AMD%20X570"
-1148,Gigabyte X570 UD,ATX,AM4,DDR4,128.0,275.0,X570,Gigabyte,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,1.0,0,5,"https://www.pc-kombo.com/us/product/mainboard/4719331806743_Gigabyte%20X570%20UD,%20AMD%20X570"
-615,Asus PRIME Z270-A,ATX,1151,DDR4,64.0,272.666,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349578858_Asus%20PRIME%20Z270-AR
-617,Asus PRIME Z270-,ATX,1151,DDR4,64.0,270.332,Z270,Asus,4,2.0,0.0,2.0,2.0,1.0,1.0,1.0,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349570074_Asus%20PRIME%20Z270-K
-373,ASRock Z370 Extreme,ATX,1151,DDR4,64.0,267.998,Z370,ASRock,4,2.0,0.0,4.0,5.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4717677334227_ASRock%20Z370%20Extreme4
-382,ASRock Z390M-ITX/AC,Mini-ITX,1151,DDR4,64.0,265.664,Z390,ASRock,2,,0.0,,,,0.0,0.0,1.0,2.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677336795_ASRock%20Z390M-ITX_AC
-1395,MSI MAG Z590 Tomahawk WiF,ATX,1200,DDR4,128.0,263.33,Z590,MSI,4,2.0,1.0,4.0,,,0.0,0.0,1.0,1.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4719072800529_MSI%20MAG%20Z590%20Tomahawk%20WiFi
-1179,Gigabyte Z370 Aorus Gaming,ATX,1151,DDR4,64.0,229.51333333333300,Z370,Gigabyte,4,1.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4719331802288_Gigabyte%20Z370%20Aorus%20Gaming%207
-657,ASUS ROG Crosshair VI HERO (WI-FI AC,ATX,AM4,DDR4,64.0,195.69666666666700,X370,ASUS,4,1.0,0.0,8.0,1.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4712900767933_ASUS%20ROG%20Crosshair%20VI%20HERO%20(WI-FI%20AC)
-1454,MSI PRO B660M-A WIFI DDR,Micro-ATX,1700,DDR4,128.0,161.88,B660,MSI,4,,1.0,2.0,,,0.0,0.0,2.0,2.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4719072912444_MSI%20PRO%20B660M-A%20WIFI%20DDR4
-928,Asus Z170-,ATX,1151,DDR4,64.0,235.08333333333300,Z170,Asus,4,1.0,0.0,2.0,2.0,,1.0,1.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/2100001392253_Asus%20Z170-A
-776,Asus ROG STRIX Z270F GAMIN,ATX,1151,DDR4,64.0,308.28666666666700,Z270,Asus,4,2.0,0.0,4.0,1.0,,,1.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349572016_Asus%20ROG%20STRIX%20Z270F%20GAMING
-618,Asus PRIME Z370-,ATX,1151,DDR4,64.0,381.49,Z370,Asus,4,2.0,0.0,2.0,2.0,,,1.0,1.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0190198496737_Asus%20PRIME%20Z370-A
-259,ASRock Fatal1ty H270 Performanc,ATX,1151,DDR4,64.0,374.776,H270,ASRock,4,0.0,0.0,3.0,4.0,1.0,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4717677332681_ASRock%20Fatal1ty%20H270%20Performance
-717,ASUS ROG Strix B360-G Gamin,Micro-ATX,1151,DDR4,64.0,368.062,B360,ASUS,4,1.0,0.0,2.0,,,0.0,0.0,0.0,1.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4712900975345_ASUS%20ROG%20Strix%20B360-G%20Gaming
-1168,Gigabyte Z170X Ultra Gamin,ATX,1151,DDR4,64.0,361.348,Z170,Gigabyte,4,0.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4719331821371_Gigabyte%20Z170X%20Ultra%20Gaming
-725,Asus ROG STRIX B450-I GAMIN,Mini-ITX,AM4,DDR4,32.0,354.634,B450,Asus,2,2.0,0.0,4.0,,,,,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0192876080276_Asus%20ROG%20STRIX%20B450-I%20GAMING
-332,ASRock X470 Master SL,ATX,AM4,DDR4,64.0,347.92,X470,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4717677335613_ASRock%20X470%20Master%20SLI
-890,ASUS TUF X470-Plus Gamin,ATX,AM4,DDR4,64.0,348.0725,X470,ASUS,4,1.0,0.0,2.0,4.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4712900951660_ASUS%20TUF%20X470-Plus%20Gaming
-726,ASUS ROG Strix B450-I Gaming,Mini-ITX,AM4,DDR4,32.0,348.225,B450,ASUS,2,2.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,"https://www.pc-kombo.com/us/product/mainboard/4718017081115_ASUS%20ROG%20Strix%20B450-I%20Gaming,%20AMD%20B450"
-25,ASRock Z370 Pro,ATX,1151,DDR4,64.0,348.3775,Z370,ASRock,4,2.0,0.0,5.0,2.0,1.0,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4717677334180_ASRock%20Z370%20Pro4
-716,ASUS ROG Strix B360-F Gamin,ATX,1151,DDR4,64.0,348.53,B360,ASUS,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4712900906202_ASUS%20ROG%20Strix%20B360-F%20Gaming
-227,ASRock B550M-ITX/a,Mini-ITX,AM4,DDR4,64.0,129.99,B550,ASRock,2,,1.0,3.0,2.0,1.0,0.0,0.0,0.0,1.0,0,1,https://www.pc-kombo.com/us/product/mainboard/4710483931727_ASRock%20B550M-ITX_ac
-1113,Gigabyte H470 HD3,ATX,1200,DDR4,128.0,184.89666666666700,H470,Gigabyte,4,,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719331808822_Gigabyte%20H470%20HD3
-1039,Gigabyte B550M Aorus Pro,Micro-ATX,AM4,DDR4,128.0,239.80333333333300,B550,Gigabyte,4,1.0,1.0,4.0,,,0.0,0.0,1.0,1.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4719331810672_Gigabyte%20B550M%20Aorus%20Pro%20P
-1220,Gigabyte Z590 Aorus Maste,ATX,1200,DDR4,128.0,294.71,Z590,Gigabyte,4,2.0,1.0,4.0,,,0.0,0.0,1.0,0.0,1,2,https://www.pc-kombo.com/us/product/mainboard/4719331814403_Gigabyte%20Z590%20Aorus%20Master
-1534,MSI Z390-A Pro,ATX,1151,DDR4,128.0,268.08,Z390,MSI,4,,0.0,,,,0.0,0.0,1.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719072594152_MSI%20Z390-A%20Pro
-21,ASRock Z270 Killer SL,ATX,1151,DDR4,64.0,706.49,Z270,ASRock,4,2.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4717677332612_ASRock%20Z270%20Killer%20SLI
-972,Gigabyte 970-Gaming,ATX,AM3+,DDR3,32.0,608.74,970,Gigabyte,4,0.0,0.0,2.0,1.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4719331848248_Gigabyte%20970-Gaming
-1092,Gigabyte H110M-S2H,Micro-ATX,1151,DDR4,32.0,510.99,H110,Gigabyte,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719331836290_Gigabyte%20H110M-S2HP
-975,Gigabyte 990FX-Gamin,ATX,"AM3, AM3+",DDR3,32.0,413.24,990FX,Gigabyte,4,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719331848255_Gigabyte%20990FX-Gaming
-24,ASRock Z270M-ITX/a,Mini-ITX,1151,DDR4,32.0,315.49,Z270,ASRock,2,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677332407_ASRock%20Z270M-ITX_ac
-1444,MSI MPG Z590 Gaming Forc,ATX,1200,DDR4,128.0,217.74,Z590,MSI,4,2.0,1.0,2.0,,,0.0,0.0,1.0,1.0,3,2,https://www.pc-kombo.com/us/product/mainboard/4719072800512_MSI%20MPG%20Z590%20Gaming%20Force
-84,GIGABYTE B650M DS3,Micro-ATX,AM5,DDR5,128.0,119.99,B650,Gigabyte,4,,2.0,2.0,,,0.0,0.0,2.0,1.0,1,1,https://www.pc-kombo.com/us/product/mainboard/4719331849825_GIGABYTE%20B650M%20DS3H
-305,ASRock H470M-ITX/a,Mini-ITX,1200,DDR4,64.0,163.99,H470,ASRock,2,1.0,,1.0,2.0,1.0,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4710483931154_ASRock%20H470M-ITX_ac
-1322,MSI B560M Pro-VD,Micro-ATX,1200,DDR4,128.0,207.99,B560,MSI,4,1.0,1.0,2.0,,,1.0,0.0,1.0,1.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4719072813444_MSI%20B560M%20Pro-VDH
-267,ASRock Fatal1ty Z170 Gaming K,ATX,1151,DDR4,64.0,251.99,Z170,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4717677326956_ASRock%20Fatal1ty%20Z170%20Gaming%20K4
-200,ASRock B360 Gaming K4 Fatal1t,ATX,1151,DDR4,64.0,295.99,B360,ASRock,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4717677335132_ASRock%20B360%20Gaming%20K4%20Fatal1ty
-608,ASUS PRIME X470-Pro,ATX,AM4,DDR4,64.0,339.99,X470,ASUS,4,1.0,0.0,5.0,2.0,1.0,0.0,0.0,1.0,0.0,3,0,"https://www.pc-kombo.com/us/product/mainboard/4712900935103_ASUS%20PRIME%20X470-Pro,%20AMD%20X470"
-1482,MSI X370 Gaming Pro Carbo,ATX,AM4,DDR4,64.0,234.99,X370,MSI,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4719072512224_MSI%20X370%20Gaming%20Pro%20Carbon
-219,ASRock B550 PG Velocit,ATX,AM4,DDR4,128.0,129.99,B550,ASRock,4,,1.0,2.0,2.0,,0.0,0.0,0.0,1.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4710483931550_ASRock%20B550%20PG%20Velocita
-377,ASRock Z390 M Pro,Micro-ATX,1151,DDR4,128.0,376.54,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677336801_ASRock%20Z390%20M%20Pro%204
-293,ASRock H310M-ITX/A,Mini-ITX,1151,DDR4,32.0,329.90250000000000,H310,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677335194_ASRock%20H310M-ITX_AC
-1164,Gigabyte Z170M-D3,Micro-ATX,1151,DDR4,64.0,283.265,Z170,Gigabyte,4,1.0,0.0,2.0,4.0,,1.0,1.0,0.0,1.0,3,0,https://www.pc-kombo.com/us/product/mainboard/4719331829292_Gigabyte%20Z170M-D3H
-297,ASRock H370M-ITX/A,Mini-ITX,1151,DDR4,32.0,236.6275,H370,ASRock,2,1.0,0.0,2.0,2.0,,0.0,0.0,1.0,2.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677335125_ASRock%20H370M-ITX_AC
-1489,MSI X470 Gaming Plus Max,ATX,AM4,DDR4,64.0,189.99,X470,MSI,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,2,0,"https://www.pc-kombo.com/us/product/mainboard/4719072667658_MSI%20X470%20Gaming%20Plus%20Max,%20AMD%20X470-,%20Sockel%20AM4"
-1381,MSI MAG B560M Morta,Micro-ATX,1200,DDR4,128.0,164.65333333333300,B560,MSI,4,1.0,1.0,,,,0.0,0.0,1.0,1.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4719072807832_MSI%20MAG%20B560M%20Mortar
-330,ASRock X370 Taichi,ATX,AM4,DDR4,64.0,139.31666666666700,X370,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,"https://www.pc-kombo.com/us/product/mainboard/4717677333121_ASRock%20X370%20Taichi,%20AMD%20X370"
-338,ASRock X570 Phantom Gaming 4,ATX,AM4,DDR4,128.0,113.98,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,1.0,1.0,0,4,"https://www.pc-kombo.com/us/product/mainboard/4717677338881_ASRock%20X570%20Phantom%20Gaming%204,%20AMD%20X570"
-294,ASRock H370 Performance Fatal1t,ATX,1151,DDR4,64.0,115.98333333333300,H370,ASRock,4,2.0,0.0,2.0,4.0,,0.0,0.0,1.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4717677335101_ASRock%20H370%20Performance%20Fatal1ty
-831,ASUS TUF B360-Plus Gamin,ATX,1151,DDR4,64.0,117.98666666666700,B360,ASUS,4,,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://www.pc-kombo.com/us/product/mainboard/4712900975321_ASUS%20TUF%20B360-Plus%20Gaming
-244,ASRock B660M-ITX/a,Mini-ITX,1700,DDR4,128.0,119.99,B660,ASRock,4,,1.0,2.0,,,0.0,0.0,1.0,1.0,0,1,https://www.pc-kombo.com/us/product/mainboard/4710483936920_ASRock%20B660M-ITX_ac
-302,ASRock H470 Phantom Gaming,ATX,1200,DDR4,128.0,144.515,H470,ASRock,4,1.0,,2.0,4.0,,0.0,0.0,1.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4710483931253_ASRock%20H470%20Phantom%20Gaming%204
-10,ASRock Fatal1ty B250M Performanc,Micro-ATX,1151,DDR4,64.0,169.04,B250,ASRock,4,1.0,0.0,3.0,2.0,1.0,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677332513_ASRock%20Fatal1ty%20B250M%20Performance
-124,MSI B360M Morta,Micro-ATX,1151,DDR4,64.0,193.565,B360,MSI,4,2.0,0.0,,2.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4719072562830_MSI%20B360M%20Mortar
-1457,MSI PRO B660M-G DDR,Micro-ATX,1700,DDR4,64.0,218.09,B660,MSI,2,,1.0,4.0,,,1.0,0.0,1.0,1.0,1,1,https://www.pc-kombo.com/us/product/mainboard/4719072912475_MSI%20PRO%20B660M-G%20DDR4
-987,Gigabyte AB350M-HD3,Micro-ATX,AM4,DDR4,32.0,186.05666666666700,B350,Gigabyte,2,1.0,0.0,4.0,,,0.0,0.0,0.0,0.0,2,0,"https://www.pc-kombo.com/us/product/mainboard/4719331801403_Gigabyte%20AB350M-HD3,%20AMD%20B350"
-453,Asus EX-B250-V,ATX,1151,DDR4,64.0,154.0233333333330,B250,Asus,4,,0.0,4.0,1.0,,,,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349795965_Asus%20EX-B250-V7
-222,ASRock B550 Pro,ATX,AM4,DDR4,128.0,121.99,B550,ASRock,4,,1.0,4.0,2.0,,0.0,0.0,0.0,0.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4710483931482_ASRock%20B550%20Pro4
-285,ASRock H170 PRO,ATX,1151,DDR4,64.0,140.2757142857140,H170,ASRock,4,1.0,0.0,6.0,2.0,,0.0,1.0,0.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4717677327021_ASRock%20H170%20PRO4
-1304,MSI B450 Gaming Plu,ATX,AM4,DDR4,64.0,158.56142857142900,B450,MSI,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719072587062_MSI%20B450%20Gaming%20Plus
-213,ASRock B460M Pro,Micro-ATX,1200,DDR4,128.0,176.84714285714300,B460,ASRock,4,1.0,,4.0,,1.0,1.0,0.0,0.0,1.0,3,0,https://www.pc-kombo.com/us/product/mainboard/4710483931161_ASRock%20B460M%20Pro4
-712,Asus ROG STRIX B250G GAMIN,ATX,1151,DDR4,64.0,195.13285714285700,B250,Asus,4,2.0,0.0,2.0,,,,1.0,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349663806_Asus%20ROG%20STRIX%20B250G%20GAMING
-1309,MSI B450M Gaming Plu,Micro-ATX,AM4,DDR4,32.0,213.4185714285710,B450,MSI,2,1.0,0.0,3.0,4.0,1.0,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719072587024_MSI%20B450M%20Gaming%20Plus
-210,ASRock B460 Phantom Gaming,ATX,1200,DDR4,128.0,231.7042857142860,B460,ASRock,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4710483931086_ASRock%20B460%20Phantom%20Gaming%204
-105,Gigabyte Z390 UD,ATX,1151,DDR4,128.0,249.99,Z390,Gigabyte,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719331804411_Gigabyte%20Z390%20UD
-984,Gigabyte AB350-Gaming 3,ATX,AM4,DDR4,64.0,169.99,B350,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,"https://www.pc-kombo.com/us/product/mainboard/4719331801281_Gigabyte%20AB350-Gaming%203,%20AMD%20B350"
-220,ASRock B550 Phantom Gaming,ATX,AM4,DDR4,128.0,89.99,B550,ASRock,4,,1.0,6.0,2.0,,0.0,0.0,0.0,1.0,3,1,https://www.pc-kombo.com/us/product/mainboard/4710483931499_ASRock%20B550%20Phantom%20Gaming%204
-621,Asus PRIME Z370-,ATX,1151,DDR4,64.0,381.49,Z370,Asus,4,2.0,0.0,4.0,2.0,,,1.0,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349853559_Asus%20PRIME%20Z370-P
-1050,Gigabyte B560M DS3,Micro-ATX,1200,DDR4,128.0,317.6566666666670,B560,Gigabyte,4,1.0,1.0,3.0,,1.0,1.0,1.0,1.0,1.0,2,1,https://www.pc-kombo.com/us/product/mainboard/4719331815400_Gigabyte%20B560M%20DS3H
-532,ASUS PRIME B360M-,Micro-ATX,1151,DDR4,32.0,253.82333333333300,B360,ASUS,2,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4712900989502_ASUS%20PRIME%20B360M-K
-460,Asus H110M-,ATX,1151,DDR4,32.0,189.99,H110,Asus,2,,0.0,2.0,1.0,,1.0,1.0,,,0,0,https://www.pc-kombo.com/us/product/mainboard/0889349191682_Asus%20H110M-K
-529,ASUS PRIME B360M-,Micro-ATX,1151,DDR4,64.0,172.375,B360,ASUS,4,2.0,0.0,,2.0,1.0,0.0,0.0,0.0,1.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4712900984361_ASUS%20PRIME%20B360M-A
-5,ASRock B360M Pro,Micro-ATX,1151,DDR4,64.0,154.76,B360,ASRock,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://www.pc-kombo.com/us/product/mainboard/4717677335149_ASRock%20B360M%20Pro4
-1264,MSI B150 PC Mat,ATX,1151,DDR4,64.0,137.145,B150,MSI,4,0.0,0.0,4.0,2.0,,1.0,1.0,0.0,1.0,5,0,https://www.pc-kombo.com/us/product/mainboard/4719072413811_MSI%20B150%20PC%20Mate
-40,ASUS PRIME B250M-,Micro-ATX,1151,DDR4,64.0,119.53,B250,ASUS,4,1.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,3,0,https://www.pc-kombo.com/us/product/mainboard/4712900572056_ASUS%20PRIME%20B250M-A
-560,ASUS PRIME H310M-,Micro-ATX,1151,DDR4,32.0,101.91500000000000,H310,ASUS,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4712900906608_ASUS%20PRIME%20H310M-A
-209,ASRock B450M-HDV R4.0,Micro-ATX,AM4,DDR4,32.0,84.3,B450,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,1,0,"https://www.pc-kombo.com/us/product/mainboard/4717677337617_ASRock%20B450M-HDV%20R4.0,%20AMD%20B450"
-314,ASRock H81 PRO BTC R2.,ATX,1150,DDR3,16.0,77.145,H81,ASRock,2,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677323368_ASRock%20H81%20PRO%20BTC%20R2.0
-1260,MSI A520M-A Pr,Micro-ATX,AM4,DDR4,64.0,69.99,A520,MSI,2,1.0,,4.0,2.0,,0.0,1.0,0.0,1.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4719072749927_MSI%20A520M-A%20Pro
-82,Gigabyte B450 Aorus M,Micro-ATX,AM4,DDR4,64.0,200.59,B450,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,2,0,"https://www.pc-kombo.com/us/product/mainboard/4719331803858_Gigabyte%20B450%20Aorus%20M,%20AMD%20B450"
-459,ASUS H110M-,Micro-ATX,1151,DDR4,32.0,189.99,H110,ASUS,2,,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4712900263374_ASUS%20H110M-K
-482,ASUS M5A78L-M LX3 GL/SATA300/CF/VGA 760,ATX,AM3+,DDR3,32.0,174.99,760G,Asus,2,,0.0,,,,,,,,0,0,https://www.pc-kombo.com/us/product/mainboard/4719543185469_ASUS%20M5A78L-M%20LX3%20GL_SATA300_CF_VGA%20760G
-208,ASRock B450M-HD,Micro-ATX,AM4,DDR4,32.0,159.99,B450,ASRock,2,1.0,0.0,4.0,,,0.0,0.0,0.0,1.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677336207_ASRock%20B450M-HDV
-177,ASRock 970M Pro,ATX,AM3+,DDR3,64.0,99.99,970,ASRock,4,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4717677325775_ASRock%20970M%20Pro3
-78,Gigabyte B360M DS3,Micro-ATX,1151,DDR4,64.0,93.32,B360,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,3,0,https://www.pc-kombo.com/us/product/mainboard/4719331802806_Gigabyte%20B360M%20DS3H
-422,Asus A68HM-PLU,ATX,FM2+,DDR3,32.0,86.65,A68H FCH (Bolton D2H),Asus,2,,0.0,2.0,1.0,,1.0,1.0,,1.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4716659949398_Asus%20A68HM-PLUS
-1006,Gigabyte B250-FinTech 11+1 BTC Editio,ATX,1151,DDR4,64.0,79.98,B250,Gigabyte,4,,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,12,0,https://www.pc-kombo.com/us/product/mainboard/0889523012437_Gigabyte%20B250-FinTech%2011+1%20BTC%20Edition
-298,ASRock H410M-HD,Micro-ATX,1200,DDR4,64.0,78.535,H410,ASRock,2,,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://www.pc-kombo.com/us/product/mainboard/4710483931246_ASRock%20H410M-HDV
-973,Gigabyte 970A-DS3,ATX,AM3+,DDR3,32.0,77.09,970,Gigabyte,4,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4719331814229_Gigabyte%20970A-DS3P
-1355,MSI H310M Pro-M,Micro-ATX,1151,DDR4,32.0,75.64500000000000,H310,MSI,2,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4719072562908_MSI%20H310M%20Pro-M2
-1256,MSI A320M-A Pro,Micro-ATX,AM4,DDR4,32.0,74.2,A320,MSI,2,,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,"https://www.pc-kombo.com/us/product/mainboard/4719072663889_MSI%20A320M-A%20Pro,%20Sockel%20AM4"
-291,ASRock H310M-DG,Micro-ATX,1151,DDR4,32.0,74.2,H310,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677335224_ASRock%20H310M-DGS
-180,ASRock A320,Micro-ATX,AM4,DDR4,32.0,74.2,A320,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677333206_ASRock%20A320M
-13,ASRock H110M-HD,Micro-ATX,1151,DDR4,32.0,74.2,H110,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677329261_ASRock%20H110M-HDS
-184,ASRock A320M-DG,Micro-ATX,AM4,DDR4,32.0,74.2,A320,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://www.pc-kombo.com/us/product/mainboard/4717677333237_ASRock%20A320M-DGS
-1303,MSI B365M Pro-VH,Micro-ATX,1151,DDR4,32.0,74.2,B365,MSI,2,1.0,0.0,4.0,1.0,,0.0,0.0,0.0,1.0,3,0,"https://www.pc-kombo.com/us/product/mainboard/4719072622749_MSI%20B365M%20Pro-VH,%20Sockel%201151"
-483,ASUS M5A78L-M PLUS/USB,ATX,AM3+,DDR3,32.0,74.2,760G,ASUS,4,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://www.pc-kombo.com/us/product/mainboard/4712900413083_ASUS%20M5A78L-M%20PLUS_USB3
+#,name,from_factor,socket,memory_type,memory_max_capacity,price,chipset,producer,ram_slots,m.2 pci-e 3.0,m.2 pci-e 4.0,usb 3 slots,usb 3 headers,usb 3 type-c,vga,dvi,display port,hdmi,pci-e 3.0,pci-e 4.0,external_image
+1,ASRock 970M Pro,ATX,AM3+,DDR3,64.0,64.99,970,ASRock,4,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/c68e404396c1365b98c3bdce95f0fecd.256p.jpg
+2,ASRock A320,Micro-ATX,AM4,DDR4,32.0,53.99,A320,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/abfdc9b2e8b4d216dc16591fd8423bc5.256p.jpg
+3,ASRock A320M-DG,Micro-ATX,AM4,DDR4,32.0,49.99,A320,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/e9bd979af5ffc26f1a250223b25050e2.256p.jpg
+4,ASRock B360 Gaming K4 Fatal1t,ATX,1151,DDR4,64.0,119.99,B360,ASRock,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/57e3b574940a31a818a28b8f6ae9da63.256p.jpg
+5,ASRock B360M Pro,Micro-ATX,1151,DDR4,64.0,77.99,B360,ASRock,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/889a1ee3950310c96b9e93d19cc030d4.256p.jpg
+6,ASRock B450M-HD,Micro-ATX,AM4,DDR4,32.0,64.99,B450,ASRock,2,1.0,0.0,4.0,,,0.0,0.0,0.0,1.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/2b2897ac0de148a2935c3277573131b3.256p.jpg
+7,ASRock B450M-HDV R4.0,Micro-ATX,AM4,DDR4,32.0,71.99,B450,ASRock,2,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/2b2897ac0de148a2935c3277573131b3.256p.jpg
+8,ASRock B460 Phantom Gaming,ATX,1200,DDR4,128.0,89.99,B460,ASRock,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/c260f3f95ce3c6ef17b2ffcdd4bbca2e.256p.jpg
+9,ASRock B460M Pro,Micro-ATX,1200,DDR4,128.0,92.99,B460,ASRock,4,1.0,,4.0,,1.0,1.0,0.0,0.0,1.0,3,0,https://cdna.pcpartpicker.com/static/forever/images/product/edcc1e5a839a1e5dcbd02b39fbc6a193.256p.jpg
+10,ASRock B550 PG Velocit,ATX,AM4,DDR4,128.0,118.99,B550,ASRock,4,,1.0,2.0,2.0,,0.0,0.0,0.0,1.0,3,1,https://m.media-amazon.com/images/I/51TSL-pmMOL.jpg
+11,ASRock B550 Phantom Gaming,ATX,AM4,DDR4,128.0,84.99,B550,ASRock,4,,1.0,6.0,2.0,,0.0,0.0,0.0,1.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/916a6391766f1cfa419a70e439faf4ab.256p.jpg
+12,ASRock B550 Pro,ATX,AM4,DDR4,128.0,97.99,B550,ASRock,4,,1.0,4.0,2.0,,0.0,0.0,0.0,0.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/9c582991edb4ccf7cdaaab81543bf668.256p.jpg
+13,ASRock B550M-ITX/a,Mini-ITX,AM4,DDR4,64.0,129.99,B550,ASRock,2,,1.0,3.0,2.0,1.0,0.0,0.0,0.0,1.0,0,1,https://m.media-amazon.com/images/I/515LtxB77aL.jpg
+14,ASRock B650 Live Mixe,ATX,AM5,DDR5,128.0,229.99,B650,ASRock,4,,2.0,4.0,,,0.0,0.0,1.0,1.0,1,2,https://cdna.pcpartpicker.com/static/forever/images/product/9dff4993915c579be209e4744adccb62.256p.jpg
+15,ASRock B650M PG Riptid,Micro-ATX,AM5,DDR5,128.0,169.99,B650E,ASRock,4,,1.0,2.0,,,0.0,0.0,1.0,1.0,0,2,https://cdna.pcpartpicker.com/static/forever/images/product/6df39531014dfa084ccce11055f42764.256p.jpg
+16,ASRock B660M-ITX/a,Mini-ITX,1700,DDR4,128.0,101.99,B660,ASRock,4,,1.0,2.0,,,0.0,0.0,1.0,1.0,0,1,https://cdna.pcpartpicker.com/static/forever/images/product/f799abb73653b256f1bebb87d30f9468.256p.jpg
+17,ASRock Fatal1ty B250M Performanc,Micro-ATX,1151,DDR4,64.0,99.99,B250,ASRock,4,1.0,0.0,3.0,2.0,1.0,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/b62834b0f74155382d2f7bed3ae6c2cd.256p.jpg
+18,ASRock Fatal1ty H270 Performanc,ATX,1151,DDR4,64.0,140.37,H270,ASRock,4,0.0,0.0,3.0,4.0,1.0,0.0,0.0,0.0,0.0,6,0,https://images-eu.ssl-images-amazon.com/images/I/51eletx8U0L.jpg
+19,ASRock Fatal1ty Z170 Gaming K,ATX,1151,DDR4,64.0,119.99,Z170,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/c0a7817c066c8b6c84d65f32e93a828b.256p.jpg
+20,ASRock H110M-HD,Micro-ATX,1151,DDR4,32.0,51.99,H110,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/51+ESS2plnL.jpg
+21,ASRock H170 PRO,ATX,1151,DDR4,64.0,94.99,H170,ASRock,4,1.0,0.0,6.0,2.0,,0.0,1.0,0.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/b7705d433eab3cfe054b1bb1e268a293.256p.jpg
+22,ASRock H310M-DG,Micro-ATX,1151,DDR4,32.0,54.78,H310,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/51f4742221c569a312985a093dd94981.256p.jpg
+23,ASRock H310M-ITX/A,Mini-ITX,1151,DDR4,32.0,112.99,H310,ASRock,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/49a10e8b1af1f86d688cf7c1cf5866a4.256p.jpg
+24,ASRock H370 Performance Fatal1t,ATX,1151,DDR4,64.0,104.99,H370,ASRock,4,2.0,0.0,2.0,4.0,,0.0,0.0,1.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/c25612ee373e8caa112cee2a13a53778.256p.jpg
+25,ASRock H370M-ITX/A,Mini-ITX,1151,DDR4,32.0,109.99,H370,ASRock,2,1.0,0.0,2.0,2.0,,0.0,0.0,1.0,2.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/299c652b7d20190b6928b03e9e8507df.256p.jpg
+26,ASRock H410M-HD,Micro-ATX,1200,DDR4,64.0,59.99,H410,ASRock,2,,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/1d7702d2e925a800b955ba13ffc910fd.256p.jpg
+27,ASRock H470 Phantom Gaming,ATX,1200,DDR4,128.0,99.99,H470,ASRock,4,1.0,,2.0,4.0,,0.0,0.0,1.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/383a970abc71794caed4efbd404b76b8.256p.jpg
+28,ASRock H470M-ITX/a,Mini-ITX,1200,DDR4,64.0,119.99,H470,ASRock,2,1.0,,1.0,2.0,1.0,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/51jo5pBGcNL.jpg
+29,ASRock H81 PRO BTC R2.,ATX,1150,DDR3,16.0,69.99,H81,ASRock,2,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://m.media-amazon.com/images/I/51C8EEf6sfL.jpg
+30,ASRock X299 Gaming i,ATX,2066,DDR4,128.0,339.99,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/417jkaDUMWL.jpg
+31,ASRock X299 OC Formul,ATX,2066,DDR4,64.0,399.99,X299,ASRock,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://images-eu.ssl-images-amazon.com/images/I/61y9ULMm6rL.jpg
+32,ASRock X299 Taich,ATX,2066,DDR4,128.0,299.99,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/51NLaiOeZjL.jpg
+33,ASRock X299 Taichi X,ATX,2066,DDR4,128.0,322.99,X299,ASRock,8,3.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/e34a6c68207261bd78351a7fee6f5a3a.256p.jpg
+34,ASRock X370 Taichi,ATX,AM4,DDR4,64.0,109.99,X370,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://images-eu.ssl-images-amazon.com/images/I/61dWxjTPSJL.jpg
+35,ASRock X399 Taich,ATX,TR4,DDR4,128.0,296.99,X399,ASRock,8,3.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/61-HgNyrhKL.jpg
+36,ASRock X470 Master SL,ATX,AM4,DDR4,64.0,134.99,X470,ASRock,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/1e55d46e97ca6759c77c6ee07b4f3efa.256p.jpg
+37,ASRock X570 Aqua,E-ATX,AM4,DDR4,128.0,999.99,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,0,3,https://cdna.pcpartpicker.com/static/forever/images/product/d7893755609db1feb833c99ad9d243bf.256p.jpg
+38,ASRock X570 Extreme4,ATX,AM4,DDR4,128.0,203.99,X570,ASRock,4,2.0,0.0,6.0,5.0,,0.0,0.0,0.0,1.0,0,5,https://cdna.pcpartpicker.com/static/forever/images/product/2d1b2aac65d64d9f823e33f0680fa5c3.256p.jpg
+39,ASRock X570 Phantom Gaming 4,ATX,AM4,DDR4,128.0,105.99,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,1.0,1.0,0,4,https://m.media-amazon.com/images/I/51wxYWXoUtL.jpg
+40,ASRock X570 Pro4,ATX,AM4,DDR4,128.0,160.99,X570,ASRock,4,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,1.0,0,4,https://cdna.pcpartpicker.com/static/forever/images/product/75e744946902a18df556c10f40ccbb35.256p.jpg
+41,ASRock X570 Taichi,ATX,AM4,DDR4,128.0,218.99,X570,ASRock,4,3.0,0.0,6.0,2.0,,0.0,0.0,0.0,1.0,0,5,https://cdna.pcpartpicker.com/static/forever/images/product/a43cfe6b3deca519ea05604568cb0b4b.256p.jpg
+42,ASRock X670E PG Lightnin,ATX,AM5,DDR5,128.0,248.99,X670E,ASRock,4,1.0,1.0,6.0,,,0.0,0.0,1.0,1.0,0,3,https://m.media-amazon.com/images/I/51ByrFiyxXL.jpg
+43,ASRock X670E Taichi Carrar,E-ATX,AM5,DDR5,128.0,519.99,X670E,ASRock,4,,1.0,3.0,,,0.0,0.0,0.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/4512c53464fa2014ed6a597b4fe41e00.256p.jpg
+44,ASRock Z270 Killer SL,ATX,1151,DDR4,64.0,127.99,Z270,ASRock,4,2.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/61036e98987f7d01afc7744a87620d8f.256p.jpg
+45,ASRock Z270M-ITX/a,Mini-ITX,1151,DDR4,32.0,121.35,Z270,ASRock,2,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/51sWl0a+JyL.jpg
+46,ASRock Z370 Extreme,ATX,1151,DDR4,64.0,150.25,Z370,ASRock,4,2.0,0.0,4.0,5.0,,0.0,0.0,0.0,0.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/733aae698bf410958b6a10a7ef613474.256p.jpg
+47,ASRock Z370 Pro,ATX,1151,DDR4,64.0,134.75,Z370,ASRock,4,2.0,0.0,5.0,2.0,1.0,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/9e1eb50ed97ad182aa5c4d460b820a3e.256p.jpg
+48,ASRock Z390 M Pro,Micro-ATX,1151,DDR4,128.0,114.99,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/fe7360c2156ea7e8b97b8908212fa2fa.256p.jpg
+49,ASRock Z390 Phantom Gaming-ITX/AC,Mini-ITX,1151,DDR4,64.0,161.99,Z390,ASRock,2,,0.0,,,,0.0,0.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/67a230012ab18b09bd99ed50683169d8.256p.jpg
+50,ASRock Z390 Taich,ATX,1151,DDR4,128.0,195.99,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/33ba1abe454ebfee3c2903bb1fecb58c.256p.jpg
+51,ASRock Z390 Taichi Ultimate,ATX,1151,DDR4,128.0,254.99,Z390,ASRock,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/b9dbdf86ba704c89b45fe590f7164a74.256p.jpg
+52,ASRock Z390M-ITX/AC,Mini-ITX,1151,DDR4,64.0,149.99,Z390,ASRock,2,,0.0,,,,0.0,0.0,1.0,2.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/9a6193f19335e71283c5158089c0225a.256p.jpg
+53,ASRock Z490 Aqu,E-ATX,1200,DDR4,128.0,1030.99,Z490,ASRock,4,2.0,,4.0,,,0.0,0.0,0.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/d7893755609db1feb833c99ad9d243bf.256p.jpg
+54,ASRock Z490 Extreme,ATX,1200,DDR4,128.0,189.99,Z490,ASRock,4,2.0,0.0,2.0,1.0,,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/c755830f28d0dab51a56165e922cb6d1.256p.jpg
+55,ASRock Z490 Phantom Gaming-ITX/TB,Mini-ITX,1200,DDR4,64.0,279.99,Z490,ASRock,2,2.0,,2.0,,,0.0,0.0,1.0,1.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/f0e3f73ddbb1fba3927c9afb843563d9.256p.jpg
+56,ASRock Z490 Pro,ATX,1200,DDR4,128.0,169.99,Z490,ASRock,4,2.0,0.0,2.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/24cc66652169bc811f7a8e3cd5a0c5c2.256p.jpg
+57,ASRock Z590M-ITX/a,Mini-ITX,1200,DDR4,64.0,169.99,Z590,ASRock,2,1.0,1.0,,,,0.0,0.0,1.0,1.0,0,1,https://cdna.pcpartpicker.com/static/forever/images/product/c554e90d4fd5bacfcec80e716ee6b307.256p.jpg
+58,ASRock Z790 PG Lightning/D,ATX,1700,DDR4,128.0,169.99,Z790,ASRock,4,,1.0,5.0,,,0.0,0.0,0.0,1.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/734e5145e6e94b381114913f48776a44.256p.jpg
+59,ASRock Z790M PG Lightning/D,Micro-ATX,1700,DDR4,128.0,179.99,Z790,ASRock,4,,1.0,4.0,,,0.0,0.0,0.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/38ea337431522ff4c9546f5aabff3cfb.256p.jpg
+60,Asus A68HM-PLU,ATX,FM2+,DDR3,32.0,61.01,A68H FCH (Bolton D2H),Asus,2,,0.0,2.0,1.0,,1.0,1.0,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/6b616f0847a67568d3a2bb6716f4547d.256p.jpg
+61,Asus EX-B250-V,ATX,1151,DDR4,64.0,98.65,B250,Asus,4,,0.0,4.0,1.0,,,,,1.0,0,0,https://static/forever/img/no-image.png
+62,Asus H110M-A,ATX,1151,DDR4,32.0,77.99,H110,Asus,2,,0.0,2.0,1.0,,1.0,1.0,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/71fdafdc764e65c147d537c0a0879451.256p.jpg
+63,Asus H110M-K,Micro-ATX,1151,DDR4,32.0,69.49,H110,ASUS,2,,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/71fdafdc764e65c147d537c0a0879451.256p.jpg
+64,ASUS M5A78L-M LX3 GL/SATA300/CF/VGA 760,ATX,AM3+,DDR3,32.0,68.51,760G,Asus,2,,0.0,,,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/dbea9f0869ed225cc821021f828686af.256p.jpg
+65,ASUS M5A78L-M PLUS/USB,ATX,AM3+,DDR3,32.0,35.99,760G,ASUS,4,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://m.media-amazon.com/images/I/61myntEMJSL.jpg
+66,Asus MAXIMUS VIII IMPAC,Mini-ITX,1151,DDR4,32.0,233.99,Z170,Asus,2,,0.0,4.0,1.0,,,,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/ec7b1e77bc3475629ed801705a095683.256p.jpg
+67,ASUS PRIME B250M-A,Micro-ATX,1151,DDR4,64.0,75,B250,ASUS,4,1.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,0.0,3,0,https://cdna.pcpartpicker.com/static/forever/images/product/6e76819a78e944edd5487451219d1f7d.256p.jpg
+68,ASUS PRIME B360M-M,Micro-ATX,1151,DDR4,32.0,81.39,B360,ASUS,2,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/9b3ca7e00f3482f627f6a30446983a73.256p.jpg
+69,ASUS PRIME B360M-A Plus,Micro-ATX,1151,DDR4,64.0,77.99,B360,ASUS,4,2.0,0.0,,2.0,1.0,0.0,0.0,0.0,1.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/9b3ca7e00f3482f627f6a30446983a73.256p.jpg
+70,ASUS PRIME H310M,Micro-ATX,1151,DDR4,32.0,72.99,H310,ASUS,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/76bb8c8dce1eb23094986ef859fdbc3d.256p.jpg
+71,Asus PRIME X299,ATX,2066,DDR4,128.0,289.99,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/6087cb093f1f38b2d8a264815a3b6d24.256p.jpg
+72,ASUS PRIME X470-Pro,ATX,AM4,DDR4,64.0,118.99,X470,ASUS,4,1.0,0.0,5.0,2.0,1.0,0.0,0.0,1.0,0.0,3,0,https://cdna.pcpartpicker.com/static/forever/images/product/f53a232186a58d1d9f0e2d678c8cee6c.256p.jpg
+73,Asus PRIME Z270-K,ATX,1151,DDR4,64.0,155.99,Z270,Asus,4,2.0,0.0,2.0,2.0,1.0,1.0,1.0,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/49e1f3750f0a0bf64a4d6d60d9eb0e06.256p.jpg
+74,Asus PRIME Z270-A,ATX,1151,DDR4,64.0,159,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/49e1f3750f0a0bf64a4d6d60d9eb0e06.256p.jpg
+75,Asus PRIME Z370-P,ATX,1151,DDR4,64.0,42.99,Z370,Asus,4,2.0,0.0,2.0,2.0,,,1.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/9a240bb5d6455883bbf45e134a11faae.256p.jpg
+76,Asus PRIME Z370-AR,ATX,1151,DDR4,64.0,79.99,Z370,Asus,4,2.0,0.0,4.0,2.0,,,1.0,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/9a240bb5d6455883bbf45e134a11faae.256p.jpg
+77,ASUS ProArt Z690-CREATOR WIF,ATX,1700,DDR5,128.0,413.99,Z690,ASUS,4,,1.0,,,,0.0,0.0,2.0,1.0,1,0,https://m.media-amazon.com/images/I/51AEhpTZ0lL.jpg
+78,ASUS ROG Crosshair VI HERO (WI-FI AC,ATX,AM4,DDR4,64.0,149.99,X370,ASUS,4,1.0,0.0,8.0,1.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/918573bf9d925e5a1a502dc355dfce8a.256p.jpg
+79,ASUS ROG Crosshair VIII Hero,ATX,AM4,DDR4,128.0,339.99,X570,ASUS,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,0,4,https://cdna.pcpartpicker.com/static/forever/images/product/9b0c678ccf7522e6ad454d3976a2e174.256p.jpg
+80,Asus ROG MAXIMUS IX HER,ATX,1151,DDR4,64.0,229,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/bd930594ee70d733230e5813b9705713.256p.jpg
+81,Asus ROG MAXIMUS X APE,E-ATX,1151,DDR4,32.0,203.99,Z370,Asus,2,,0.0,6.0,1.0,,,,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/80b32a9297a056829256eee2b79dd1be.256p.jpg
+82,ASUS ROG MAXIMUS X HERO Wi-F,ATX,1151,DDR4,64.0,259.65,Z370,ASUS,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/16dd581ff37796dc1d495e5677fa4232.256p.jpg
+83,ASUS ROG Maximus XI COD,ATX,1151,DDR4,64.0,349.99,Z390,ASUS,4,2.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/51GB8EH72GL.jpg
+84,ASUS ROG Maximus XI Extreme,E-ATX,1151,DDR4,128.0,501.99,Z390,ASUS,4,4.0,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/6a45961f93b08aa060b7aa30cdb2e2fc.256p.jpg
+85,ASUS ROG Maximus XI FORMUL,ATX,1151,DDR4,64.0,379.99,Z390,ASUS,4,2.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/51Da8b0-5+L.jpg
+86,Asus ROG RAMPAGE VI EXTREM,E-ATX,2066,DDR4,128.0,529.99,X299,Asus,8,1.0,0.0,8.0,,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/bae0fc57aca53db6a45f3c5cf0833ecc.256p.jpg
+87,ASUS ROG Rampage VI Extreme OMEG,E-ATX,2066,DDR4,128.0,799,X299,ASUS,8,2.0,0.0,10.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/3eba93ceb2598cecf71489ab01b4f0dc.256p.jpg
+88,Asus ROG STRIX B250G GAMIN,ATX,1151,DDR4,64.0,90.88,B250,Asus,4,2.0,0.0,2.0,,,,1.0,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/f6318e2df8e0ae409c9e8a832ca5507f.256p.jpg
+89,ASUS ROG Strix B360-F Gamin,ATX,1151,DDR4,64.0,133.6,B360,ASUS,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/7572eeea96c79fbe15b9d03d0190b7ac.256p.jpg
+90,ASUS ROG Strix B360-G Gamin,Micro-ATX,1151,DDR4,64.0,138,B360,ASUS,4,1.0,0.0,2.0,,,0.0,0.0,0.0,1.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/cfff498455e6d432e9d1d3520c4237c9.256p.jpg
+91,Asus ROG STRIX B450-I GAMIN,Mini-ITX,AM4,DDR4,32.0,134.99,B450,Asus,2,2.0,0.0,4.0,,,,,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/d16e04d394d588e9045d587653cad761.256p.jpg
+92,ASUS ROG Strix B450-I Gaming,Mini-ITX,AM4,DDR4,32.0,134.99,B450,ASUS,2,2.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/d16e04d394d588e9045d587653cad761.256p.jpg
+93,Asus ROG STRIX X299-XE GAMIN,ATX,2066,DDR4,128.0,206.99,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://m.media-amazon.com/images/I/51wg-mssDiL.jpg
+94,Asus ROG STRIX X99 GAMIN,ATX,2011-v3,DDR4,128.0,280.85,X99,Asus,8,1.0,0.0,4.0,2.0,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/a45700d68843793df6eb94a370c72c04.256p.jpg
+95,Asus ROG STRIX Z270F GAMIN,ATX,1151,DDR4,64.0,148.36,Z270,Asus,4,2.0,0.0,4.0,1.0,,,1.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/c50914f6d3a6ed5677cf24d113be5753.256p.jpg
+96,Asus ROG STRIX Z270G GAMIN,ATX,1151,DDR4,64.0,239.99,Z270,Asus,4,2.0,0.0,4.0,1.0,,,,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/c50914f6d3a6ed5677cf24d113be5753.256p.jpg
+97,Asus ROG STRIX Z370-F GAMIN,ATX,1151,DDR4,64.0,161.99,Z370,Asus,4,2.0,0.0,2.0,,,,1.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/c1cd0f33ae4b8b6a4d4fea1892abfe7d.256p.jpg
+98,ASUS ROG Strix Z390-F Gaming,ATX,1151,DDR4,128.0,209.99,Z390,ASUS,4,,0.0,,,,0.0,0.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/6ea4c987730f1af0c4819fa9065b52ef.256p.jpg
+99,ASUS ROG STRIX Z690-A GAMING WIFI D,ATX,1700,DDR4,128.0,264.99,Z690,ASUS,4,,1.0,4.0,,,0.0,0.0,1.0,1.0,1,1,https://m.media-amazon.com/images/I/519+E97-55L.jpg
+100,Asus SABERTOOTH X9,ATX,2011-v3,DDR4,64.0,348.13,X99,Asus,8,,0.0,4.0,2.0,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/d574199cf6a6b312c3b5fc127b286da4.256p.jpg
+101,ASUS TUF B360-Plus Gamin,ATX,1151,DDR4,64.0,101.99,B360,ASUS,4,,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/66cf6b59c9ea67d960fc746ff1a008e6.256p.jpg
+102,ASUS TUF GAMING Z690-PLUS WIFI D,ATX,1700,DDR4,128.0,264.99,Z690,ASUS,4,1.0,3.0,4.0,,,0.0,0.0,1.0,1.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/f6a3e400c28a84d7add7dabc7f5cbd6a.256p.jpg
+103,Asus TUF X299 MARK,ATX,2066,DDR4,128.0,220.99,X299,Asus,8,2.0,0.0,4.0,2.0,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/941197f5362d1d91da5bef98e579be50.256p.jpg
+104,ASUS TUF X470-Plus Gamin,ATX,AM4,DDR4,64.0,134.99,X470,ASUS,4,1.0,0.0,2.0,4.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/8f9c4e5a54a474f18e509d3e1e2a286a.256p.jpg
+105,ASUS WS X299 SAG,CEB,2066,DDR4,128.0,517.99,X299,ASUS,8,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,7,0,https://cdna.pcpartpicker.com/static/forever/images/product/a2d655edb1c4313bdbee87b9ff2283bb.256p.jpg
+106,Asus X99-DELUXE I,ATX,2011-v3,DDR4,128.0,299.99,X99,Asus,8,1.0,0.0,4.0,2.0,,,,,,0,0,https://m.media-amazon.com/images/I/61IVxO7sH+L.jpg
+107,ASUS X99-E WS USB 3.,"XL-ATX, CEB",2011-V3,DDR4,128.0,472.47,X99,ASUS,8,1.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,7,0,https://m.media-amazon.com/images/I/519yXEKlPhL.jpg
+108,Asus Z170-,ATX,1151,DDR4,64.0,148.49,Z170,Asus,4,1.0,0.0,2.0,2.0,,1.0,1.0,1.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/275bd01f746af921f9739489bb235716.256p.jpg
+109,EVGA Z370 Classified,ATX,1151,DDR4,64.0,205.99,Z370,EVGA,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/42cd79f1126a2f5d1c58ceb748367c46.256p.jpg
+110,Gigabyte 970-Gaming,ATX,AM3+,DDR3,32.0,127.46,970,Gigabyte,4,0.0,0.0,2.0,1.0,,0.0,0.0,0.0,0.0,2,0,https://m.media-amazon.com/images/I/61zld73TszL.jpg
+111,Gigabyte 970A-DS3,ATX,AM3+,DDR3,32.0,59.99,970,Gigabyte,4,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,0,0,https://images-na.ssl-images-amazon.com/images/I/61Sy5pQ9YPL.jpg
+112,Gigabyte 990FX-Gamin,ATX,"AM3, AM3+",DDR3,32.0,124.28,990FX,Gigabyte,4,0.0,0.0,2.0,,,0.0,0.0,0.0,0.0,0,0,https://m.media-amazon.com/images/I/611iRc-Uj7L.jpg
+113,Gigabyte AB350-Gaming 3,ATX,AM4,DDR4,64.0,84.99,B350,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/51IFLBU8jpL.jpg
+114,Gigabyte AB350M-HD3,Micro-ATX,AM4,DDR4,32.0,99.15,B350,Gigabyte,2,1.0,0.0,4.0,,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/7ab99a71bf0ed32723e7455cefff30a3.256p.jpg
+115,Gigabyte Aorus X299-Gaming,ATX,2066,DDR4,128.0,438.62,X299,Gigabyte,8,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://m.media-amazon.com/images/I/51z9ptmwyJL.jpg
+116,Gigabyte Aorus Z270X-Gaming,ATX,1151,DDR4,64.0,422.58,Z270,Gigabyte,4,0.0,0.0,5.0,4.0,,0.0,0.0,0.0,0.0,6,0,https://static/forever/img/no-image.png
+117,Gigabyte AX370-Gaming 5,ATX,AM4,DDR4,64.0,189.98,X370,Gigabyte,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://m.media-amazon.com/images/I/51TaP-OIwEL.jpg
+118,Gigabyte B250-FinTech 11+1 BTC Editio,ATX,1151,DDR4,64.0,59.99,B250,Gigabyte,4,,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,12,0,https://cdna.pcpartpicker.com/static/forever/images/product/f52a9a0b2a28f096b5b1e5bf02707224.256p.jpg
+119,Gigabyte B360M DS3,Micro-ATX,1151,DDR4,64.0,63.99,B360,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,3,0,https://m.media-amazon.com/images/I/51CbQdmpitL.jpg
+120,Gigabyte B450 Aorus M,Micro-ATX,AM4,DDR4,64.0,69.99,B450,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/9c229eef9d9724da36a40412ab564c17.256p.jpg
+121,Gigabyte B550M Aorus Pro,Micro-ATX,AM4,DDR4,128.0,129.99,B550,Gigabyte,4,1.0,1.0,4.0,,,0.0,0.0,1.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/6ee60c91fb16b4bddf49fc49cd080a16.256p.jpg
+122,Gigabyte B560M DS3,Micro-ATX,1200,DDR4,128.0,81.99,B560,Gigabyte,4,1.0,1.0,3.0,,1.0,1.0,1.0,1.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/0deb2420299098824fb58d364339023b.256p.jpg
+123,GIGABYTE B650M DS3,Micro-ATX,AM5,DDR5,128.0,119.99,B650,Gigabyte,4,,2.0,2.0,,,0.0,0.0,2.0,1.0,1,1,https://cdna.pcpartpicker.com/static/forever/images/product/c2e7c6c86640a343fb44ae052217c200.256p.jpg
+124,Gigabyte B660 Gaming X AX DDR,ATX,1700,DDR4,128.0,179.99,B660,Gigabyte,4,1.0,2.0,2.0,,,0.0,0.0,1.0,1.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/5f39595e6f270ae24f1c00748cdde442.256p.jpg
+125,Gigabyte F2A88XN-WIF,Mini-ITX,FM2+,DDR3,64.0,320.58,A88X,Gigabyte,2,0.0,0.0,2.0,2.0,,0.0,1.0,0.0,2.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/fce1de593608054d0dcd9809337556b6.256p.jpg
+126,Gigabyte GA-Z97M-D3H GL/USB3.0/HDMI/DVI/VGA Z9,Micro-ATX,1150,DDR3,32.0,1180.05,Z97,Gigabyte,4,,0.0,,,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/120239b1f4c3294414d2dcb5378131ce.256p.jpg
+127,Gigabyte H110M-S2H,Micro-ATX,1151,DDR4,32.0,127.36,H110,Gigabyte,2,0.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/1350738cae4c916ffc39bf2c9527b9d2.256p.jpg
+128,Gigabyte H470 HD3,ATX,1200,DDR4,128.0,129.99,H470,Gigabyte,4,,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/bf591dd3ae7eac4208add36ab4158361.256p.jpg
+129,Gigabyte TRX40 Aorus Maste,E-ATX,TRX40,DDR4,256.0,479.99,TRX40,Gigabyte,8,3.0,0.0,,4.0,,0.0,0.0,0.0,0.0,0,4,https://cdna.pcpartpicker.com/static/forever/images/product/0262d145d764aadb9c60889ad23605ac.256p.jpg
+130,Gigabyte X299 UD,ATX,2066,DDR4,128.0,212.11,X299,Gigabyte,8,2.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://m.media-amazon.com/images/I/61C62peknDL.jpg
+131,Gigabyte X299X Aorus Maste,E-ATX,2066,DDR4,256.0,410.4,X299,Gigabyte,8,3.0,0.0,6.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/fa2e06a333db47bdeb767e8571bf91b4.256p.jpg
+132,Gigabyte X299X Designare 10,E-ATX,2066,DDR4,256.0,574.99,X299,Gigabyte,8,2.0,0.0,4.0,,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/334432c28b403a4cfb2a24ad86260fb7.256p.jpg
+133,Gigabyte X470 Aorus Gaming 5 WiF,ATX,AM4,DDR4,64.0,167.19,X470,Gigabyte,4,2.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://m.media-amazon.com/images/I/61ji1DJhLmL.jpg
+134,Gigabyte X570 UD,ATX,AM4,DDR4,128.0,159.99,X570,Gigabyte,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,1.0,0,5,https://cdna.pcpartpicker.com/static/forever/images/product/575459297fc3c5490b6a3878a2bd578f.256p.jpg
+135,Gigabyte X570S Aorus Elit,ATX,AM4,DDR4,128.0,199.99,X570,Gigabyte,4,,3.0,,,,0.0,0.0,0.0,1.0,0,3,https://cdna.pcpartpicker.com/static/forever/images/product/8ba97ee3dffbeb15bc7f27c76cde6acc.256p.jpg
+136,Gigabyte X99-UD5 WIF,E-ATX,2011-V3,DDR4,64.0,316.13,X99,Gigabyte,8,0.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/51ODilB87BL.jpg
+137,Gigabyte Z170M-D3,Micro-ATX,1151,DDR4,64.0,112.43,Z170,Gigabyte,4,1.0,0.0,2.0,4.0,,1.0,1.0,0.0,1.0,3,0,https://images-eu.ssl-images-amazon.com/images/I/61hMwlOlefL.jpg
+138,Gigabyte Z170X Ultra Gamin,ATX,1151,DDR4,64.0,135,Z170,Gigabyte,4,0.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://m.media-amazon.com/images/I/615BKSQVs2L.jpg
+139,Gigabyte Z370 Aorus Gaming,ATX,1151,DDR4,64.0,149.99,Z370,Gigabyte,4,1.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://static/forever/img/no-image.png
+140,Gigabyte Z390 Aorus Pro WiF,ATX,1151,DDR4,64.0,169.99,Z390,Gigabyte,4,2.0,0.0,3.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/a735153cb96091c6e69f267386e177df.256p.jpg
+141,Gigabyte Z390 Designar,ATX,1151,DDR4,64.0,169.99,Z390,Gigabyte,4,2.0,0.0,4.0,2.0,,0.0,0.0,1.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/e6ca8ab53946c008e506432f0ee86a3b.256p.jpg
+142,Gigabyte Z390 I Aorus Pro WiF,Mini-ITX,1151,DDR4,32.0,164.99,Z390,Gigabyte,2,1.0,0.0,4.0,3.0,,0.0,0.0,1.0,1.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/faffdd443e284a7f37a3f337c3d2ffff.256p.jpg
+143,Gigabyte Z390 UD,ATX,1151,DDR4,128.0,84.99,Z390,Gigabyte,4,,0.0,,,,0.0,0.0,0.0,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/22573d2c099a90eb53acfd285b0fbed1.256p.jpg
+144,Gigabyte Z490 Aorus Pro A,ATX,1200,DDR4,64.0,299,Z490,Gigabyte,4,3.0,0.0,3.0,2.0,,0.0,0.0,0.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/3718be5ef70c16f5dfb16cf28596ab9e.256p.jpg
+145,Gigabyte Z490 UD A,ATX,1200,DDR4,64.0,169,Z490,Gigabyte,4,3.0,0.0,4.0,2.0,,0.0,0.0,0.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/ffa7e43d03d781ddc117d93296eb30ce.256p.jpg
+146,Gigabyte Z590 Aorus Maste,ATX,1200,DDR4,128.0,129.99,Z590,Gigabyte,4,2.0,1.0,4.0,,,0.0,0.0,1.0,0.0,1,2,https://cdna.pcpartpicker.com/static/forever/images/product/dc3885f711fcf1a1bb4fe3a92a4d31ca.256p.jpg
+147,Gigabyte Z590 UD A,ATX,1200,DDR4,128.0,209.99,Z590,Gigabyte,4,1.0,1.0,4.0,,,0.0,0.0,1.0,0.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/d194f5096bf0c5c5abe41aff46406a4e.256p.jpg
+148,MSI A320M-A Pro,Micro-ATX,AM4,DDR4,32.0,54.99,A320,MSI,2,,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/f1398e1d4522992aeed28eb9f6385679.256p.jpg
+149,MSI A520M-A Pr,Micro-ATX,AM4,DDR4,64.0,69.99,A520,MSI,2,1.0,,4.0,2.0,,0.0,1.0,0.0,1.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/f210cab1260cc8cd402ee007cc382029.256p.jpg
+150,MSI B150 PC Mat,ATX,1151,DDR4,64.0,76.99,B150,MSI,4,0.0,0.0,4.0,2.0,,1.0,1.0,0.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/9b72b75f56e5f2d984b3fe537ce47982.256p.jpg
+151,MSI B360M Morta,Micro-ATX,1151,DDR4,64.0,99.99,B360,MSI,4,2.0,0.0,,2.0,,0.0,0.0,0.0,0.0,4,0,https://cdna.pcpartpicker.com/static/forever/images/product/1dea452ec2e1084d5966031a86f48d1e.256p.jpg
+152,MSI B365M Pro-VH,Micro-ATX,1151,DDR4,32.0,48.27,B365,MSI,2,1.0,0.0,4.0,1.0,,0.0,0.0,0.0,1.0,3,0,https://cdna.pcpartpicker.com/static/forever/images/product/d99f5c787c137193d68e3c6786f278c6.256p.jpg
+153,MSI B450 Gaming Plu,ATX,AM4,DDR4,64.0,94.04,B450,MSI,4,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,1.0,1,0,https://m.media-amazon.com/images/I/61-3Dc+m9DL.jpg
+154,MSI B450M Gaming Plu,Micro-ATX,AM4,DDR4,32.0,89.99,B450,MSI,2,1.0,0.0,3.0,4.0,1.0,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/61YjcKG-z6L.jpg
+155,MSI B560M Pro-VD,Micro-ATX,1200,DDR4,128.0,119.99,B560,MSI,4,1.0,1.0,2.0,,,1.0,0.0,1.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/5be07f4d5e1d91d779c39a7af8c9efa3.256p.jpg
+156,MSI H310M Pro-M,Micro-ATX,1151,DDR4,32.0,59.99,H310,MSI,2,1.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/6930e87af100cac85c270e2d78835a87.256p.jpg
+157,MSI MAG B560M Morta,Micro-ATX,1200,DDR4,128.0,109.99,B560,MSI,4,1.0,1.0,,,,0.0,0.0,1.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/7fac2531fd84562ab9ca62b2c32f1f4d.256p.jpg
+158,MSI MAG X570S Tomahawk WiF,ATX,AM4,DDR4,128.0,229.99,X570,MSI,4,,2.0,,,,0.0,0.0,0.0,1.0,2,2,https://cdna.pcpartpicker.com/static/forever/images/product/950dd885063b91719cea31608309066f.256p.jpg
+159,MSI MAG Z590 Tomahawk WiF,ATX,1200,DDR4,128.0,149.99,Z590,MSI,4,2.0,1.0,4.0,,,0.0,0.0,1.0,1.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/4af41d22c160814fa0c2e22a1a1e7209.256p.jpg
+160,MSI MEG Z490 AC,ATX,1200,DDR4,128.0,279.99,Z490,MSI,4,2.0,,2.0,,,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/a22733cc8b0dca99ebe441e3579c8c59.256p.jpg
+161,MSI MEG Z590I Unif,Mini-ITX,1200,DDR4,64.0,369.99,Z590,MSI,2,1.0,1.0,,,,0.0,0.0,1.0,1.0,0,1,https://cdna.pcpartpicker.com/static/forever/images/product/9d4667a9947754e1451e3832ee031490.256p.jpg
+162,MSI MPG Z390 Gaming Pro Carbo,ATX,1151,DDR4,64.0,198.38,Z390,MSI,4,2.0,0.0,,4.0,,0.0,0.0,1.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/91d7402ac6c9d16afc48f31c5165cf3d.256p.jpg
+163,MSI MPG Z390M Gaming Edge AC,Micro-ATX,1151,DDR4,128.0,180.99,Z390,MSI,4,,0.0,,,,0.0,0.0,0.0,0.0,0,0,https://m.media-amazon.com/images/I/31P9KstMpuL.jpg
+164,MSI MPG Z590 Gaming Forc,ATX,1200,DDR4,128.0,119.99,Z590,MSI,4,2.0,1.0,2.0,,,0.0,0.0,1.0,1.0,3,2,https://cdna.pcpartpicker.com/static/forever/images/product/5242ce48db07728c3e99ee5d821d4e3e.256p.jpg
+165,MSI PRO B660M-A WIFI DDR,Micro-ATX,1700,DDR4,128.0,149.99,B660,MSI,4,,1.0,2.0,,,0.0,0.0,2.0,2.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/3cbf74a6886df1b73c6db3935b1b24e1.256p.jpg
+166,MSI PRO B660M-G DDR,Micro-ATX,1700,DDR4,64.0,99.99,B660,MSI,2,,1.0,4.0,,,1.0,0.0,1.0,1.0,1,1,https://cdna.pcpartpicker.com/static/forever/images/product/8658cf6d48409be106fc2995fad9984d.256p.jpg
+167,MSI X370 Gaming Pro Carbo,ATX,AM4,DDR4,64.0,118.99,X370,MSI,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,2,0,https://m.media-amazon.com/images/I/5167pK9B0UL.jpg
+168,MSI X470 Gaming Plus Max,ATX,AM4,DDR4,64.0,109.99,X470,MSI,4,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/67c9fcef981a962757caaf4c26082dc0.256p.jpg
+169,MSI Z390-A Pro,ATX,1151,DDR4,128.0,129.99,Z390,MSI,4,,0.0,,,,0.0,0.0,1.0,0.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/65d2e2e1dd6c41fe051500c6d88ffe0c.256p.jpg
+170,NZXT N7 Z390 Intel Z390,ATX,1151,DDR4,64.0,249.99,Z390,NZXT,4,2.0,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/9f1ed4f4946aaf83258d5d7cfa5d90d5.256p.jpg
