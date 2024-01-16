@@ -1,0 +1,105 @@
+name,price,capacity,price_per_gb,type,cache,form_factor,interface,image_url
+Acer Predator GM7000,110.0,2000.0,0.055,SSD,2048.0,M.2-2280,M.2 PCIe 4.0 X4,https://m.media-amazon.com/images/I/31s5ADmcRXL.jpg
+Acer Predator GM7000,250.0,4000.0,0.062,SSD,4096.0,M.2-2280,M.2 PCIe 4.0 X4,https://m.media-amazon.com/images/I/31s5ADmcRXL.jpg
+Crucial MX500,29.99,250.0,0.12,SSD,256.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/2983fbcd487b315b31855399829b532c.256p.jpg
+Hitachi 0F23663,878.0,6000.0,0.146,7200,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/0c1287b442e124091710bd6a7ed65d22.256p.jpg
+Hitachi Deskstar 7K1000.D,498.0,500.0,0.996,7200,32.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/517ym7R2xnL.jpg
+Hitachi Travelstar 5K500.B,69.0,250.0,0.276,5400,8.0,2.5,SATA 3.0 Gb/s,https://m.media-amazon.com/images/I/51hskJX5guL.jpg
+Hitachi Travelstar Z5K500,150.0,500.0,0.3,5400,8.0,2.5,SATA 3.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/32c94edfbb25368f21eb4999cd3e4b4c.1600.jpg
+Hitachi Ultrastar,197.73,1800.0,0.11,10500,128.0,2.5,SAS 12.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/2318353e16c5474df12f42af86d4ea93.1600.jpg
+Hitachi Ultrastar 7K3000,79.28,2000.0,0.04,7200,64.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41Dr07Ew7OL.jpg
+Hitachi Ultrastar 7K6000,88.99,4000.0,0.022,7200,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/3d20e7ae2466d9c773fef2b64c00e814.1600.jpg
+Hitachi Ultrastar He8,249.0,8000.0,0.031,7200,128.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41dRGDRQhRL.jpg
+Hitachi Ultrastar He8,1087.0,8000.0,0.136,7200,128.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41dRGDRQhRL.jpg
+HP EX920,118.99,1000.0,0.119,SSD,1024.0,M.2-2280,M.2 PCIe 3.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/23efbb1120944857bf3d1248a5c53ee7.256p.jpg
+MSI SPATIUM M480 PLAY,209.14,2000.0,0.105,SSD,2048.0,M.2-2280,M.2 PCIe 4.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/c7f21f044181403141e29d15cbfa99f4.256p.jpg
+Mushkin Source,289.26,2000.0,0.145,SSD,2048.0,2.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/31KeULdwSLL.jpg
+Mushkin Vortex Redline,97.99,2000.0,0.049,SSD,1024.0,M.2-2280,M.2 PCIe 4.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/f8e9f0d8957ae41fc34ae62ae2ece25c.256p.jpg
+Samsung 860 Evo,67.0,500.0,0.134,SSD,512.0,2.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41qR7C253KL.jpg
+Samsung 860 Evo,225.0,2000.0,0.113,SSD,2048.0,2.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41qR7C253KL.jpg
+Samsung 960 Evo,149.99,1000.0,0.15,SSD,1024.0,M.2-2280,M.2 PCIe 3.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/05c84a7f2b020b4efe1b7b736b9eefd0.256p.jpg
+Samsung 970 Evo,44.99,250.0,0.18,SSD,512.0,M.2-2280,M.2 PCIe 3.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/326881d073c1b667bd348893696c690e.256p.jpg
+Samsung 980 Pro w/Heatsink,79.98,1000.0,0.08,SSD,1024.0,M.2-2280,M.2 PCIe 4.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/b2412d4f6cdb883eafbc4a27afa07878.256p.jpg
+Samsung 990 Pro w/Heatsink,144.99,2000.0,0.072,SSD,2048.0,M.2-2280,M.2 PCIe 4.0 X4,https://cdna.pcpartpicker.com/static/forever/images/product/ee5dce8b58c4c1e8661c97a35289d2fb.256p.jpg
+Seagate BarraCuda,34.99,320.0,0.109,7200,16.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate BarraCuda,149.0,500.0,0.298,7200,16.0,3.5,PATA 100,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate BarraCuda,42.0,500.0,0.084,5400,32.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate BarraCuda,25.09,1000.0,0.025,7200,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate BarraCuda,90.2,4000.0,0.023,5900,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate Barracuda Compute,39.99,1000.0,0.04,5400,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate Barracuda Compute,84.49,3000.0,0.028,5400,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c7b5b7dacbecdcdd0e073b761193eef6.256p.jpg
+Seagate BarraCuda Pro,209.99,10000.0,0.021,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/340060a87cb466dba877bfa1ff5c0444.256p.jpg
+Seagate Constellation ES,99.0,500.0,0.198,7200,16.0,3.5,SAS 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/41DOvqfhWkL.jpg
+Seagate Constellation.2,205.0,500.0,0.41,7200,64.0,2.5,SAS 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/a4e10b58aca8859cb1db9a1ea6a576f9.256p.jpg
+Seagate Enterprise Capacity,240.44,6000.0,0.04,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/329754e4f794528a9871cec5d543d23f.256p.jpg
+Seagate Enterprise Capacity,147.0,8000.0,0.018,7200,256.0,3.5,SAS 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/329754e4f794528a9871cec5d543d23f.256p.jpg
+Seagate Enterprise Capacity,169.0,8000.0,0.021,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/329754e4f794528a9871cec5d543d23f.256p.jpg
+Seagate Enterprise Capacity,199.96,10000.0,0.02,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/329754e4f794528a9871cec5d543d23f.256p.jpg
+Seagate Enterprise NAS,239.0,5000.0,0.048,7200,128.0,3.5,SATA 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/41m4iLw2UTL.jpg
+Seagate Exos 7E10 512e/4Kn,244.94,10000.0,0.024,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/6c66f5ecd95539fcc2659ac929c9469c.256p.jpg
+Seagate Exos 7E8,129.99,4000.0,0.032,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/ae54441dec9c942100012625e32e15d7.256p.jpg
+Seagate Exos 7E8 512e,269.99,8000.0,0.034,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/ae54441dec9c942100012625e32e15d7.256p.jpg
+Seagate EXOS Enterprise,318.0,6000.0,0.053,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1c27e073407b0a537a0b939afb114c42.256p.jpg
+Seagate Exos X10,811.0,10000.0,0.081,7200,256.0,3.5,SAS 12.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/206570fbd4e6a9cf0addfaa1e6b1df27.256p.jpg
+Seagate Exos X16,359.99,10000.0,0.036,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/e950a67e8c0769204d060195b8c44e93.256p.jpg
+Seagate Exos X20,289.99,20000.0,0.014,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/41709ead4814bb1350fa3505d707758c.256p.jpg
+Seagate FireCuda,166.27,4000.0,0.042,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/a82a914921d63165f8a7b096089ff91f.256p.jpg
+Seagate IronWolf NAS,177.99,8000.0,0.022,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/ade739fa581e4650e4c6b5e7409a129f.256p.jpg
+Seagate IronWolf Pro NAS,209.99,6000.0,0.035,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/ade739fa581e4650e4c6b5e7409a129f.256p.jpg
+Seagate SkyHawk,176.95,6000.0,0.029,5900,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/a2b7ca332bf0d1d0802f556a6a19e80c.256p.jpg
+Seagate SkyHawk AI,427.45,14000.0,0.031,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/79d11f419c95ed35130caec24af2ce50.256p.jpg
+Seagate SkyHawk AI,314.99,16000.0,0.02,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/79d11f419c95ed35130caec24af2ce50.256p.jpg
+Seagate SkyHawk AI,352.99,20000.0,0.018,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/79d11f419c95ed35130caec24af2ce50.256p.jpg
+Seagate SkyHawk Surveillance,114.99,3000.0,0.038,5900,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/a2b7ca332bf0d1d0802f556a6a19e80c.256p.jpg
+Seagate SkyHawk Surveillance,96.17,4000.0,0.024,5000,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/a2b7ca332bf0d1d0802f556a6a19e80c.256p.jpg
+Seagate ST1000NX0333,102.0,1000.0,0.102,7200,128.0,2.5,SAS 12.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/d9220b306966ec0567c353723cb261a2.256p.jpg
+Seagate ST4000VX000,158.99,4000.0,0.04,5900,64.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41QQNeYlWTL.jpg
+Seagate ST5000NM0024,556.49,5000.0,0.111,7200,128.0,3.5,SATA 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/41pw8MWMn-L.jpg
+Seagate ST500LM021,18.44,500.0,0.037,7200,32.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/923df78bd39bd4f885f4f98a36930223.256p.jpg
+Seagate ST6000DX000,118.99,6000.0,0.02,7200,128.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/51gOAus7wcL.jpg
+Seagate ST6000NM0014,140.0,6000.0,0.023,7200,128.0,3.5,SAS 12.0 Gb/s,https://m.media-amazon.com/images/I/4186Up4lvnL.jpg
+Seagate ST6000NM0104,120.0,6000.0,0.02,7200,128.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/21FM4p3M6WL.jpg
+Seagate ST6000VN0021,250.0,6000.0,0.042,7200,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/522ae2cd7bd2dc96b8fef35d250af682.256p.jpg
+Seagate ST600MM0158,39.74,600.0,0.066,10000,128.0,2.5,SAS 12.0 Gb/s,https://m.media-amazon.com/images/I/51bHED5ng5L.jpg
+Toshiba DT01ACA100,49.02,1000.0,0.049,7200,32.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/b292420c25c9662b49beabcc4e2b5362.256p.jpg
+Toshiba HDKCC00,35.9,500.0,0.072,7200,16.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/9b1d3dd195aa5371aaa5b3a0f4eac84d.256p.jpg
+Toshiba L200,46.17,1000.0,0.046,5400,128.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/eb7ee4ce5b0d9aee2d214b80dc928cd6.256p.jpg
+Toshiba MG03ACA,85.99,2000.0,0.043,7200,64.0,3.5,SATA 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51BtsHJWP2L.jpg
+Toshiba MK6465GSX,39.0,640.0,0.061,5400,8.0,2.5,SATA 3.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51F6D20PtxL.jpg
+Toshiba N300,243.98,8000.0,0.03,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/2cbbf7a3ad8013a4bf27607bad5aabcd.256p.jpg
+Toshiba N300,179.99,10000.0,0.018,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/2cbbf7a3ad8013a4bf27607bad5aabcd.256p.jpg
+Toshiba N300,214.99,12000.0,0.018,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/2cbbf7a3ad8013a4bf27607bad5aabcd.256p.jpg
+Toshiba P300,99.0,2000.0,0.05,7200,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/15aef12f00c6cec9bb56e547326c33b2.256p.jpg
+Toshiba P300,93.31,4000.0,0.023,5400,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/15aef12f00c6cec9bb56e547326c33b2.256p.jpg
+Toshiba X300,189.99,10000.0,0.019,7200,256.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41QClauIrCL.jpg
+Toshiba X300 Pro,269.99,12000.0,0.022,7200,512.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41ZatSrY3+L.jpg
+Toshiba X300 Pro,364.99,18000.0,0.02,7200,512.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41ZatSrY3+L.jpg
+Western Digital Ae,123.72,6000.0,0.021,5760,64.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/51vcu7tVDtL.jpg
+Western Digital AV-GP,18.71,500.0,0.037,5400,16.0,3.5,SATA 3.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ed3ba2b05451e2537a17258f48b895f.256p.jpg
+Western Digital AV-GP,120.7,2000.0,0.06,5400,64.0,3.5,SATA 3.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ed3ba2b05451e2537a17258f48b895f.256p.jpg
+Western Digital Black,58.99,1000.0,0.059,7200,64.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/79382e732eb79c802239d346232806dd.256p.jpg
+Western Digital Blue,54.99,3000.0,0.018,5400,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/da6c2cb6e4d17032dbb3da790499b57f.256p.jpg
+Western Digital Blue,72.99,4000.0,0.018,5400,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/da6c2cb6e4d17032dbb3da790499b57f.256p.jpg
+Western Digital Blue Mobile,23.77,500.0,0.048,5400,16.0,2.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/5063b739921761c6a8c5847a4ef62c7f.256p.jpg
+Western Digital Caviar Blue,114.31,750.0,0.152,7200,32.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/daf819b70eccf7fec275bd65e3fe2b6a.256p.jpg
+Western Digital Caviar Green,20.87,500.0,0.042,5400,32.0,3.5,SATA 3.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51rpntPX04L.jpg
+Western Digital Caviar Green,189.95,750.0,0.253,5400,32.0,3.5,SATA 3.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51rpntPX04L.jpg
+Western Digital Caviar Green,119.77,1500.0,0.08,5400,64.0,3.5,SATA 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51rpntPX04L.jpg
+Western Digital Caviar Green,98.22,2000.0,0.049,5400,64.0,3.5,SATA 6.0 Gb/s,https://images-na.ssl-images-amazon.com/images/I/51rpntPX04L.jpg
+Western Digital Gold,251.69,8000.0,0.031,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/213aa25a6480e72c40c2b6c44c4aa588.256p.jpg
+Western Digital Gold,249.45,10000.0,0.025,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/213aa25a6480e72c40c2b6c44c4aa588.256p.jpg
+Western Digital Gold,275.99,12000.0,0.023,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/213aa25a6480e72c40c2b6c44c4aa588.256p.jpg
+Western Digital Purple,51.93,1000.0,0.052,5400,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/8e32fbeaf3794a1547303d9d5e6b158a.256p.jpg
+Western Digital Purple,330.0,14000.0,0.024,7200,512.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/8e32fbeaf3794a1547303d9d5e6b158a.256p.jpg
+Western Digital RE,20.3,250.0,0.081,7200,64.0,3.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/41oBTPYwGdL.jpg
+Western Digital Red,62.99,1000.0,0.063,5400,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ac710bded46038988de0ebfa909355a.256p.jpg
+Western Digital Red,73.48,4000.0,0.018,5400,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ac710bded46038988de0ebfa909355a.256p.jpg
+Western Digital Red,350.45,8000.0,0.044,5400,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ac710bded46038988de0ebfa909355a.256p.jpg
+Western Digital Red Plus,72.99,2000.0,0.036,5400,128.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/0583aa15a3ba6cd0f607f453bdc6f8d4.256p.jpg
+Western Digital Red Pro,409.99,22000.0,0.019,7200,512.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/1ac710bded46038988de0ebfa909355a.256p.jpg
+Western Digital Scorpio Black,125.0,80.0,1.562,7200,16.0,2.5,SATA 3.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/c49268a8641d1b4781d25782b96de87d.256p.jpg
+Western Digital Scorpio Blue,45.05,160.0,0.282,5400,8.0,2.5,SATA 1.5 Gb/s,https://m.media-amazon.com/images/I/51ASPtyUDpL.jpg
+Western Digital SE,142.0,3000.0,0.047,7200,64.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/08105799a06f56c779261642b857dd7f.256p.jpg
+Western Digital Ultrastar DC HC330,249.95,10000.0,0.025,7200,256.0,3.5,SATA 6.0 Gb/s,https://cdna.pcpartpicker.com/static/forever/images/product/539b274877d099e122834768ec201def.256p.jpg
+Western Digital VelociRaptor,130.02,600.0,0.217,10000,32.0,2.5,SATA 6.0 Gb/s,https://m.media-amazon.com/images/I/519fK6x1dGL.jpg
+Western Digital WDBMYH5000ANC-NRSN,24.94,500.0,0.05,5400,8.0,2.5,SATA 3.0 Gb/s,https://m.media-amazon.com/images/I/41T0FM-iMML.jpg
