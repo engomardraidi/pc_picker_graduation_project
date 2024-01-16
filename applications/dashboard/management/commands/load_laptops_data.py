@@ -1,7 +1,9 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import Laptop, LaptopField, LaptopUse
+import os
 
 class Command(BaseCommand):
     help = 'Loads data from laptops-ready.csv'
@@ -13,7 +15,9 @@ class Command(BaseCommand):
 
         print("Loading Laptops data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/laptops-readiest.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'laptops-readiest.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             laptop = Laptop(
                 name=row['Name'],
                 screen_size=float(row['Screen_Size']),

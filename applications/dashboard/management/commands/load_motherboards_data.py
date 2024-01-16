@@ -1,7 +1,9 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import Motherboard, CPUSocket, FormFactor, RAMType, Chipset, Producer
+import os
 
 class Command(BaseCommand):
     help = 'Loads data from motherboards_1-cleand.csv'
@@ -13,7 +15,9 @@ class Command(BaseCommand):
 
         print("Loading motherboards data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/motherboards_1-cleaned.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'motherboards_1-cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             socket = CPUSocket.objects.get_or_create(socket=row['socket'])[0]
             form_factor = FormFactor.objects.get_or_create(form_factor=row['from_factor'])[0]
             ram_type = RAMType.objects.get_or_create(type=row['memory_type'])[0]

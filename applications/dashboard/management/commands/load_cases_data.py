@@ -2,7 +2,9 @@ from django.db import IntegrityError
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import Case, Color, CaseType, CaseSidePanel, CaseStyle
+import os
 
 class Command(BaseCommand):
     help = 'Loads data cases-cleand.csv'
@@ -14,7 +16,9 @@ class Command(BaseCommand):
 
         print("Loading Cases data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/cases_cleaned.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'cases_cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             color = Color.objects.get_or_create(color=row['color'])[0]
             case_type = CaseType.objects.get_or_create(type=row['type'])[0]
             side_panel = CaseSidePanel.objects.get_or_create(side_panel=row['side_panel'])[0]

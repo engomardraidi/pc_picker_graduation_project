@@ -1,7 +1,9 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import Mobile, MobileField, MobileUse
+import os
 
 class Command(BaseCommand):
     help = 'Loads data from mobiles.csv'
@@ -13,7 +15,9 @@ class Command(BaseCommand):
 
         print("Loading mobiles data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/mobiles.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'mobiles.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             mobile = Mobile(
                 name=row['Name'],
                 price=row['Price'],

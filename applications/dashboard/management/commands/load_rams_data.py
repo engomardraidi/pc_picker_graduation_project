@@ -1,7 +1,9 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import RAM, RAMType, Producer, PCField, RAMField
+import os
 
 class Command(BaseCommand):
     help = 'Loads data from rams_1-cleand.csv'
@@ -13,7 +15,9 @@ class Command(BaseCommand):
 
         print("Loading RAMs data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/rams_1-cleaned.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'rams_1-cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             ram_type = RAMType.objects.get_or_create(type=row['memory_type'])[0]
             producer = Producer.objects.get_or_create(name=row['producer'])[0]
 

@@ -14,7 +14,9 @@ class Command(BaseCommand):
 
         print("Loading power supply data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/power-supply-cleaned.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'power-supply-cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             power_type = PowerSupplyType.objects.get_or_create(type=row['type'])[0]
             power_efficiency = PowerSupplyEfficiency.objects.get_or_create(efficiency=row['efficiency'])[0]
 

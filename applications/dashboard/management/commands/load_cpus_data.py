@@ -1,7 +1,9 @@
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import CPU, CPUSocket, Producer, PCField, CPUField
+import os
 
 class Command(BaseCommand):
     help = 'Loads data from cpus_1-cleand.csv'
@@ -13,7 +15,9 @@ class Command(BaseCommand):
 
         print("Loading CPUs data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/cpus_1-cleaned.csv')):
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'cpus_1-cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):
             socket = CPUSocket.objects.get_or_create(socket=row['socket'])[0]
             producer = Producer.objects.get_or_create(name=row['producer'])[0]
 

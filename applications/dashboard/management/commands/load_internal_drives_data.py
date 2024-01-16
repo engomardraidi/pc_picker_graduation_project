@@ -2,7 +2,9 @@ from django.db import IntegrityError
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import InternalDrive, DriveType
+import os
 
 class Command(BaseCommand):
     help = 'Loads Internal Drives cases-cleand.csv'
@@ -14,7 +16,9 @@ class Command(BaseCommand):
 
         print("Loading Internal Drives data")
 
-        for row in DictReader(open('/Users/eng.omar/Desktop/python_backend/pc_picker_graduation_project/datasets/internal-drive-cleaned.csv')):  
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets', 'internal-drive-cleaned.csv')
+
+        for row in DictReader(open(BASE_DIR)):  
             drive_type = DriveType.objects.get_or_create(type=f'HDD {row["type"]}' if row['type'] != 'SSD' else row['type'])[0]
 
             internal_drive = InternalDrive(
