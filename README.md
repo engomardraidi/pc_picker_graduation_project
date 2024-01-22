@@ -7,7 +7,7 @@
     <img src="logo.png" alt="Logo">
   </a>
 
-  <h3 align="center">PC Picker - Backend</h3>
+  <h3 align="center">Tech Tailor - Backend</h3>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
@@ -63,11 +63,11 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Welcome to PC Picker, your personalized guide to finding the perfect computing device tailored to your needs! Whether you're a professional in the creative industry, a student on a tight budget, or a gaming enthusiast looking for the latest and greatest hardware, PC Picker is here to simplify your decision-making process.
+Welcome to Tech Tailor, your personalized guide to finding the perfect computing device tailored to your needs! Whether you're a professional in the creative industry, a student on a tight budget, or a gaming enthusiast looking for the latest and greatest hardware, Tech Tailor is here to simplify your decision-making process.
 
 How it work:
 
-The PC Picker system is an innovative solution designed to assist users in selecting the most suitable computing devices based on their budget and specific needs. This intelligent system leverages both expert systems and neural networks to provide personalized recommendations for PCs, laptops, and mobile devices.
+The Tech Tailor system is an innovative solution designed to assist users in selecting the most suitable computing devices based on their budget and specific needs. This intelligent system leverages both expert systems and neural networks to provide personalized recommendations for PCs, laptops, and mobile devices.
 
 Why you should use it:
 * Receive personalized device suggestions based on your budget and field of use, ensuring a perfect match for your specific needs.
