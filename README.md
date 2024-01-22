@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/engomardraidi/test_readme">
-    <img src="logo.png" alt="Logo" width="130" height="130">
+    <img src="logo.png" alt="Logo">
   </a>
 
   <h3 align="center">PC Picker - Backend</h3>
