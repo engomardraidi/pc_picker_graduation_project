@@ -327,7 +327,9 @@ def classification_gpu(sender, instance, created, **kwargs):
 @disable_for_loaddata
 def classification_laptop(sender, instance, created, **kwargs):
     # Load the laptop dataset
-    df = pd.read_csv('./././datasets/laptops-readiest.csv')
+    BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets')
+    df_file = pd.read_csv(f'{BASE_DIR}/laptops-readiest.csv')
+    df = df_file
 
     df['Number_of_Cores'] = df['Number_of_Cores'].str.split('-', n=1).str[0]
 
@@ -349,52 +351,87 @@ def classification_laptop(sender, instance, created, **kwargs):
     predictions = classifier.predict(X_test)
 
     # Evaluate the model
-    accuracy = accuracy_score(y_test, predictions)
-    print(f'Accuracy: {accuracy}')
+    # accuracy = accuracy_score(y_test, predictions)
+    # print(f'Accuracy: {accuracy}')
 
-    # Display classification report
-    print(classification_report(y_test, predictions))
+    # # Display classification report
+    # print(classification_report(y_test, predictions))
 
     # Example input data for testing
-    example_input = pd.DataFrame({
-        'VRAM': [8],
-        'GPU_Speed': [16000],
-        'GPU_Cores': [7472],
-        'CPU_Speed': [2.3],
-        'Number_of_Cores': [14],
-        'Memory': [32],
+    new_data = pd.DataFrame({
+        'VRAM': [instance.vram],
+        'GPU_Speed': [instance.gpu_speed],
+        'GPU_Cores': [instance.gpu_cores],
+        'CPU_Speed': [instance.cpu_speed],
+        'Number_of_Cores': [int(instance.number_of_cores.split('-')[0])],
+        'Memory': [instance.memory],
     })
 
     # Make predictions for the example input
-    new_predictions = classifier.predict(example_input)
+    new_predictions = classifier.predict(new_data)
 
     list_data = []
 
     if new_predictions[0][0] == True:
+        # gaming
         list_data.append({'laptop': instance.id, 'use': 3})
     if new_predictions[0][1] == True:
+        # workstation
         list_data.append({'laptop': instance.id, 'use': 2})
     if new_predictions[0][2] == True:
+        # home
         list_data.append({'laptop': instance.id, 'use': 1})
 
     serializer = serializers.LaptopUseSerializer(data=list_data, many=True)
     if serializer.is_valid():
         serializer.save()
 
+    new_row = [
+        instance.external_image if instance.external_image is not None else instance.image,
+        instance.name,
+        instance.screen_size,
+        instance.cpu_type,
+        instance.memory,
+        instance.storage,
+        instance.gpu,
+        instance.vram,
+        instance.gpu_speed,
+        instance.gpu_cores,
+        instance.resolution,
+        instance.weight,
+        instance.backlit_keyboard,
+        instance.touchscreen,
+        instance.cpu_speed,
+        instance.number_of_cores,
+        instance.display_type,
+        instance.graphic_type,
+        instance.operating_system,
+        instance.webcam,
+        instance.price,
+        new_predictions[0, 0],
+        new_predictions[0, 1],
+        new_predictions[0, 2],
+    ]
+
+    with open(f'{BASE_DIR}/laptops-readiest.csv', 'a') as file:
+        writer_object = writer(file)
+        writer_object.writerow(new_row)
+        file.close()
+
     # Display the predicted use
-    print('Predicted Use for the Example Input:', new_predictions)
+    # print('Predicted Use for the Example Input:', new_predictions)
 
 @receiver(post_save, sender=models.Mobile)
 @disable_for_loaddata
 def classification_mobile(sender, instance, created, **kwargs):
-    df = pd.read_csv('./././datasets/mobiles.csv')
+    BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets')
+    df_file = pd.read_csv(f'{BASE_DIR}/mobiles.csv')
+    df = df_file
 
-    features = ['Price', 'Core_count', 'CPU_speed', 'Ram', 'Battery', 'Main_camera', 'Cameras_num']
-    X = df[features]
+    X = df[['Price', 'Core_count', 'CPU_speed', 'Ram', 'Battery', 'Main_camera', 'Cameras_num']]
 
     # Target variables (y)
-    target_variables = ['Performance_class', 'Camera_class', 'Battery_class', 'Browsing_class']
-    y = df[target_variables]
+    y = df[['Performance_class', 'Camera_class', 'Battery_class', 'Browsing_class']]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -408,19 +445,18 @@ def classification_mobile(sender, instance, created, **kwargs):
     predictions = classifier.predict(X_test)
 
     # Evaluate the model
-    from sklearn.metrics import accuracy_score, classification_report
 
-    accuracy = accuracy_score(y_test, predictions)
-    print(f'Overall Accuracy: {accuracy}')
+    # accuracy = accuracy_score(y_test, predictions)
+    # print(f'Overall Accuracy: {accuracy}')
 
-    # Display classification report for each target variable
-    for i, target_variable in enumerate(target_variables):
-        print(f'\nClassification Report for {target_variable}:')
-        print(classification_report(y_test[target_variable], predictions[:, i]))
+    # # Display classification report for each target variable
+    # for i, target_variable in enumerate(target_variables):
+    #     print(f'\nClassification Report for {target_variable}:')
+    #     print(classification_report(y_test[target_variable], predictions[:, i]))
 
 
     # Example input data for testing
-    example_input = pd.DataFrame({
+    new_data = pd.DataFrame({
         'Price': [instance.price],
         'Core_count': [instance.core_count],
         'CPU_speed': [instance.cpu_speed],
@@ -431,25 +467,55 @@ def classification_mobile(sender, instance, created, **kwargs):
     })
 
     # Make predictions for the example input
-    new_predictions = classifier.predict(example_input)
+    new_predictions = classifier.predict(new_data)
 
     list_data = []
 
     if new_predictions[0][0] == True:
+        # performance
         list_data.append({'mobile': instance.id, 'use': 1})
     if new_predictions[0][1] == True:
+        # camera
         list_data.append({'mobile': instance.id, 'use': 2})
     if new_predictions[0][2] == True:
+        # bettery
         list_data.append({'mobile': instance.id, 'use': 3})
     if new_predictions[0][2] == True:
+        # browsing
         list_data.append({'mobile': instance.id, 'use': 4})
-
-
 
     serializer = serializers.MobileUseSerializer(data=list_data, many=True)
     if serializer.is_valid():
         serializer.save()
 
+    new_row = [
+        instance.name,
+        instance.external_image if instance.external_image is not None else instance.image,
+        instance.price,
+        instance.cameras,
+        instance.cpu,
+        instance.core_count,
+        instance.cpu_speed,
+        instance.storage,
+        instance.ram,
+        instance.screen_size,
+        instance.refresh_rate,
+        instance.battery,
+        instance.fast_charging,
+        instance.main_camera,
+        instance.front_camera,
+        instance.cameras_num,
+        new_predictions[0, 0],
+        new_predictions[0, 1],
+        new_predictions[0, 2],
+        new_predictions[0, 3],
+    ]
+
+    with open(f'{BASE_DIR}/mobiles.csv', 'a') as file:
+        writer_object = writer(file)
+        writer_object.writerow(new_row)
+        file.close()
+
     # Display the predicted values for each target variable
-    for i, target_variable in enumerate(target_variables):
-        print(f'Predicted {target_variable} for the Example Input:', new_predictions[0, i])
+    # for i, target_variable in enumerate(target_variables):
+    #     print(f'Predicted {target_variable} for the Example Input:', new_predictions[0, i])
