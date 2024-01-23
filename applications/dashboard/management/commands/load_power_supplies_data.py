@@ -2,7 +2,9 @@ from django.db import IntegrityError
 from csv import DictReader
 from typing import Any
 from django.core.management import BaseCommand
+from django.conf import settings
 from ...models import PowerSupply, PowerSupplyType, PowerSupplyEfficiency
+import os
 
 class Command(BaseCommand):
     help = 'Loads data power-supply-cleaned.csv'
