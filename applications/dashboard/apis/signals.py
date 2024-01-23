@@ -4,12 +4,14 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
-from jinja2 import Template
+from django.conf import settings
+from csv import writer
 from .decorators import disable_for_loaddata
 from .. import models
 from . import serializers
 import pandas as pd
 import os
+# from jinja2 import Template
 
 # @receiver(post_save, sender=models.CaseStyle)
 # def create_case_style_function_in_knowledge_engine(sender, instance, created, **kwargs):
@@ -39,9 +41,10 @@ import os
 @disable_for_loaddata
 def classification_cpu(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv('./././datasets/cpu_fields_class.csv')
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets')
+        df_file = pd.read_csv(f'{BASE_DIR}/cpus_1-cleaned.csv')
 
-        df = df.drop(columns=['integrated_graphics', 'url', 'image_url', 'created_at', 'updated_at', 'status', 'socket', 'producer'])
+        df = df_file.drop(columns=['integrated graphics', 'image_url', 'socket', 'producer', 'tdp'])
 
         X = df[['price', 'base_clock', 'turbo_clock', 'cores', 'threads']]
 
@@ -59,12 +62,12 @@ def classification_cpu(sender, instance, created, **kwargs):
         predictions = classifier.predict(X_test)
 
         # Evaluate the accuracy for each label
-        for i, label in enumerate(y.columns):
-            accuracy = accuracy_score(y_test[label], predictions[:, i])
-            print(f'Accuracy for {label}: {accuracy}')
+        # for i, label in enumerate(y.columns):
+        #     accuracy = accuracy_score(y_test[label], predictions[:, i])
+        #     print(f'Accuracy for {label}: {accuracy}')
 
         # Display overall classification report
-        print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
+        # print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
 
 
         new_data = pd.DataFrame({
@@ -72,7 +75,7 @@ def classification_cpu(sender, instance, created, **kwargs):
             'base_clock': [instance.base_clock],
             'turbo_clock': [instance.turbo_clock],
             'cores': [instance.cores],
-            'threads': [instance.threads]
+            'threads': [instance.threads],
         })
 
         # Make predictions for the new data
@@ -97,22 +100,48 @@ def classification_cpu(sender, instance, created, **kwargs):
         if serializer.is_valid():
             serializer.save()
 
+        new_row = [
+            instance.id,
+            instance.name,
+            instance.socket.socket,
+            instance.price,
+            instance.producer.name,
+            instance.base_clock,
+            instance.turbo_clock,
+            instance.cores,
+            instance.threads,
+            instance.tdp,
+            instance.integrated_graphics,
+            instance.external_image if instance.external_image is not None else instance.image,
+            new_predictions[0, 0],
+            new_predictions[0, 1],
+            new_predictions[0, 2],
+            new_predictions[0, 3]
+        ]
+
+        with open(f'{BASE_DIR}/cpus_1-cleaned.csv', 'a') as file:
+            writer_object = writer(file)
+            writer_object.writerow(new_row)
+            file.close()
+
         # Display the predictions
-        print('Predicted classification for the new data:')
-        print('Gaming:', new_predictions[0, 0])
-        print('Graphic Design:', new_predictions[0, 1])
-        print('Programming:', new_predictions[0, 2])
-        print('Office:', new_predictions[0, 3])
+        # print('Predicted classification for the new data:')
+        # print('Gaming:', new_predictions[0, 0])
+        # print('Graphic Design:', new_predictions[0, 1])
+        # print('Programming:', new_predictions[0, 2])
+        # print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.RAM)
 @disable_for_loaddata
 def classification_ram(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv('./././datasets/ram_fields_class.csv')
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets')
+        df_file = pd.read_csv(f'{BASE_DIR}/rams_1-cleaned.csv')
 
-        df = df.drop(columns=['timings', 'sticks', 'url', 'image_url', 'created_at', 'updated_at', 'status', 'producer'])
+        df = df_file.drop(columns=['timings', 'sticks', 'image_url', 'producer'])
 
-        X = df[['size', 'clock', 'type', 'price']]
+        X = df[['size', 'clock', 'memory_type', 'price']]
+        X['memory_type'] = X['memory_type'].str.replace('DDR', '')
 
         y = df[['gaming', 'graphic design', 'programming', 'office']]
 
@@ -127,20 +156,18 @@ def classification_ram(sender, instance, created, **kwargs):
         # Make predictions on the test set
         predictions = classifier.predict(X_test)
 
-        # Evaluate the accuracy for each label
-        for i, label in enumerate(y.columns):
-            accuracy = accuracy_score(y_test[label], predictions[:, i])
-            print(f'Accuracy for {label}: {accuracy}')
+        # # Evaluate the accuracy for each label
+        # for i, label in enumerate(y.columns):
+        #     accuracy = accuracy_score(y_test[label], predictions[:, i])
+        #     print(f'Accuracy for {label}: {accuracy}')
 
-        # Display overall classification report
-        print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
-
-        print(instance.type.id)
+        # # Display overall classification report
+        # print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
 
         new_data = pd.DataFrame({
             'size': [instance.size],
             'clock': [instance.clock],
-            'type': [instance.type.id],
+            'memory_type': [instance.type.type.replace('DDR', '')],
             'price': [instance.price]
         })
 
@@ -166,20 +193,43 @@ def classification_ram(sender, instance, created, **kwargs):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
 
+        new_row = [
+            instance.id,
+            instance.name,
+            instance.size,
+            instance.type.type,
+            instance.price,
+            instance.producer.name,
+            instance.clock,
+            instance.timings,
+            instance.sticks,
+            instance.external_image if instance.external_image is not None else instance.image,
+            new_predictions[0, 0],
+            new_predictions[0, 1],
+            new_predictions[0, 2],
+            new_predictions[0, 3]
+        ]
+
+        with open(f'{BASE_DIR}/rams_1-cleaned.csv', 'a') as file:
+            writer_object = writer(file)
+            writer_object.writerow(new_row)
+            file.close()
+
         # Display the predictions
-        print('Predicted classification for the new data:')
-        print('Gaming:', new_predictions[0, 0])
-        print('Graphic Design:', new_predictions[0, 1])
-        print('Programming:', new_predictions[0, 2])
-        print('Office:', new_predictions[0, 3])
+        # print('Predicted classification for the new data:')
+        # print('Gaming:', new_predictions[0, 0])
+        # print('Graphic Design:', new_predictions[0, 1])
+        # print('Programming:', new_predictions[0, 2])
+        # print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.GPU)
 @disable_for_loaddata
 def classification_gpu(sender, instance, created, **kwargs):
     if created:
-        df = pd.read_csv('./././datasets/gpu_fields_class.csv')
+        BASE_DIR = os.path.join(settings.BASE_DIR, 'datasets')
+        df_file = pd.read_csv(f'{BASE_DIR}/gpus_1-cleaned.csv')
 
-        df = df.drop(columns=['pci_e', 'length', 'slots', 'connectors_8pin', 'connectors_6pin', 'hdmi', 'display_port', 'dvi', 'vga', 'sync', 'tdp', 'image_url', 'created_at', 'updated_at', 'status', 'producer'])
+        df = df_file.drop(columns=['pci-e', 'length', 'slots', '8-pin connectors', '6-pin connectors', 'hdmi', 'display port', 'dvi', 'vga', 'sync', 'tdp', 'image_url', 'producer'])
 
         X = df[['vram', 'cores', 'memory_clock', 'boost_clock', 'price']]
 
@@ -197,12 +247,12 @@ def classification_gpu(sender, instance, created, **kwargs):
         predictions = classifier.predict(X_test)
 
         # Evaluate the accuracy for each label
-        for i, label in enumerate(y.columns):
-            accuracy = accuracy_score(y_test[label], predictions[:, i])
-            print(f'Accuracy for {label}: {accuracy}')
+        # for i, label in enumerate(y.columns):
+        #     accuracy = accuracy_score(y_test[label], predictions[:, i])
+        #     print(f'Accuracy for {label}: {accuracy}')
 
-        # Display overall classification report
-        print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
+        # # Display overall classification report
+        # print('\nOverall Classification Report:\n', classification_report(y_test, predictions))
 
 
         new_data = pd.DataFrame({
@@ -235,12 +285,43 @@ def classification_gpu(sender, instance, created, **kwargs):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
 
+        new_row = [
+            instance.id,
+            instance.name,
+            instance.pci_e,
+            instance.series.series,
+            instance.vram,
+            instance.cores,
+            instance.memory_clock,
+            instance.boost_clock,
+            instance.price,
+            instance.producer.name,
+            instance.length,
+            instance.slots,
+            instance.connectors_8pin,
+            instance.connectors_6pin,
+            instance.dvi,
+            instance.vga,
+            instance.sync.sync,
+            instance.tdp,
+            instance.external_image if instance.external_image is not None else instance.image,
+            new_predictions[0, 0],
+            new_predictions[0, 1],
+            new_predictions[0, 2],
+            new_predictions[0, 3]
+        ]
+
+        with open(f'{BASE_DIR}/gpus_1-cleaned.csv', 'a') as file:
+            writer_object = writer(file)
+            writer_object.writerow(new_row)
+            file.close()
+
         # Display the predictions
-        print('Predicted classification for the new data:')
-        print('Gaming:', new_predictions[0, 0])
-        print('Graphic Design:', new_predictions[0, 1])
-        print('Programming:', new_predictions[0, 2])
-        print('Office:', new_predictions[0, 3])
+        # print('Predicted classification for the new data:')
+        # print('Gaming:', new_predictions[0, 0])
+        # print('Graphic Design:', new_predictions[0, 1])
+        # print('Programming:', new_predictions[0, 2])
+        # print('Office:', new_predictions[0, 3])
 
 @receiver(post_save, sender=models.Laptop)
 @disable_for_loaddata
