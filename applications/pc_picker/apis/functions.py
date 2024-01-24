@@ -6,6 +6,7 @@ from fuzzywuzzy import process
 from jinja2 import Template
 from rest_framework.response import Response
 from numbers import Number
+from operator import itemgetter
 from ...core.functions import get_detail_response
 from ...core.constants import Constants
 from ...dashboard.models import MobileField
@@ -40,9 +41,12 @@ def get_best_devices(devices):
                 check = device.get('check', False)
                 if abs(device['perc'] - full_perc) <= diff and not check:
                     best_devices.append(device)
+                    device['diff'] = abs(device['perc'] - full_perc)
                     device['check'] = True
     else:
         best_devices = devices
+
+    best_devices.sort(key=itemgetter('diff'))
 
     return best_devices
 
