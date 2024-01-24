@@ -12,11 +12,11 @@ from ...dashboard.models import MobileField
 
 __NUM_OF_BEST = 3
 
-def get_laptop_as_json(laptop, budget):
+def get_laptop_as_json(device, budget):
     return {
-        'perc': (laptop.price / budget) * 100,
-        'price': laptop.price,
-        'laptop': laptop.to_json()
+        'perc': (device.price / budget) * 100,
+        'price': device.price,
+        'device': device.to_json()
     }
 
 def get_mobile_as_json(mobile, budget):
@@ -26,65 +26,25 @@ def get_mobile_as_json(mobile, budget):
         'mobile': mobile.to_json()
     }
 
-def get_best_laptops(laptops):
+def get_best_devices(devices):
     full_perc = decimal.Decimal(100)
     diff = 0
-    best_laptops = []
+    best_devices = []
 
-    if len(laptops) > __NUM_OF_BEST:
-        while len(best_laptops) < __NUM_OF_BEST:
+    if len(devices) > __NUM_OF_BEST:
+        while len(best_devices) < __NUM_OF_BEST:
             diff += 2
-            for laptop in laptops:
-                if len(best_laptops) == __NUM_OF_BEST:
+            for device in devices:
+                if len(best_devices) == __NUM_OF_BEST:
                     break
-                check = laptop.get('check', False)
-                if abs(laptop['perc'] - full_perc) <= diff and not check:
-                    best_laptops.append(laptop)
-                    laptop['check'] = True
+                check = device.get('check', False)
+                if abs(device['perc'] - full_perc) <= diff and not check:
+                    best_devices.append(device)
+                    device['check'] = True
     else:
-        best_laptops = laptops
+        best_devices = devices
 
-    return best_laptops
-
-def get_best_mobiles(mobiles):
-    full_perc = decimal.Decimal(100)
-    diff = 0
-    best_mobiles = []
-
-    if len(mobiles) > __NUM_OF_BEST:
-        while len(best_mobiles) < __NUM_OF_BEST:
-            diff += 2
-            for mobile in mobiles:
-                if len(best_mobiles) == __NUM_OF_BEST:
-                    break
-                check = mobile.get('check', False)
-                if abs(mobile['perc'] - full_perc) <= diff and not check:
-                    best_mobiles.append(mobile)
-                    mobile['check'] = True
-    else:
-        best_mobiles = mobiles
-
-    return best_mobiles
-
-def get_best_pcs(pcs):
-    full_perc = decimal.Decimal(100)
-    diff = 0
-    best_pcs = []
-
-    if len(pcs) > __NUM_OF_BEST:
-        while len(best_pcs) < __NUM_OF_BEST:
-            diff += 2
-            for laptop in pcs:
-                if len(best_pcs) == __NUM_OF_BEST:
-                    break
-                check = laptop.get('check', False)
-                if abs(laptop['perc'] - full_perc) <= diff and not check:
-                    best_pcs.append(laptop)
-                    laptop['check'] = True
-    else:
-        best_pcs = pcs
-
-    return best_pcs
+    return best_devices
 
 def validate_field_budget(field_model, field_id, budget):
     if field_id == None or budget == None:

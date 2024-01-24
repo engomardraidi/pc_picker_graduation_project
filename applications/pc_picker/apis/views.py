@@ -6,7 +6,7 @@ from .expert_system.laptops_knowledge import LaptopsKnowledge
 from .expert_system.mobiles_knowledge import MobilesKnowledge
 from .expert_system.input_fact import InputFact
 from ...dashboard.apis.serializers import DeviceSerializer, PCFieldReadSerializer
-from .functions import validate_field_budget, get_best_laptops, get_best_pcs, get_best_mobiles
+from .functions import validate_field_budget, get_best_devices
 from ...dashboard import models as dashboard_models
 from ...dashboard.apis import serializers as dashboard_serializers
 from rest_framework.pagination import PageNumberPagination
@@ -34,7 +34,7 @@ def pick_laptop(request):
     expert_system.declare(InputFact(field_id=field_id, budget=budget))
     result = expert_system.run()
 
-    best_laptops = get_best_laptops(result)
+    best_laptops = get_best_devices(result)
 
     return Response({'num_of_laptops': len(best_laptops), 'laptops': best_laptops})
 
@@ -56,7 +56,7 @@ def pick_mobile(request):
     result = expert_system.run()
 
     if result != None:
-        best_laptops = get_best_mobiles(result)
+        best_laptops = get_best_devices(result)
     else:
         best_laptops = []
 
@@ -77,7 +77,7 @@ def pick_pc(request):
     expert_system.declare(InputFact(field_id=field_id, budget=budget))
     result = expert_system.run()
 
-    best_pcs = get_best_pcs(result)
+    best_pcs = get_best_devices(result)
 
     return Response({'num_of_PCs': len(best_pcs), 'PCs': best_pcs})
 

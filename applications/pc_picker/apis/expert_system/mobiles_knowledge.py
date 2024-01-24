@@ -8,7 +8,6 @@ import decimal
 
 class MobilesKnowledge(ExpertSystem):
     def __get_mobiles(self, field_id, budget):
-        print(field_id)
         perc = decimal.Decimal(0.03)
         mobiles = []
 
