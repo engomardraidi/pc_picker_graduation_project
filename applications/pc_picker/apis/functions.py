@@ -31,8 +31,11 @@ def get_best_devices(devices):
     full_perc = decimal.Decimal(100)
     diff = 0
     best_devices = []
+    cleaned_best_devices = []
+    min_perc = decimal.Decimal(70)
+    max_perc = decimal.Decimal(130)
 
-    if len(devices) > __NUM_OF_BEST:
+    if len(devices) >= __NUM_OF_BEST:
         while len(best_devices) < __NUM_OF_BEST:
             diff += 2
             for device in devices:
@@ -43,12 +46,19 @@ def get_best_devices(devices):
                     best_devices.append(device)
                     device['diff'] = abs(device['perc'] - full_perc)
                     device['check'] = True
+        for device in best_devices:
+            if device['perc'] > min_perc and device['perc'] < max_perc:
+                cleaned_best_devices.append(device)
     else:
-        best_devices = devices
+        for device in devices:
+                if device['perc'] > min_perc and device['perc'] < max_perc:
+                    cleaned_best_devices.append(device)
+                    device['diff'] = abs(device['perc'] - full_perc)
+                    device['check'] = True
 
-    best_devices.sort(key=itemgetter('diff'))
+    cleaned_best_devices.sort(key=itemgetter('diff'))
 
-    return best_devices
+    return cleaned_best_devices
 
 def validate_field_budget(field_model, field_id, budget):
     if field_id == None or budget == None:
