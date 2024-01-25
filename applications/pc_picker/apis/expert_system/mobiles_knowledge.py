@@ -1,7 +1,7 @@
 from .expert_system_abc import ExpertSystem
 import decimal
 from experta import Rule, AS
-from ....dashboard.models import Mobile
+from ....dashboard.models import Mobile, MobileUse
 from ..functions import get_mobile_as_json
 from .input_fact import InputFact
 import decimal
@@ -11,11 +11,11 @@ class MobilesKnowledge(ExpertSystem):
         perc = decimal.Decimal(0.03)
         mobiles = []
 
-        while len(mobiles) < 5:
+        while len(mobiles) < 5 and perc < decimal.Decimal(1):
             perc += decimal.Decimal(0.03)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
-            mobiles = Mobile.filter_objects(mobileuse__use__id__in=field_id, price__range=(min_budget, max_budget))
+            mobiles = MobileUse.filter_objects(use__id__in=field_id, mobile__price__range=(min_budget, max_budget)).distinct('mobile')
 
         return mobiles
 
@@ -27,7 +27,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -39,7 +39,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -51,7 +51,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -63,7 +63,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -75,7 +75,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -87,7 +87,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -99,7 +99,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -111,7 +111,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -123,7 +123,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -135,7 +135,7 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
 
@@ -147,6 +147,6 @@ class MobilesKnowledge(ExpertSystem):
         mobiles = []
 
         for mobile in list_mobiles:
-            mobiles.append(get_mobile_as_json(mobile, budget))
+            mobiles.append(get_mobile_as_json(mobile.mobile, budget))
 
         return mobiles
