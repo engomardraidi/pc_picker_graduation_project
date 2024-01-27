@@ -44,8 +44,7 @@
       <a href="#usage">Usage</a>
       <ul>
         <li><a href="#accounts">Accounts</a></li>
-      </ul>
-      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
         <li><a href="#picker">PC/Laptop/Mobile Picker</a></li>
       </ul>
     </li>
@@ -330,6 +329,56 @@ Below you will find instructions and everything you need to use the APIs.
      ```sh
      {} # with status code 200 (ok)
      ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Dashboard
+
+1. Motherboards
+   * GET, POST, PATCH, DELETE methods
+   * paths
+     ```sh
+     dashboard/motherboards/ # GET list of motherboards data or POST new motherboard
+     dashboard/motherboards/<int:id>/ # GET, PATCH (update) or DELETE specific motherboard
+     ```
+   * Body
+     ```sh
+     # When POST new motherboard
+     {
+       "name": string,
+       "memory_max_capacity": int,
+       "price": string,
+       "ram_slots": int,
+       "m2_pci_e_3": int,
+       "m2_pci_e_4": int,
+       "usb_3_slots": int,
+       "usb_3_headers": int,
+       "usb_3_type_c": int,
+       "vga": int,
+       "dvi": int,
+       "display_port": int,
+       "hdmi": int,
+       "pci_e_3": int,
+       "pci_e_4": int,
+       "external_image": string, # url
+       "image": file,
+       "form_factor": int, id of form factor
+       "socket": int, # id of socket
+       "ram_type": int, # id of ram_type
+       "chipset": int, # id of chipset
+       "producer": int # id of producer
+     }
+     ```
+   * Content-Type
+     ```sh
+     multipart/form-data # allowed application/json when not upload file image
+     ```
+   * Response
+     ```sh
+     # list of motherboards data when GET
+     # motherboard information when POST a new
+     # motherboard with new information when PATCH
+     # status code 204 (no content)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
