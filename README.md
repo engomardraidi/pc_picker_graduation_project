@@ -468,6 +468,55 @@ Below you will find instructions and everything you need to use the APIs.
      # ram with new information when PATCH
      # status code 204 (no content)
 
+4. GPUs
+   * GET, POST, PATCH, DELETE methods
+   * paths
+     ```sh
+     dashboard/rams/ # GET list of gpus data or POST new gpu
+     dashboard/rams/<int:id>/ # GET, PATCH (update) or DELETE specific gpu
+     ```
+   * Body
+     ```sh
+     # When POST new gpu
+     {
+       "name": string,
+       "pci_e": int,
+       "vram": int,
+       "cores": int,
+       "price": string,
+       "length": float,
+       "slots": float,
+       "connectors_8pin": int,
+       "connectors_6pin": int,
+       "hdmi": int,
+       "display_port": int,
+       "dvi": int,
+       "vga": int,
+       "boost_clock": int,
+       "memory_clock": int,
+       "tdp": int,
+       "external_image": string, # url
+       "image": file,
+       "series": int, # id of series
+       "producer": int, # id of producer
+       "sync": int # id of sync
+     }
+     ```
+   * Headers
+      ```sh
+      Authorization: Bearer {access_token}
+      ```
+   * Content-Type
+     ```sh
+     multipart/form-data # allowed application/json when not upload file image
+     ```
+   * Response
+     ```sh
+     # list of gpus data when GET
+     # gpu information when POST a new
+     # gpu with new information when PATCH
+     # status code 204 (no content)
+
 ### Picker
 
 1. Pick PC
