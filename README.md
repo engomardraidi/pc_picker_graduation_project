@@ -428,6 +428,46 @@ Below you will find instructions and everything you need to use the APIs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+3. RAMs
+   * GET, POST, PATCH, DELETE methods
+   * paths
+     ```sh
+     dashboard/rams/ # GET list of rams data or POST new ram
+     dashboard/rams/<int:id>/ # GET, PATCH (update) or DELETE specific ram
+     ```
+   * Body
+     ```sh
+     # When POST new ram
+     {
+       "name": string,
+       "price": string,
+       "base_clock": float,
+       "turbo_clock": float,
+       "cores": int,
+       "threads": int,
+       "tdp": int,
+       "integrated_graphics": string,
+       "external_image": string, # url
+       "image": file,
+       "socket": int, # id of socket
+       "producer": int # id of producer
+     }
+     ```
+   * Headers
+      ```sh
+      Authorization: Bearer {access_token}
+      ```
+   * Content-Type
+     ```sh
+     multipart/form-data # allowed application/json when not upload file image
+     ```
+   * Response
+     ```sh
+     # list of rams data when GET
+     # ram information when POST a new
+     # ram with new information when PATCH
+     # status code 204 (no content)
+
 ### Picker
 
 1. Pick PC
