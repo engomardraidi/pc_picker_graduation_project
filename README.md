@@ -369,6 +369,10 @@ Below you will find instructions and everything you need to use the APIs.
        "producer": int # id of producer
      }
      ```
+   * Headers
+      ```sh
+      Authorization: Bearer {access_token}
+      ```
    * Content-Type
      ```sh
      multipart/form-data # allowed application/json when not upload file image
@@ -378,6 +382,48 @@ Below you will find instructions and everything you need to use the APIs.
      # list of motherboards data when GET
      # motherboard information when POST a new
      # motherboard with new information when PATCH
+     # status code 204 (no content)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+2. CPUs
+   * GET, POST, PATCH, DELETE methods
+   * paths
+     ```sh
+     dashboard/cpus/ # GET list of cpus data or POST new cpu
+     dashboard/cpus/<int:id>/ # GET, PATCH (update) or DELETE specific cpu
+     ```
+   * Body
+     ```sh
+     # When POST new cpu
+     {
+       "name": string,
+       "price": string,
+       "base_clock": float,
+       "turbo_clock": float,
+       "cores": int,
+       "threads": int,
+       "tdp": int,
+       "integrated_graphics": string,
+       "external_image": string, # url
+       "image": file,
+       "socket": int, # id of socket
+       "producer": int # id of producer
+     }
+     ```
+   * Headers
+      ```sh
+      Authorization: Bearer {access_token}
+      ```
+   * Content-Type
+     ```sh
+     multipart/form-data # allowed application/json when not upload file image
+     ```
+   * Response
+     ```sh
+     # list of cpus data when GET
+     # cpu information when POST a new
+     # cpu with new information when PATCH
      # status code 204 (no content)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
