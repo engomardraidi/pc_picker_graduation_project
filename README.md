@@ -340,6 +340,7 @@ Below you will find instructions and everything you need to use the APIs.
      ```sh
      dashboard/motherboards/ # GET list of motherboards data or POST new motherboard
      dashboard/motherboards/<int:id>/ # GET, PATCH (update) or DELETE specific motherboard
+     dashboard/motherboards/?search=<string:name> # "GET" request
      ```
    * Body
      ```sh
