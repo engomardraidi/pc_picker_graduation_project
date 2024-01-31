@@ -50,8 +50,8 @@
 49,Corsair RGB 32GB,32,DDR4,94.99,Corsair,2666,16-18-18-35,4,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,TRUE,FALSE
 50,Corsair SO-Dimm Vengeance Series DDR4-3000,16,DDR4,41.99,Corsair,3000,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,TRUE,FALSE,TRUE,FALSE
 51,Corsair ValueSelect,16,DDR4,39.99,Corsair,2133,15-15-15-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
-52,Corsair ValueSelect DDR3-1333 CL9,8,DDR3,49.99,Corsair,1333,,1,,FALSE,FALSE,TRUE,TRUE
-53,Corsair ValueSelect Series DDR4-2133,8,DDR4,49.99,Corsair,2133,15-15-15-36,1,,TRUE,FALSE,TRUE,TRUE
+52,Corsair ValueSelect DDR3-1333 CL9,8,DDR3,49.99,Corsair,1333,,1,https://cdn11.bigcommerce.com/s-6bkt1ygjlf/images/stencil/1280x1280/products/764689/827706/CMV8GX3M1A1333C9-lg__35355.1635948238.jpg?c=2?imbypass=on,FALSE,FALSE,TRUE,TRUE
+53,Corsair ValueSelect Series DDR4-2133,8,DDR4,49.99,Corsair,2133,15-15-15-36,1,https://media.ldlc.com/r1600/ld/products/00/03/08/91/LD0003089176_2_0003089206.jpg,TRUE,FALSE,TRUE,TRUE
 54,Corsair Vengeance,192,DDR5,669.99,Corsair,5200,38-38-38-84,4,https://pcpartpicker.com/product/BXP8TW/corsair-vengeance-192-gb-4-x-48-gb-ddr5-5200-cl38-memory-cmk192gx5m4b5200c38,FALSE,TRUE,FALSE,FALSE
 55,Corsair Vengeance,32,DDR5,104.99,Corsair,7000,34-42-42-96,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,FALSE,TRUE,FALSE,FALSE
 56,Corsair Vengeance,64,DDR5,159.99,Corsair,5200,40-40-40-77,2,https://cdna.pcpartpicker.com/static/forever/images/product/44511eed6b609f1979ca94fe5ed2e2ad.256p.jpg,TRUE,TRUE,FALSE,FALSE
@@ -273,17 +273,17 @@
 272,HyperX Fury black DDR3-1333 CL9,16,DDR3,134.32,HyperX,1333,,2,https://cdna.pcpartpicker.com/static/forever/images/product/85fd6da3232f01936f1032b9e22d047e.256p.jpg,FALSE,FALSE,TRUE,TRUE
 273,HyperX Fury black DDR3-1600 CL10,4,DDR3,134.32,HyperX,1600,,1,https://cdna.pcpartpicker.com/static/forever/images/product/9dbdaa325c3c8126bddcfdc65c80dc0d.256p.jpg,FALSE,FALSE,FALSE,TRUE
 274,HyperX Fury black DDR3-1866 CL10,16,DDR3,134.32,HyperX,1866,,2,https://cdna.pcpartpicker.com/static/forever/images/product/85fd6da3232f01936f1032b9e22d047e.256p.jpg,FALSE,FALSE,TRUE,TRUE
-275,HyperX Fury black DDR3-1866 CL10,8,DDR3,134.32,HyperX,1866,,2,,TRUE,FALSE,TRUE,FALSE
+275,HyperX Fury black DDR3-1866 CL10,8,DDR3,134.32,HyperX,1866,,2,"https://m.media-amazon.com/images/I/71Yqg7w-guS._AC_UF894,1000_QL80_.jpg",TRUE,FALSE,TRUE,FALSE
 276,HyperX Fury blue DDR3-1333 CL9,4,DDR3,134.32,Hynix,1333,,1,https://cdna.pcpartpicker.com/static/forever/images/product/9dbdaa325c3c8126bddcfdc65c80dc0d.256p.jpg,FALSE,FALSE,FALSE,TRUE
-277,HyperX Fury blue DDR3-1600 CL10,8,DDR3,134.32,HyperX,1600,,2,,FALSE,FALSE,TRUE,TRUE
+277,HyperX Fury blue DDR3-1600 CL10,8,DDR3,134.32,HyperX,1600,,2,https://m.media-amazon.com/images/I/71l8Xm5Q6MS.jpg,FALSE,FALSE,TRUE,TRUE
 278,HyperX Fury red DDR3-1600 CL10,16,DDR3,134.32,HyperX,1600,,2,https://cdna.pcpartpicker.com/static/forever/images/product/85fd6da3232f01936f1032b9e22d047e.256p.jpg,FALSE,FALSE,TRUE,TRUE
 279,HyperX Fury white DDR3-1333 CL9,16,DDR3,134.32,HyperX,1333,,2,https://cdna.pcpartpicker.com/static/forever/images/product/85fd6da3232f01936f1032b9e22d047e.256p.jpg,FALSE,FALSE,TRUE,TRUE
-280,HyperX Fury white DDR3-1600 CL10,8,DDR3,134.32,HyperX,1600,,2,,FALSE,FALSE,TRUE,TRUE
+280,HyperX Fury white DDR3-1600 CL10,8,DDR3,134.32,HyperX,1600,,2,https://www.electrobyt.com/images/Gaming-DDR3/kingston-hyperx-fury-white-ddr3-pair.jpg,FALSE,FALSE,TRUE,TRUE
 281,HyperX Predator DDR4-3000 CL15,16,DDR4,134.32,HyperX,3000,,4,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
 282,HyperX Predator DDR4-3000 CL15,16,DDR4,134.32,HyperX,3000,,2,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
 283,HyperX Predator DDR4-3200 CL16,32,DDR4,134.32,HyperX,3200,,4,https://pcpartpicker.com/product/7Zc48d/adata-32gb-2-x-16gb-ddr4-3000-memory-ax4u3000316g16-drg,TRUE,TRUE,FALSE,FALSE
 284,HyperX Predator DDR4-3200 CL16,16,DDR4,134.32,HyperX,3200,,2,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
-285,HyperX Savage red DDR3-2133 CL11,8,DDR3,134.32,HyperX,2133,,1,,FALSE,FALSE,TRUE,TRUE
+285,HyperX Savage red DDR3-2133 CL11,8,DDR3,134.32,HyperX,2133,,1,https://bilendenal.com/materials/images/products/products/1/1151/2309/kingston-hyperx-savage-8gb-ddr3-2133mhz-cl11-performans-rami-hx321c11sr8-s10-p5-1200x800-i2309.jpg,FALSE,FALSE,TRUE,TRUE
 286,Kingston DDR4-2133 reg ECC  - Dell branded,32,DDR4,62.99,Kingston,2133,,1,https://pcpartpicker.com/product/hMLFf7/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-kf560c36bbek2-32,TRUE,FALSE,TRUE,FALSE
 287,Kingston DDR4-2133 reg ECC  - Dell branded,8,DDR4,28.69,Kingston,2133,,1,https://pcpartpicker.com/product/PkbTwP/kingston-fury-beast-8-gb-1-x-8-gb-ddr4-3200-cl16-memory-kf432c16bb8,TRUE,FALSE,TRUE,TRUE
 288,Kingston DDR4-2400 CL17 reg ECC   - HP branded,32,DDR4,62.99,Kingston,2400,,1,https://pcpartpicker.com/product/hMLFf7/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-kf560c36bbek2-32,TRUE,FALSE,TRUE,FALSE

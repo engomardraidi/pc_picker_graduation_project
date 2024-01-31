@@ -12,7 +12,7 @@
 11,AMD Athlon 240GE,AM4,63.00,AMD,3.5,0.0,2,4,35,Radeon RX Vega 3,https://cdna.pcpartpicker.com/static/forever/images/product/900cddd78a7e0b4ab21a6e80f65fd9d0.256p.jpg,FALSE,FALSE,FALSE,TRUE
 12,AMD Athlon 3000G,AM4,49.00,AMD,3.5,0.0,2,4,35,Radeon RX Vega 3,https://cdna.pcpartpicker.com/static/forever/images/product/4cca7584d65df7a4e4b5298805e9552f.256p.jpg,FALSE,FALSE,TRUE,TRUE
 13,AMD FX-4300,AM3+,90.05,AMD,3.8,4.0,4,4,95,,https://images-na.ssl-images-amazon.com/images/I/51cX5o1WMGL.jpg,FALSE,FALSE,FALSE,TRUE
-14,AMD FX-6300,AM3+,88.71,AMD,3.5,3.8,6,6,95,,https://static/forever/img/no-image.png,FALSE,FALSE,FALSE,TRUE
+14,AMD FX-6300,AM3+,88.71,AMD,3.5,3.8,6,6,95,,https://www.indybusinesssolutions.com/images/store/product/FD6300WMHKBOX.png,FALSE,FALSE,FALSE,TRUE
 15,AMD FX-8300,AM3+,143.61,AMD,3.3,4.2,8,8,95,,https://images-fe.ssl-images-amazon.com/images/I/51OQzB3bsDL.jpg,FALSE,FALSE,FALSE,TRUE
 16,AMD FX-8320E,AM3+,132.61,AMD,3.2,4.0,8,8,95,,https://m.media-amazon.com/images/I/41lJqX+INGL.jpg,FALSE,FALSE,FALSE,TRUE
 17,AMD FX-8350,AM3+,84.95,AMD,4.0,4.2,8,8,125,,https://m.media-amazon.com/images/I/511KbpvD7fL.jpg,FALSE,FALSE,FALSE,TRUE
@@ -101,7 +101,7 @@
 100,Intel Core i3-7300T,1151,164.33,Intel,3.5,0.0,2,4,35,,https://cdna.pcpartpicker.com/static/forever/images/product/6575bf30b14742cef9e7ddae7fb2ce7f.256p.jpg,FALSE,FALSE,TRUE,TRUE
 101,Intel Core i3-7320,1151,154.66,Intel,4.1,0.0,2,4,51,,https://m.media-amazon.com/images/I/51NQB9peGbL.jpg,FALSE,FALSE,TRUE,TRUE
 102,Intel Core i3-7350K,1151,174.99,Intel,4.2,0.0,2,4,60,Intel HD 630,https://cdna.pcpartpicker.com/static/forever/images/product/f08ed44a8570ef813099b9b298a84d38.256p.jpg,FALSE,FALSE,TRUE,FALSE
-103,Intel Core i3-8100,1151,119.99,Intel,3.6,0.0,4,4,65,Intel UHD 630,https://static/forever/img/no-image.png,FALSE,FALSE,TRUE,TRUE
+103,Intel Core i3-8100,1151,119.99,Intel,3.6,0.0,4,4,65,Intel UHD 630,https://m.media-amazon.com/images/I/81hifQSyFlL.jpg,FALSE,FALSE,TRUE,TRUE
 104,Intel Core i3-8300,1151,147.00,Intel,3.7,0.0,4,4,62,,https://cdna.pcpartpicker.com/static/forever/images/product/5c92fd399303b10e4c5ea8015ec47f39.256p.jpg,FALSE,FALSE,TRUE,TRUE
 105,Intel Core i3-8350K,1151,179.99,Intel,4.0,0.0,4,4,91,Intel UHD 630,https://cdna.pcpartpicker.com/static/forever/images/product/c96f59d30a42a70cb371b93507d7eea1.256p.jpg,TRUE,FALSE,TRUE,FALSE
 106,Intel Core i3-9100,1151,109.99,,3.6,4.2,4,4,65,Intel UHD 630,https://cdna.pcpartpicker.com/static/forever/images/product/46badc31f619c275800a79476709e08f.256p.jpg,TRUE,FALSE,TRUE,FALSE
@@ -133,18 +133,18 @@
 132,Intel Core i5-13600KF,1700,285.99,Intel,3.5,0.0,6,12,125,,https://cdna.pcpartpicker.com/static/forever/images/product/d151778af9f52d6ab1f9475a0ae84dc0.256p.jpg,TRUE,TRUE,FALSE,FALSE
 133,Intel Core i5-4460,1150,193.78,Intel,3.2,3.4,4,4,84,Intel HD 4600,https://m.media-amazon.com/images/I/51m7EsJG9-L.jpg,FALSE,FALSE,FALSE,TRUE
 134,Intel Core i5-4590,1150,179.99,Intel,3.3,3.7,4,4,84,Intel HD 4600,https://m.media-amazon.com/images/I/51vb+UYTxSL.jpg,FALSE,FALSE,FALSE,TRUE
-135,Intel Core i5-4690,1150,219.29,Intel,3.5,3.9,4,4,84,Intel HD 4600,https://static/forever/img/no-image.png,FALSE,FALSE,FALSE,TRUE
+135,Intel Core i5-4690,1150,219.29,Intel,3.5,3.9,4,4,84,Intel HD 4600,https://www.bhphotovideo.com/images/images2500x2500/intel_bx80646i54690_core_i5_4690_3_90_ghz_1216668.jpg,FALSE,FALSE,FALSE,TRUE
 136,Intel Core i5-6400,1151,179.99,Intel,2.7,3.3,4,4,65,Intel HD 530,https://cdna.pcpartpicker.com/static/forever/images/product/fd51d44541807d00d4b265d071f313fa.256p.jpg,FALSE,FALSE,TRUE,TRUE
 137,Intel Core i5-6500,1151,189.44,Intel,3.2,3.6,4,4,65,Intel HD 530,https://cdna.pcpartpicker.com/static/forever/images/product/68a2d7d02408cf9854c557a10603aa8b.256p.jpg,FALSE,FALSE,TRUE,TRUE
 138,Intel Core i5-6600,1151,246.32,Intel,3.3,3.9,4,4,65,Intel HD 530,https://cdna.pcpartpicker.com/static/forever/images/product/fd51d44541807d00d4b265d071f313fa.256p.jpg,FALSE,FALSE,TRUE,TRUE
 139,Intel Core i5-6600K,1151,219.99,Intel,3.5,3.9,4,4,91,Intel HD 530,https://cdna.pcpartpicker.com/static/forever/images/product/39c7a343d00445b6e0e5d54d4b7ed561.256p.jpg,FALSE,FALSE,TRUE,TRUE
-140,Intel Core i5-7400,1151,182.00,Intel,3.0,3.5,4,4,65,Intel HD 630,https://static/forever/img/no-image.png,FALSE,FALSE,TRUE,TRUE
-141,Intel Core i5-7500,1151,202.00,Intel,3.4,3.8,4,4,65,Intel HD 630,https://static/forever/img/no-image.png,FALSE,FALSE,TRUE,TRUE
+140,Intel Core i5-7400,1151,182.00,Intel,3.0,3.5,4,4,65,Intel HD 630,https://www.tradeinn.com/f/13743/137434523/intel-core-i5-7400-3.0ghz-cpu.jpg,FALSE,FALSE,TRUE,TRUE
+141,Intel Core i5-7500,1151,202.00,Intel,3.4,3.8,4,4,65,Intel HD 630,https://super-star.ps/wp-content/uploads/2023/08/71GY6jdAVHL.jpg,FALSE,FALSE,TRUE,TRUE
 142,Intel Core i5-7600,1151,229.99,Intel,3.5,4.1,4,4,65,Intel HD 630,https://m.media-amazon.com/images/I/51PTdytDLsL.jpg,FALSE,FALSE,TRUE,TRUE
 143,Intel Core i5-7600K,1151,242.99,Intel,3.8,4.2,4,4,91,Intel HD 630,https://cdna.pcpartpicker.com/static/forever/images/product/a9e3ce1189342ff04c81e37b12d2c162.256p.jpg,TRUE,FALSE,TRUE,TRUE
 144,Intel Core i5-7640X,2066,199.99,Intel,4.0,4.2,4,4,112,,https://m.media-amazon.com/images/I/51LYLytJQOL.jpg,FALSE,FALSE,TRUE,FALSE
 145,Intel Core i5-8400,1151,189.99,Intel,2.8,4.0,6,6,65,Intel UHD 630,https://cdna.pcpartpicker.com/static/forever/images/product/781c3da4b04a14f5556a6bc7ad7907de.256p.jpg,FALSE,FALSE,TRUE,TRUE
-146,Intel Core i5-8500,1151,209.95,Intel,3.0,4.1,6,6,65,Intel UHD 630,https://static/forever/img/no-image.png,FALSE,FALSE,TRUE,TRUE
+146,Intel Core i5-8500,1151,209.95,Intel,3.0,4.1,6,6,65,Intel UHD 630,https://m.media-amazon.com/images/I/91OeIuA2SBL.jpg,FALSE,FALSE,TRUE,TRUE
 147,Intel Core i5-8600,1151,224.00,Intel,3.1,4.3,6,6,65,Intel UHD 630,https://m.media-amazon.com/images/I/51yRjfYzahL.jpg,FALSE,FALSE,TRUE,TRUE
 148,Intel Core i5-8600K,1151,259.99,Intel,3.6,4.3,6,6,95,Intel UHD 630,https://cdna.pcpartpicker.com/static/forever/images/product/781c3da4b04a14f5556a6bc7ad7907de.256p.jpg,FALSE,FALSE,TRUE,FALSE
 149,Intel Core i5-9400,1151,167.65,Intel,2.9,4.1,6,6,65,Intel UHD 630,https://cdna.pcpartpicker.com/static/forever/images/product/64bf363daabaca441f6b8f07b54005cc.256p.jpg,TRUE,FALSE,TRUE,TRUE
@@ -232,7 +232,7 @@
 231,Intel Xeon E3-1231 V3,1150,147.18,Intel,3.4,3.8,4,8,80,,https://m.media-amazon.com/images/I/51k59EO89OL.jpg,FALSE,FALSE,TRUE,TRUE
 232,Intel Xeon E5-1620 V3,2011-V3,356.21,Intel,3.5,3.6,4,8,140,,https://m.media-amazon.com/images/I/51rLr1NagHL.jpg,FALSE,FALSE,TRUE,TRUE
 233,Intel Xeon E5-1650 V4,2011-V3,299.99,Intel,3.6,4.0,6,12,140,,https://cdna.pcpartpicker.com/static/forever/images/product/9f6b656cf6f4885666f47c2677601942.256p.jpg,FALSE,FALSE,TRUE,TRUE
-234,Intel Xeon E5-2603 V3,2011-V3,182.99,Intel,1.6,0.0,6,6,85,,https://static/forever/img/no-image.png,FALSE,FALSE,TRUE,FALSE
+234,Intel Xeon E5-2603 V3,2011-V3,182.99,Intel,1.6,0.0,6,6,85,,https://c1.neweggimages.com/productimage/nb640/19-117-482-01.jpg,FALSE,FALSE,TRUE,FALSE
 235,Intel Xeon E5-2603 V4,2011-V3,218.13,Intel,1.7,0.0,6,6,85,,https://cdna.pcpartpicker.com/static/forever/images/product/ced2928f0412783f6314a70692c976b0.256p.jpg,FALSE,FALSE,TRUE,FALSE
 236,Intel Xeon E5-2609 V4,2011-V3,319.99,Intel,1.7,0.0,8,8,85,,https://cdna.pcpartpicker.com/static/forever/images/product/644fdf832bb1cdf8d7d313e357abda26.256p.jpg,FALSE,FALSE,TRUE,FALSE
 237,Intel Xeon E5-2620 V3,2011-V3,55.24,Intel,2.4,3.2,6,12,85,,https://m.media-amazon.com/images/I/51vdDe8NA9L.jpg,FALSE,FALSE,TRUE,FALSE

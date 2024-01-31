@@ -59,7 +59,7 @@
 58,ASRock Z790 PG Lightning/D,ATX,1700,DDR4,128.0,169.99,Z790,ASRock,4,,1.0,5.0,,,0.0,0.0,0.0,1.0,3,1,https://cdna.pcpartpicker.com/static/forever/images/product/734e5145e6e94b381114913f48776a44.256p.jpg
 59,ASRock Z790M PG Lightning/D,Micro-ATX,1700,DDR4,128.0,179.99,Z790,ASRock,4,,1.0,4.0,,,0.0,0.0,0.0,1.0,2,1,https://cdna.pcpartpicker.com/static/forever/images/product/38ea337431522ff4c9546f5aabff3cfb.256p.jpg
 60,Asus A68HM-PLU,ATX,FM2+,DDR3,32.0,61.01,A68H FCH (Bolton D2H),Asus,2,,0.0,2.0,1.0,,1.0,1.0,,1.0,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/6b616f0847a67568d3a2bb6716f4547d.256p.jpg
-61,Asus EX-B250-V,ATX,1151,DDR4,64.0,98.65,B250,Asus,4,,0.0,4.0,1.0,,,,,1.0,0,0,https://static/forever/img/no-image.png
+61,Asus EX-B250-V,ATX,1151,DDR4,64.0,98.65,B250,Asus,4,,0.0,4.0,1.0,,,,,1.0,0,0,https://www.asus.com/media/global/gallery/w7fINSM7SZmOwYJF_setting_xxx_0_90_end_2000.png
 62,Asus H110M-A,ATX,1151,DDR4,32.0,77.99,H110,Asus,2,,0.0,2.0,1.0,,1.0,1.0,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/71fdafdc764e65c147d537c0a0879451.256p.jpg
 63,Asus H110M-K,Micro-ATX,1151,DDR4,32.0,69.49,H110,ASUS,2,,0.0,2.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/71fdafdc764e65c147d537c0a0879451.256p.jpg
 64,ASUS M5A78L-M LX3 GL/SATA300/CF/VGA 760,ATX,AM3+,DDR3,32.0,68.51,760G,Asus,2,,0.0,,,,,,,,0,0,https://cdna.pcpartpicker.com/static/forever/images/product/dbea9f0869ed225cc821021f828686af.256p.jpg
@@ -114,7 +114,7 @@
 113,Gigabyte AB350-Gaming 3,ATX,AM4,DDR4,64.0,84.99,B350,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,1,0,https://m.media-amazon.com/images/I/51IFLBU8jpL.jpg
 114,Gigabyte AB350M-HD3,Micro-ATX,AM4,DDR4,32.0,99.15,B350,Gigabyte,2,1.0,0.0,4.0,,,0.0,0.0,0.0,0.0,2,0,https://cdna.pcpartpicker.com/static/forever/images/product/7ab99a71bf0ed32723e7455cefff30a3.256p.jpg
 115,Gigabyte Aorus X299-Gaming,ATX,2066,DDR4,128.0,438.62,X299,Gigabyte,8,1.0,0.0,4.0,4.0,,0.0,0.0,0.0,0.0,5,0,https://m.media-amazon.com/images/I/51z9ptmwyJL.jpg
-116,Gigabyte Aorus Z270X-Gaming,ATX,1151,DDR4,64.0,422.58,Z270,Gigabyte,4,0.0,0.0,5.0,4.0,,0.0,0.0,0.0,0.0,6,0,https://static/forever/img/no-image.png
+116,Gigabyte Aorus Z270X-Gaming,ATX,1151,DDR4,64.0,422.58,Z270,Gigabyte,4,0.0,0.0,5.0,4.0,,0.0,0.0,0.0,0.0,6,0,https://m.media-amazon.com/images/I/81j3TAx2YpL.jpg
 117,Gigabyte AX370-Gaming 5,ATX,AM4,DDR4,64.0,189.98,X370,Gigabyte,4,1.0,0.0,6.0,2.0,,0.0,0.0,0.0,0.0,2,0,https://m.media-amazon.com/images/I/51TaP-OIwEL.jpg
 118,Gigabyte B250-FinTech 11+1 BTC Editio,ATX,1151,DDR4,64.0,59.99,B250,Gigabyte,4,,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,12,0,https://cdna.pcpartpicker.com/static/forever/images/product/f52a9a0b2a28f096b5b1e5bf02707224.256p.jpg
 119,Gigabyte B360M DS3,Micro-ATX,1151,DDR4,64.0,63.99,B360,Gigabyte,4,1.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,3,0,https://m.media-amazon.com/images/I/51CbQdmpitL.jpg
@@ -137,7 +137,7 @@
 136,Gigabyte X99-UD5 WIF,E-ATX,2011-V3,DDR4,64.0,316.13,X99,Gigabyte,8,0.0,0.0,8.0,4.0,,0.0,0.0,0.0,0.0,4,0,https://m.media-amazon.com/images/I/51ODilB87BL.jpg
 137,Gigabyte Z170M-D3,Micro-ATX,1151,DDR4,64.0,112.43,Z170,Gigabyte,4,1.0,0.0,2.0,4.0,,1.0,1.0,0.0,1.0,3,0,https://images-eu.ssl-images-amazon.com/images/I/61hMwlOlefL.jpg
 138,Gigabyte Z170X Ultra Gamin,ATX,1151,DDR4,64.0,135,Z170,Gigabyte,4,0.0,0.0,4.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://m.media-amazon.com/images/I/615BKSQVs2L.jpg
-139,Gigabyte Z370 Aorus Gaming,ATX,1151,DDR4,64.0,149.99,Z370,Gigabyte,4,1.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://static/forever/img/no-image.png
+139,Gigabyte Z370 Aorus Gaming,ATX,1151,DDR4,64.0,149.99,Z370,Gigabyte,4,1.0,0.0,5.0,2.0,,0.0,0.0,0.0,0.0,6,0,https://static.gigabyte.com/StaticFile/Image/Global/b1559ab1e167c09ef1f6191336d36a48/Product/20724
 140,Gigabyte Z390 Aorus Pro WiF,ATX,1151,DDR4,64.0,169.99,Z390,Gigabyte,4,2.0,0.0,3.0,2.0,,0.0,0.0,0.0,1.0,6,0,https://cdna.pcpartpicker.com/static/forever/images/product/a735153cb96091c6e69f267386e177df.256p.jpg
 141,Gigabyte Z390 Designar,ATX,1151,DDR4,64.0,169.99,Z390,Gigabyte,4,2.0,0.0,4.0,2.0,,0.0,0.0,1.0,1.0,5,0,https://cdna.pcpartpicker.com/static/forever/images/product/e6ca8ab53946c008e506432f0ee86a3b.256p.jpg
 142,Gigabyte Z390 I Aorus Pro WiF,Mini-ITX,1151,DDR4,32.0,164.99,Z390,Gigabyte,2,1.0,0.0,4.0,3.0,,0.0,0.0,1.0,1.0,1,0,https://cdna.pcpartpicker.com/static/forever/images/product/faffdd443e284a7f37a3f337c3d2ffff.256p.jpg
