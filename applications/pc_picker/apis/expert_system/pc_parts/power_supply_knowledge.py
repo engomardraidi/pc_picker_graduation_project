@@ -9,7 +9,7 @@ class PowerSuppliesKnowledge(PCKnowledge):
         power_supplies = []
         perc = decimal.Decimal(0.03)
 
-        while len(power_supplies) == 0 and perc <= 1:
+        while len(power_supplies) == 0 and perc <= 3:
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)

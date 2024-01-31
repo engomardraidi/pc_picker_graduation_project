@@ -9,7 +9,7 @@ class CPUsKnowledge(PCKnowledge):
         cpus = []
         perc = decimal.Decimal(0.03)
 
-        while len(cpus) == 0 and perc < 1.6:
+        while len(cpus) == 0 and perc < 4:
             perc += decimal.Decimal(0.02)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)

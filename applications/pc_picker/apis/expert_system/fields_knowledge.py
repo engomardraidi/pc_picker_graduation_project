@@ -98,45 +98,53 @@ class FieldsKnowledge(ExpertSystem):
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=1))
-    def pick_pc_for_programming(self, rule):
+    def pick_pc_for_office(self, rule):
         self.__init_expert()
         budget = decimal.Decimal(rule['budget'])
         
-        list_pcs = self.__get_all_parts(1, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
+        list_pcs = self.__get_all_parts(1, budget)
         pcs = []
         for pc in list_pcs:
-            pcs.append(pc.get_pc_parts_as_json(budget))
+            if pc.cpu != None and pc.ram != None:
+                pcs.append(pc.get_pc_parts_as_json(budget))
+
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=2))
-    def pick_pc_for_graphic_design(self, rule):
+    def pick_pc_for_programming(self, rule):
         self.__init_expert()
         budget = decimal.Decimal(rule['budget'])
         
         list_pcs = self.__get_all_parts(2, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pcs.append(pc.get_pc_parts_as_json(budget))
+            # if pc.cpu != None and pc.ram != None:
+                pcs.append(pc.get_pc_parts_as_json(budget))
+
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=3))
-    def pick_pc_for_gaming(self, rule):
+    def pick_pc_for_graphic_design(self, rule):
         self.__init_expert()
         budget = decimal.Decimal(rule['budget'])
         
         list_pcs = self.__get_all_parts(3, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pcs.append(pc.get_pc_parts_as_json(budget))
+            if pc.cpu != None and pc.ram != None and pc.gpu != None:
+                pcs.append(pc.get_pc_parts_as_json(budget))
+
         return pcs
 
     @Rule(AS.rule << InputFact(field_id=4))
-    def pick_pc_for_office(self, rule):
+    def pick_pc_for_gaming(self, rule):
         self.__init_expert()
         budget = decimal.Decimal(rule['budget'])
         
-        list_pcs = self.__get_all_parts(4, budget)
+        list_pcs = self.__get_all_parts(4, budget, motherboard_Q_query=~Q(pci_e_3=0) | ~Q(pci_e_4=0))
         pcs = []
         for pc in list_pcs:
-            pcs.append(pc.get_pc_parts_as_json(budget))
+            if pc.cpu != None and pc.ram != None and pc.gpu != None:
+                pcs.append(pc.get_pc_parts_as_json(budget))
+
         return pcs
