@@ -123,10 +123,6 @@ Below you will find instructions to run project.
    ```sh
    git clone https://github.com/engomardraidi/pc_picker_graduation_project.git
    ```
-2. Open proejct on your IDE then
-   ```sh
-   python3 manage.py super_admin # Create super admin in database
-   ```
 3. Create project database
    ```sh
    python3 manage.py makemigrations
@@ -138,7 +134,7 @@ Below you will find instructions to run project.
    ```
 5. Create super admin
    ```sh
-   python3 manage.py super_admin
+   python3 manage.py super_admin # Create super admin in database
    ```
 6. Run server
    ```sh
