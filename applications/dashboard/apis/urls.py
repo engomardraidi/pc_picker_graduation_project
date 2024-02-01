@@ -13,4 +13,6 @@ router.register(r'power-supplies', views.PowerSupplyViewSet, basename='power-sup
 router.register(r'laptops', views.LaptopViewSet, basename='laptops')
 router.register(r'mobiles', views.MobileViewSet, basename='mobiles')
 
-urlpatterns = router.urls
+urlpatterns = router.urls + [
+    path('attributes/', views.get_all_attributes, name='attributes')
+]
