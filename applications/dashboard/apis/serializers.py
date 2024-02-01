@@ -8,6 +8,19 @@ class SerializerWithoutImage(BaseSerializer):
     pass
 
 class SerializerWithImage(BaseSerializer):
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('producer', False):
+            data['producer'] = models.Producer.get_object(data['producer']).name
+        if data.get('form_factor', False):
+            if isinstance(type(data['form_factor']),int):
+                data['form_factor'] = models.FormFactor.get_object(data['form_factor']).form_factor
+        if data.get('socket', False):
+            data['socket'] = models.CPUSocket.get_object(data['socket']).socket
+
+        return data
+
     def validate(self, attrs):
         if not self.partial:
             external_image = attrs.get('external_image', None)
@@ -85,7 +98,7 @@ class PowerSupplyTypeSerializer(SerializerWithoutImage):
 
 class PowerSupplyEfficiencySerializer(SerializerWithoutImage):
     class Meta:
-        models = models.PowerSupplyEfficiency
+        model = models.PowerSupplyEfficiency
         fields = '__all__'
 
 class RAMTypeSerializer(SerializerWithoutImage):
@@ -128,10 +141,28 @@ class MotherboardSerializer(SerializerWithImage):
         model = models.Motherboard
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('chipset', False):
+            data['chipset'] = models.Chipset.get_object(data['chipset']).chipset
+        if data.get('ram_type', False):
+            data['ram_type'] = models.RAMType.get_object(data['ram_type']).type
+
+        return data
+
 class RAMSerializer(SerializerWithImage):
     class Meta:
         model = models.RAM
         fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('type', False):
+            data['type'] = models.RAMType.get_object(data['type']).type
+
+        return data
 
 class CPUSerializer(SerializerWithImage):
     class Meta:
@@ -143,20 +174,62 @@ class GPUSerializer(SerializerWithImage):
         model = models.GPU
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('series', False):
+            data['series'] = models.GPUSeries.get_object(data['series']).series
+        if data.get('sync', False):
+            data['sync'] = models.GPUSync.get_object(data['sync']).sync
+
+        return data
+
 class CaseSerializer(SerializerWithImage):
     class Meta:
         model = models.Case
         fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('type', False):
+            data['type'] = models.CaseType.get_object(data['type']).type
+        if data.get('color', False):
+            data['color'] = models.Color.get_object(data['color']).color
+        if data.get('side_panel', False):
+            data['side_panel'] = models.CaseSidePanel.get_object(data['side_panel']).side_panel
+        if data.get('style', False):
+            data['style'] = models.CaseStyle.get_object(data['style']).style
+
+        return data
 
 class InternalDriveSerializer(SerializerWithImage):
     class Meta:
         model = models.InternalDrive
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('drive_type', False):
+            data['drive_type'] = models.DriveType.get_object(data['drive_type']).type
+
+        return data
+
 class PowerSupplySerializer(SerializerWithImage):
     class Meta:
         model = models.PowerSupply
         fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('type', False):
+            data['type'] = models.PowerSupplyType.get_object(data['type']).type
+        if data.get('efficiency', False):
+            data['efficiency'] = models.PowerSupplyEfficiency.get_object(data['efficiency']).efficiency
+
+        return data
 
 class CPUFieldSerializer(SerializerWithoutImage):
     class Meta:
