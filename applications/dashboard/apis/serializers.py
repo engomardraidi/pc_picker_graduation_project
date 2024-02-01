@@ -136,6 +136,22 @@ class MobileSerializer(SerializerWithImage):
         model = models.Mobile
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('ram', False):
+            data['ram'] = f'{data["ram"]}GB'
+        if data.get('cpu_speed', False):
+            data['cpu_speed'] = f'{data["cpu_speed"]}GHz'
+        if data.get('screen_size', False):
+            data['screen_size'] = f'{data["screen_size"]} inch'
+        if data.get('refresh_rate', False):
+            data['refresh_rate'] = f'{data["refresh_rate"]} frame'
+        if data.get('battery', False):
+            data['battery'] = f'{data["battery"]} mAh'
+
+        return data
+
 class MotherboardSerializer(SerializerWithImage):
     class Meta:
         model = models.Motherboard

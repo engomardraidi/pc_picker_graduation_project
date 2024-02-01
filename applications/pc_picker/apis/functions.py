@@ -21,10 +21,16 @@ def get_laptop_as_json(device, budget):
     }
 
 def get_mobile_as_json(mobile, budget):
+    data = dict(mobile.to_json())
+
+    data.pop('main_camera')
+    data.pop('front_camera')
+    data.pop('cameras_num')
+
     return {
         'perc': (mobile.price / budget) * 100,
         'price': mobile.price,
-        'mobile': mobile.to_json()
+        'mobile': data
     }
 
 def get_best_devices(devices):
