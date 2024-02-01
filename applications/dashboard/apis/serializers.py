@@ -146,7 +146,7 @@ class MobileSerializer(SerializerWithImage):
         if data.get('screen_size', False):
             data['screen_size'] = f'{data["screen_size"]} inch'
         if data.get('refresh_rate', False):
-            data['refresh_rate'] = f'{data["refresh_rate"]} frame'
+            data['refresh_rate'] = f'{data["refresh_rate"]}GHz'
         if data.get('battery', False):
             data['battery'] = f'{data["battery"]} mAh'
 
