@@ -11,7 +11,7 @@ class LaptopsKnowledge(ExpertSystem):
         perc = decimal.Decimal(0.03)
         laptops = []
 
-        while len(laptops) < 5:
+        while len(laptops) < 5 and perc < decimal.Decimal(1):
             perc += decimal.Decimal(0.03)
             min_budget = budget - (budget * perc)
             max_budget = budget + (budget * perc)
