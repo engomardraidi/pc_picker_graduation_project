@@ -14,10 +14,16 @@ class SerializerWithImage(BaseSerializer):
         if data.get('producer', False):
             data['producer'] = models.Producer.get_object(data['producer']).name
         if data.get('form_factor', False):
-            if isinstance(type(data['form_factor']),int):
+            if isinstance(data['form_factor'], int):
                 data['form_factor'] = models.FormFactor.get_object(data['form_factor']).form_factor
         if data.get('socket', False):
             data['socket'] = models.CPUSocket.get_object(data['socket']).socket
+        if data.get('tdp', False):
+            data['tdp'] = f'{data["tdp"]} wattage'
+
+        price = f'{data["price"]}$'
+        data.pop('price')
+        data['price'] = price
 
         return data
 
@@ -131,6 +137,24 @@ class LaptopSerializer(SerializerWithImage):
         model = models.Laptop
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('screen_size', False):
+            data['screen_size'] = f'{data["screen_size"]} inch'
+        if data.get('cpu_speed', False):
+            data['cpu_speed'] = f'{data["cpu_speed"]} GHz'
+        if data.get('gpu_speed', False):
+            data['gpu_speed'] = f'{data["gpu_speed"]} GHz'
+        if data.get('weight', False):
+            data['weight'] = f'{data["weight"] / 2.205} kilo'
+        if data.get('vram', False):
+            data['vram'] = f'{data["vram"]} GB'
+        if data.get('memory', False):
+            data['memory'] = f'{data["memory"]} GB'
+
+        return data
+
 class MobileSerializer(SerializerWithImage):
     class Meta:
         model = models.Mobile
@@ -160,6 +184,8 @@ class MotherboardSerializer(SerializerWithImage):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
+        if data.get('memory_max_capacity', False):
+            data['memory_max_capacity'] = f'{data["memory_max_capacity"]} GB'
         if data.get('chipset', False):
             data['chipset'] = models.Chipset.get_object(data['chipset']).chipset
         if data.get('ram_type', False):
@@ -177,6 +203,10 @@ class RAMSerializer(SerializerWithImage):
 
         if data.get('type', False):
             data['type'] = models.RAMType.get_object(data['type']).type
+        if data.get('size', False):
+            data['size'] = f'{data["size"]} GB'
+        if data.get('clock', False):
+            data['clock'] = f'{data["clock"]} GHz'
 
         return data
 
@@ -184,6 +214,16 @@ class CPUSerializer(SerializerWithImage):
     class Meta:
         model = models.CPU
         fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        if data.get('base_clock', False):
+            data['base_clock'] = f'{data["base_clock"]} GHz'
+        if data.get('turbo_clock', False) or data['turbo_clock'] == 0.0:
+            data['turbo_clock'] = f'{data["turbo_clock"]} GHz'
+
+        return data
 
 class GPUSerializer(SerializerWithImage):
     class Meta:
@@ -197,6 +237,14 @@ class GPUSerializer(SerializerWithImage):
             data['series'] = models.GPUSeries.get_object(data['series']).series
         if data.get('sync', False):
             data['sync'] = models.GPUSync.get_object(data['sync']).sync
+        if data.get('vram', False):
+            data['vram'] = f'{data["vram"]} GB'
+        if data.get('length', False):
+            data['length'] = f'{data["length"]} mm'
+        if data.get('boost_clock', False):
+            data['boost_clock'] = f'{data["boost_clock"]} GHz'
+        if data.get('memory_clock', False):
+            data['memory_clock'] = f'{data["memory_clock"]} GHz'
 
         return data
 
@@ -229,6 +277,12 @@ class InternalDriveSerializer(SerializerWithImage):
 
         if data.get('drive_type', False):
             data['drive_type'] = models.DriveType.get_object(data['drive_type']).type
+        if data.get('capacity', False):
+            data['capacity'] = f'{data["capacity"]} GB'
+        if data.get('price_per_gb', False):
+            data['price_per_gb'] = f'{data["price_per_gb"]}$'
+        if data.get('cache', False):
+            data['cache'] = f'{data["cache"]} MB'
 
         return data
 
@@ -244,6 +298,8 @@ class PowerSupplySerializer(SerializerWithImage):
             data['type'] = models.PowerSupplyType.get_object(data['type']).type
         if data.get('efficiency', False):
             data['efficiency'] = models.PowerSupplyEfficiency.get_object(data['efficiency']).efficiency
+        if data.get('wattage', False):
+            data['wattage'] = f'{data["wattage"]} wattage'
 
         return data
 
