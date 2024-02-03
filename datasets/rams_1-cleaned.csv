@@ -1,38 +1,38 @@
 #,name,size,memory_type,price,producer,clock,timings,sticks,image_url,gaming,graphic design,programming,office
 1,ADATA Premier DDR5-4800,16,DDR5,134.32,ADATA,4800,40,1,https://cdna.pcpartpicker.com/static/forever/images/product/de785c70194bf677c5fe0dc99d8af089.256p.jpg,TRUE,FALSE,TRUE,FALSE
-2,ADATA Premier Series DDR3-1600 CL11,8,DDR3,134.32,Adata,1600,,1,https://pcpartpicker.com/product/Vs8j4D/adata-premier-8gb-1-x-8gb-ddr4-2400-memory-ad4u240038g17-s,FALSE,FALSE,TRUE,TRUE
-3,Ballistix Tactical DDR4-3000 CL15,8,DDR4,134.32,Ballistix,3000,,1,https://pcpartpicker.com/product/znddnQ/crucial-ballistix-8-gb-1-x-8-gb-ddr4-3600-cl16-memory-bl8g36c16u4b,TRUE,FALSE,TRUE,FALSE
+2,ADATA Premier Series DDR3-1600 CL11,8,DDR3,134.32,Adata,1600,,1,https://cdna.pcpartpicker.com/static/forever/images/product/bbb6e3d9787cc6bd8ff1c5df6efbab1e.1600.jpg,FALSE,FALSE,TRUE,TRUE
+3,Ballistix Tactical DDR4-3000 CL15,8,DDR4,134.32,Ballistix,3000,,1,https://cdna.pcpartpicker.com/static/forever/images/product/9e5ec9cdd08d9c2e391708c160a9043a.1600.jpg,TRUE,FALSE,TRUE,FALSE
 4,Corsair — 16GB Dual Channel DDR3 Memory Kit,16,DDR3,41.99,Corsair,1600,10-10-10-27,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,FALSE,FALSE,TRUE,TRUE
 5,Corsair — 16GB Dual Channel DDR3 Memory Kit,16,DDR3,41.99,Corsair,1600,10-10-10-27,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,FALSE,FALSE,TRUE,TRUE
 6,Corsair — 16GB Dual/Quad Channel DDR3 Memory Kit,16,DDR3,41.99,Corsair,1866,9-10-9-27,4,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,FALSE,FALSE,TRUE,TRUE
-7,Corsair — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,FALSE,TRUE,FALSE
+7,Corsair — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,FALSE,TRUE,FALSE
 8,Corsair — 4GB Dual Channel DDR3 Memory Kit,4,DDR3,14.99,Corsair,1600,9-9-9-24,2,https://cdna.pcpartpicker.com/static/forever/images/product/835ab3efad1be13bbe53beef3e3c6f96.256p.jpg,FALSE,FALSE,FALSE,TRUE
-9,Corsair — 8GB Dual Channel DDR3 Memory Kit,8,DDR3,24.99,Corsair,1600,8-8-8-24,2,https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16,FALSE,FALSE,TRUE,TRUE
+9,Corsair — 8GB Dual Channel DDR3 Memory Kit,8,DDR3,24.99,Corsair,1600,8-8-8-24,2,https://cdna.pcpartpicker.com/static/forever/images/product/ef1c9d46308283f227a0ba51e4179ff1.1600.jpg,FALSE,FALSE,TRUE,TRUE
 10,Corsair 1GB DDR2 Memory,1,DDR2,134.32,Corsair,533,4-4-4-12,1,https://cdna.pcpartpicker.com/static/forever/images/product/c70aa8275698a40fe919387b972728a1.256p.jpg,FALSE,FALSE,FALSE,TRUE
-11,Corsair 2GB Dual Channel DDR Memory Kit,2,DDR1,94.90,Corsair,400,3-3-3-8,2,https://pcpartpicker.com/product/LWsKHx/corsair-memory-cm2x20486400c5,FALSE,FALSE,FALSE,TRUE
-12,Corsair 8GB,8,DDR4,24.99,Corsair,2400,16-16-16-39,1,https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16,TRUE,FALSE,TRUE,TRUE
-13,"Corsair Dominator Platinum + AF, DDR4-3600, CL 16 - 32 GB Quad Kit",32,DDR4,104.99,Corsair,3600,16-16-16-36,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
+11,Corsair 2GB Dual Channel DDR Memory Kit,2,DDR1,94.90,Corsair,400,3-3-3-8,2,https://m.media-amazon.com/images/I/31FX2Av+QKL.jpg,FALSE,FALSE,FALSE,TRUE
+12,Corsair 8GB,8,DDR4,24.99,Corsair,2400,16-16-16-39,1,https://cdna.pcpartpicker.com/static/forever/images/product/ef1c9d46308283f227a0ba51e4179ff1.1600.jpg,TRUE,FALSE,TRUE,TRUE
+13,"Corsair Dominator Platinum + AF, DDR4-3600, CL 16 - 32 GB Quad Kit",32,DDR4,104.99,Corsair,3600,16-16-16-36,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
 14,Corsair Dominator Platinum RGB,64,DDR5,324.99,Corsair,6400,32-40-40-84,4,https://cdna.pcpartpicker.com/static/forever/images/product/2d5f8a5348178d69f75557c090aed328.256p.jpg,FALSE,TRUE,FALSE,FALSE
-15,Corsair Dominator Platinum RGB,32,DDR5,164.99,Corsair,6200,36-39-39-76,2,https://pcpartpicker.com/product/qBBG3C/corsair-dominator-platinum-rgb-32-gb-2-x-16-gb-ddr5-6200-cl36-memory-cmt32gx5m2x6200c36w,TRUE,TRUE,FALSE,FALSE
-16,Corsair Dominator Platinum RGB,32,DDR5,164.99,Corsair,5200,40-40-77,2,https://pcpartpicker.com/product/qBBG3C/corsair-dominator-platinum-rgb-32-gb-2-x-16-gb-ddr5-6200-cl36-memory-cmt32gx5m2x6200c36w,TRUE,TRUE,FALSE,FALSE
+15,Corsair Dominator Platinum RGB,32,DDR5,164.99,Corsair,6200,36-39-39-76,2,https://cdna.pcpartpicker.com/static/forever/images/product/14efe97f96919022afdfc48699226b7f.1600.jpg,TRUE,TRUE,FALSE,FALSE
+16,Corsair Dominator Platinum RGB,32,DDR5,164.99,Corsair,5200,40-40-77,2,https://cdna.pcpartpicker.com/static/forever/images/product/14efe97f96919022afdfc48699226b7f.1600.jpg,TRUE,TRUE,FALSE,FALSE
 17,Corsair Dominator Platinum RGB Series,64,DDR4,159.99,Corsair,3600,18-19-19-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/44511eed6b609f1979ca94fe5ed2e2ad.256p.jpg,TRUE,TRUE,FALSE,FALSE
 18,Corsair Dominator Platinum RGB Series,16,DDR4,69.98,Corsair,3200,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
-19,Corsair Dominator Platinum ROG Edition 32GB,32,DDR4,134.32,Corsair,3200,16-18-18-36,4,https://pcpartpicker.com/product/7bGxFT/corsair-dominator-platinum-rog-edition-32gb-4-x-8gb-ddr4-3200-memory-cmd32gx4m4c3200c16-rog,TRUE,TRUE,FALSE,FALSE
+19,Corsair Dominator Platinum ROG Edition 32GB,32,DDR4,134.32,Corsair,3200,16-18-18-36,4,https://m.media-amazon.com/images/I/51nj6yc6QrL.jpg,TRUE,TRUE,FALSE,FALSE
 20,Corsair Dominator Platinum Series — 16GB,16,DDR3,89.99,Corsair,3000,12-14-14-36,4,https://cdna.pcpartpicker.com/static/forever/images/product/6026d8285e41f56e9c8e797286810d04.256p.jpg,TRUE,FALSE,TRUE,FALSE
 21,Corsair Dominator Platinum Series — 16GB,16,DDR3,89.99,Corsair,2133,9-11-10-30,4,https://cdna.pcpartpicker.com/static/forever/images/product/6026d8285e41f56e9c8e797286810d04.256p.jpg,FALSE,FALSE,TRUE,TRUE
 22,Corsair Dominator Platinum Series — 16GB,16,DDR3,89.99,Corsair,1866,10-11-10-30,2,https://cdna.pcpartpicker.com/static/forever/images/product/6026d8285e41f56e9c8e797286810d04.256p.jpg,FALSE,FALSE,TRUE,TRUE
 23,Corsair Dominator Platinum Series — 16GB,16,DDR3,89.99,Corsair,2400,11-13-13-31,4,https://cdna.pcpartpicker.com/static/forever/images/product/6026d8285e41f56e9c8e797286810d04.256p.jpg,FALSE,FALSE,TRUE,FALSE
-24,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,3200,14-16-16-36,2,https://pcpartpicker.com/product/7Y3H99/corsair-dominator-platinum-rgb-16-gb-2-x-8-gb-ddr4-3600-memory-cmt16gx4m2c3600c18,TRUE,FALSE,TRUE,FALSE
-25,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,3733,17-19-19-39,2,https://pcpartpicker.com/product/7Y3H99/corsair-dominator-platinum-rgb-16-gb-2-x-8-gb-ddr4-3600-memory-cmt16gx4m2c3600c18,TRUE,FALSE,TRUE,FALSE
-26,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,2400,10-12-12-28,2,https://pcpartpicker.com/product/7Y3H99/corsair-dominator-platinum-rgb-16-gb-2-x-8-gb-ddr4-3600-memory-cmt16gx4m2c3600c18,FALSE,FALSE,TRUE,TRUE
-27,Corsair Dominator Platinum Series 32GB,32,DDR4,1674.47,Corsair,3200,16-18-18-36,2,https://pcpartpicker.com/product/VbtWGX/corsair-memory-cmd32gx4m4a2666c15,TRUE,TRUE,FALSE,FALSE
-28,Corsair Dominator Platinum Series 64GB,64,DDR4,324.99,Corsair,2800,14-16-16-31,8,https://pcpartpicker.com/product/rGkH99/corsair-dominator-platinum-rgb-64-gb-2-x-32-gb-ddr5-6800-cl40-memory-cmt64gx5m2b6800c40,TRUE,TRUE,FALSE,FALSE
-29,Corsair LED 32GB,32,DDR4,94.99,Corsair,3200,16-18-18-36,4,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,FALSE,FALSE
-30,Corsair Low Profile — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,FALSE,TRUE,FALSE
-31,Corsair Low Profile — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,FALSE,TRUE,FALSE
+24,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,3200,14-16-16-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/d756aa5dc951a72c2cde2c8d1d7b7dca.1600.jpg,TRUE,FALSE,TRUE,FALSE
+25,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,3733,17-19-19-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/d756aa5dc951a72c2cde2c8d1d7b7dca.1600.jpg,TRUE,FALSE,TRUE,FALSE
+26,Corsair Dominator Platinum Series 16GB,16,DDR4,89.99,Corsair,2400,10-12-12-28,2,https://cdna.pcpartpicker.com/static/forever/images/product/d756aa5dc951a72c2cde2c8d1d7b7dca.1600.jpg,FALSE,FALSE,TRUE,TRUE
+27,Corsair Dominator Platinum Series 32GB,32,DDR4,1674.47,Corsair,3200,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.1600.jpg,TRUE,TRUE,FALSE,FALSE
+28,Corsair Dominator Platinum Series 64GB,64,DDR4,324.99,Corsair,2800,14-16-16-31,8,https://cdna.pcpartpicker.com/static/forever/images/product/2d5f8a5348178d69f75557c090aed328.1600.jpg,TRUE,TRUE,FALSE,FALSE
+29,Corsair LED 32GB,32,DDR4,94.99,Corsair,3200,16-18-18-36,4,https://cdna.pcpartpicker.com/static/forever/images/product/5f09867b54e9ad932b4dd1bc767f6238.1600.jpg,TRUE,TRUE,FALSE,FALSE
+30,Corsair Low Profile — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,FALSE,TRUE,FALSE
+31,Corsair Low Profile — 32GB Dual/Quad Channel DDR3 Memory Kit,32,DDR3,104.99,Corsair,1600,10-10-10-27,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,FALSE,TRUE,FALSE
 32,Corsair Low Profile Blue — 16GB Dual Channel DDR3 Memory Kit,16,DDR3,41.99,Corsair,1600,9-9-9-24,4,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,FALSE,FALSE,TRUE,TRUE
-33,Corsair LP 8GB,8,DDR3,24.99,Corsair,1600,9-9-9-24,1,https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16,FALSE,FALSE,TRUE,TRUE
-34,Corsair LPX 128GB,128,DDR4,444.99,Corsair,3000,16-18-18-36,8,https://pcpartpicker.com/product/PNsV3C/corsair-vengeance-rgb-128-gb-4-x-32-gb-ddr5-5600-cl40-memory-cmh128gx5m4b5600c40,FALSE,TRUE,FALSE,FALSE
+33,Corsair LP 8GB,8,DDR3,24.99,Corsair,1600,9-9-9-24,1,https://cdna.pcpartpicker.com/static/forever/images/product/ef1c9d46308283f227a0ba51e4179ff1.1600.jpg,FALSE,FALSE,TRUE,TRUE
+34,Corsair LPX 128GB,128,DDR4,444.99,Corsair,3000,16-18-18-36,8,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.1600.jpg,FALSE,TRUE,FALSE,FALSE
 35,Corsair LPX 16GB,16,DDR4,41.99,Corsair,3400,16-18-18-36,4,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
 36,Corsair LPX 16GB,16,DDR4,41.99,Corsair,4266,19-26-26-46,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
 37,Corsair LPX 16GB,16,DDR4,41.99,Corsair,3200,15-17-17-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
@@ -42,122 +42,122 @@
 41,Corsair LPX 16GB,16,DDR4,41.99,Corsair,2400,14-16-16-31,1,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,FALSE,FALSE,TRUE,FALSE
 42,Corsair LPX 16GB,16,DDR4,41.99,Corsair,3200,16-18-18-36,4,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
 43,Corsair LPX 16GB,16,DDR4,41.99,Corsair,2400,16-16-16-39,1,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,FALSE,FALSE,TRUE,FALSE
-44,Corsair LPX 32GB,32,DDR4,94.99,Corsair,3866,18-22-22-40,4,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,FALSE,FALSE
-45,Corsair Pro Series — 32GB,32,DDR3,234.99,Corsair,1866,9-10-9-27,4,https://pcpartpicker.com/product/nkbRsY/corsair-dominator-titanium-first-edition-32-gb-2-x-16-gb-ddr5-7200-cl40-memory-cmp32gx5m2x7200c34few,TRUE,FALSE,TRUE,FALSE
-46,Corsair Pro Series — 8GB,8,DDR3,134.32,Corsair,1600,9-9-9-24,2,https://pcpartpicker.com/product/gDH323/patriot-memory-pgv38g1333elk,FALSE,FALSE,TRUE,TRUE
+44,Corsair LPX 32GB,32,DDR4,94.99,Corsair,3866,18-22-22-40,4,https://cdna.pcpartpicker.com/static/forever/images/product/5f09867b54e9ad932b4dd1bc767f6238.1600.jpg,TRUE,TRUE,FALSE,FALSE
+45,Corsair Pro Series — 32GB,32,DDR3,234.99,Corsair,1866,9-10-9-27,4,https://cdna.pcpartpicker.com/static/forever/images/product/3bd86356a8e23b6badf4e2feb416a843.1600.jpg,TRUE,FALSE,TRUE,FALSE
+46,Corsair Pro Series — 8GB,8,DDR3,134.32,Corsair,1600,9-9-9-24,2,https://images-na.ssl-images-amazon.com/images/I/411bqk5l7TL.jpg,FALSE,FALSE,TRUE,TRUE
 47,Corsair RGB 16GB,16,DDR4,41.99,Corsair,3200,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
-48,Corsair RGB 32GB,32,DDR4,94.99,Corsair,3333,16-18-18-36,4,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,FALSE,FALSE
-49,Corsair RGB 32GB,32,DDR4,94.99,Corsair,2666,16-18-18-35,4,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,TRUE,FALSE
+48,Corsair RGB 32GB,32,DDR4,94.99,Corsair,3333,16-18-18-36,4,https://cdna.pcpartpicker.com/static/forever/images/product/5f09867b54e9ad932b4dd1bc767f6238.1600.jpg,TRUE,TRUE,FALSE,FALSE
+49,Corsair RGB 32GB,32,DDR4,94.99,Corsair,2666,16-18-18-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/5f09867b54e9ad932b4dd1bc767f6238.1600.jpg,TRUE,TRUE,TRUE,FALSE
 50,Corsair SO-Dimm Vengeance Series DDR4-3000,16,DDR4,41.99,Corsair,3000,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,TRUE,FALSE,TRUE,FALSE
 51,Corsair ValueSelect,16,DDR4,39.99,Corsair,2133,15-15-15-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
 52,Corsair ValueSelect DDR3-1333 CL9,8,DDR3,49.99,Corsair,1333,,1,https://cdn11.bigcommerce.com/s-6bkt1ygjlf/images/stencil/1280x1280/products/764689/827706/CMV8GX3M1A1333C9-lg__35355.1635948238.jpg?c=2?imbypass=on,FALSE,FALSE,TRUE,TRUE
 53,Corsair ValueSelect Series DDR4-2133,8,DDR4,49.99,Corsair,2133,15-15-15-36,1,https://media.ldlc.com/r1600/ld/products/00/03/08/91/LD0003089176_2_0003089206.jpg,TRUE,FALSE,TRUE,TRUE
-54,Corsair Vengeance,192,DDR5,669.99,Corsair,5200,38-38-38-84,4,https://pcpartpicker.com/product/BXP8TW/corsair-vengeance-192-gb-4-x-48-gb-ddr5-5200-cl38-memory-cmk192gx5m4b5200c38,FALSE,TRUE,FALSE,FALSE
-55,Corsair Vengeance,32,DDR5,104.99,Corsair,7000,34-42-42-96,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,FALSE,TRUE,FALSE,FALSE
+54,Corsair Vengeance,192,DDR5,669.99,Corsair,5200,38-38-38-84,4,https://cdna.pcpartpicker.com/static/forever/images/product/a1a07494c46dd71252fe1127c3523562.1600.jpg,FALSE,TRUE,FALSE,FALSE
+55,Corsair Vengeance,32,DDR5,104.99,Corsair,7000,34-42-42-96,2,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,FALSE,TRUE,FALSE,FALSE
 56,Corsair Vengeance,64,DDR5,159.99,Corsair,5200,40-40-40-77,2,https://cdna.pcpartpicker.com/static/forever/images/product/44511eed6b609f1979ca94fe5ed2e2ad.256p.jpg,TRUE,TRUE,FALSE,FALSE
-57,Corsair Vengeance,48,DDR5,189.30,Corsair,7000,40-52-52-114,2,https://pcpartpicker.com/product/kL26Mp/corsair-vengeance-48-gb-2-x-24-gb-ddr5-7000-cl40-memory-cmk48gx5m2b7000c40,TRUE,TRUE,FALSE,FALSE
-58,Corsair Vengeance DDR3-1600 CL10,8,DDR3,44.99,Corsair,1600,,1,https://pcpartpicker.com/product/YQW9TW/corsair-memory-cmx8gx3m2a1333c9,TRUE,FALSE,TRUE,TRUE
-59,Corsair Vengeance DDR3-1600 CL9,12,DDR3,134.32,Corsair,1600,,3,https://pcpartpicker.com/product/QjMFf7/corsair-memory-hx3x12g1333c9,TRUE,FALSE,TRUE,FALSE
+57,Corsair Vengeance,48,DDR5,189.30,Corsair,7000,40-52-52-114,2,https://cdna.pcpartpicker.com/static/forever/images/product/1c95c8797b9d8d1e8ced68926892786c.1600.jpg,TRUE,TRUE,FALSE,FALSE
+58,Corsair Vengeance DDR3-1600 CL10,8,DDR3,44.99,Corsair,1600,,1,https://cdna.pcpartpicker.com/static/forever/images/product/43bbe574d71b52e966f4358f929922ac.1600.jpg,TRUE,FALSE,TRUE,TRUE
+59,Corsair Vengeance DDR3-1600 CL9,12,DDR3,134.32,Corsair,1600,,3,https://m.media-amazon.com/images/I/41GXaQVMt0L.jpg,TRUE,FALSE,TRUE,FALSE
 60,Corsair Vengeance LED blue DDR4-3200  CL16,16,DDR4,41.99,Corsair,3200,,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,TRUE,FALSE,TRUE,FALSE
-61,Corsair Vengeance LED red DDR4-2666  CL16,32,DDR4,104.99,Corsair,2666,,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,TRUE,FALSE
-62,Corsair Vengeance LED red DDR4-3000  CL15,32,DDR4,104.99,Corsair,3000,,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
+61,Corsair Vengeance LED red DDR4-2666  CL16,32,DDR4,104.99,Corsair,2666,,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,TRUE,FALSE
+62,Corsair Vengeance LED red DDR4-3000  CL15,32,DDR4,104.99,Corsair,3000,,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
 63,Corsair Vengeance LED red DDR4-3000  CL15,16,DDR4,41.99,Corsair,3000,,2,https://cdna.pcpartpicker.com/static/forever/images/product/c8c550b5d013b34d3aa138781624bd7b.256p.jpg,TRUE,FALSE,TRUE,FALSE
 64,Corsair Vengeance LED red DDR4-3200  CL16,16,DDR4,41.99,Corsair,3200,,2,https://cdna.pcpartpicker.com/static/forever/images/product/c8c550b5d013b34d3aa138781624bd7b.256p.jpg,TRUE,FALSE,TRUE,TRUE
-65,Corsair Vengeance LED red DDR4-3400  CL16,32,DDR4,104.99,Corsair,3400,,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
+65,Corsair Vengeance LED red DDR4-3400  CL16,32,DDR4,104.99,Corsair,3400,,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
 66,Corsair Vengeance LED Series,16,DDR4,220.00,Corsair,2666,16-18-18-35,2,https://m.media-amazon.com/images/I/41ORtJsa-rL.jpg,TRUE,FALSE,TRUE,FALSE
-67,Corsair Vengeance LED white DDR4-2666  CL16,32,DDR4,104.99,Corsair,2666,,1,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,TRUE,FALSE
+67,Corsair Vengeance LED white DDR4-2666  CL16,32,DDR4,104.99,Corsair,2666,,1,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,TRUE,FALSE
 68,Corsair Vengeance LED white DDR4-3000  CL15,64,DDR4,159.99,Corsair,3000,,1,https://cdna.pcpartpicker.com/static/forever/images/product/087a53a300785acbd5a872d29c668058.256p.jpg,TRUE,TRUE,FALSE,FALSE
 69,Corsair Vengeance LED white DDR4-3000  CL15,16,DDR4,41.99,Corsair,3000,,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,TRUE,FALSE,TRUE,FALSE
 70,Corsair Vengeance LPX black,64,DDR4,359.99,Corsair,3200,16-20-20-38,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 71,Corsair Vengeance LPX blue DDR4-2133  CL13,16,DDR4,41.99,Corsair,2133,,4,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,FALSE,FALSE,TRUE,FALSE
-72,Corsair Vengeance LPX Blue DDR4-2400  CL14,32,DDR4,104.99,Corsair,2400,,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,FALSE,TRUE,FALSE
-73,Corsair Vengeance LPX DDR4-2800 black CL16,32,DDR4,104.99,Corsair,2800,,1,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,TRUE,FALSE
+72,Corsair Vengeance LPX Blue DDR4-2400  CL14,32,DDR4,104.99,Corsair,2400,,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,FALSE,TRUE,FALSE
+73,Corsair Vengeance LPX DDR4-2800 black CL16,32,DDR4,104.99,Corsair,2800,,1,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,TRUE,FALSE
 74,Corsair Vengeance LPX Series black,16,DDR4,134.32,Corsair,2666,15-15-15-36,1,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
-75,Corsair Vengeance LPX Series black DDR4-2400,128,DDR4,444.99,Corsair,2400,14-16-16-31,8,https://pcpartpicker.com/product/PNsV3C/corsair-vengeance-rgb-128-gb-4-x-32-gb-ddr5-5600-cl40-memory-cmh128gx5m4b5600c40,FALSE,TRUE,FALSE,FALSE
+75,Corsair Vengeance LPX Series black DDR4-2400,128,DDR4,444.99,Corsair,2400,14-16-16-31,8,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.1600.jpg,FALSE,TRUE,FALSE,FALSE
 76,Corsair Vengeance LPX Series black DDR4-2400,16,DDR4,41.99,Corsair,2400,14-16-16-31,4,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,FALSE,FALSE,TRUE,TRUE
 77,Corsair Vengeance LPX Series black DDR4-2400,16,DDR4,41.99,Corsair,2400,16-16-16-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/97f4efea4a46c0f35748c429fca636cc.256p.jpg,FALSE,FALSE,TRUE,TRUE
-78,Corsair Vengeance LPX Series black DDR4-2400,8,DDR4,24.99,Corsair,2400,14-16-16-31,2,https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16,TRUE,FALSE,TRUE,FALSE
-79,Corsair Vengeance LPX Series black DDR4-3000,32,DDR4,104.99,Corsair,3000,15-17-17-35,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
-80,"Corsair Vengeance LPX Series black DDR4-3000, CL15 - 8 GB Kit",8,DDR4,24.99,Corsair,3000,15-17-17-35,2,https://pcpartpicker.com/product/sMbkcf/corsair-memory-cmk8gx4m1a2400c16,TRUE,TRUE,TRUE,FALSE
-81,Corsair Vengeance LPX Series red,32,DDR4,134.32,Corsair,3000,15-17-17-35,2,https://pcpartpicker.com/product/DMprxr/corsair-dominator-platinum-special-editi-32gb-2-x-16gb-ddr4-3200-memory-cmd32gx4m2c3200c14t,TRUE,TRUE,FALSE,FALSE
-82,Corsair Vengeance LPX Series white,32,DDR4,134.32,Corsair,2666,16-18-18-35,2,https://pcpartpicker.com/product/cL9tt6/corsair-32-gb-2-x-16-gb-ddr4-3466-memory-cmd32gx4m2c3466c16w,TRUE,TRUE,TRUE,FALSE
+78,Corsair Vengeance LPX Series black DDR4-2400,8,DDR4,24.99,Corsair,2400,14-16-16-31,2,https://cdna.pcpartpicker.com/static/forever/images/product/ef1c9d46308283f227a0ba51e4179ff1.1600.jpg,TRUE,FALSE,TRUE,FALSE
+79,Corsair Vengeance LPX Series black DDR4-3000,32,DDR4,104.99,Corsair,3000,15-17-17-35,2,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
+80,"Corsair Vengeance LPX Series black DDR4-3000, CL15 - 8 GB Kit",8,DDR4,24.99,Corsair,3000,15-17-17-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/ef1c9d46308283f227a0ba51e4179ff1.1600.jpg,TRUE,TRUE,TRUE,FALSE
+81,Corsair Vengeance LPX Series red,32,DDR4,134.32,Corsair,3000,15-17-17-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/31b490b540e579887010f841eb1cb3a2.1600.jpg,TRUE,TRUE,FALSE,FALSE
+82,Corsair Vengeance LPX Series white,32,DDR4,134.32,Corsair,2666,16-18-18-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/64d8bb4527c9b024cfb8951f8154ff8e.1600.jpg,TRUE,TRUE,TRUE,FALSE
 83,Corsair Vengeance Pro Blue DDR3-1600 CL9,16,DDR3,69.98,Corsair,1600,,2,https://cdna.pcpartpicker.com/static/forever/images/product/c8c550b5d013b34d3aa138781624bd7b.256p.jpg,FALSE,FALSE,TRUE,TRUE
-84,Corsair Vengeance RGB,96,DDR5,384.99,Corsair,5200,38-38-38-84,2,https://pcpartpicker.com/product/2Yrqqs/corsair-vengeance-rgb-96-gb-2-x-48-gb-ddr5-5600-cl40-memory-cmh96gx5m2b5600c40,FALSE,TRUE,FALSE,FALSE
-85,Corsair Vengeance RGB,32,DDR5,94.99,Corsair,6800,40-50-50-110,2,https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18,TRUE,TRUE,FALSE,FALSE
+84,Corsair Vengeance RGB,96,DDR5,384.99,Corsair,5200,38-38-38-84,2,https://cdna.pcpartpicker.com/static/forever/images/product/7e42ecfdfa4ab12b85c98c6865c66c58.1600.jpg,FALSE,TRUE,FALSE,FALSE
+85,Corsair Vengeance RGB,32,DDR5,94.99,Corsair,6800,40-50-50-110,2,https://cdna.pcpartpicker.com/static/forever/images/product/5f09867b54e9ad932b4dd1bc767f6238.1600.jpg,TRUE,TRUE,FALSE,FALSE
 86,Corsair Vengeance RGB Pro black,64,DDR4,189.99,Corsair,3600,18-22-22-42,2,https://images-eu.ssl-images-amazon.com/images/I/51pTfvjwsWL.jpg,TRUE,TRUE,FALSE,FALSE
 87,Corsair Vengeance RGB Pro Series black,16,DDR4,69.98,Corsair,3200,16-18-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/c8c550b5d013b34d3aa138781624bd7b.256p.jpg,TRUE,FALSE,TRUE,FALSE
-88,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,4266,19-26-26-46,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
-89,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,2933,16-18-18-35,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
-90,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,3000,15-17-17-35,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
+88,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,4266,19-26-26-46,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
+89,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,2933,16-18-18-35,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
+90,Corsair Vengeance RGB Pro Series black,32,DDR4,104.99,Corsair,3000,15-17-17-35,2,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
 91,Corsair Vengeance RGB Pro Series black,16,DDR4,69.98,Corsair,4000,19-23-23-45,2,https://cdna.pcpartpicker.com/static/forever/images/product/c8c550b5d013b34d3aa138781624bd7b.256p.jpg,TRUE,FALSE,TRUE,FALSE
 92,Corsair Vengeance RGB Pro Series white,64,DDR4,159.99,Corsair,3600,18-19-19-39,8,https://cdna.pcpartpicker.com/static/forever/images/product/44511eed6b609f1979ca94fe5ed2e2ad.256p.jpg,TRUE,TRUE,FALSE,FALSE
-93,Corsair Vengeance RGB Pro Series white,32,DDR4,104.99,Corsair,3200,16-16-16-36,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
-94,Corsair Vengeance RGB Pro Series white,32,DDR4,104.99,Corsair,2666,16-18-18-35,2,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,FALSE,TRUE,FALSE
-95,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3200,16-20-20-38,4,https://pcpartpicker.com/product/bjjNnQ/corsair-vengeance-rgb-pro-sl-32-gb-2-x-16-gb-ddr4-3600-cl18-memory-cmh32gx4m2d3600c18w,TRUE,TRUE,FALSE,FALSE
-96,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3200,16-20-20-38,2,https://pcpartpicker.com/product/bjjNnQ/corsair-vengeance-rgb-pro-sl-32-gb-2-x-16-gb-ddr4-3600-cl18-memory-cmh32gx4m2d3600c18w,TRUE,TRUE,FALSE,FALSE
-97,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3600,18-22-22-42,2,https://pcpartpicker.com/product/bjjNnQ/corsair-vengeance-rgb-pro-sl-32-gb-2-x-16-gb-ddr4-3600-cl18-memory-cmh32gx4m2d3600c18w,TRUE,TRUE,FALSE,FALSE
-98,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3600,18-22-22-42,2,https://pcpartpicker.com/product/bjjNnQ/corsair-vengeance-rgb-pro-sl-32-gb-2-x-16-gb-ddr4-3600-cl18-memory-cmh32gx4m2d3600c18w,TRUE,TRUE,FALSE,FALSE
+93,Corsair Vengeance RGB Pro Series white,32,DDR4,104.99,Corsair,3200,16-16-16-36,2,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
+94,Corsair Vengeance RGB Pro Series white,32,DDR4,104.99,Corsair,2666,16-18-18-35,2,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,FALSE,TRUE,FALSE
+95,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3200,16-20-20-38,4,https://cdna.pcpartpicker.com/static/forever/images/product/64079d85add71559122ffbd000911056.1600.jpg,TRUE,TRUE,FALSE,FALSE
+96,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3200,16-20-20-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/64079d85add71559122ffbd000911056.1600.jpg,TRUE,TRUE,FALSE,FALSE
+97,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/64079d85add71559122ffbd000911056.1600.jpg,TRUE,TRUE,FALSE,FALSE
+98,Corsair Vengeance RGB Pro SL,32,DDR4,84.99,Corsair,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/64079d85add71559122ffbd000911056.1600.jpg,TRUE,TRUE,FALSE,FALSE
 99,Corsair Vengeance RGB Pro SL,16,DDR4,54.99,Corsair,3600,18-22-22-42,2,https://m.media-amazon.com/images/I/41g+w77udlS.jpg,TRUE,FALSE,TRUE,FALSE
 100,Corsair Vengeance RGB Pro SL,16,DDR4,54.99,Corsair,3200,16-20-20-38,2,https://m.media-amazon.com/images/I/41g+w77udlS.jpg,TRUE,FALSE,TRUE,FALSE
 101,Corsair Vengeance RGB Pro SL,16,DDR4,54.99,Corsair,3200,"15-15-15-36, 16-20-20-38",2,https://m.media-amazon.com/images/I/41g+w77udlS.jpg,TRUE,FALSE,TRUE,FALSE
-102,Corsair Vengeance RGB Pro SL DDR4-3200,32,DDR4,104.99,Corsair,3200,16-20-20-38,4,https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36,TRUE,TRUE,FALSE,FALSE
+102,Corsair Vengeance RGB Pro SL DDR4-3200,32,DDR4,104.99,Corsair,3200,16-20-20-38,4,https://m.media-amazon.com/images/I/41jJSPS8W7L.jpg,TRUE,TRUE,FALSE,FALSE
 103,Corsair Vengeance RGB RS,64,DDR4,154.99,Corsair,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/1f627399671ad03740af8adeebf5d2da.256p.jpg,TRUE,TRUE,FALSE,FALSE
-104,Corsair Vengeance RGB RS,32,DDR4,79.98,Corsair,3600,18-22-22-42,2,https://pcpartpicker.com/product/7tLFf7/corsair-vengeance-rgb-rs-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-cmg32gx4m2e3200c16,TRUE,TRUE,FALSE,FALSE
-105,Corsair Vengeance RGB RS,32,DDR4,79.98,Corsair,3200,16-20-20-38,2,https://pcpartpicker.com/product/7tLFf7/corsair-vengeance-rgb-rs-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-cmg32gx4m2e3200c16,TRUE,TRUE,FALSE,FALSE
+104,Corsair Vengeance RGB RS,32,DDR4,79.98,Corsair,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/b6d111351e56f32cd776e4cf8ce17e39.1600.jpg,TRUE,TRUE,FALSE,FALSE
+105,Corsair Vengeance RGB RS,32,DDR4,79.98,Corsair,3200,16-20-20-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/b6d111351e56f32cd776e4cf8ce17e39.1600.jpg,TRUE,TRUE,FALSE,FALSE
 106,Corsair Vengeance RGB RT,64,DDR4,154.99,Corsair,3200,16-20-20-38,4,https://m.media-amazon.com/images/I/41OL46qmV6L.jpg,TRUE,TRUE,FALSE,FALSE
 107,Corsair Vengeance RGB RT,64,DDR4,154.99,Corsair,3600,18-22-22-42,4,https://m.media-amazon.com/images/I/41OL46qmV6L.jpg,TRUE,TRUE,FALSE,FALSE
-108,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,4600,18-22-22-42,2,https://pcpartpicker.com/product/cfVmP6/corsair-vengeance-rgb-rt-32-gb-2-x-16-gb-ddr4-3600-cl16-memory-cmn32gx4m2z3600c16,TRUE,TRUE,FALSE,FALSE
+108,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,4600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/18d515b5e9b6de9484ac9eb7901c119c.1600.jpg,TRUE,TRUE,FALSE,FALSE
 109,Corsair Vengeance RGB RT,64,DDR4,154.99,Corsair,3200,16-20-20-38,2,https://m.media-amazon.com/images/I/41OL46qmV6L.jpg,TRUE,TRUE,FALSE,FALSE
-110,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,3600,18-22-22-42,4,https://pcpartpicker.com/product/cfVmP6/corsair-vengeance-rgb-rt-32-gb-2-x-16-gb-ddr4-3600-cl16-memory-cmn32gx4m2z3600c16,TRUE,TRUE,FALSE,FALSE
-111,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,3200,16-20-20-38,2,https://pcpartpicker.com/product/cfVmP6/corsair-vengeance-rgb-rt-32-gb-2-x-16-gb-ddr4-3600-cl16-memory-cmn32gx4m2z3600c16,TRUE,TRUE,FALSE,FALSE
+110,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,3600,18-22-22-42,4,https://cdna.pcpartpicker.com/static/forever/images/product/18d515b5e9b6de9484ac9eb7901c119c.1600.jpg,TRUE,TRUE,FALSE,FALSE
+111,Corsair Vengeance RGB RT,32,DDR4,99.99,Corsair,3200,16-20-20-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/18d515b5e9b6de9484ac9eb7901c119c.1600.jpg,TRUE,TRUE,FALSE,FALSE
 112,Corsair Vengeance RGB RT,16,DDR4,67.98,Corsair,3200,16-20-20-38,2,https://m.media-amazon.com/images/I/41RQ3OmQrWL.jpg,TRUE,FALSE,TRUE,FALSE
-113,Crucial Ballistix Elite series,32,DDR4,88.98,Crucial,3600,16-18-18,4,https://pcpartpicker.com/product/3L9wrH/crucial-pro-32-gb-2-x-16-gb-ddr5-5600-cl46-memory-cp2k16g56c46u5,TRUE,TRUE,FALSE,FALSE
+113,Crucial Ballistix Elite series,32,DDR4,88.98,Crucial,3600,16-18-18,4,https://cdna.pcpartpicker.com/static/forever/images/product/c62f5aa1d2d902523596f383c7946a7b.1600.jpg,TRUE,TRUE,FALSE,FALSE
 114,Crucial Ballistix Sport AT,16,DDR4,134.32,Crucial,2666,16-18-18,1,https://m.media-amazon.com/images/I/41mKTopIuML.jpg,TRUE,FALSE,TRUE,FALSE
 115,Crucial Ballistix Sport LT grey DDR4-2666 CL16,16,DDR4,45.99,Ballistix,2666,,1,https://images-na.ssl-images-amazon.com/images/I/41%2B2%2B5suuAL.jpg,TRUE,FALSE,TRUE,FALSE
-116,Crucial Ballistix Sport LT Series grey DDR4-2400,8,DDR4,19.98,Crucial,2400,16-16-16,1,https://pcpartpicker.com/product/2dYmP6/crucial-ct8g48c40u5-8-gb-1-x-8-gb-ddr5-4800-cl40-memory-ct8g48c40u5,TRUE,FALSE,TRUE,TRUE
+116,Crucial Ballistix Sport LT Series grey DDR4-2400,8,DDR4,19.98,Crucial,2400,16-16-16,1,https://cdna.pcpartpicker.com/static/forever/images/product/aae9b49cc423c0b0bf7053e10832a964.1600.jpg,TRUE,FALSE,TRUE,TRUE
 117,Crucial Ballistix Sport LT series red,16,DDR4,134.32,Crucial,3200,16-18-18,2,https://cdna.pcpartpicker.com/static/forever/images/product/0e1710473f2e5c1c968385a02c96171b.256p.jpg,TRUE,FALSE,TRUE,FALSE
 118,Crucial Ballistix Sport LT Series red,16,DDR4,134.32,Crucial,2400,16-16-16,1,https://cdna.pcpartpicker.com/static/forever/images/product/0e1710473f2e5c1c968385a02c96171b.256p.jpg,FALSE,FALSE,TRUE,FALSE
-119,Crucial Ballistix Sport LT Series red,8,DDR4,19.98,Crucial,2400,16-16-16,2,https://pcpartpicker.com/product/2dYmP6/crucial-ct8g48c40u5-8-gb-1-x-8-gb-ddr5-4800-cl40-memory-ct8g48c40u5,TRUE,FALSE,TRUE,FALSE
-120,Crucial Ballistix Sport LT Series red,8,DDR4,19.98,Crucial,2666,16-18-18,1,https://pcpartpicker.com/product/2dYmP6/crucial-ct8g48c40u5-8-gb-1-x-8-gb-ddr5-4800-cl40-memory-ct8g48c40u5,TRUE,FALSE,TRUE,FALSE
+119,Crucial Ballistix Sport LT Series red,8,DDR4,19.98,Crucial,2400,16-16-16,2,https://cdna.pcpartpicker.com/static/forever/images/product/aae9b49cc423c0b0bf7053e10832a964.1600.jpg,TRUE,FALSE,TRUE,FALSE
+120,Crucial Ballistix Sport LT Series red,8,DDR4,19.98,Crucial,2666,16-18-18,1,https://cdna.pcpartpicker.com/static/forever/images/product/aae9b49cc423c0b0bf7053e10832a964.1600.jpg,TRUE,FALSE,TRUE,FALSE
 121,Crucial Ballistix Sport LT Series red,4,DDR4,29.99,Crucial,2400,16-16-16,1,https://cdna.pcpartpicker.com/static/forever/images/product/c62f5aa1d2d902523596f383c7946a7b.256p.jpg,FALSE,FALSE,FALSE,TRUE
-122,Crucial Ballistix Sport LT series white,64,DDR4,224.52,Crucial,3000,15-16-16,4,https://pcpartpicker.com/product/QCDQzy/crucial-classic-64-gb-2-x-32-gb-ddr5-5600-cl46-memory-ct2k32g56c46u5,TRUE,TRUE,FALSE,FALSE
-123,Crucial Ballistix Sport LT series white,32,DDR4,88.98,Crucial,3000,15-16-16,2,https://pcpartpicker.com/product/3L9wrH/crucial-pro-32-gb-2-x-16-gb-ddr5-5600-cl46-memory-cp2k16g56c46u5,TRUE,TRUE,FALSE,FALSE
+122,Crucial Ballistix Sport LT series white,64,DDR4,224.52,Crucial,3000,15-16-16,4,https://cdna.pcpartpicker.com/static/forever/images/product/da4cecff7e3ebe77a577561a19a2d1c7.1600.jpg,TRUE,TRUE,FALSE,FALSE
+123,Crucial Ballistix Sport LT series white,32,DDR4,88.98,Crucial,3000,15-16-16,2,https://cdna.pcpartpicker.com/static/forever/images/product/c62f5aa1d2d902523596f383c7946a7b.1600.jpg,TRUE,TRUE,FALSE,FALSE
 124,Crucial Ballistix Sport LT series white,16,DDR4,40.99,Crucial,3200,16-18-18,2,https://cdna.pcpartpicker.com/static/forever/images/product/0e1710473f2e5c1c968385a02c96171b.256p.jpg,TRUE,FALSE,TRUE,FALSE
 125,Crucial Ballistix Sport LT series white,16,DDR4,40.99,Crucial,3000,15-16-16,1,https://cdna.pcpartpicker.com/static/forever/images/product/0e1710473f2e5c1c968385a02c96171b.256p.jpg,TRUE,FALSE,TRUE,FALSE
 126,Crucial Ballistix Sport LT Series white,16,DDR4,40.99,Crucial,2400,16-16-16,1,https://cdna.pcpartpicker.com/static/forever/images/product/0e1710473f2e5c1c968385a02c96171b.256p.jpg,FALSE,FALSE,TRUE,FALSE
 127,Crucial Ballistix Sport LT white DDR4-2666 CL16,4,DDR4,15.90,Ballistix,2666,,1,https://cdna.pcpartpicker.com/static/forever/images/product/c62f5aa1d2d902523596f383c7946a7b.256p.jpg,FALSE,FALSE,TRUE,TRUE
-128,Crucial Ballistix Tactical Tracer RGB,32,DDR4,134.32,Crucial,2666,16-18-18,4,https://pcpartpicker.com/product/FskgXL/crucial-ballistix-tactical-tracer-rgb-32-gb-4-x-8-gb-ddr4-3200-memory-blt4k8g4d32aet4k,TRUE,TRUE,TRUE,FALSE
-129,Crucial Ballistix Tactical Tracer RGB,32,DDR4,134.32,Crucial,2666,16-18-18,4,https://pcpartpicker.com/product/FskgXL/crucial-ballistix-tactical-tracer-rgb-32-gb-4-x-8-gb-ddr4-3200-memory-blt4k8g4d32aet4k,TRUE,TRUE,TRUE,FALSE
-130,Crucial DDR4-2133 CL15,32,DDR4,124.99,Crucial,2133,,1,https://pcpartpicker.com/product/Ybn8TW/crucial-32-gb-1-x-32-gb-ddr4-3200-cl22-memory-mta18asf4g72az-3g2b1,TRUE,FALSE,TRUE,FALSE
+128,Crucial Ballistix Tactical Tracer RGB,32,DDR4,134.32,Crucial,2666,16-18-18,4,https://m.media-amazon.com/images/I/51GJlZ52nXL.jpg,TRUE,TRUE,TRUE,FALSE
+129,Crucial Ballistix Tactical Tracer RGB,32,DDR4,134.32,Crucial,2666,16-18-18,4,https://m.media-amazon.com/images/I/51GJlZ52nXL.jpg,TRUE,TRUE,TRUE,FALSE
+130,Crucial DDR4-2133 CL15,32,DDR4,124.99,Crucial,2133,,1,https://cdna.pcpartpicker.com/static/forever/images/product/de3c2c90a77dd86d0e11899f355bfbcd.1600.jpg,TRUE,FALSE,TRUE,FALSE
 131,Crucial DDR4-2133 CL15   Reg. ECC,16,DDR4,55.99,Crucial,2133,,1,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,FALSE,FALSE,TRUE,TRUE
 132,Crucial DDR5-4800,16,DDR5,45.99,Crucial,4800,40-39-39,2,https://images-na.ssl-images-amazon.com/images/I/41%2B2%2B5suuAL.jpg,TRUE,TRUE,FALSE,FALSE
-133,G.Skill Aegis DDR4 DDR4-2400 32GB,32,DDR4,95.99,G.Skill,2400,15-15-15-35-2N,2,https://pcpartpicker.com/product/pwxRsY/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-fx5,TRUE,FALSE,TRUE,FALSE
+133,G.Skill Aegis DDR4 DDR4-2400 32GB,32,DDR4,95.99,G.Skill,2400,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/5bfb04d855b1e501d71ef7516d5c39f7.1600.jpg,TRUE,FALSE,TRUE,FALSE
 134,G.Skill Aegis DDR4 DDR4-2400 4GB,4,DDR4,37.99,G.Skill,2400,15-15-15-35-2N,1,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,FALSE,FALSE,FALSE,TRUE
 135,G.Skill AEGIS Series,16,DDR4,220.00,G.Skill,2400,17-17-17-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/3f022d1fab33c9449528fcde94d7df8e.256p.jpg,TRUE,FALSE,TRUE,FALSE
-136,G.Skill Aegis Series,32,DDR4,117.99,G.Skill,3200,16-18-18-38,2,https://pcpartpicker.com/product/CXKKHx/gskill-trident-z5-neo-rgb-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-f5-6000j3038f16gx2-tz5nr,TRUE,TRUE,FALSE,FALSE
-137,G.Skill AEGIS Series,8,DDR4,134.32,G.Skill,2400,17-17-17-39,1,https://pcpartpicker.com/product/9dR48d/gskill-f3-12800cl11d-8gbsq-8-gb-2-x-4-gb-ddr3-1600-sodimm-cl11-memory-f3-12800cl11d-8gbsq,TRUE,FALSE,TRUE,FALSE
-138,G.Skill Flare X (for AMD) DDR4-2133 32GB,32,DDR4,95.99,G.Skill,2133,15-15-15-36,2,https://pcpartpicker.com/product/pwxRsY/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-fx5,TRUE,FALSE,TRUE,FALSE
+136,G.Skill Aegis Series,32,DDR4,117.99,G.Skill,3200,16-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/a4cecff25f58230f3fbae1903d711e49.1600.jpg,TRUE,TRUE,FALSE,FALSE
+137,G.Skill AEGIS Series,8,DDR4,134.32,G.Skill,2400,17-17-17-39,1,https://m.media-amazon.com/images/I/41Y1FqRjViL.jpg,TRUE,FALSE,TRUE,FALSE
+138,G.Skill Flare X (for AMD) DDR4-2133 32GB,32,DDR4,95.99,G.Skill,2133,15-15-15-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/5bfb04d855b1e501d71ef7516d5c39f7.1600.jpg,TRUE,FALSE,TRUE,FALSE
 139,G.Skill Flare X (for AMD) DDR4-2400 16GB,16,DDR4,49.99,G.Skill,2400,16-16-16-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,FALSE,FALSE,TRUE,FALSE
 140,G.Skill Flare X Series,64,DDR4,199.99,G.Skill,2400,16-16-16-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/5a9d191fd5126d95e101c829b03149e8.256p.jpg,TRUE,TRUE,FALSE,FALSE
-141,G.Skill Flare X Series,32,DDR4,272.21,G.Skill,2400,16-16-16-39,2,https://pcpartpicker.com/product/zkjBD3/gskill-trident-z-royal-elite-32-gb-2-x-16-gb-ddr4-4000-cl16-memory-f4-4000c16d-32gtes,TRUE,FALSE,TRUE,FALSE
+141,G.Skill Flare X Series,32,DDR4,272.21,G.Skill,2400,16-16-16-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/fc68ea242d4c2ff9c579fa266583febb.1600.jpg,TRUE,FALSE,TRUE,FALSE
 142,G.Skill Fortis Series,64,DDR4,209.99,G.Skill,2400,15-15-15-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/5a9d191fd5126d95e101c829b03149e8.256p.jpg,TRUE,TRUE,FALSE,FALSE
-143,G.Skill Ripjaws 4 DDR4-2133 32GB,32,DDR4,62.99,G.Skill,2133,15-15-15-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,FALSE,TRUE,FALSE
+143,G.Skill Ripjaws 4 DDR4-2133 32GB,32,DDR4,62.99,G.Skill,2133,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,FALSE,TRUE,FALSE
 144,G.Skill Ripjaws 4 DDR4-2133 64GB,64,DDR4,499.99,G.Skill,2133,15-15-15-35-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,FALSE,FALSE,FALSE
 145,G.Skill Ripjaws 4 DDR4-2666 16GB,16,DDR4,42.99,G.Skill,2666,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,TRUE,TRUE,FALSE
-146,G.Skill Ripjaws 4 DDR4-2666 32GB,32,DDR4,62.99,G.Skill,2666,15-15-15-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,TRUE,FALSE
+146,G.Skill Ripjaws 4 DDR4-2666 32GB,32,DDR4,62.99,G.Skill,2666,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,TRUE,FALSE
 147,G.Skill Ripjaws 4 DDR4-2800 16GB,16,DDR4,42.99,G.Skill,2800,16-16-16-36-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 148,G.Skill Ripjaws 4 DDR4-3300 16GB,16,DDR4,42.99,G.Skill,3300,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 149,G.Skill Ripjaws V,64,DDR4,129.99,G.Skill,3600,14-15-15-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/b412e59a1c95b3f9472949e6ac0d5e5e.256p.jpg,TRUE,TRUE,FALSE,FALSE
-150,G.Skill Ripjaws V,32,DDR4,64.98,G.Skill,3600,14-15-15-35,2,https://pcpartpicker.com/product/kXbkcf/gskill-ripjaws-v-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gvk,TRUE,TRUE,FALSE,FALSE
-151,G.Skill RipJaws V,32,DDR4,64.98,G.Skill,3600,18-22-22-42,2,https://pcpartpicker.com/product/kXbkcf/gskill-ripjaws-v-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gvk,TRUE,TRUE,FALSE,FALSE
-152,G.Skill Ripjaws V DDR4-2133 32GB,32,DDR4,62.99,G.Skill,2133,15-15-15-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,FALSE,TRUE,FALSE
-153,G.Skill Ripjaws V DDR4-2400 8GB,8,DDR4,21.99,G.Skill,2400,15-15-15-35-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,FALSE,TRUE,FALSE
+150,G.Skill Ripjaws V,32,DDR4,64.98,G.Skill,3600,14-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/f97fce0b44ff2447a790b0bffc74f9f3.1600.jpg,TRUE,TRUE,FALSE,FALSE
+151,G.Skill RipJaws V,32,DDR4,64.98,G.Skill,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/f97fce0b44ff2447a790b0bffc74f9f3.1600.jpg,TRUE,TRUE,FALSE,FALSE
+152,G.Skill Ripjaws V DDR4-2133 32GB,32,DDR4,62.99,G.Skill,2133,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,FALSE,TRUE,FALSE
+153,G.Skill Ripjaws V DDR4-2400 8GB,8,DDR4,21.99,G.Skill,2400,15-15-15-35-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,FALSE,TRUE,FALSE
 154,G.Skill Ripjaws V DDR4-2666 16GB,16,DDR4,42.99,G.Skill,2666,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,FALSE,FALSE,TRUE,FALSE
-155,G.Skill Ripjaws V DDR4-2666 8GB,8,DDR4,21.99,G.Skill,2666,15-15-15-35-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,FALSE,TRUE,FALSE
+155,G.Skill Ripjaws V DDR4-2666 8GB,8,DDR4,21.99,G.Skill,2666,15-15-15-35-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,FALSE,TRUE,FALSE
 156,G.Skill Ripjaws V DDR4-2800 16GB,16,DDR4,42.99,G.Skill,2800,15-16-16-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 157,G.Skill Ripjaws V DDR4-2800 16GB,16,DDR4,42.99,G.Skill,2800,16-16-16-36-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-158,G.Skill Ripjaws V DDR4-2800 32GB,32,DDR4,62.99,G.Skill,2800,15-16-16-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,TRUE,FALSE
-159,G.Skill Ripjaws V DDR4-3000 128GB,128,DDR4,1000.98,G.Skill,3000,14-14-14-34-2N,8,https://pcpartpicker.com/product/KPV2FT/gskill-zeta-r5-128-gb-8-x-16-gb-registered-ddr5-6400-cl32-memory-f5-6400r3239g16ge8-zr5k,FALSE,TRUE,FALSE,FALSE
+158,G.Skill Ripjaws V DDR4-2800 32GB,32,DDR4,62.99,G.Skill,2800,15-16-16-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,TRUE,FALSE
+159,G.Skill Ripjaws V DDR4-3000 128GB,128,DDR4,1000.98,G.Skill,3000,14-14-14-34-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/10975464bd8860e1def0ecd832a2aeb2.1600.jpg,FALSE,TRUE,FALSE,FALSE
 160,G.Skill Ripjaws V DDR4-3000 16GB,16,DDR4,42.99,G.Skill,3000,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 161,G.Skill Ripjaws V DDR4-3000 16GB,16,DDR4,42.99,G.Skill,3000,14-14-14-34-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 162,G.Skill Ripjaws V DDR4-3000 16GB,16,DDR4,42.99,G.Skill,3000,15-16-16-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
@@ -165,107 +165,107 @@
 164,G.Skill Ripjaws V DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,16-16-16-36-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 165,G.Skill Ripjaws V DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,16-16-16-36-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 166,G.Skill Ripjaws V DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-167,G.Skill Ripjaws V DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,14-14-14-34-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-168,G.Skill Ripjaws V DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,TRUE,TRUE
+167,G.Skill Ripjaws V DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,14-14-14-34-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+168,G.Skill Ripjaws V DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,TRUE,TRUE
 169,G.Skill Ripjaws V DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,14-14-14-34-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 170,G.Skill Ripjaws V DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,15-15-15-35-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
-171,G.Skill Ripjaws V DDR4-3400 32GB,32,DDR4,62.99,G.Skill,3400,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+171,G.Skill Ripjaws V DDR4-3400 32GB,32,DDR4,62.99,G.Skill,3400,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 172,G.Skill Ripjaws V DDR4-3400 64GB,64,DDR4,499.99,G.Skill,3400,16-16-16-36-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 173,G.Skill Ripjaws V DDR4-3466 16GB,16,DDR4,42.99,G.Skill,3466,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-174,G.Skill Ripjaws V DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-175,G.Skill Ripjaws V DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-176,G.Skill Ripjaws V DDR4-4000 8GB,8,DDR4,21.99,G.Skill,4000,19-21-21-41-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,TRUE,FALSE,FALSE
+174,G.Skill Ripjaws V DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+175,G.Skill Ripjaws V DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+176,G.Skill Ripjaws V DDR4-4000 8GB,8,DDR4,21.99,G.Skill,4000,19-21-21-41-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,TRUE,FALSE,FALSE
 177,G.Skill RipJaws V Series black,16,DDR4,42.99,G.Skill,3000,15-16-16-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-178,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,4,https://pcpartpicker.com/product/zkjBD3/gskill-trident-z-royal-elite-32-gb-2-x-16-gb-ddr4-4000-cl16-memory-f4-4000c16d-32gtes,TRUE,TRUE,FALSE,FALSE
-179,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,2,https://pcpartpicker.com/product/zkjBD3/gskill-trident-z-royal-elite-32-gb-2-x-16-gb-ddr4-4000-cl16-memory-f4-4000c16d-32gtes,TRUE,TRUE,FALSE,FALSE
-180,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,2,https://pcpartpicker.com/product/zkjBD3/gskill-trident-z-royal-elite-32-gb-2-x-16-gb-ddr4-4000-cl16-memory-f4-4000c16d-32gtes,TRUE,TRUE,FALSE,FALSE
+178,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,4,https://cdna.pcpartpicker.com/static/forever/images/product/fc68ea242d4c2ff9c579fa266583febb.1600.jpg,TRUE,TRUE,FALSE,FALSE
+179,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/fc68ea242d4c2ff9c579fa266583febb.1600.jpg,TRUE,TRUE,FALSE,FALSE
+180,G.Skill Sniper X Series,32,DDR4,272.21,G.Skill,3200,16-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/fc68ea242d4c2ff9c579fa266583febb.1600.jpg,TRUE,TRUE,FALSE,FALSE
 181,G.Skill Sniper X Series,16,DDR4,220.00,G.Skill,3200,16-18-18-38,2,https://m.media-amazon.com/images/I/41ORtJsa-rL.jpg,TRUE,FALSE,TRUE,FALSE
 182,G.Skill Trident Z DDR4-3000 16GB,16,DDR4,42.99,G.Skill,3000,15-16-16-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-183,G.Skill Trident Z DDR4-3000 32GB,32,DDR4,62.99,G.Skill,3000,14-14-14-34-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-184,G.Skill Trident Z DDR4-3000 8GB,8,DDR4,21.99,G.Skill,3000,15-15-15-35-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,FALSE,TRUE,FALSE
-185,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,14-14-14-34-2N,8,https://pcpartpicker.com/product/KPV2FT/gskill-zeta-r5-128-gb-8-x-16-gb-registered-ddr5-6400-cl32-memory-f5-6400r3239g16ge8-zr5k,FALSE,TRUE,FALSE,FALSE
-186,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,16-18-18-38-2N,8,https://pcpartpicker.com/product/KPV2FT/gskill-zeta-r5-128-gb-8-x-16-gb-registered-ddr5-6400-cl32-memory-f5-6400r3239g16ge8-zr5k,FALSE,TRUE,FALSE,FALSE
-187,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,16-18-18-38-2N,8,https://pcpartpicker.com/product/KPV2FT/gskill-zeta-r5-128-gb-8-x-16-gb-registered-ddr5-6400-cl32-memory-f5-6400r3239g16ge8-zr5k,FALSE,TRUE,FALSE,FALSE
+183,G.Skill Trident Z DDR4-3000 32GB,32,DDR4,62.99,G.Skill,3000,14-14-14-34-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+184,G.Skill Trident Z DDR4-3000 8GB,8,DDR4,21.99,G.Skill,3000,15-15-15-35-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,FALSE,TRUE,FALSE
+185,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,14-14-14-34-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/10975464bd8860e1def0ecd832a2aeb2.1600.jpg,FALSE,TRUE,FALSE,FALSE
+186,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/10975464bd8860e1def0ecd832a2aeb2.1600.jpg,FALSE,TRUE,FALSE,FALSE
+187,G.Skill Trident Z DDR4-3200 128GB,128,DDR4,1000.98,G.Skill,3200,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/10975464bd8860e1def0ecd832a2aeb2.1600.jpg,FALSE,TRUE,FALSE,FALSE
 188,G.Skill Trident Z DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,14-14-14-34-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 189,G.Skill Trident Z DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 190,G.Skill Trident Z DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 191,G.Skill Trident Z DDR4-3200 16GB,16,DDR4,42.99,G.Skill,3200,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-192,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,14-14-14-34-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-193,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-194,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-195,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-196,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-197,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-198,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+192,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,14-14-14-34-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+193,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+194,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,15-15-15-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+195,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+196,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+197,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+198,G.Skill Trident Z DDR4-3200 32GB,32,DDR4,62.99,G.Skill,3200,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 199,G.Skill Trident Z DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 200,G.Skill Trident Z DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 201,G.Skill Trident Z DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,15-15-15-35-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 202,G.Skill Trident Z DDR4-3200 64GB,64,DDR4,499.99,G.Skill,3200,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
-203,G.Skill Trident Z DDR4-3200 8GB,8,DDR4,21.99,G.Skill,3200,16-18-18-38-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,TRUE,TRUE,FALSE
+203,G.Skill Trident Z DDR4-3200 8GB,8,DDR4,21.99,G.Skill,3200,16-18-18-38-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,TRUE,TRUE,FALSE
 204,G.Skill Trident Z DDR4-3300 64GB,64,DDR4,499.99,G.Skill,3300,16-16-16-36-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 205,G.Skill Trident Z DDR4-3333 16GB,16,DDR4,42.99,G.Skill,3333,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 206,G.Skill Trident Z DDR4-3333 16GB,16,DDR4,42.99,G.Skill,3333,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-207,G.Skill Trident Z DDR4-3333 32GB,32,DDR4,62.99,G.Skill,3333,16-16-16-36-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-208,G.Skill Trident Z DDR4-3333 32GB,32,DDR4,62.99,G.Skill,3333,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+207,G.Skill Trident Z DDR4-3333 32GB,32,DDR4,62.99,G.Skill,3333,16-16-16-36-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+208,G.Skill Trident Z DDR4-3333 32GB,32,DDR4,62.99,G.Skill,3333,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 209,G.Skill Trident Z DDR4-3466 16GB,16,DDR4,42.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-210,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-211,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-212,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,2,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+210,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+211,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+212,G.Skill Trident Z DDR4-3466 32GB,32,DDR4,62.99,G.Skill,3466,16-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 213,G.Skill Trident Z DDR4-3466 64GB,64,DDR4,499.99,G.Skill,3466,16-18-18-38-2N,8,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 214,G.Skill Trident Z DDR4-3466 64GB,64,DDR4,499.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 215,G.Skill Trident Z DDR4-3466 64GB,64,DDR4,499.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 216,G.Skill Trident Z DDR4-3600 16GB,16,DDR4,42.99,G.Skill,3600,17-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 217,G.Skill Trident Z DDR4-3600 16GB,16,DDR4,42.99,G.Skill,3600,17-18-18-38-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-218,G.Skill Trident Z DDR4-3600 32GB,32,DDR4,62.99,G.Skill,3600,17-18-18-38-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+218,G.Skill Trident Z DDR4-3600 32GB,32,DDR4,62.99,G.Skill,3600,17-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 219,G.Skill Trident Z DDR4-3600 64GB,64,DDR4,499.99,G.Skill,3600,17-19-19-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
 220,G.Skill Trident Z DDR4-3733 16GB,16,DDR4,42.99,G.Skill,3733,17-17-17-37-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
-221,G.Skill Trident Z DDR4-3733 8GB,8,DDR4,21.99,G.Skill,3733,17-19-19-39-2N,2,https://pcpartpicker.com/product/XJYWGX/gskill-aegis-8-gb-1-x-8-gb-ddr4-3000-cl16-memory-f4-3000c16s-8gisb,TRUE,TRUE,TRUE,FALSE
-222,G.Skill Trident Z DDR4-3866 32GB,32,DDR4,62.99,G.Skill,3866,18-19-19-39-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+221,G.Skill Trident Z DDR4-3733 8GB,8,DDR4,21.99,G.Skill,3733,17-19-19-39-2N,2,https://m.media-amazon.com/images/I/315oQw5udhL.jpg,TRUE,TRUE,TRUE,FALSE
+222,G.Skill Trident Z DDR4-3866 32GB,32,DDR4,62.99,G.Skill,3866,18-19-19-39-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 223,G.Skill Trident Z DDR4-4000 16GB,16,DDR4,42.99,G.Skill,4000,19-21-21-41-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,TRUE,FALSE,FALSE
-224,G.Skill Trident Z DDR4-4000 32GB,32,DDR4,62.99,G.Skill,4000,18-19-19-39-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
-225,G.Skill Trident Z DDR4-4000 32GB,32,DDR4,62.99,G.Skill,4000,18-19-19-39-2N,4,https://pcpartpicker.com/product/8BLwrH/gskill-aegis-32-gb-2-x-16-gb-ddr4-3200-cl16-memory-f4-3200c16d-32gis,TRUE,TRUE,FALSE,FALSE
+224,G.Skill Trident Z DDR4-4000 32GB,32,DDR4,62.99,G.Skill,4000,18-19-19-39-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
+225,G.Skill Trident Z DDR4-4000 32GB,32,DDR4,62.99,G.Skill,4000,18-19-19-39-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.1600.jpg,TRUE,TRUE,FALSE,FALSE
 226,G.Skill Trident Z DDR4-4266 16GB,16,DDR4,42.99,G.Skill,4266,19-19-19-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/9e003e10740c0e04136649de59fa2ab5.256p.jpg,TRUE,FALSE,TRUE,FALSE
 227,G.Skill Trident Z Neo,64,DDR4,204.99,G.Skill,3600,14-15-15-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/1370f670e619950a35c6f024b55cd2c9.256p.jpg,TRUE,TRUE,FALSE,FALSE
-228,G.Skill Trident Z Neo,32,DDR4,99.99,G.Skill,3600,14-15-15-35,2,https://pcpartpicker.com/product/w3FKHx/gskill-trident-z-neo-32-gb-2-x-16-gb-ddr4-3600-cl16-memory-f4-3600c16d-32gtznc,TRUE,TRUE,FALSE,FALSE
+228,G.Skill Trident Z Neo,32,DDR4,99.99,G.Skill,3600,14-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/20348ef9eb7ca86600eefb50c6a56597.1600.jpg,TRUE,TRUE,FALSE,FALSE
 229,G.Skill Trident Z Neo Series,64,DDR4,134.32,G.Skill,3200,14-14-14-34,4,https://cdna.pcpartpicker.com/static/forever/images/product/d55577b0a369b5d28d17cbce26de79f6.256p.jpg,TRUE,TRUE,FALSE,FALSE
 230,G.Skill Trident Z Neo Series,16,DDR4,220.00,G.Skill,3600,14-15-15-35,2,https://m.media-amazon.com/images/I/41ORtJsa-rL.jpg,TRUE,FALSE,TRUE,FALSE
-231,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3000,16-18-18-38,4,https://pcpartpicker.com/product/WRDwrH/gskill-memory-f32400c11q32gab,TRUE,TRUE,FALSE,FALSE
-232,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,2666,18-18-18-43,2,https://pcpartpicker.com/product/WRDwrH/gskill-memory-f32400c11q32gab,TRUE,TRUE,TRUE,FALSE
-233,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3600,16-16-16-36,2,https://pcpartpicker.com/product/WRDwrH/gskill-memory-f32400c11q32gab,TRUE,TRUE,FALSE,FALSE
+231,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3000,16-18-18-38,4,https://cdna.pcpartpicker.com/static/forever/images/product/3b191ea6d2424329059465069984d5f2.1600.jpg,TRUE,TRUE,FALSE,FALSE
+232,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,2666,18-18-18-43,2,https://cdna.pcpartpicker.com/static/forever/images/product/3b191ea6d2424329059465069984d5f2.1600.jpg,TRUE,TRUE,TRUE,FALSE
+233,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3600,16-16-16-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/3b191ea6d2424329059465069984d5f2.1600.jpg,TRUE,TRUE,FALSE,FALSE
 234,G.Skill Trident Z Neo Series,16,DDR4,220.00,G.Skill,3200,14-14-14-34,2,https://m.media-amazon.com/images/I/41ORtJsa-rL.jpg,TRUE,FALSE,TRUE,FALSE
-235,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3600,18-22-22-42,2,https://pcpartpicker.com/product/WRDwrH/gskill-memory-f32400c11q32gab,TRUE,TRUE,FALSE,FALSE
+235,G.Skill Trident Z Neo Series,32,DDR4,152.69,G.Skill,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/3b191ea6d2424329059465069984d5f2.1600.jpg,TRUE,TRUE,FALSE,FALSE
 236,G.Skill Trident Z Neo Series,16,DDR4,220.00,G.Skill,3200,16-18-18-38,2,https://m.media-amazon.com/images/I/41ORtJsa-rL.jpg,TRUE,FALSE,TRUE,FALSE
 237,G.Skill Trident Z RGB,64,DDR4,139.99,G.Skill,3600,14-15-15-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bd51ac22f62f50071472086b46ea6f6.256p.jpg,TRUE,TRUE,FALSE,FALSE
-238,G.Skill Trident Z RGB,128,DDR4,289.99,G.Skill,3600,18-22-22-42,4,https://pcpartpicker.com/product/qxkgXL/gskill-trident-z-rgb-128-gb-4-x-32-gb-ddr4-3600-memory-f4-3600c18q-128gtzr,FALSE,TRUE,FALSE,FALSE
-239,G.Skill Trident Z RGB,32,DDR4,81.99,G.Skill,3600,14-15-15-35,2,https://pcpartpicker.com/product/dHjJ7P/gskill-trident-z-rgb-32gb-2-x-16gb-ddr4-3200-memory-f4-3200c16d-32gtzrx,TRUE,TRUE,FALSE,FALSE
+238,G.Skill Trident Z RGB,128,DDR4,289.99,G.Skill,3600,18-22-22-42,4,https://cdna.pcpartpicker.com/static/forever/images/product/edf92ca9ebf54e7200ca588c8395c9c4.1600.jpg,FALSE,TRUE,FALSE,FALSE
+239,G.Skill Trident Z RGB,32,DDR4,81.99,G.Skill,3600,14-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/edf92ca9ebf54e7200ca588c8395c9c4.1600.jpg,TRUE,TRUE,FALSE,FALSE
 240,G.Skill Trident Z RGB DDR4-3000 16GB,16,DDR4,49.99,G.Skill,3000,14-14-14-34-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
-241,G.Skill Trident Z RGB DDR4-3000 32GB,32,DDR4,95.99,G.Skill,3000,15-16-16-35-2N,4,https://pcpartpicker.com/product/pwxRsY/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-fx5,TRUE,TRUE,FALSE,FALSE
+241,G.Skill Trident Z RGB DDR4-3000 32GB,32,DDR4,95.99,G.Skill,3000,15-16-16-35-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/5bfb04d855b1e501d71ef7516d5c39f7.1600.jpg,TRUE,TRUE,FALSE,FALSE
 242,G.Skill Trident Z RGB DDR4-3200 16GB,16,DDR4,49.99,G.Skill,3200,14-14-14-34,2,https://cdna.pcpartpicker.com/static/forever/images/product/00963d6b0a92c53e1e3c5c6de47d238f.256p.jpg,TRUE,TRUE,TRUE,FALSE
-243,G.Skill Trident Z RGB DDR4-3200 32GB,32,DDR4,95.99,G.Skill,3200,14-14-14-34,2,https://pcpartpicker.com/product/pwxRsY/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-fx5,TRUE,TRUE,FALSE,FALSE
+243,G.Skill Trident Z RGB DDR4-3200 32GB,32,DDR4,95.99,G.Skill,3200,14-14-14-34,2,https://cdna.pcpartpicker.com/static/forever/images/product/5bfb04d855b1e501d71ef7516d5c39f7.1600.jpg,TRUE,TRUE,FALSE,FALSE
 244,G.Skill Trident Z RGB DDR4-3200 64GB,64,DDR4,194.99,G.Skill,3200,15-15-15-35,4,https://cdna.pcpartpicker.com/static/forever/images/product/10975464bd8860e1def0ecd832a2aeb2.256p.jpg,TRUE,TRUE,FALSE,FALSE
-245,G.Skill Trident Z RGB DDR4-3466 32GB,32,DDR4,95.99,G.Skill,3466,16-18-18-38-2N,4,https://pcpartpicker.com/product/pwxRsY/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-fx5,TRUE,TRUE,FALSE,FALSE
+245,G.Skill Trident Z RGB DDR4-3466 32GB,32,DDR4,95.99,G.Skill,3466,16-18-18-38-2N,4,https://cdna.pcpartpicker.com/static/forever/images/product/5bfb04d855b1e501d71ef7516d5c39f7.1600.jpg,TRUE,TRUE,FALSE,FALSE
 246,G.Skill Trident Z RGB DDR4-4000 16GB,16,DDR4,49.99,G.Skill,4000,18-19-19-39-2N,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 247,G.Skill Trident Z RGB DDR4-4266 16GB,16,DDR4,49.99,G.Skill,4266,19-19-19-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 248,G.Skill Trident Z RGB Series,64,DDR4,134.32,G.Skill,3600,17-19-19-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/2bf9c19005b3014bc81be0ca4a35323e.256p.jpg,TRUE,TRUE,FALSE,FALSE
-249,G.Skill Trident Z RGB Series,32,DDR4,84.99,G.Skill,3600,17-19-19-39,4,https://pcpartpicker.com/product/BsYRsY/silicon-power-xpower-zenith-rgb-gaming-32-gb-2-x-16-gb-ddr5-6000-cl40-memory-sp032gxlwu600fdh,TRUE,TRUE,FALSE,FALSE
-250,G.Skill Trident Z RGB Series,32,DDR4,84.99,G.Skill,3000,14-14-14-34,2,https://pcpartpicker.com/product/BsYRsY/silicon-power-xpower-zenith-rgb-gaming-32-gb-2-x-16-gb-ddr5-6000-cl40-memory-sp032gxlwu600fdh,TRUE,TRUE,FALSE,FALSE
-251,G.Skill Trident Z RGB Series für AMD Ryzen,32,DDR4,122.99,G.Skill,3200,14-14-14-34,4,https://pcpartpicker.com/product/QTLFf7/corsair-vengeance-rgb-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-cmh32gx5m2d6000c36w,TRUE,TRUE,FALSE,FALSE
+249,G.Skill Trident Z RGB Series,32,DDR4,84.99,G.Skill,3600,17-19-19-39,4,https://cdna.pcpartpicker.com/static/forever/images/product/696244f2a4f2b000a8aa45153077f649.1600.jpg,TRUE,TRUE,FALSE,FALSE
+250,G.Skill Trident Z RGB Series,32,DDR4,84.99,G.Skill,3000,14-14-14-34,2,https://cdna.pcpartpicker.com/static/forever/images/product/696244f2a4f2b000a8aa45153077f649.1600.jpg,TRUE,TRUE,FALSE,FALSE
+251,G.Skill Trident Z RGB Series für AMD Ryzen,32,DDR4,122.99,G.Skill,3200,14-14-14-34,4,https://cdna.pcpartpicker.com/static/forever/images/product/ebca1cc55cb7829ce3ed0b8a13efce7e.1600.jpg,TRUE,TRUE,FALSE,FALSE
 252,G.Skill Trident Z RGB Series für AMD Ryzen,16,DDR4,49.99,G.Skill,2933,14-14-14-34,2,https://cdna.pcpartpicker.com/static/forever/images/product/51e300a552ede01b3e636254e0a93089.256p.jpg,TRUE,FALSE,TRUE,FALSE
 253,G.Skill Trident Z RGB Series für AMD Ryzen,16,DDR4,49.99,G.Skill,2400,15-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/51e300a552ede01b3e636254e0a93089.256p.jpg,FALSE,FALSE,TRUE,FALSE
-254,G.Skill Trident Z Royal,32,DDR4,108.99,G.Skill,3600,14-15-15-35,2,https://pcpartpicker.com/product/sNrmP6/gskill-trident-z-royal-32-gb-2-x-16-gb-ddr4-3600-memory-f4-3600c19d-32gtrs,TRUE,TRUE,FALSE,FALSE
+254,G.Skill Trident Z Royal,32,DDR4,108.99,G.Skill,3600,14-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/5f0811018cd80527d23610ce976a39ce.1600.jpg,TRUE,TRUE,FALSE,FALSE
 255,G.Skill Trident Z Royal Series gold,16,DDR4,49.99,G.Skill,3600,17-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 256,G.Skill Trident Z Royal Series gold,16,DDR4,49.99,G.Skill,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 257,G.Skill Trident Z Royal Series silver,16,DDR4,49.99,G.Skill,4266,19-19-19-39,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 258,G.Skill Trident Z Series silver/red,16,DDR4,49.99,G.Skill,3600,16-16-18-36,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
 259,G.Skill Trident Z Series silver/red,16,DDR4,49.99,G.Skill,3200,15-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/f32933ead8c97b0d50b26c83dc02ae6c.256p.jpg,TRUE,FALSE,TRUE,FALSE
-260,G.Skill Trident Z5 RGB,32,DDR5,112.99,G.Skill,7800,36-46-125,2,https://pcpartpicker.com/product/mhJgXL/gskill-trident-z5-rgb-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
-261,G.Skill Trident Z5 RGB,32,DDR5,112.99,G.Skill,7800,36-46-125,2,https://pcpartpicker.com/product/mhJgXL/gskill-trident-z5-rgb-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
-262,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,30-40-96,2,https://pcpartpicker.com/product/636p99/gskill-trident-z5-rgb-64-gb-2-x-32-gb-ddr5-6400-cl32-memory-f5-6400j3239g32gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
-263,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,30-40-96,2,https://pcpartpicker.com/product/636p99/gskill-trident-z5-rgb-64-gb-2-x-32-gb-ddr5-6400-cl32-memory-f5-6400j3239g32gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
-264,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,32-38-38-96,2,https://pcpartpicker.com/product/636p99/gskill-trident-z5-rgb-64-gb-2-x-32-gb-ddr5-6400-cl32-memory-f5-6400j3239g32gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
-265,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,32-38-38-96,2,https://pcpartpicker.com/product/636p99/gskill-trident-z5-rgb-64-gb-2-x-32-gb-ddr5-6400-cl32-memory-f5-6400j3239g32gx2-tz5rk,FALSE,TRUE,FALSE,FALSE
+260,G.Skill Trident Z5 RGB,32,DDR5,112.99,G.Skill,7800,36-46-125,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
+261,G.Skill Trident Z5 RGB,32,DDR5,112.99,G.Skill,7800,36-46-125,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
+262,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,30-40-96,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
+263,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,30-40-96,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
+264,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,32-38-38-96,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
+265,G.Skill Trident Z5 RGB,64,DDR5,214.99,G.Skill,6000,32-38-38-96,2,https://cdna.pcpartpicker.com/static/forever/images/product/e8d573bd2eac864d427645f0d2f7cad8.1600.jpg,FALSE,TRUE,FALSE,FALSE
 266,G.Skill Value Series,16,DDR4,220.00,G.Skill,2400,15-15-15-35,2,https://cdna.pcpartpicker.com/static/forever/images/product/3f022d1fab33c9449528fcde94d7df8e.256p.jpg,TRUE,FALSE,TRUE,TRUE
-267,G.Skill Value Series,8,DDR4,134.32,G.Skill,2666,19-19-19-43,1,https://pcpartpicker.com/product/9dR48d/gskill-f3-12800cl11d-8gbsq-8-gb-2-x-4-gb-ddr3-1600-sodimm-cl11-memory-f3-12800cl11d-8gbsq,TRUE,FALSE,TRUE,FALSE
+267,G.Skill Value Series,8,DDR4,134.32,G.Skill,2666,19-19-19-43,1,https://m.media-amazon.com/images/I/41Y1FqRjViL.jpg,TRUE,FALSE,TRUE,FALSE
 268,G.Skill Value Series,4,DDR4,134.32,G.Skill,2400,15-15-15-35,1,https://cdna.pcpartpicker.com/static/forever/images/product/a4cecff25f58230f3fbae1903d711e49.256p.jpg,FALSE,FALSE,FALSE,TRUE
 269,Gigabyte Aorus RGB Memory,16,DDR4,43.99,Gigabyte,3200,16-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
 270,Gigabyte Aorus RGB Memory,16,DDR4,43.99,Gigabyte,3200,16-18-18-38,2,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
@@ -284,14 +284,14 @@
 283,HyperX Predator DDR4-3200 CL16,32,DDR4,134.32,HyperX,3200,,4,https://pcpartpicker.com/product/7Zc48d/adata-32gb-2-x-16gb-ddr4-3000-memory-ax4u3000316g16-drg,TRUE,TRUE,FALSE,FALSE
 284,HyperX Predator DDR4-3200 CL16,16,DDR4,134.32,HyperX,3200,,2,https://cdna.pcpartpicker.com/static/forever/images/product/854f4fb3eae606a42541249b498ddde7.256p.jpg,TRUE,FALSE,TRUE,FALSE
 285,HyperX Savage red DDR3-2133 CL11,8,DDR3,134.32,HyperX,2133,,1,https://bilendenal.com/materials/images/products/products/1/1151/2309/kingston-hyperx-savage-8gb-ddr3-2133mhz-cl11-performans-rami-hx321c11sr8-s10-p5-1200x800-i2309.jpg,FALSE,FALSE,TRUE,TRUE
-286,Kingston DDR4-2133 reg ECC  - Dell branded,32,DDR4,62.99,Kingston,2133,,1,https://pcpartpicker.com/product/hMLFf7/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-kf560c36bbek2-32,TRUE,FALSE,TRUE,FALSE
-287,Kingston DDR4-2133 reg ECC  - Dell branded,8,DDR4,28.69,Kingston,2133,,1,https://pcpartpicker.com/product/PkbTwP/kingston-fury-beast-8-gb-1-x-8-gb-ddr4-3200-cl16-memory-kf432c16bb8,TRUE,FALSE,TRUE,TRUE
-288,Kingston DDR4-2400 CL17 reg ECC   - HP branded,32,DDR4,62.99,Kingston,2400,,1,https://pcpartpicker.com/product/hMLFf7/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-kf560c36bbek2-32,TRUE,FALSE,TRUE,FALSE
-289,Kingston DDR4-2400 reg ECC  - Dell branded,32,DDR4,62.99,Kingston,2400,,1,https://pcpartpicker.com/product/hMLFf7/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-kf560c36bbek2-32,TRUE,FALSE,TRUE,FALSE
+286,Kingston DDR4-2133 reg ECC  - Dell branded,32,DDR4,62.99,Kingston,2133,,1,https://cdna.pcpartpicker.com/static/forever/images/product/15f577658fa02ead3aa1acb1886567a3.1600.jpg,TRUE,FALSE,TRUE,FALSE
+287,Kingston DDR4-2133 reg ECC  - Dell branded,8,DDR4,28.69,Kingston,2133,,1,https://cdna.pcpartpicker.com/static/forever/images/product/cbff70f75b5d67c6c28fce5086628059.1600.jpg,TRUE,FALSE,TRUE,TRUE
+288,Kingston DDR4-2400 CL17 reg ECC   - HP branded,32,DDR4,62.99,Kingston,2400,,1,https://cdna.pcpartpicker.com/static/forever/images/product/15f577658fa02ead3aa1acb1886567a3.1600.jpg,TRUE,FALSE,TRUE,FALSE
+289,Kingston DDR4-2400 reg ECC  - Dell branded,32,DDR4,62.99,Kingston,2400,,1,https://cdna.pcpartpicker.com/static/forever/images/product/15f577658fa02ead3aa1acb1886567a3.1600.jpg,TRUE,FALSE,TRUE,FALSE
 290,Kingston HyperX Predator,64,DDR4,134.32,Kingston,3000,15-17-17,4,https://m.media-amazon.com/images/I/41JGho18UFL.jpg,TRUE,TRUE,FALSE,FALSE
 291,Kingston Value  DDR3-1333  CL9,4,DDR3,37.99,Kingston,1333,,1,https://cdna.pcpartpicker.com/static/forever/images/product/9dbdaa325c3c8126bddcfdc65c80dc0d.256p.jpg,FALSE,FALSE,FALSE,TRUE
-292,Kingston Value  DDR3-1333 CL9  Memory,2,DDR3,17.09,Kingston,1333,,1,https://pcpartpicker.com/product/Lrg323/kingston-memory-kvr800d2n62g,FALSE,FALSE,FALSE,TRUE
+292,Kingston Value  DDR3-1333 CL9  Memory,2,DDR3,17.09,Kingston,1333,,1,https://cdna.pcpartpicker.com/static/forever/images/product/ceb98d22e569129d71a4a037c46d7fd4.1600.jpg,FALSE,FALSE,FALSE,TRUE
 293,Kingston Value  DDR3-1600  CL11,4,DDR3,37.99,Kingston,1600,,1,https://cdna.pcpartpicker.com/static/forever/images/product/9dbdaa325c3c8126bddcfdc65c80dc0d.256p.jpg,FALSE,FALSE,FALSE,TRUE
-294,Kingston Value DDR3-1600  CL11,8,DDR3,19.43,Kingston,1600,,1,https://pcpartpicker.com/product/LMGxFT/gskill-value-8-gb-2-x-4-gb-ddr4-2400-memory-f4-2400c17d-8gnt,FALSE,FALSE,TRUE,TRUE
+294,Kingston Value DDR3-1600  CL11,8,DDR3,19.43,Kingston,1600,,1,https://cdna.pcpartpicker.com/static/forever/images/product/e7b5f236d0eca0f5ce670417e412d245.1600.jpg,FALSE,FALSE,TRUE,TRUE
 295,Thermaltake Toughram RGB DDR4-3600 CL18 - 16 GB Dual-Kit,16,DDR4,41.99,Thermaltake,3600,18-22-22-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,FALSE,TRUE,FALSE
 296,Thermaltake Toughram RGB DDR4-4000 CL19- 16 GB Dual-Kit,16,DDR4,41.99,Thermaltake,4000,19-23-23-42,2,https://cdna.pcpartpicker.com/static/forever/images/product/33813e932dd7993032d89b4ce508aa21.256p.jpg,TRUE,TRUE,FALSE,FALSE
