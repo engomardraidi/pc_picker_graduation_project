@@ -147,7 +147,7 @@ class LaptopSerializer(SerializerWithImage):
         if data.get('gpu_speed', False):
             data['gpu_speed'] = f'{data["gpu_speed"]} GHz'
         if data.get('weight', False):
-            data['weight'] = f'{data["weight"] / 2.205} kilo'
+            data['weight'] = f'{round(data["weight"] / 2.205, 2)} Kg'
         if data.get('vram', False):
             data['vram'] = f'{data["vram"]} GB'
         if data.get('memory', False):
