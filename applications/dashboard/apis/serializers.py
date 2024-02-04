@@ -8,6 +8,14 @@ class SerializerWithoutImage(BaseSerializer):
     pass
 
 class SerializerWithImage(BaseSerializer):
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('producer', False):
+            self.initial_data['producer'] = models.Producer.objects.get_or_create(name=self.initial_data['producer'])[0].id
+        if self.initial_data.get('socket', False):
+            self.initial_data['socket'] = models.CPUSocket.objects.get_or_create(socket=self.initial_data['socket'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
+
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
@@ -28,6 +36,7 @@ class SerializerWithImage(BaseSerializer):
         return data
 
     def validate(self, attrs):
+        print('dsadadasdadsadasda')
         if not self.partial:
             external_image = attrs.get('external_image', None)
             image = attrs.get('image', None)
@@ -181,6 +190,16 @@ class MotherboardSerializer(SerializerWithImage):
         model = models.Motherboard
         fields = '__all__'
 
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('ram_type', False):
+            self.initial_data['ram_type'] = models.RAMType.objects.get_or_create(type=self.initial_data['ram_type'])[0].id
+        if self.initial_data.get('chipset', False):
+            self.initial_data['chipset'] = models.Chipset.objects.get_or_create(chipset=self.initial_data['chipset'])[0].id
+        if self.initial_data.get('form_factor', False):
+            self.initial_data['form_factor'] = models.FormFactor.objects.get_or_create(form_factor=self.initial_data['form_factor'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
+
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
@@ -197,6 +216,12 @@ class RAMSerializer(SerializerWithImage):
     class Meta:
         model = models.RAM
         fields = '__all__'
+
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('type', False):
+            self.initial_data['type'] = models.RAMType.objects.get_or_create(type=self.initial_data['type'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -230,6 +255,14 @@ class GPUSerializer(SerializerWithImage):
         model = models.GPU
         fields = '__all__'
 
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('series', False):
+            self.initial_data['series'] = models.GPUSeries.objects.get_or_create(series=self.initial_data['series'])[0].id
+        if self.initial_data.get('sync', False):
+            self.initial_data['sync'] = models.GPUSync.objects.get_or_create(sync=self.initial_data['sync'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
+
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
@@ -242,9 +275,9 @@ class GPUSerializer(SerializerWithImage):
         if data.get('length', False):
             data['length'] = f'{data["length"]} mm'
         if data.get('boost_clock', False):
-            data['boost_clock'] = f'{data["boost_clock"]} GHz'
+            data['boost_clock'] = f'{data["boost_clock"]} MHz'
         if data.get('memory_clock', False):
-            data['memory_clock'] = f'{data["memory_clock"]} GHz'
+            data['memory_clock'] = f'{data["memory_clock"]} MHz'
 
         return data
 
@@ -252,6 +285,18 @@ class CaseSerializer(SerializerWithImage):
     class Meta:
         model = models.Case
         fields = '__all__'
+
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('type', False):
+            self.initial_data['type'] = models.CaseType.objects.get_or_create(type=self.initial_data['type'])[0].id
+        if self.initial_data.get('color', False):
+            self.initial_data['color'] = models.Color.objects.get_or_create(color=self.initial_data['color'])[0].id
+        if self.initial_data.get('side_panel', False):
+            self.initial_data['side_panel'] = models.CaseSidePanel.objects.get_or_create(side_panel=self.initial_data['side_panel'])[0].id
+        if self.initial_data.get('style', False):
+            self.initial_data['style'] = models.CaseStyle.objects.get_or_create(style=self.initial_data['style'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -272,6 +317,12 @@ class InternalDriveSerializer(SerializerWithImage):
         model = models.InternalDrive
         fields = '__all__'
 
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('drive_type', False):
+            self.initial_data['drive_type'] = models.DriveType.objects.get_or_create(type=self.initial_data['drive_type'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
+
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
@@ -290,6 +341,14 @@ class PowerSupplySerializer(SerializerWithImage):
     class Meta:
         model = models.PowerSupply
         fields = '__all__'
+
+    def is_valid(self, *, raise_exception=False):
+        if self.initial_data.get('type', False):
+            self.initial_data['type'] = models.PowerSupplyType.objects.get_or_create(type=self.initial_data['type'])[0].id
+        if self.initial_data.get('efficiency', False):
+            self.initial_data['efficiency'] = models.PowerSupplyEfficiency.objects.get_or_create(efficiency=self.initial_data['efficiency'])[0].id
+
+        return super().is_valid(raise_exception=raise_exception)
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
